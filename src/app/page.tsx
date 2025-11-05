@@ -53,48 +53,44 @@ export default function Home() {
       {/* Pilihan Paket Wisata - Exact layout dari The Langkah Travel */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-            <div className="lg:col-span-1">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                {t.popularPackages}
-              </h2>
-              <p className="text-base text-gray-700 leading-relaxed">
-                {t.popularDesc}
-              </p>
-            </div>
-            <div className="lg:col-span-2 grid grid-cols-2 gap-4">
-              <PackageCard
-                image="/images/whale-shark/IMG_2992.JPG"
-                title="Whale Shark Experience - Labuhan Jambu"
-                href="/whale-shark-experience"
-              />
-              <PackageCard
-                image="/images/moyo/hero.jpg"
-                title="Moyo Island Adventure"
-                href="/moyo-island-adventure"
-              />
-            </div>
+          <div className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+              {t.popularPackages}
+            </h2>
+            <p className="text-base text-gray-700 leading-relaxed text-center max-w-3xl mx-auto mb-8">
+              {t.popularDesc}
+            </p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <PackageCard
+              image="/images/whale-shark/IMG_2992.JPG"
+              title="Whale Shark Experience"
+              href="/whale-shark-experience"
+            />
+            <PackageCard
+              image="/images/moyo/hero.jpg"
+              title="Moyo Island Adventure"
+              href="/moyo-island-adventure"
+            />
             <PackageCard
               image="/images/kenawa/hero.jpg"
               title="Kenawa Sunset Tour"
               href="/kenawa-sunset-tour"
             />
             <PackageCard
-              image="/images/whale-shark/IMG_2079.JPG"
-              title="Private Trip Whale Shark"
-              href="/private-trip-whale-shark"
-            />
-            <PackageCard
-              image="/images/whale-shark/IMG_2805.JPG"
-              title="Open Trip Whale Shark"
-              href="/open-trip-whale-shark"
+              image="/images/hero.jpg"
+              title="Trip 4D3N Sumbawa"
+              href="/trip-4d3n-sumbawa"
             />
             <PackageCard
               image="/images/destinations/sumbawa.jpg"
-              title="Sumbawa Island Hopping"
+              title="Trip 3D2N Sumbawa"
+              href="/trip-3d2n-sumbawa"
+            />
+            <PackageCard
+              image="/images/kenawa/sunset.jpg"
+              title="Island Hopping"
               href="/sumbawa-island-hopping"
             />
           </div>

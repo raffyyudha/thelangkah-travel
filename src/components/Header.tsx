@@ -50,12 +50,12 @@ export default function Header() {
             <NavDropdown
               title={t.packages}
               items={[
-                { label: t.whaleShark, href: "/whale-shark-experience" },
-                { label: t.privateTrip, href: "/private-trip-whale-shark" },
-                { label: t.openTrip, href: "/open-trip-whale-shark" },
-                { label: t.moyoIsland, href: "/moyo-island-adventure" },
-                { label: t.kenawa, href: "/kenawa-sunset-tour" },
-                { label: t.islandHopping, href: "/sumbawa-island-hopping" },
+                { label: "Whale Shark Experience", href: "/whale-shark-experience" },
+                { label: "Moyo Island Adventure", href: "/moyo-island-adventure" },
+                { label: "Kenawa Sunset Tour", href: "/kenawa-sunset-tour" },
+                { label: "Trip 4D3N Sumbawa", href: "/trip-4d3n-sumbawa" },
+                { label: "Trip 3D2N Sumbawa", href: "/trip-3d2n-sumbawa" },
+                { label: "Island Hopping", href: "/sumbawa-island-hopping" },
               ]}
             />
             <Link href="/gallery" className="text-gray-700 hover:text-[#00a6b5] transition-colors font-medium">
@@ -125,12 +125,12 @@ export default function Header() {
             <MobileNavDropdown
               title={t.packages}
               items={[
-                { label: t.whaleShark, href: "/whale-shark-experience" },
-                { label: t.privateTrip, href: "/private-trip-whale-shark" },
-                { label: t.openTrip, href: "/open-trip-whale-shark" },
-                { label: t.moyoIsland, href: "/moyo-island-adventure" },
-                { label: t.kenawa, href: "/kenawa-sunset-tour" },
-                { label: t.islandHopping, href: "/sumbawa-island-hopping" },
+                { label: "Whale Shark Experience", href: "/whale-shark-experience" },
+                { label: "Moyo Island Adventure", href: "/moyo-island-adventure" },
+                { label: "Kenawa Sunset Tour", href: "/kenawa-sunset-tour" },
+                { label: "Trip 4D3N Sumbawa", href: "/trip-4d3n-sumbawa" },
+                { label: "Trip 3D2N Sumbawa", href: "/trip-3d2n-sumbawa" },
+                { label: "Island Hopping", href: "/sumbawa-island-hopping" },
               ]}
             />
             <Link href="/gallery" className="block py-2 text-gray-700 hover:text-[#00a6b5]">
