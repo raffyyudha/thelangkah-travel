@@ -62,24 +62,24 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 gap-4 md:gap-6">
             <PackageCard
-              image="/images/whale-shark/IMG_2992.JPG"
+              image="/images/whaleshark.PNG"
               title="Whale Shark Experience"
               href="/whale-shark-experience"
             />
             <PackageCard
-              image="/images/moyo/hero.jpg"
+              image="/images/moyoisland.JPG"
               title="Moyo Island Adventure"
               href="/moyo-island-adventure"
             />
             <PackageCard
-              image="/images/kenawa/hero.jpg"
+              image="/images/kenawasunset.PNG"
               title="Kenawa Sunset Tour"
               href="/kenawa-sunset-tour"
             />
             <PackageCard
-              image="/images/hero.jpg"
+              image="/images/islandjawa.jpg"
               title="Trip 4D3N Sumbawa"
               href="/trip-4d3n-sumbawa"
             />
