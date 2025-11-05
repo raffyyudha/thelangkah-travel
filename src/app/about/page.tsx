@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { MessageCircle, Users, Shield, Leaf, Award, Heart, MapPin } from "lucide-react";
+import { MessageCircle, Users, Shield, Leaf, Award, Heart, MapPin, Compass, Briefcase, Map, Waves } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function AboutPage() {
@@ -167,28 +167,28 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             <TeamCard
-              name="Haikal"
+              name="Andi"
               role="Founder & Lead Guide"
-              image="/images/moyo/hero.jpg"
+              icon="compass"
               description="Berpengalaman lebih dari 10 tahun sebagai guide wisata Sumbawa"
             />
             <TeamCard
               name="Naja"
               role="Operations Manager"
-              image="/images/kenawa/hero.jpg"
+              icon="briefcase"
               description="Mengatur semua operasional trip dengan detail dan profesional"
+            />
+            <TeamCard
+              name="Haikal"
+              role="Senior Guide"
+              icon="map"
+              description="Guide berpengalaman dengan pengetahuan mendalam tentang Sumbawa"
             />
             <TeamCard
               name="Alex"
               role="Marine Expert"
-              image="/images/whale-shark/IMG_2079.JPG"
+              icon="waves"
               description="Ahli ekosistem laut dan konservasi hiu paus"
-            />
-            <TeamCard
-              name="Ikram"
-              role="Senior Guide"
-              image="/images/destinations/sumbawa.jpg"
-              description="Guide berpengalaman dengan pengetahuan mendalam tentang Sumbawa"
             />
           </div>
         </div>
@@ -427,16 +427,23 @@ function ValueCard({ icon, title, description }: { icon: React.ReactNode; title:
   );
 }
 
-function TeamCard({ name, role, image, description }: { name: string; role: string; image: string; description: string }) {
+function TeamCard({ name, role, icon, description }: { name: string; role: string; icon: string; description: string }) {
+  const getIcon = () => {
+    switch(icon) {
+      case 'compass': return <Compass className="w-16 h-16" />;
+      case 'briefcase': return <Briefcase className="w-16 h-16" />;
+      case 'map': return <Map className="w-16 h-16" />;
+      case 'waves': return <Waves className="w-16 h-16" />;
+      default: return <Users className="w-16 h-16" />;
+    }
+  };
+
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
-      <div className="relative h-64">
-        <Image
-          src={image}
-          alt={name}
-          fill
-          className="object-cover"
-        />
+      <div className="relative h-64 bg-gradient-to-br from-[#00a6b5] to-[#0a3d52] flex items-center justify-center">
+        <div className="text-white">
+          {getIcon()}
+        </div>
       </div>
       <div className="p-6">
         <h3 className="text-xl font-bold mb-1 text-gray-900">{name}</h3>
