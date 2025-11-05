@@ -12,21 +12,21 @@ export default function WhaleSharkExperiencePage() {
   const privatePackages = [
     {
       image: "/images/whale-shark/IMG_2079.JPG",
-      title: "Paket Wisata Hiu Paus (Start & Finish Sumbawa Besar)",
-      price: "IDR 500.000",
-      alt: "Private Trip Sumbawa Besar"
+      title: "Private Trip - 1-3 People",
+      price: "1,200,000 - 3,300,000",
+      alt: "Private Trip Small Group"
     },
     {
       image: "/images/whale-shark/IMG_2082.JPG",
-      title: "Paket Tour Hiu Paus (Start Desa Labuhan Jambu)",
-      price: "IDR 400.000",
-      alt: "Tour Labuhan Jambu"
+      title: "Private Trip - 4-6 People",
+      price: "800,000 - 1,000,000",
+      alt: "Private Trip Medium Group"
     },
     {
       image: "/images/whale-shark/IMG_2806.JPG",
-      title: "Tour Hiu Paus (Menggunakan Speed Boat)",
-      price: "IDR 600.000",
-      alt: "Speed Boat Tour"
+      title: "Private Trip - 7-10 People",
+      price: "480,000 - 700,000",
+      alt: "Private Trip Large Group"
     }
   ];
 
@@ -97,6 +97,9 @@ export default function WhaleSharkExperiencePage() {
       <section className="py-12 bg-white">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-12">
+            <p className="text-gray-700 text-xl leading-relaxed mb-6">
+              <strong>Whale shark tour packages take you on an unforgettable experience to meet the gentle giants of the sea.</strong>
+            </p>
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
               Selamat datang di <span className="font-bold text-[#00a6b5]">Adventure Sumbawa Island</span>! Bersiaplah untuk petualangan snorkeling seru bersama hiu paus di perairan eksklusif Sumbawa. Nikmati keindahan bawah laut yang memukau, air jernih, dan momen tak terlupakan bersama tim ahli kami yang siap memandu Anda.
             </p>
@@ -357,6 +360,244 @@ export default function WhaleSharkExperiencePage() {
                   </div>
                 </Link>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Details Section */}
+      <section className="py-16 bg-gradient-to-br from-[#00a6b5]/10 to-white">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">✨ PRIVATE TRIP PRICING</h2>
+          <p className="text-center text-gray-600 mb-12">The price above is the price per person</p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
+            <div className="bg-white rounded-lg p-4 shadow-md text-center">
+              <p className="text-sm text-gray-600 mb-2">1 person</p>
+              <p className="text-xl font-bold text-[#00a6b5]">3,300,000</p>
+              <p className="text-xs text-gray-500">IDR</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-md text-center">
+              <p className="text-sm text-gray-600 mb-2">2 people</p>
+              <p className="text-xl font-bold text-[#00a6b5]">1,700,000</p>
+              <p className="text-xs text-gray-500">IDR</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-md text-center">
+              <p className="text-sm text-gray-600 mb-2">3 people</p>
+              <p className="text-xl font-bold text-[#00a6b5]">1,200,000</p>
+              <p className="text-xs text-gray-500">IDR</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-md text-center">
+              <p className="text-sm text-gray-600 mb-2">4 people</p>
+              <p className="text-xl font-bold text-[#00a6b5]">1,000,000</p>
+              <p className="text-xs text-gray-500">IDR</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-md text-center">
+              <p className="text-sm text-gray-600 mb-2">5 people</p>
+              <p className="text-xl font-bold text-[#00a6b5]">900,000</p>
+              <p className="text-xs text-gray-500">IDR</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-md text-center">
+              <p className="text-sm text-gray-600 mb-2">6 people</p>
+              <p className="text-xl font-bold text-[#00a6b5]">800,000</p>
+              <p className="text-xs text-gray-500">IDR</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-md text-center">
+              <p className="text-sm text-gray-600 mb-2">7 people</p>
+              <p className="text-xl font-bold text-[#00a6b5]">700,000</p>
+              <p className="text-xs text-gray-500">IDR</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-md text-center">
+              <p className="text-sm text-gray-600 mb-2">8 people</p>
+              <p className="text-xl font-bold text-[#00a6b5]">600,000</p>
+              <p className="text-xs text-gray-500">IDR</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-md text-center">
+              <p className="text-sm text-gray-600 mb-2">9 people</p>
+              <p className="text-xl font-bold text-[#00a6b5]">500,000</p>
+              <p className="text-xs text-gray-500">IDR</p>
+            </div>
+            <div className="bg-white rounded-lg p-4 shadow-md text-center">
+              <p className="text-sm text-gray-600 mb-2">10 people</p>
+              <p className="text-xl font-bold text-[#00a6b5]">480,000</p>
+              <p className="text-xs text-gray-500">IDR</p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-6 md:p-8 shadow-lg mb-8">
+            <h3 className="text-2xl font-bold mb-4">✨ NOTE</h3>
+            <ul className="space-y-2 text-gray-700">
+              <li className="flex items-start gap-2">
+                <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <span>Available every day</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                <span>We offer a Private Trip package for couple and family</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <Clock className="w-5 h-5 text-[#00a6b5] flex-shrink-0 mt-0.5" />
+                <span>Labuhan Jambu meeting point starts at 04:30 AM - finishes at 11:00 AM</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <AlertCircle className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" />
+                <span>All depends on weather conditions</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="bg-red-50 border-2 border-red-200 rounded-xl p-6 md:p-8 mb-8">
+            <h3 className="text-2xl font-bold mb-4 text-red-700">✨ IMPORTANT RULES</h3>
+            <ul className="space-y-3 text-gray-800">
+              <li className="flex items-start gap-2">
+                <X className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                <span><strong>It is forbidden to touch whale sharks</strong> because whale shark skin is sensitive and protected by conservation</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                <span>Keep a minimum distance of 2 meters when swimming</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <Users className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                <span>Follow the directions of local guides for safety and conservation</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-green-50 rounded-xl p-6 md:p-8">
+              <h3 className="text-2xl font-bold mb-4 text-green-700">✨ INCLUDE</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Boat trip</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Fresh fruit</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Coffee & tea</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Bread & Chocolate</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Mineral water</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Towel & blanket</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>English tour guide</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Village entrance fee</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Conservation platform</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>GoPro camera 11/12</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Underwater photo & Video</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                  <span>Snorkeling equipment (mask, snorkel, fins)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div className="bg-gray-50 rounded-xl p-6 md:p-8 mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-gray-700">✨ NOT INCLUDED</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <X className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
+                    <span>Airfare</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <X className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
+                    <span>Hotel</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <X className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
+                    <span>Lunch/Dinner</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <X className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
+                    <span>Personal Needs</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <X className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
+                    <span>Tips for local crew & driver</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-blue-50 rounded-xl p-6 md:p-8">
+                <h3 className="text-2xl font-bold mb-4 text-blue-700">✨ WHAT TO BRING (optional)</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                    <span>Jacket</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                    <span>Sunscreen/UV cream</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                    <span>Sunglasses/UV protection</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-xl p-6 md:p-8 shadow-lg">
+            <h3 className="text-2xl font-bold mb-6">✨ ITINERARY</h3>
+            <div className="space-y-4">
+              <div className="border-l-4 border-[#00a6b5] pl-4">
+                <p className="font-bold text-lg">⏰ FIRST DAY</p>
+                <p className="text-gray-700">Arrival to Sumbawa or Labuhan Jambu hotel<br/><span className="text-sm text-gray-600">(Labuhan Jambu hotel is close to the pier)</span></p>
+              </div>
+              <div className="border-l-4 border-[#00a6b5] pl-4">
+                <p className="font-bold text-lg">⏰ SECOND DAY</p>
+                <ul className="space-y-2 text-gray-700 mt-2">
+                  <li><strong>4:00 AM</strong> - Wake up and get ready</li>
+                  <li><strong>4:20 AM</strong> - Guide picks up at hotel</li>
+                  <li><strong>4:30 AM</strong> - Depart for whale shark location</li>
+                  <li><strong>6:00 AM</strong> - Arrive at whale shark location</li>
+                  <li><strong>6:10 AM</strong> - Enjoy breakfast</li>
+                  <li><strong>6:20 AM</strong> - Swimming activity with whale sharks 🐋</li>
+                  <li><strong>9:30 AM</strong> - Return to pier</li>
+                  <li><strong>11:00 AM</strong> - Arrive at the pier</li>
+                  <li><strong>11:10 AM</strong> - Guide will take you to the hotel</li>
+                  <li><strong>11:20 AM</strong> - Guide will send video documentation</li>
+                  <li className="font-bold text-[#00a6b5]">✨ Trip completed</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 bg-gradient-to-r from-[#00a6b5] to-[#0a3d52] rounded-xl p-8 text-white text-center">
+            <h3 className="text-2xl font-bold mb-4">✨ ADDITIONAL SERVICES</h3>
+            <p className="text-lg mb-4">We can help arrange:</p>
+            <div className="flex justify-center gap-8 text-lg">
+              <div>🏨 Hotel</div>
+              <div>🚗 Transfer car</div>
             </div>
           </div>
         </div>

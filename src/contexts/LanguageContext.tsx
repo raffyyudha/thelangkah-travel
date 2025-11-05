@@ -215,7 +215,7 @@ const translations = {
     faqRequirementsAnswer: "Anda memerlukan paspor yang valid (minimal 6 bulan), tiket pulang/lanjutan, dan bukti akomodasi. Asuransi perjalanan sangat disarankan. Tidak ada vaksinasi khusus yang diperlukan, tetapi Hepatitis A, Tifoid, dan Tetanus direkomendasikan.",
     
     faqBestTime: "Kapan waktu terbaik untuk berwisata ke Sumbawa?",
-    faqBestTimeAnswer: "Waktu terbaik mengunjungi Sumbawa adalah selama musim kemarau dari April hingga November. Untuk perjumpaan hiu paus di Teluk Saleh, musim puncak adalah dari Oktober hingga Desember ketika hiu paus paling banyak. Musim hujan (Desember-Maret) dapat membawa hujan lebat.",
+    faqBestTimeAnswer: "Waktu terbaik mengunjungi Sumbawa adalah selama musim kemarau dari April hingga November. Untuk perjumpaan hiu paus di Teluk Saleh, waktu terbaik adalah dari Maret sampai November dengan musim puncak dari Juni sampai Oktober ketika hiu paus paling banyak. Musim hujan (Desember-Maret) dapat membawa hujan lebat.",
     
     faqHowToGet: "Bagaimana cara ke Sumbawa?",
     faqHowToGetAnswer: "Anda dapat mencapai Sumbawa dengan penerbangan ke Bandara Sultan Muhammad Kaharuddin III (Sumbawa Besar) atau dengan feri dari Lombok (Pelabuhan Kayangan ke Poto Tano, sekitar 1,5-2 jam). Kami menyediakan layanan penjemputan dari bandara dan pelabuhan feri.",
@@ -389,7 +389,7 @@ const translations = {
     faqRequirementsAnswer: "You'll need a valid passport (minimum 6 months validity), return/onward ticket, and proof of accommodation. Travel insurance is highly recommended. No specific vaccinations are required, but Hepatitis A, Typhoid, and Tetanus are recommended.",
     
     faqBestTime: "When are the best months to travel to Sumbawa?",
-    faqBestTimeAnswer: "The best time to visit Sumbawa is during the dry season from April to November. For whale shark encounters in Teluk Saleh, the peak season is from October to December when whale sharks are most abundant. The wet season (December-March) can bring heavy rains.",
+    faqBestTimeAnswer: "The best time to visit Sumbawa is during the dry season from April to November. For whale shark encounters in Teluk Saleh, the best time is from March to November with peak season from June to October when whale sharks are most abundant. The wet season (December-March) can bring heavy rains.",
     
     faqHowToGet: "How do I get to Sumbawa?",
     faqHowToGetAnswer: "You can reach Sumbawa by flight to Sultan Muhammad Kaharuddin III Airport (Sumbawa Besar) or by ferry from Lombok (Pelabuhan Kayangan to Poto Tano, about 1.5-2 hours). We provide pickup services from both the airport and ferry ports.",
