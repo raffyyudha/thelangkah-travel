@@ -79,9 +79,9 @@ export default function Home() {
               href="/kenawa-sunset-tour"
             />
             <PackageCard
-              image="/images/islandjawa.jpg"
-              title="Trip 4D3N Sumbawa"
-              href="/trip-4d3n-sumbawa"
+              image="/images/kenawa/sunset.jpg"
+              title="Island Hopping"
+              href="/sumbawa-island-hopping"
             />
             <PackageCard
               image="/images/destinations/sumbawa.jpg"
@@ -89,9 +89,9 @@ export default function Home() {
               href="/trip-3d2n-sumbawa"
             />
             <PackageCard
-              image="/images/kenawa/sunset.jpg"
-              title="Island Hopping"
-              href="/sumbawa-island-hopping"
+              image="/images/islandjawa.jpg"
+              title="Trip 4D3N Sumbawa"
+              href="/trip-4d3n-sumbawa"
             />
           </div>
         </div>
