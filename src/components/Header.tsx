@@ -1,0 +1,245 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import { ChevronDown, Menu, X } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+
+export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'id' ? 'en' : 'id');
+  };
+
+  return (
+    <header className="bg-white shadow-sm sticky top-0 z-50">
+      <nav className="container mx-auto px-6 max-w-7xl">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-2 md:gap-3">
+            <div className="relative w-12 h-12 md:w-20 md:h-20 flex-shrink-0 overflow-hidden flex items-center justify-center">
+              <Image
+                src="/images/logo.png"
+                alt="Adventure Sumbawa Island"
+                width={150}
+                height={150}
+                className="object-cover scale-[1.8]"
+                style={{ 
+                  filter: 'brightness(0.7) saturate(1.2)',
+                  objectPosition: 'center 50%',
+                  transform: 'translateY(18px) scale(1.8)'
+                }}
+              />
+            </div>
+            <span className="text-[#00a6b5] font-bold text-sm md:text-xl uppercase tracking-wide leading-tight">
+              Adventure<br className="md:hidden" /> Sumbawa Island
+            </span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center gap-8">
+            <Link href="/" className="text-gray-700 hover:text-[#00a6b5] transition-colors font-medium">
+              {t.home}
+            </Link>
+            <Link href="/about" className="text-gray-700 hover:text-[#00a6b5] transition-colors font-medium">
+              {t.about}
+            </Link>
+            <NavDropdown
+              title={t.packages}
+              items={[
+                { label: t.whaleShark, href: "/whale-shark-experience" },
+                { label: t.privateTrip, href: "/private-trip-whale-shark" },
+                { label: t.openTrip, href: "/open-trip-whale-shark" },
+                { label: t.moyoIsland, href: "/moyo-island-adventure" },
+                { label: t.kenawa, href: "/kenawa-sunset-tour" },
+                { label: t.islandHopping, href: "/sumbawa-island-hopping" },
+              ]}
+            />
+            <Link href="/gallery" className="text-gray-700 hover:text-[#00a6b5] transition-colors font-medium">
+              {t.gallery}
+            </Link>
+            <Link href="/testimonials" className="text-gray-700 hover:text-[#00a6b5] transition-colors font-medium">
+              {t.testimonials}
+            </Link>
+          </div>
+
+          {/* Language Switcher & Contact Button */}
+          <div className="hidden lg:flex items-center gap-4">
+            <button 
+              onClick={toggleLanguage}
+              className={`w-8 h-8 transition-opacity ${language === 'id' ? 'opacity-100' : 'opacity-50'}`}
+              title="Bahasa Indonesia"
+            >
+              <Image
+                src="https://flagcdn.com/w40/id.png"
+                alt="Indonesia"
+                width={32}
+                height={32}
+                className="rounded"
+              />
+            </button>
+            <button 
+              onClick={toggleLanguage}
+              className={`w-8 h-8 transition-opacity ${language === 'en' ? 'opacity-100' : 'opacity-50'}`}
+              title="English"
+            >
+              <Image
+                src="https://flagcdn.com/w40/gb.png"
+                alt="English"
+                width={32}
+                height={32}
+                className="rounded"
+              />
+            </button>
+            <a
+              href="https://wa.me/6282341331975?text=Halo%20Adventure%20Sumbawa%20Island,%20saya%20ingin%20booking%20trip"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-600 text-white px-6 py-2.5 rounded-full font-medium transition-colors"
+            >
+              {t.bookNow}
+            </a>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden text-gray-700"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden py-4 border-t">
+            <Link href="/" className="block py-2 text-gray-700 hover:text-[#00a6b5]">
+              {t.home}
+            </Link>
+            <Link href="/about" className="block py-2 text-gray-700 hover:text-[#00a6b5]">
+              {t.about}
+            </Link>
+            <MobileNavDropdown
+              title={t.packages}
+              items={[
+                { label: t.whaleShark, href: "/whale-shark-experience" },
+                { label: t.privateTrip, href: "/private-trip-whale-shark" },
+                { label: t.openTrip, href: "/open-trip-whale-shark" },
+                { label: t.moyoIsland, href: "/moyo-island-adventure" },
+                { label: t.kenawa, href: "/kenawa-sunset-tour" },
+                { label: t.islandHopping, href: "/sumbawa-island-hopping" },
+              ]}
+            />
+            <Link href="/gallery" className="block py-2 text-gray-700 hover:text-[#00a6b5]">
+              {t.gallery}
+            </Link>
+            <Link href="/testimonials" className="block py-2 text-gray-700 hover:text-[#00a6b5]">
+              {t.testimonials}
+            </Link>
+            
+            {/* Language Switcher Mobile */}
+            <div className="flex gap-3 py-4 border-t mt-2">
+              <button 
+                onClick={toggleLanguage}
+                className={`w-10 h-10 transition-opacity ${language === 'id' ? 'opacity-100 ring-2 ring-[#00a6b5]' : 'opacity-50'} rounded`}
+              >
+                <Image
+                  src="https://flagcdn.com/w40/id.png"
+                  alt="Indonesia"
+                  width={40}
+                  height={40}
+                  className="rounded"
+                />
+              </button>
+              <button 
+                onClick={toggleLanguage}
+                className={`w-10 h-10 transition-opacity ${language === 'en' ? 'opacity-100 ring-2 ring-[#00a6b5]' : 'opacity-50'} rounded`}
+              >
+                <Image
+                  src="https://flagcdn.com/w40/gb.png"
+                  alt="English"
+                  width={40}
+                  height={40}
+                  className="rounded"
+                />
+              </button>
+            </div>
+            
+            <a
+              href="https://wa.me/6282341331975?text=Halo%20Adventure%20Sumbawa%20Island,%20saya%20ingin%20booking%20trip"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block mt-4 bg-green-500 hover:bg-green-600 text-white px-6 py-2.5 rounded-full font-medium text-center transition-colors"
+            >
+              {t.bookNow}
+            </a>
+          </div>
+        )}
+      </nav>
+    </header>
+  );
+}
+
+function NavDropdown({ title, items }: { title: string; items: { label: string; href: string }[] }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div
+      className="relative"
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
+      <button className="flex items-center gap-1 text-gray-700 hover:text-[#00a6b5] transition-colors font-medium py-2">
+        {title}
+        <ChevronDown size={16} className={`transition-transform ${isOpen ? "rotate-180" : ""}`} />
+      </button>
+      {isOpen && (
+        <div className="absolute top-full left-0 pt-2 z-50">
+          <div className="bg-white shadow-lg rounded-lg py-2 min-w-[250px] border border-gray-100">
+            {items.map((item, index) => (
+              <Link
+                key={index}
+                href={item.href}
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#00a6b5] transition-colors"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function MobileNavDropdown({ title, items }: { title: string; items: { label: string; href: string }[] }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="py-2">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center justify-between w-full text-gray-700 hover:text-[#00a6b5] font-medium"
+      >
+        {title}
+        <ChevronDown size={16} className={`transition-transform ${isOpen ? "rotate-180" : ""}`} />
+      </button>
+      {isOpen && (
+        <div className="pl-4 mt-2 space-y-2">
+          {items.map((item, index) => (
+            <Link
+              key={index}
+              href={item.href}
+              className="block py-1 text-gray-600 hover:text-[#00a6b5] transition-colors"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
