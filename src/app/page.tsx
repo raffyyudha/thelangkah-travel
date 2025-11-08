@@ -7,17 +7,17 @@ import { useLanguage } from "@/contexts/LanguageContext";
 function PackageCard({ image, title, href }: { image: string; title: string; href: string }) {
   return (
     <Link href={href} className="group">
-      <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-        <div className="relative h-48">
+      <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+        <div className="relative h-32 sm:h-40">
           <Image
             src={image}
             alt={title}
             fill
-            className="object-cover group-hover:scale-110 transition-transform duration-300"
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <div className="absolute bottom-0 left-0 right-0 p-6">
-          <h3 className="text-white font-bold text-lg">{title}</h3>
+        <div className="p-3 text-center">
+          <h3 className="text-xs sm:text-sm font-bold text-gray-900 leading-tight">{title}</h3>
         </div>
       </div>
     </Link>
@@ -45,53 +45,55 @@ export default function Home() {
             {t.heroTitle}
           </h1>
           <p className="text-lg md:text-xl text-white mb-8 leading-relaxed">
-            {t.heroDesc}
+            <span className="font-bold">Selamat datang di Adventure Sumbawa Island, penyedia layanan wisata petualangan lokal yang berbasis di Sumbawa.</span>
+            <br />
+            Kami berdiri dengan tujuan untuk memperkenalkan keindahan alam Sumbawa kepada dunia melalui pengalaman wisata yang autentik, aman, dan ramah lingkungan.
           </p>
         </div>
       </section>
 
       {/* Pilihan Paket Wisata - Exact layout dari The Langkah Travel */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-              {t.popularPackages}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <div className="mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3 text-gray-900">
+              Paket Wisata Populer
             </h2>
-            <p className="text-base text-gray-700 leading-relaxed text-center max-w-3xl mx-auto mb-8">
-              {t.popularDesc}
+            <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+              Paket wisata Sumbawa bersama Adventure Sumbawa Island dengan destinasi terlengkap dan pilihan paket wisata yang beragam. Dari snorkeling dengan hiu paus hingga eksplorasi pulau-pulau eksotis.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 gap-3 sm:gap-4">
             <PackageCard
-              image="/images/whaleshark.PNG"
-              title="Whale Shark Experience"
-              href="/whale-shark-experience"
+              image="/images/whale-shark/IMG_2992.JPG"
+              title="Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar"
+              href="/whale-shark-start-sumbawa"
             />
             <PackageCard
-              image="/images/moyoisland.JPG"
-              title="Moyo Island Adventure"
-              href="/moyo-island-adventure"
+              image="/images/whale-shark/IMG_2079.JPG"
+              title="Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar"
+              href="/whale-shark-2d1n"
             />
             <PackageCard
-              image="/images/kenawasunset.PNG"
-              title="Kenawa Sunset Tour"
-              href="/kenawa-sunset-tour"
+              image="/images/moyo/hero.jpg"
+              title="Paket Tour Sumbawa 3 Hari 2 Malam Pulau Moyo - Hiu Paus Teluk Saleh"
+              href="/combo-moyo-whale-shark"
             />
             <PackageCard
-              image="/images/kenawa/sunset.jpg"
-              title="Island Hopping"
-              href="/sumbawa-island-hopping"
-            />
-            <PackageCard
-              image="/images/destinations/sumbawa.jpg"
-              title="Trip 3D2N Sumbawa"
-              href="/trip-3d2n-sumbawa"
+              image="/images/whale-shark/IMG_2082.JPG"
+              title="Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok"
+              href="/whale-shark-start-labuhan-jambu"
             />
             <PackageCard
               image="/images/islandjawa.jpg"
-              title="Trip 4D3N Sumbawa"
+              title="Paket Tour Sumbawa 4 Hari 3 Malam Wisata Pulau Moyo, Pulau Kenawa & Hiu Paus"
               href="/trip-4d3n-sumbawa"
+            />
+            <PackageCard
+              image="/images/whale-shark/IMG_2806.JPG"
+              title="Sumbawa Whale Shark Tour 2 Days 1 Night (scuba diving tour)"
+              href="/whale-shark-experience"
             />
           </div>
         </div>

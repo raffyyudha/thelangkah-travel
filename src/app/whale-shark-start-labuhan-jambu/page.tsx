@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { MessageCircle, ChevronLeft, ChevronRight, Clock, Users, MapPin, Check, X } from "lucide-react";
+import { MessageCircle, ChevronLeft, ChevronRight, Clock, Check, X } from "lucide-react";
 import { useState } from "react";
 import { DropdownSection, PricingTable } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 
-export default function ComboMoyoWhaleSharkPage() {
+export default function WhaleSharkStartLabuhanJambuPage() {
   const [currentReview, setCurrentReview] = useState(0);
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
@@ -55,7 +55,7 @@ export default function ComboMoyoWhaleSharkPage() {
   ];
 
   const handleBooking = () => {
-    const message = encodeURIComponent("Halo, saya ingin booking Sumbawa Tour 3 Days 2 Nights Moyo Island & Whale Shark");
+    const message = encodeURIComponent("Halo, saya ingin booking Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok");
     window.open(`https://wa.me/6282341331975?text=${message}`, "_blank");
   };
 
@@ -66,20 +66,21 @@ export default function ComboMoyoWhaleSharkPage() {
   const prevReview = () => {
     setCurrentReview((prev) => (prev - 1 + reviews.length) % reviews.length);
   };
+
   return (
     <main className="min-h-screen bg-white">
       <article className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Title */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Sumbawa Tour 3 Days 2 Nights
+            Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok
           </h1>
 
           {/* Featured Image */}
           <div className="relative w-full h-64 md:h-96 mb-8 rounded-lg overflow-hidden">
             <Image
-              src="/images/moyo/hero.jpg"
-              alt="Sumbawa Tour 3 Days 2 Nights Moyo Island & Whale Shark"
+              src="/images/whale-shark/IMG_2992.JPG"
+              alt="Sumbawa Whale Shark Tours"
               fill
               className="object-cover"
               priority
@@ -92,7 +93,7 @@ export default function ComboMoyoWhaleSharkPage() {
             <div className="grid grid-cols-3 gap-4 mb-8">
               <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/whale-shark/IMG_2992.JPG"
+                  src="/images/whale-shark/IMG_2079.JPG"
                   alt="Whale Shark"
                   fill
                   className="object-cover"
@@ -100,8 +101,8 @@ export default function ComboMoyoWhaleSharkPage() {
               </div>
               <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/moyo/waterfall.jpg"
-                  alt="Moyo Waterfall"
+                  src="/images/whale-shark/IMG_2082.JPG"
+                  alt="Whale Shark Tour"
                   fill
                   className="object-cover"
                 />
@@ -109,7 +110,7 @@ export default function ComboMoyoWhaleSharkPage() {
               <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
                 <Image
                   src="/images/whale-shark/IMG_2806.JPG"
-                  alt="Snorkeling"
+                  alt="Swimming with Whale Shark"
                   fill
                   className="object-cover"
                 />
@@ -117,68 +118,55 @@ export default function ComboMoyoWhaleSharkPage() {
             </div>
 
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Sumbawa Tour PackagesMoyo Island & Whale Shark in Sumbawa Experience #type A
+              Sumbawa Whale Shark Tour 2 Day 1 Night (start / Finish Lombok)
             </h3>
 
             <p className="text-gray-700 leading-relaxed mb-4">
-              Sumbawa Tour 3 Days 2 Nights after arrival go to visit Moyo Island, also known as Mojo Island, is a pristine destination located just north of Sumbawa in West Nusa Tenggara. Easily accessible from Sumbawa City, this island is a must-visit for snorkeling and diving lovers. Among the many breathtaking spots are Takat Segele, Labuan Aji Reef, Sanglo Reef, Tanjung Pasir, and Angel Reef. Each location showcases the stunning underwater beauty of the area's diverse marine flora and fauna.
-            </p>
-
-            <p className="text-gray-700 leading-relaxed mb-4">
-              On the eastern side of Moyo Island lies Saleh Bay, which, thanks to its geographical positioning, provides a safe haven from the open ocean. This makes it an ideal spot to observe the majestic whale sharks that are often found here. Moyo National Park's protected waters offer a unique opportunity to experience marine life up close.
+              Providing Sumbawa Whale Shark Tour Lombok, an Unmatched Adventure for Nature Lovers and Divers. Departing from Lombok, you'll be taken to experience the stunning marine beauty of Sumbawa and encounter whale sharks, one of the largest yet gentlest species in the ocean. On this whale shark tour in Sumbawa, you'll get the chance to witness these majestic creatures up close.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-8">
-              Intrigued? Embark on a Sumbawa tour with us and explore this natural wonder!
+              Due to high demand tour request from Lombok, we have decided to providing sumbawa whale shark tour lombok tour package starting and ending in Lombok, prioritizing the comfort and safety of our customers.
             </p>
 
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Sumbawa Tour Itinerary</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Sumbawa Whale Shark Tour Lombok - Tour Itinerary</h2>
             
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Exploring Moyo Island and Surroundings</h3>
-            <p className="text-gray-700 mb-2"><strong>10:30 AM</strong> – Arrival at Sumbawa Airport (SWQ). Our team will pick you up at the meeting point.</p>
-            <p className="text-gray-700 mb-2"><strong>11:00 AM</strong> – Embark on a 45-minute speedboat ride to Moyo Island.</p>
-            <p className="text-gray-700 mb-2"><strong>11:45 AM</strong> – Arrive at Moyo Island.</p>
-            <p className="text-gray-700 mb-2"><strong>12:00 PM</strong> – Enjoy lunch at a beachfront restaurant with stunning ocean views.</p>
-            <p className="text-gray-700 mb-2"><strong>1:30 PM</strong> – After lunch, get ready for a soft adventure. Hop on an ojek (motorbike taxi) for a ride to the beautiful Mata Jitu Waterfalls.</p>
-            <p className="text-gray-700 mb-2"><strong>2:00 PM</strong> – Experience the serene atmosphere of the forest and swim in the turquoise pool beneath the waterfalls.</p>
-            <p className="text-gray-700 mb-2"><strong>3:30 PM</strong> – Return to Labuan Aji Village and continue to Takat Sagele for a snorkeling adventure. You'll also visit Poto Jarum Beach, a secluded spot with white sands and vibrant coral reefs, perfect for relaxation.</p>
-            <p className="text-gray-700 mb-2"><strong>5:30 PM</strong> – After snorkeling and swimming, head back to the main island.</p>
-            <p className="text-gray-700 mb-8"><strong>6:00 PM</strong> – Arrive at Samawa Seaside Resort for check-in and free time to unwind. Dinner Available at the hotel restaurant, where you can enjoy local and international cuisine.</p>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Day 1</h3>
+            <p className="text-gray-700 mb-2"><strong>09:00 AM</strong> – Pick-up by our driver from Lombok (Bangsal Pier/Senggigi/Mataram/Kuta Mandalika, Central Lombok) and depart for Kayangan Port. The drive will take approximately 2.5 to 3 hours, depending on traffic conditions.</p>
+            <p className="text-gray-700 mb-2"><strong>12:00 PM</strong> – Arrive at Kayangan Port. The Lombok vehicle will stop here, and you will transfer to the ferry for a 2 to 2.5-hour crossing to Sumbawa Island.</p>
+            <p className="text-gray-700 mb-2"><strong>2:30 PM</strong> – Arrive at Pototano Port, Sumbawa Island. You will be picked up by another vehicle and continue the journey to Labuhan Jambu Village, which will take approximately 4 to 5 hours.</p>
+            <p className="text-gray-700 mb-2">Optional meal stop in Sumbawa Besar City is available.</p>
+            <p className="text-gray-700 mb-2"><strong>7:30 PM</strong> – Arrive at Labuhan Jambu Village. Check in at Alffiah Hotel/Transit Hotel, rest, enjoy the sunset, and have free time to relax.</p>
+            <p className="text-gray-700 mb-8">Dinner is available at the hotel (personal expenses).</p>
 
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Whale Shark Saleh Bay Excursion</h3>
-            <h4 className="text-lg font-bold text-gray-900 mb-3">2nd Day</h4>
-            <p className="text-gray-700 mb-2"><strong>2.00 AM</strong> – Early pick-up from Samawa Seaside Resort and depart for Labu Jambu Village (approximately 2-hour drive).</p>
-            <p className="text-gray-700 mb-2"><strong>4:00 AM</strong> – Arrive at Labu Jambu Harbour. Board the boat, get comfortable with pillows, blankets, and mattresses, and prepare for an exciting whale shark encounter.</p>
-            <p className="text-gray-700 mb-2"><strong>5:30 AM</strong> – Reach the whale shark spotting location. Our crew will attract whale sharks by feeding them baby fish, keeping them near the surface for a closer view from the boat.</p>
-            <p className="text-gray-700 mb-2"><strong>6:00 AM</strong> – Dive into the unforgettable experience of swimming, snorkeling, and diving with whale sharks. Witness these gentle giants up close in their natural habitat.</p>
-            <p className="text-gray-700 mb-2">Light breakfast will be served on board, including bread, coffee, tea, and fresh fruit.</p>
-            <p className="text-gray-700 mb-2"><strong>9:00 AM</strong> – Depart from the whale shark spots. (Departure time is flexible based on when you're done swimming).</p>
-            <p className="text-gray-700 mb-2"><strong>11:00 AM</strong> – Arrive back at Labu Jambu Harbour and continue your journey back to Samawa Seaside Resort.</p>
-            <p className="text-gray-700 mb-2"><strong>12:00 PM</strong> – Optional stop for lunch at a floating seafood restaurant, featuring fresh local dishes.</p>
-            <p className="text-gray-700 mb-8"><strong>2:30 PM</strong> – Return to Samawa Seaside Resort for check-in and free time to relax by the pool or enjoy the seaside views. Dinner Available at the resort's restaurant or at a local venue in central Sumbawa.</p>
-
-            <h4 className="text-lg font-bold text-gray-900 mb-3">3rd Day</h4>
-            <p className="text-gray-700 mb-8"><strong>07.30 – 09.00 AM</strong> – After breakfast Pick up at the Hotel and transfer out to Sumbawa Airport (SWQ). End of Service</p>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Day 2</h3>
+            <p className="text-gray-700 mb-2"><strong>03:45 AM</strong> – Wake-up call from the tour guide, preparing for pick-up at the hotel.</p>
+            <p className="text-gray-700 mb-2"><strong>04:00 AM</strong> – Depart by boat to the whale shark point.</p>
+            <p className="text-gray-700 mb-2"><strong>06:00 AM</strong> – Arrive at the Whale Shark Point. Enjoy the sunrise while diving, swimming, or snorkeling with sumbawa whale sharks.</p>
+            <p className="text-gray-700 mb-2"><strong>08:00 AM</strong> – Light breakfast served on the boat, including bread, coffee, tea, and fresh fruit.</p>
+            <p className="text-gray-700 mb-2"><strong>08:30 AM</strong> – Leave Whale Shark Point and head back to Labuhan Jambu Harbor.</p>
+            <p className="text-gray-700 mb-2"><strong>10:00 AM</strong> – Arrive back at the hotel in Labuhan Jambu. Time to clean up, enjoy a hotel breakfast, rest, and check out.</p>
+            <p className="text-gray-700 mb-2"><strong>12:30 PM</strong> – Begin the return journey to Pototano Port, which takes approximately 4 to 5 hours.</p>
+            <p className="text-gray-700 mb-2"><strong>04:00 PM</strong> – Arrive at Pototano Port and board the ferry back to Lombok.</p>
+            <p className="text-gray-700 mb-2"><strong>05:30 PM</strong> – Arrive at Kayangan Port, Lombok, and transfer to another vehicle for a 2-hour drive.</p>
+            <p className="text-gray-700 mb-8"><strong>08:00 PM</strong> – Drop-off at your hotel in (Bangsal Pier/Senggigi/Mataram/Kuta Mandalika, Central Lombok), marking the end of the program.</p>
 
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Inclusion</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-8">
-              <li>2 night Hotel + Breakfast (AC & for 2 person/room)</li>
-              <li>Car Transpotation+Driver+fuel (full AC Vehicle)</li>
-              <li>boat transfer & return</li>
-              <li>taxy bike (ojeg) fee</li>
-              <li>Licensed English Speaking Guide</li>
+              <li>1 night Hotel + Breakfast (AC & for 2 person/room)</li>
+              <li>Car Transpotation+Driver+fuel (full AC Vehicle) extra car up to 5person (transfer+return Lombok)</li>
+              <li>ferry ticket roundway</li>
+              <li>Whale Shark Sumbawa Boat Transfer + Return</li>
+              <li>Licensed English Speaking & Profesional Tour Guide</li>
               <li>Mineral water during the tour</li>
-              <li>Simple light breakfast on the boat (bread, nutella, fruit)</li>
-              <li>Coffee, tea / hot chocolate (on the boat)</li>
+              <li>Simple breakfast on the boat (bread, nutella, fruit) Coffee, tea (on the boat)</li>
               <li>Snorkling Equipment</li>
-              <li>Profesional Tour Guide</li>
               <li>Gopro hero11-12 / sony rx100m6 (the Tour Guide will provide a picture/video as your request)</li>
               <li>Entrance and Conservation fee</li>
             </ul>
 
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Exclusion</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-8">
-              <li>flight Ticket</li>
               <li>Meal Beverages L&D</li>
               <li>Personal Needed</li>
               <li>local crew/tour guide tips</li>
@@ -192,24 +180,71 @@ export default function ComboMoyoWhaleSharkPage() {
               <li>Sunglasses with UV Protection</li>
             </ul>
 
+            <p className="text-gray-700 leading-relaxed mb-8">
+              Sumbawa and Lombok are in the same province, natural diversity and beauty are presented in this area, one of which is the Sumbawa whale shark. On your trip to Sumbawa, you will also find many interesting new things, both in terms of culture and views of mountain and sea landscapes that are very varied and very authentic.
+            </p>
+
             <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">Whale Shark Saleh Bay Sumbawa pricing revert to Indonesian Rupiah (IDR)</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
               <li>Since we cannot control Mother Nature, and due to the sea conditions on the day of the tour, it is possible that the whale shark sighting may not occur. Therefore, we will only refund IDR 1,000,000 from your total payment.</li>
-              <li>Please note that lunch is not included in this package. However, we can arrange to take you to a local restaurant before returning you to your accommodation in Sumbawa Besar City.</li>
+              <li>Please note that lunch is not included in this package. However, we can arrange to take you to a local restaurant before returning you to your accommodation.</li>
               <li>Visit <a href="https://sumbawaadventour.com/whale-shark-in-sumbawa-opportunities-to-encounter-spot-and-swim-blog/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">FAQ Sumbawa Whale Shark</a> and some other information to know about these Gentle Giant!</li>
             </ul>
 
-            {/* Pricing Table */}
-            <PricingTable
-              title="Harga Tour"
-              data={[
-                {
-                  participants: "2-10",
-                  openTrip: "IDR. 1,450,000/orang",
-                  fullPrivate: "IDR. 2,500,000/orang"
-                }
-              ]}
-            />
+            {/* Pricing Table - Custom 2 Column */}
+            <div className="my-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
+                Harga Tour (Start & Finish Lombok)
+              </h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse rounded-lg overflow-hidden shadow-md">
+                  <thead>
+                    <tr className="bg-blue-400 text-white">
+                      <th className="py-4 px-6 text-center font-bold text-sm md:text-base">
+                        PARTICIPANT
+                      </th>
+                      <th className="py-4 px-6 text-center font-bold text-sm md:text-base">
+                        PRICE / PERSON
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white">
+                    <tr className="bg-gray-100">
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">1</td>
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 8,890,000. / Person</td>
+                    </tr>
+                    <tr className="bg-white">
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">2</td>
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 4,685,000. / Person</td>
+                    </tr>
+                    <tr className="bg-gray-100">
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">3</td>
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 3,425,000 / Person</td>
+                    </tr>
+                    <tr className="bg-white">
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">4</td>
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 2,975,000. / Person</td>
+                    </tr>
+                    <tr className="bg-gray-100">
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">5</td>
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 2,930,000. / Person</td>
+                    </tr>
+                    <tr className="bg-white">
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">6</td>
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 2,650,000. / Person</td>
+                    </tr>
+                    <tr className="bg-gray-100">
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">7</td>
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 2,295,000. / Person</td>
+                    </tr>
+                    <tr className="bg-white">
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">8</td>
+                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 1,990,000. / Person</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
 
             <div className="text-center mb-8">
               <p className="text-gray-900 text-lg font-bold mb-6">Intrested with this Program Tour book Here:</p>
@@ -323,7 +358,7 @@ export default function ComboMoyoWhaleSharkPage() {
               <DropdownSection title="Pembatalan & Penjadwalan ulang">
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
                   <li>Cancellation up to 3 days before the event: a 25% cancellation fee will apply, based on the total booking price.</li>
-                  <li>Cancellation 3 day before or on the day of the event: The deposit is non-refundable, but you will get the opportunity to do the tour any other day as scheduled with no extra charge</li>
+                  <li>Cancellation 1 or 2 day before or on the day of the event: The deposit is non-refundable.</li>
                   <li>No-show on the day of the event: Regardless of prior cancellation, the payment is non-refundable.</li>
                   <li>Force majeure (e.g., bad weather, natural disasters, war): The guide reserves the right to cancel or modify the schedule/itinerary for the safety of participants and crew. Any changes or cancellations due to force majeure are non-refundable</li>
                 </ul>
@@ -352,94 +387,60 @@ export default function ComboMoyoWhaleSharkPage() {
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-12">
             Pulau Moyo terletak di Kabupaten Sumbawa, Provinsi Nusa Tenggara Barat. Selain Pulau Moyo, berikut berbagai pilihan paket wisata lainnya yang bisa anda nikmati bersama keluarga, kerabat dan sahabat saat berlibur ke Pulau Sumbawa.
           </p>
-
           <div className="grid grid-cols-2 gap-4">
-            {/* Tour 1 */}
             <Link href="/whale-shark-start-sumbawa" className="group">
               <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
                 <Image
                   src="/images/whale-shark/IMG_2992.JPG"
-                  alt="Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar"
+                  alt="Whale Shark Daily Tour"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-xs sm:text-sm font-bold text-white leading-tight">
-                    Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar
-                  </h3>
+                  <h3 className="text-white font-bold text-sm md:text-base">Whale Shark Daily Tour</h3>
                 </div>
               </div>
             </Link>
-
-            {/* Tour 2 */}
             <Link href="/whale-shark-2d1n" className="group">
               <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
                 <Image
                   src="/images/whale-shark/IMG_2079.JPG"
-                  alt="Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar"
+                  alt="Whale Shark 2D1N"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-xs sm:text-sm font-bold text-white leading-tight">
-                    Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar
-                  </h3>
+                  <h3 className="text-white font-bold text-sm md:text-base">Whale Shark 2D1N</h3>
                 </div>
               </div>
             </Link>
-
-            {/* Tour 4 */}
-            <Link href="/whale-shark-start-labuhan-jambu" className="group">
+            <Link href="/combo-moyo-whale-shark" className="group">
               <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
                 <Image
-                  src="/images/whale-shark/IMG_2082.JPG"
-                  alt="Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok"
+                  src="/images/moyo/hero.jpg"
+                  alt="Combo Moyo + Whale Shark"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-xs sm:text-sm font-bold text-white leading-tight">
-                    Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok
-                  </h3>
+                  <h3 className="text-white font-bold text-sm md:text-base">Combo Moyo + Whale Shark 3D2N</h3>
                 </div>
               </div>
             </Link>
-
-            {/* Tour 5 */}
             <Link href="/trip-4d3n-sumbawa" className="group">
               <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
                 <Image
-                  src="/images/islandjawa.jpg"
-                  alt="Paket Tour Sumbawa 4 Hari 3 Malam Wisata Pulau Moyo, Pulau Kenawa & Hiu Paus"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-xs sm:text-sm font-bold text-white leading-tight">
-                    Paket Tour Sumbawa 4 Hari 3 Malam Wisata Pulau Moyo, Pulau Kenawa & Hiu Paus
-                  </h3>
-                </div>
-              </div>
-            </Link>
-
-            {/* Tour 6 */}
-            <Link href="/whale-shark-experience" className="group">
-              <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
-                <Image
                   src="/images/whale-shark/IMG_2806.JPG"
-                  alt="Sumbawa Whale Shark Tour 2 Days 1 Night (scuba diving tour)"
+                  alt="4D3N Sumbawa Tour"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-xs sm:text-sm font-bold text-white leading-tight">
-                    Sumbawa Whale Shark Tour 2 Days 1 Night (scuba diving tour)
-                  </h3>
+                  <h3 className="text-white font-bold text-sm md:text-base">Sumbawa Tour 4D3N</h3>
                 </div>
               </div>
             </Link>
@@ -451,7 +452,7 @@ export default function ComboMoyoWhaleSharkPage() {
       <BookingModal
         isOpen={isBookingModalOpen}
         onClose={() => setIsBookingModalOpen(false)}
-        tourName="Sumbawa Tour 3D2N Moyo Island & Whale Shark"
+        tourName="Paket Tour Hiu Paus Sumbawa 2D1N Start & Finish Lombok"
       />
     </main>
   );

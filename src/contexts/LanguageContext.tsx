@@ -177,7 +177,7 @@ const translations = {
     
     // Homepage Hero
     heroTitle: "Jelajahi Sumbawa Terbaik Bersama Kami",
-    heroDesc: "Adventure Sumbawa Island merupakan operator wisata lokal terbaik yang menyediakan paket wisata ke Sumbawa, khususnya snorkeling dengan hiu paus di Labuhan Jambu",
+    heroDesc: "Selamat datang di Adventure Sumbawa Island, penyedia layanan wisata petualangan lokal yang berbasis di Sumbawa. Kami berdiri dengan tujuan untuk memperkenalkan keindahan alam Sumbawa kepada dunia melalui pengalaman wisata yang autentik, aman, dan ramah lingkungan.",
     
     // Popular Packages
     popularPackages: "Paket Wisata Populer",

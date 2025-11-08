@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import ClientBody from "./ClientBody";
 import Header from "@/components/Header";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const poppins = Poppins({ 
@@ -27,6 +28,7 @@ export default function RootLayout({
         <LanguageProvider>
           <Header />
           {children}
+          <WhatsAppButton />
         </LanguageProvider>
       </ClientBody>
     </html>

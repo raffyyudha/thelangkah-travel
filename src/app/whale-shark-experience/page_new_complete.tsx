@@ -310,6 +310,26 @@ export default function WhaleSharkExperiencePage() {
                 <li>However, we maintain strong coordination with the all the local & Crews to ensure you visit the Whale Shark Sumbawa Congregation Point at the best possible time.Thank you for your understanding as we strive to provide the best experience in harmony with nature.</li>
               </ul>
             </DropdownSection>
+
+            {/* Explore More */}
+            <h4 className="text-xl font-bold text-gray-900 mb-4 mt-12">Explore More</h4>
+            <div className="space-y-2 mb-12">
+              <p className="text-gray-700">
+                <a href="/sumbawa-tour-packages" className="text-blue-600 hover:underline">Whale Shark Sumbawa Saleh Bay Tour Packages</a>
+              </p>
+              <p className="text-gray-700">
+                <a href="/combo-moyo-whale-shark" className="text-blue-600 hover:underline">Moyo Island & Whale Shark Sumbawa 3 Days 2 Nights</a>
+              </p>
+              <p className="text-gray-700">
+                <a href="/whale-shark-2d1n" className="text-blue-600 hover:underline">Whale shark Sumbawa 2 Days 1 Night Tour</a>
+              </p>
+              <p className="text-gray-700">
+                <a href="/whale-shark-liveaboard" className="text-blue-600 hover:underline">Sumbawa Whale Shark Tour Liveaboard 2 Days 1 Night</a>
+              </p>
+              <p className="text-gray-700">
+                <a href="/trip-4d3n-sumbawa" className="text-blue-600 hover:underline">Whale Shark Saleh Bay, Moyo Island & kenawa Island - 4 Days 3 Nights</a>
+              </p>
+            </div>
           </div>
         </div>
       </article>
@@ -410,6 +430,24 @@ export default function WhaleSharkExperiencePage() {
                 <div className="absolute bottom-0 left-0 right-0 p-3">
                   <h3 className="text-xs sm:text-sm font-bold text-white leading-tight">
                     Paket Tour Sumbawa 4 Hari 3 Malam Wisata Pulau Moyo, Pulau Kenawa & Hiu Paus
+                  </h3>
+                </div>
+              </div>
+            </Link>
+
+            {/* Sumbawa Whale Shark Tour 2 Days 1 Night (scuba diving tour) */}
+            <Link href="/whale-shark-experience" className="group">
+              <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
+                <Image
+                  src="/images/whale-shark/IMG_2806.JPG"
+                  alt="Sumbawa Whale Shark Tour 2 Days 1 Night (scuba diving tour)"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-3">
+                  <h3 className="text-xs sm:text-sm font-bold text-white leading-tight">
+                    Sumbawa Whale Shark Tour 2 Days 1 Night (scuba diving tour)
                   </h3>
                 </div>
               </div>
