@@ -1,13 +1,19 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight, Clock, Check, X } from "lucide-react";
-import { useState } from "react";
-import { DropdownSection, PricingTable } from "@/components/TourComponents";
+import { DropdownSection, PricingTable, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { tour4Translations } from "@/translations/tour4";
 
 export default function WhaleSharkStartLabuhanJambuPage() {
+  const { language } = useLanguage();
+  const t = language === 'id' ? tour4Translations.id : tour4Translations.en;
+  const { t: commonT } = useLanguage();
+  
   const [currentReview, setCurrentReview] = useState(0);
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
@@ -76,46 +82,11 @@ export default function WhaleSharkStartLabuhanJambuPage() {
             Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok
           </h1>
 
-          {/* Featured Image */}
-          <div className="relative w-full h-64 md:h-96 mb-8 rounded-lg overflow-hidden">
-            <Image
-              src="/images/whale-shark/IMG_2992.JPG"
-              alt="Sumbawa Whale Shark Tours"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+          {/* Featured Image - Dynamic from Database */}
+          <DynamicTourImages tourName="whale-shark-start-labuhan-jambu" />
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
-            {/* Image Gallery - 3 small images */}
-            <div className="grid grid-cols-3 gap-4 mb-8">
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/whale-shark/IMG_2079.JPG"
-                  alt="Whale Shark"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/whale-shark/IMG_2082.JPG"
-                  alt="Whale Shark Tour"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/whale-shark/IMG_2806.JPG"
-                  alt="Swimming with Whale Shark"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
 
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
               Sumbawa Whale Shark Tour 2 Day 1 Night (start / Finish Lombok)

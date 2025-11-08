@@ -3,12 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { DynamicHomepageHero } from "@/components/DynamicHomepageHero";
+import { DynamicPackageCard } from "@/components/DynamicPackageCard";
 
 function PackageCard({ image, title, href }: { image: string; title: string; href: string }) {
   return (
     <Link href={href} className="group">
       <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-        <div className="relative h-48 sm:h-56 bg-gray-100">
+        <div className="relative h-40 sm:h-40 bg-gray-100">
           <Image
             src={image}
             alt={title}
@@ -16,8 +18,8 @@ function PackageCard({ image, title, href }: { image: string; title: string; hre
             className="object-contain group-hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <div className="p-4 text-center">
-          <h3 className="text-sm sm:text-base font-bold text-gray-900 leading-tight">{title}</h3>
+        <div className="p-3 text-center">
+          <h3 className="text-xs sm:text-sm font-bold text-gray-900 leading-tight">{title}</h3>
         </div>
       </div>
     </Link>
@@ -31,15 +33,7 @@ export default function Home() {
     <main className="min-h-screen">
       {/* Hero Section - Exact copy dari The Langkah Travel */}
       <section className="relative h-[600px] flex items-center justify-start">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/hero.jpg"
-            alt="Hero background"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
+        <DynamicHomepageHero />
         <div className="container mx-auto px-6 relative z-10 max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white leading-tight">
             {t.heroTitle}
@@ -62,34 +56,34 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-4">
-            <PackageCard
-              image="/images/whale-shark/IMG_2992.JPG"
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+            <DynamicPackageCard
+              tourName="whale-shark-start-sumbawa"
               title="Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar"
               href="/whale-shark-start-sumbawa"
             />
-            <PackageCard
-              image="/images/whale-shark/IMG_2079.JPG"
+            <DynamicPackageCard
+              tourName="whale-shark-2d1n"
               title="Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar"
               href="/whale-shark-2d1n"
             />
-            <PackageCard
-              image="/images/moyo/hero.jpg"
+            <DynamicPackageCard
+              tourName="combo-moyo-whale-shark"
               title="Paket Tour Sumbawa 3 Hari 2 Malam Pulau Moyo - Hiu Paus Teluk Saleh"
               href="/combo-moyo-whale-shark"
             />
-            <PackageCard
-              image="/images/whale-shark/IMG_2082.JPG"
+            <DynamicPackageCard
+              tourName="whale-shark-start-labuhan-jambu"
               title="Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok"
               href="/whale-shark-start-labuhan-jambu"
             />
-            <PackageCard
-              image="/images/islandjawa.jpg"
+            <DynamicPackageCard
+              tourName="trip-4d3n-sumbawa"
               title="Paket Tour Sumbawa 4 Hari 3 Malam Wisata Pulau Moyo, Pulau Kenawa & Hiu Paus"
               href="/trip-4d3n-sumbawa"
             />
-            <PackageCard
-              image="/images/whale-shark/IMG_2806.JPG"
+            <DynamicPackageCard
+              tourName="whale-shark-experience"
               title="Sumbawa Whale Shark Tour 2 Days 1 Night (scuba diving tour)"
               href="/whale-shark-experience"
             />

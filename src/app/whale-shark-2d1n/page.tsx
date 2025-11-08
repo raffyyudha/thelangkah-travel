@@ -6,8 +6,14 @@ import { MessageCircle, ChevronLeft, ChevronRight, Clock, Check, X } from "lucid
 import { useState } from "react";
 import { DropdownSection, DynamicPricingTable, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { tour2Translations } from "@/translations/tour2";
 
 export default function WhaleShark2D1NPage() {
+  const { language } = useLanguage();
+  const t = language === 'id' ? tour2Translations.id : tour2Translations.en;
+  const { t: commonT } = useLanguage();
+  
   const [currentReview, setCurrentReview] = useState(0);
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 

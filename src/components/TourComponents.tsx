@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export { DynamicPricingTable } from "./DynamicPricingTable";
 export { DynamicTourImages } from "./DynamicTourImages";
@@ -46,24 +47,26 @@ interface PricingTableProps {
   }[];
 }
 
-export function PricingTable({ title = "Harga Tour", data }: PricingTableProps) {
+export function PricingTable({ title, data }: PricingTableProps) {
+  const { t } = useLanguage();
+  
   return (
     <div className="my-8">
       <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
-        {title}
+        {title || t.tourPriceTitle}
       </h3>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse rounded-lg overflow-hidden shadow-md">
           <thead>
             <tr className="bg-green-600 text-white">
               <th className="py-4 px-6 text-left font-bold text-sm md:text-base">
-                PESERTA
+                {t.tourParticipant}
               </th>
               <th className="py-4 px-6 text-left font-bold text-sm md:text-base">
-                OPEN TRIP
+                {t.tourOpenTrip}
               </th>
               <th className="py-4 px-6 text-left font-bold text-sm md:text-base">
-                FULL PRIVAT
+                {t.tourFullPrivate}
               </th>
             </tr>
           </thead>

@@ -1,13 +1,19 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
-import { DropdownSection, PricingTable } from "@/components/TourComponents";
+import { DropdownSection, PricingTable, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { tour6Translations } from "@/translations/tour6";
 
 export default function WhaleSharkExperiencePage() {
+  const { language } = useLanguage();
+  const t = language === 'id' ? tour6Translations.id : tour6Translations.en;
+  const { t: commonT } = useLanguage();
+  
   const [currentReview, setCurrentReview] = useState(0);
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
@@ -76,47 +82,11 @@ export default function WhaleSharkExperiencePage() {
             Sumbawa Whale Shark Tours
           </h1>
 
-          {/* Featured Image */}
-          <div className="relative w-full h-64 md:h-96 mb-8 rounded-lg overflow-hidden">
-            <Image
-              src="/images/whale-shark/IMG_2992.JPG"
-              alt="Sumbawa Whale Shark Tours"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+          {/* Featured Image - Dynamic from Database */}
+          <DynamicTourImages tourName="whale-shark-experience" />
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
-            {/* Image Gallery - 3 small images only */}
-            <div className="grid grid-cols-3 gap-4 mb-8">
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/whale-shark/IMG_2079.JPG"
-                  alt="Swimming with Whale Shark"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/whale-shark/IMG_2082.JPG"
-                  alt="Whale Shark Tour Boat"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/whale-shark/IMG_2806.JPG"
-                  alt="Whale Shark Encounter"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-
             <p className="text-gray-700 leading-relaxed mb-4">
               Sumbawa Adventour specializes in offering unique experiences with sumbawa whale sharks in Saleh Bay
             </p>

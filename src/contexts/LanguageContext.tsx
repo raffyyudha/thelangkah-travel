@@ -154,6 +154,26 @@ interface LanguageContextType {
     galleryCTATitle: string;
     galleryCTADesc: string;
     galleryCTAButton: string;
+    
+    // Common Tour Page Elements
+    tourBookNow: string;
+    tourChatWhatsApp: string;
+    tourPriceTitle: string;
+    tourParticipant: string;
+    tourOpenTrip: string;
+    tourFullPrivate: string;
+    tourPerPerson: string;
+    tourInclusions: string;
+    tourExclusions: string;
+    tourItinerary: string;
+    tourWhatToBring: string;
+    tourTermsConditions: string;
+    tourCancellationPolicy: string;
+    tourImportantNotes: string;
+    tourRecommendedTours: string;
+    tourDuration: string;
+    tourMinPax: string;
+    tourStartingFrom: string;
   };
 }
 
@@ -331,6 +351,26 @@ const translations = {
     galleryCTATitle: "Siap Memulai Petualangan Anda?",
     galleryCTADesc: "Hubungi kami sekarang untuk booking dan informasi lebih lanjut",
     galleryCTAButton: "Book Sekarang via WhatsApp",
+    
+    // Common Tour Page Elements
+    tourBookNow: "Book Sekarang",
+    tourChatWhatsApp: "Chat di WhatsApp",
+    tourPriceTitle: "Harga Tour",
+    tourParticipant: "PESERTA",
+    tourOpenTrip: "OPEN TRIP",
+    tourFullPrivate: "FULL PRIVAT",
+    tourPerPerson: "Per Orang",
+    tourInclusions: "Yang Termasuk",
+    tourExclusions: "Yang Tidak Termasuk",
+    tourItinerary: "Itinerary",
+    tourWhatToBring: "Yang Harus Dibawa",
+    tourTermsConditions: "Syarat & Ketentuan",
+    tourCancellationPolicy: "Pembatalan & Penjadwalan ulang",
+    tourImportantNotes: "Catatan Penting",
+    tourRecommendedTours: "Pilihan Paket Tour Sumbawa Lainnya",
+    tourDuration: "Durasi",
+    tourMinPax: "Minimal",
+    tourStartingFrom: "Mulai dari",
   },
   en: {
     // Navigation
@@ -505,6 +545,26 @@ const translations = {
     galleryCTATitle: "Ready to Start Your Adventure?",
     galleryCTADesc: "Contact us now for booking and more information",
     galleryCTAButton: "Book Now via WhatsApp",
+    
+    // Common Tour Page Elements
+    tourBookNow: "Book Now",
+    tourChatWhatsApp: "Chat On WhatsApp",
+    tourPriceTitle: "Tour Price",
+    tourParticipant: "PARTICIPANT",
+    tourOpenTrip: "OPEN TRIP",
+    tourFullPrivate: "FULL PRIVATE",
+    tourPerPerson: "Per Person",
+    tourInclusions: "Inclusions",
+    tourExclusions: "Exclusions",
+    tourItinerary: "Itinerary",
+    tourWhatToBring: "What to Bring",
+    tourTermsConditions: "Terms & Conditions",
+    tourCancellationPolicy: "Cancellation & Rescheduling",
+    tourImportantNotes: "Important Notes",
+    tourRecommendedTours: "Other Sumbawa Tour Packages",
+    tourDuration: "Duration",
+    tourMinPax: "Minimum",
+    tourStartingFrom: "Starting from",
   }
 };
 

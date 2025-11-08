@@ -1,13 +1,19 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
-import { DropdownSection, PricingTable } from "@/components/TourComponents";
+import { DropdownSection, PricingTable, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { tour5Translations } from "@/translations/tour5";
 
 export default function Trip4D3NSumbawaPage() {
+  const { language } = useLanguage();
+  const t = language === 'id' ? tour5Translations.id : tour5Translations.en;
+  const { t: commonT } = useLanguage();
+  
   const [currentReview, setCurrentReview] = useState(0);
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
@@ -75,46 +81,11 @@ export default function Trip4D3NSumbawaPage() {
             Sumbawa Tour 4 Days 3 Nights
           </h1>
 
-          {/* Featured Image */}
-          <div className="relative w-full h-64 md:h-96 mb-8 rounded-lg overflow-hidden">
-            <Image
-              src="/images/moyo/hero.jpg"
-              alt="Sumbawa Tour 4 Days 3 Nights"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+          {/* Featured Image - Dynamic from Database */}
+          <DynamicTourImages tourName="trip-4d3n-sumbawa" />
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
-            {/* Image Gallery - 3 small images */}
-            <div className="grid grid-cols-3 gap-4 mb-8">
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/whale-shark/IMG_2992.JPG"
-                  alt="Whale Shark"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/moyo/waterfall.jpg"
-                  alt="Moyo Waterfall"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/islandjawa.jpg"
-                  alt="Kenawa Island"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
 
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
               Sumbawa Tour Packages - Moyo Island, Whale Shark & Kenawa Island Experience #type A

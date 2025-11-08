@@ -40,6 +40,17 @@ CREATE TABLE IF NOT EXISTS about_images (
   UNIQUE(section)
 );
 
+-- Create homepage_images table
+CREATE TABLE IF NOT EXISTS homepage_images (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  image_url TEXT NOT NULL,
+  section TEXT NOT NULL, -- 'hero' for main banner
+  title TEXT,
+  description TEXT,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
+  UNIQUE(section)
+);
+
 -- Create storage bucket for images
 INSERT INTO storage.buckets (id, name, public)
 VALUES ('images', 'images', true)
@@ -50,6 +61,7 @@ ALTER TABLE tour_prices ENABLE ROW LEVEL SECURITY;
 ALTER TABLE tour_images ENABLE ROW LEVEL SECURITY;
 ALTER TABLE gallery_images ENABLE ROW LEVEL SECURITY;
 ALTER TABLE about_images ENABLE ROW LEVEL SECURITY;
+ALTER TABLE homepage_images ENABLE ROW LEVEL SECURITY;
 
 -- Drop existing policies if they exist
 DROP POLICY IF EXISTS "Public can read tour_prices" ON tour_prices;
@@ -68,6 +80,10 @@ DROP POLICY IF EXISTS "Public can read about_images" ON about_images;
 DROP POLICY IF EXISTS "Anyone can insert about_images" ON about_images;
 DROP POLICY IF EXISTS "Anyone can update about_images" ON about_images;
 DROP POLICY IF EXISTS "Anyone can delete about_images" ON about_images;
+DROP POLICY IF EXISTS "Public can read homepage_images" ON homepage_images;
+DROP POLICY IF EXISTS "Anyone can insert homepage_images" ON homepage_images;
+DROP POLICY IF EXISTS "Anyone can update homepage_images" ON homepage_images;
+DROP POLICY IF EXISTS "Anyone can delete homepage_images" ON homepage_images;
 DROP POLICY IF EXISTS "Public can view images" ON storage.objects;
 DROP POLICY IF EXISTS "Anyone can upload images" ON storage.objects;
 DROP POLICY IF EXISTS "Anyone can update images" ON storage.objects;
@@ -84,6 +100,9 @@ CREATE POLICY "Public can read gallery_images" ON gallery_images
   FOR SELECT USING (true);
 
 CREATE POLICY "Public can read about_images" ON about_images
+  FOR SELECT USING (true);
+
+CREATE POLICY "Public can read homepage_images" ON homepage_images
   FOR SELECT USING (true);
 
 -- Create policies for managing data (allow anon for upload script)
@@ -121,6 +140,15 @@ CREATE POLICY "Anyone can update about_images" ON about_images
   FOR UPDATE USING (true);
 
 CREATE POLICY "Anyone can delete about_images" ON about_images
+  FOR DELETE USING (true);
+
+CREATE POLICY "Anyone can insert homepage_images" ON homepage_images
+  FOR INSERT WITH CHECK (true);
+
+CREATE POLICY "Anyone can update homepage_images" ON homepage_images
+  FOR UPDATE USING (true);
+
+CREATE POLICY "Anyone can delete homepage_images" ON homepage_images
   FOR DELETE USING (true);
 
 -- Storage policies

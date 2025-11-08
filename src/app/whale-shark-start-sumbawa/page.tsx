@@ -1,13 +1,19 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
-import { DropdownSection, PricingTable } from "@/components/TourComponents";
+import { DropdownSection, PricingTable, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { tour1Translations } from "@/translations/tour1";
 
 export default function WhaleSharkStartSumbawaPage() {
+  const { language } = useLanguage();
+  const t = language === 'id' ? tour1Translations.id : tour1Translations.en;
+  const { t: commonT } = useLanguage();
+  
   const [currentReview, setCurrentReview] = useState(0);
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
@@ -76,130 +82,87 @@ export default function WhaleSharkStartSumbawaPage() {
             Whale Shark Sumbawa Daily Trip
           </h1>
 
-          {/* Featured Image */}
-          <div className="relative w-full h-64 md:h-96 mb-8 rounded-lg overflow-hidden">
-            <Image
-              src="/images/whale-shark/IMG_2992.JPG"
-              alt="Whale Shark Sumbawa Daily Trip"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+          {/* Featured Image - Dynamic from Database */}
+          <DynamicTourImages tourName="whale-shark-start-sumbawa" />
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
-            {/* Image Gallery - 3 small images only */}
-            <div className="grid grid-cols-3 gap-4 mb-8">
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/whale-shark/IMG_2079.JPG"
-                  alt="Swimming with Whale Shark"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/whale-shark/IMG_2082.JPG"
-                  alt="Whale Shark Tour Boat"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/whale-shark/IMG_2806.JPG"
-                  alt="Whale Shark Encounter"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Sumbawa Whale Shark Saleh Bay One Day Tour Start Finish Sumbawa Besar City
+              {t.title}
             </h2>
 
             <p className="text-gray-700 leading-relaxed mb-4">
-              Whale shark Sumbawa daily Tour take approximately 12 hours to spend. Presence this Creatures in <a href="https://en.wikipedia.org/wiki/Saleh_Bay" className="text-blue-600 hover:underline">Saleh Bay</a> has been occurring for many years. Its natural presence in Saleh Bay is due to the daily activities of fishermen from Saleh Bay Sumbawa Island throughout the year.
+              {t.subtitle}
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-4">
-              in fact schooling of whale sharks in sumbawa will appear because along with the nett being lifted, during the time there be lots of planktons is the food of these Gentle Creatures!, in short on this period of time, we can swim, diving with these Gentle Giant
+              {t.description1}
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-8">
-              seeing that <a href="https://sumbawaadventour.com/whale-shark-in-sumbawa-opportunities-to-encounter-spot-and-swim-blog/" className="text-blue-600 hover:underline">FAQ</a> Whale Shark Sumbawa always atract to come on the daily basis come from long time ago,  whale shark are easily recognizable with its unique pattern, we can see before sunrise early morning when the fisherman of BAGAN BOAT lift their nets at that time.
+              {t.description2}
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Whale Shark Saleh Bay Sumbawa Tour Program
+              {t.programTitle}
             </h2>
 
             <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>02:00</strong> : Pick-up by tour guide/driver at any hotel in Sumbawa Besar for a road trip to Labuhan Jambu Village or Ai Paya Village.
+              <strong>{t.itinerary.time1}</strong> : {t.itinerary.desc1}
             </p>
             <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>04:00</strong> : Arrive at Labuhan Jambu. Board a boat heading towards the Bagan (flatform fishing boat), Sumbawa whale shark spot point.
+              <strong>{t.itinerary.time2}</strong> : {t.itinerary.desc2}
             </p>
             <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>06:00</strong> : Arrive at the Whale Shark Point At Saleh Bay. Enjoy Sunrise, swimming, or snorkeling with the Gentel Giant, Sumbawa Whale Shark
+              <strong>{t.itinerary.time3}</strong> : {t.itinerary.desc3}
             </p>
             <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>08:00</strong> : Light breakfast will be served on the boat (bread, coffee, tea, and fresh fruits).
+              <strong>{t.itinerary.time4}</strong> : {t.itinerary.desc4}
             </p>
             <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>08:30</strong> : Depart from the Sumbawa Whale Shark Point
+              <strong>{t.itinerary.time5}</strong> : {t.itinerary.desc5}
             </p>
             <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>10:30</strong>  : Arrive at Labuhan Jambu Harbor, prepare for return trip to Sumbawa Besar.
+              <strong>{t.itinerary.time6}</strong> : {t.itinerary.desc6}
             </p>
             <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>11:30</strong>   : Return to Sumbawa Besar and drop off at your hotel or accomodation.
+              <strong>{t.itinerary.time7}</strong> : {t.itinerary.desc7}
             </p>
             <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>12:30</strong> : Stop for lunch (personal account).
+              <strong>{t.itinerary.time8}</strong> : {t.itinerary.desc8}
             </p>
             <p className="text-gray-700 leading-relaxed mb-8">
-              <strong>02:00</strong> : Arrive back at your accomodation in Sumbawa Besar, ends of program
+              <strong>{t.itinerary.time9}</strong> : {t.itinerary.desc9}
             </p>
 
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Whats include in the Tour Whale Shark Sumbawa
+              {t.inclusionsTitle}
             </h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-8">
-            <li>Vehicle Transpotation+Driver+fuel (full AC Vehicle)</li>
-            <li>Boat Whale Shark Tour (matras, pillow, blanket, towel & toilet)</li>
-            <li>Licensed English Speaking Guide</li>
-            <li>Mineral water during the tour</li>
-            <li>Simple breakfast on the boat (bread, nutella, fruit)</li>
-            <li>Coffee, tea / hot chocolate (on the boat)</li>
-            <li>Snorkling tools (high standart mask with antifog, snorkle & fins)</li>
-            <li>Profesional Tour Guide</li>
-            <li>Gopro hero 11-12-13 (Tour Guide will provide a picture/video as your request : please visit our <a href="https://www.instagram.com/ers_ega/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">instagram</a> here)</li>
-            <li>Entrance and Conservation fee</li>
+              {t.inclusions.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
           </ul>
 
-          <h4 className="text-xl font-bold mb-4 text-gray-900">Exclusion</h4>
+          <h4 className="text-xl font-bold mb-4 text-gray-900">{t.exclusionsTitle}</h4>
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-8">
-            <li>Meal Beverages L&D</li>
-            <li>Hotel</li>
-            <li>Personal Needed</li>
-            <li>local crew/tour guide tips</li>
+            {t.exclusions.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
 
-          <h4 className="text-xl font-bold mb-4 text-gray-900">Whats to bring during the Tour (optional)</h4>
+          <h4 className="text-xl font-bold mb-4 text-gray-900">{t.whatToBringTitle}</h4>
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-8">
-            <li>Jackets & Hat</li>
-            <li>Head lamp, or Flash light</li>
-            <li>Sun Protection</li>
-            <li>Sunglasses with UV Protection</li>
+            {t.whatToBring.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
 
-          <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">Whale Shark Saleh Bay Sumbawa pricing revert to Indonesian Rupiah (IDR)</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">{t.pricingTitle}</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
-            <li>Since we cannot control Mother Nature, and due to the sea conditions on the day of the tour, it is possible that the whale shark sighting may not occur. Therefore, we will only refund IDR 1,000,000 from your total payment.</li>
-            <li>Please note that lunch is not included in this package. However, we can arrange to take you to a local restaurant before returning you to your accommodation in Sumbawa Besar City.</li>
+            {t.pricingNotes.map((note, index) => (
+              <li key={index}>{note}</li>
+            ))}
           </ul>
 
             {/* Pricing Table */}
