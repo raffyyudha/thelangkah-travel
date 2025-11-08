@@ -8,16 +8,16 @@ function PackageCard({ image, title, href }: { image: string; title: string; hre
   return (
     <Link href={href} className="group">
       <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
-        <div className="relative h-32 sm:h-40">
+        <div className="relative h-48 sm:h-56 bg-gray-100">
           <Image
             src={image}
             alt={title}
             fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            className="object-contain group-hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <div className="p-3 text-center">
-          <h3 className="text-xs sm:text-sm font-bold text-gray-900 leading-tight">{title}</h3>
+        <div className="p-4 text-center">
+          <h3 className="text-sm sm:text-base font-bold text-gray-900 leading-tight">{title}</h3>
         </div>
       </div>
     </Link>
@@ -62,7 +62,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-3 sm:gap-4">
+          <div className="grid grid-cols-1 gap-4">
             <PackageCard
               image="/images/whale-shark/IMG_2992.JPG"
               title="Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar"
@@ -164,52 +164,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Things to Do Section - Bali.com Style */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-900">
-            {t.thingsToDoTitle}
-          </h2>
-          
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            <Link 
-              href="/whale-shark-experience"
-              className="bg-black hover:bg-gray-800 text-white rounded-xl p-8 text-center transition-all transform hover:scale-105 shadow-lg"
-            >
-              <h3 className="text-xl font-bold">{t.whaleSharkExp}</h3>
-            </Link>
-            
-            <Link 
-              href="/moyo-island-adventure"
-              className="bg-black hover:bg-gray-800 text-white rounded-xl p-8 text-center transition-all transform hover:scale-105 shadow-lg"
-            >
-              <h3 className="text-xl font-bold">{t.islandAdventure}</h3>
-            </Link>
-            
-            <Link 
-              href="/snorkeling-diving"
-              className="bg-black hover:bg-gray-800 text-white rounded-xl p-8 text-center transition-all transform hover:scale-105 shadow-lg"
-            >
-              <h3 className="text-xl font-bold">{t.snorkelingDiving}</h3>
-            </Link>
-            
-            <Link 
-              href="/beach-hopping"
-              className="bg-black hover:bg-gray-800 text-white rounded-xl p-8 text-center transition-all transform hover:scale-105 shadow-lg"
-            >
-              <h3 className="text-xl font-bold">{t.beachHopping}</h3>
-            </Link>
-            
-            <Link 
-              href="/contact"
-              className="bg-black hover:bg-gray-800 text-white rounded-xl p-8 text-center transition-all transform hover:scale-105 shadow-lg"
-            >
-              <h3 className="text-xl font-bold">{t.customTours}</h3>
-            </Link>
           </div>
         </div>
       </section>
