@@ -23,10 +23,10 @@ export function DynamicHomepageHero() {
         .from("homepage_images")
         .select("*")
         .eq("section", "hero")
-        .single();
+        .maybeSingle();
 
       if (error) {
-        console.error("Error fetching hero image:", error);
+        console.log("No hero image in database yet, using fallback");
         return;
       }
 
@@ -34,7 +34,7 @@ export function DynamicHomepageHero() {
         setHeroImage(data.image_url);
       }
     } catch (error) {
-      console.error("Error:", error);
+      console.log("Error fetching hero image, using fallback");
     }
   };
 
