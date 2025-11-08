@@ -175,7 +175,6 @@ export default function WhaleSharkExperiencePage() {
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
               <li>Since we cannot control Mother Nature, and due to the sea conditions on the day of the tour, it is possible that the whale shark sighting may not occur. Therefore, we will only refund IDR 1,000,000 from your total payment.</li>
               <li>Please note that lunch is not included in this package. However, we can arrange to take you to a local restaurant before returning you to your accommodation in Sumbawa Besar City.</li>
-              <li>Visit <a href="https://sumbawaadventour.com/whale-shark-in-sumbawa-opportunities-to-encounter-spot-and-swim-blog/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">FAQ Sumbawa Whale Shark</a> and some other information to know about these Gentle Giant!</li>
             </ul>
 
             {/* Pricing Table */}
