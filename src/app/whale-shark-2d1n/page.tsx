@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight, Clock, Check, X } from "lucide-react";
 import { useState } from "react";
-import { DropdownSection, DynamicPricingTable } from "@/components/TourComponents";
+import { DropdownSection, DynamicPricingTable, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 
 export default function WhaleShark2D1NPage() {
@@ -76,46 +76,11 @@ export default function WhaleShark2D1NPage() {
             Whale Shark Sumbawa Tour 2 Days
           </h1>
 
-          {/* Featured Image */}
-          <div className="relative w-full h-64 md:h-96 mb-8 rounded-lg overflow-hidden">
-            <Image
-              src="/images/whale-shark/IMG_2079.JPG"
-              alt="Whale Shark Sumbawa Tour 2 Days 1 Night"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+          {/* Dynamic Images from Supabase */}
+          <DynamicTourImages tourName="whale-shark-2d1n" />
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
-            {/* Image Gallery - 3 small images only */}
-            <div className="grid grid-cols-3 gap-4 mb-8">
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/whale-shark/IMG_2992.JPG"
-                  alt="Swimming with Whale Shark"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/whale-shark/IMG_2082.JPG"
-                  alt="Whale Shark Tour Boat"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/whale-shark/IMG_2806.JPG"
-                  alt="Whale Shark Encounter"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
 
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
               Sumbawa Whale Shark 2 Days 1 Night Start Finish Sumbawa Besar City

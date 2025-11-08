@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 export { DynamicPricingTable } from "./DynamicPricingTable";
+export { DynamicTourImages } from "./DynamicTourImages";
 
 interface DropdownSectionProps {
   title: string;
