@@ -13,7 +13,8 @@
     "upload-images": "node scripts/upload-images-to-supabase.js",
     "insert-prices": "node scripts/insert-all-prices.js",
     "upload-gallery-about": "node scripts/upload-gallery-about-images.js",
-    "upload-homepage-hero": "node scripts/upload-homepage-hero.js"
+    "upload-homepage-hero": "node scripts/upload-homepage-hero.js",
+    "set-homepage-hero": "node scripts/set-homepage-hero.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.80.0",

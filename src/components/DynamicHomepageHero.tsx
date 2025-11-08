@@ -11,7 +11,7 @@ interface HomepageImage {
 }
 
 export function DynamicHomepageHero() {
-  const [heroImage, setHeroImage] = useState<string>("/images/hero.jpg"); // default fallback
+  const [heroImage, setHeroImage] = useState<string>("/images/hero.PNG"); // default fallback
 
   useEffect(() => {
     fetchHeroImage();
