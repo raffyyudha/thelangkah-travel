@@ -386,7 +386,7 @@ export default function WhaleSharkStartLabuhanJambuPage() {
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-12">
             Pulau Moyo terletak di Kabupaten Sumbawa, Provinsi Nusa Tenggara Barat. Selain Pulau Moyo, berikut berbagai pilihan paket wisata lainnya yang bisa anda nikmati bersama keluarga, kerabat dan sahabat saat berlibur ke Pulau Sumbawa.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <Link href="/whale-shark-start-sumbawa" className="group">
               <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
                 <Image
@@ -440,6 +440,20 @@ export default function WhaleSharkStartLabuhanJambuPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-3">
                   <h3 className="text-white font-bold text-sm md:text-base">Sumbawa Tour 4D3N</h3>
+                </div>
+              </div>
+            </Link>
+            <Link href="/whale-shark-experience" className="group">
+              <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
+                <Image
+                  src="/images/whale-shark/IMG_2082.JPG"
+                  alt="Whale Shark Experience"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-3">
+                  <h3 className="text-white font-bold text-sm md:text-base">Whale Shark Experience</h3>
                 </div>
               </div>
             </Link>
