@@ -46,8 +46,6 @@ export default function Home() {
           </h1>
           <p className="text-lg md:text-xl text-white mb-8 leading-relaxed">
             <span className="font-bold">Selamat datang di Adventure Sumbawa Island, penyedia layanan wisata petualangan lokal yang berbasis di Sumbawa.</span>
-            <br />
-            Kami berdiri dengan tujuan untuk memperkenalkan keindahan alam Sumbawa kepada dunia melalui pengalaman wisata yang autentik, aman, dan ramah lingkungan.
           </p>
         </div>
       </section>
