@@ -10,7 +10,8 @@
     "lint": "bunx tsc --noEmit && next lint",
     "format": "bunx biome format --write",
     "compress-images": "node scripts/compress-images.js",
-    "upload-images": "node scripts/upload-images-to-supabase.js"
+    "upload-images": "node scripts/upload-images-to-supabase.js",
+    "insert-prices": "node scripts/insert-all-prices.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.80.0",

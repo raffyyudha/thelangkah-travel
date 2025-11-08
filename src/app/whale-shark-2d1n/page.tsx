@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight, Clock, Check, X } from "lucide-react";
 import { useState } from "react";
-import { DropdownSection, PricingTable } from "@/components/TourComponents";
+import { DropdownSection, DynamicPricingTable } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 
 export default function WhaleShark2D1NPage() {
@@ -178,16 +178,10 @@ export default function WhaleShark2D1NPage() {
 
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Whale Shark Saleh Bay Sumbawa pricing revert to Indonesian Rupiah (IDR)</h3>
             
-            {/* Pricing Table */}
-            <PricingTable
+            {/* Pricing Table - Dynamic from Supabase */}
+            <DynamicPricingTable
+              tourName="whale-shark-2d1n"
               title="Harga Tour"
-              data={[
-                {
-                  participants: "2 -10",
-                  openTrip: "IDR. 1,960,000/Person",
-                  fullPrivate: "IDR. 2,850,000/person"
-                }
-              ]}
             />
 
             <div className="text-center mb-8">

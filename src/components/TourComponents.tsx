@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
+export { DynamicPricingTable } from "./DynamicPricingTable";
+
 interface DropdownSectionProps {
   title: string;
   children: React.ReactNode;
