@@ -120,8 +120,9 @@ export default function AdminDashboard() {
 
       alert('Image uploaded!');
       loadImages();
-    } catch (error: any) {
-      alert('Error: ' + error.message);
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      alert('Error: ' + errorMessage);
     } finally {
       setUploadingImage(false);
     }
@@ -136,8 +137,9 @@ export default function AdminDashboard() {
         await supabase.from('tour_images').delete().eq('id', id);
         alert('Deleted!');
         loadImages();
-      } catch (error: any) {
-        alert('Error: ' + error.message);
+      } catch (error) {
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+        alert('Error: ' + errorMessage);
       }
     }
   };

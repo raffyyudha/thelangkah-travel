@@ -60,8 +60,9 @@ export default function AdminGalleryPage() {
 
       alert('Image uploaded!');
       loadImages();
-    } catch (error: any) {
-      alert('Error: ' + error.message);
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      alert('Error: ' + errorMessage);
     } finally {
       setUploading(false);
     }
@@ -76,8 +77,9 @@ export default function AdminGalleryPage() {
         await supabase.from('gallery_images').delete().eq('id', id);
         alert('Deleted!');
         loadImages();
-      } catch (error: any) {
-        alert('Error: ' + error.message);
+      } catch (error) {
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+        alert('Error: ' + errorMessage);
       }
     }
   };

@@ -38,7 +38,7 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
         if (error) throw error;
 
         if (data && data.length > 0) {
-          const imageMap: any = {
+          const imageMap = {
             hero: "",
             gallery1: "",
             gallery2: "",
@@ -46,8 +46,9 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
           };
 
           data.forEach((img: TourImage) => {
-            if (img.image_type in imageMap) {
-              imageMap[img.image_type] = img.image_url;
+            const imgType = img.image_type as keyof typeof imageMap;
+            if (imgType in imageMap) {
+              imageMap[imgType] = img.image_url;
             }
           });
 
