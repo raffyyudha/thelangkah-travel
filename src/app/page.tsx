@@ -56,7 +56,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-4">
             <DynamicPackageCard
               tourName="whale-shark-start-sumbawa"
               title="Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar"
