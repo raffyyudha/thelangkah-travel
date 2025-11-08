@@ -28,6 +28,20 @@ ON CONFLICT (id) DO NOTHING;
 ALTER TABLE tour_prices ENABLE ROW LEVEL SECURITY;
 ALTER TABLE tour_images ENABLE ROW LEVEL SECURITY;
 
+-- Drop existing policies if they exist
+DROP POLICY IF EXISTS "Public can read tour_prices" ON tour_prices;
+DROP POLICY IF EXISTS "Public can read tour_images" ON tour_images;
+DROP POLICY IF EXISTS "Anyone can insert tour_prices" ON tour_prices;
+DROP POLICY IF EXISTS "Anyone can update tour_prices" ON tour_prices;
+DROP POLICY IF EXISTS "Anyone can delete tour_prices" ON tour_prices;
+DROP POLICY IF EXISTS "Anyone can insert tour_images" ON tour_images;
+DROP POLICY IF EXISTS "Anyone can update tour_images" ON tour_images;
+DROP POLICY IF EXISTS "Anyone can delete tour_images" ON tour_images;
+DROP POLICY IF EXISTS "Public can view images" ON storage.objects;
+DROP POLICY IF EXISTS "Anyone can upload images" ON storage.objects;
+DROP POLICY IF EXISTS "Anyone can update images" ON storage.objects;
+DROP POLICY IF EXISTS "Anyone can delete images" ON storage.objects;
+
 -- Create policies for public read access
 CREATE POLICY "Public can read tour_prices" ON tour_prices
   FOR SELECT USING (true);
@@ -68,14 +82,19 @@ CREATE POLICY "Anyone can delete images" ON storage.objects
   FOR DELETE USING (bucket_id = 'images');
 
 -- Create indexes for better performance
+DROP INDEX IF EXISTS idx_tour_prices_tour_name;
+DROP INDEX IF EXISTS idx_tour_images_tour_name;
+DROP INDEX IF EXISTS idx_tour_images_image_type;
+
 CREATE INDEX idx_tour_prices_tour_name ON tour_prices(tour_name);
 CREATE INDEX idx_tour_images_tour_name ON tour_images(tour_name);
 CREATE INDEX idx_tour_images_image_type ON tour_images(image_type);
 
--- Insert sample data for tour_prices
+-- Insert sample data for tour_prices (skip if already exists)
 INSERT INTO tour_prices (tour_name, participants, open_trip_price, full_private_price) VALUES
 ('whale-shark-start-sumbawa', '2 - 10', 'IDR. 1,450,000/Person', 'IDR. 2,500,000/person'),
-('whale-shark-2d1n', '2 -10', 'IDR. 1,960,000/Person', 'IDR. 2,850,000/person');
+('whale-shark-2d1n', '2 -10', 'IDR. 1,960,000/Person', 'IDR. 2,850,000/person')
+ON CONFLICT DO NOTHING;
 
 -- Note: Run this SQL in your Supabase SQL Editor
 -- After running, you can access the admin dashboard at /admin
