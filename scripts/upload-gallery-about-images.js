@@ -11,7 +11,7 @@ const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYm
 
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-// Gallery images - dari screenshot yang ada 11 gambar
+// Gallery images - using existing images from public folder
 const galleryImages = [
   '/images/hero.jpg',
   '/images/islandjawa.jpg',
@@ -19,11 +19,11 @@ const galleryImages = [
   '/images/whale-shark/IMG_2079.JPG',
   '/images/whale-shark/IMG_2082.JPG',
   '/images/whale-shark/IMG_2806.JPG',
-  '/images/moyo.jpg',
-  '/images/kenawa.jpg',
-  '/images/beach.jpg',
-  '/images/sunset.jpg',
-  '/images/diving.jpg'
+  '/images/hero.jpg', // reuse
+  '/images/islandjawa.jpg', // reuse
+  '/images/whale-shark/IMG_2992.JPG', // reuse
+  '/images/whale-shark/IMG_2079.JPG', // reuse
+  '/images/whale-shark/IMG_2082.JPG' // reuse
 ];
 
 // About page images - 6 sections
@@ -31,8 +31,8 @@ const aboutImages = {
   'hero1': '/images/hero.jpg', // Pengalaman Lokal Autentik (palm tree beach)
   'hero2': '/images/islandjawa.jpg', // Layanan Profesional (wave/ocean)
   'feature1': '/images/whale-shark/IMG_2992.JPG', // Keselamatan Utama (whale shark with diver)
-  'feature2': '/images/moyo.jpg', // Eco-Conscious (waterfall)
-  'feature3': '/images/beach.jpg', // Community Based (beach/sunset)
+  'feature2': '/images/whale-shark/IMG_2079.JPG', // Eco-Conscious (waterfall alternative)
+  'feature3': '/images/whale-shark/IMG_2082.JPG', // Community Based (beach/sunset alternative)
   'feature4': '/images/islandjawa.jpg' // Tim yang Passionate (temple/cultural)
 };
 
