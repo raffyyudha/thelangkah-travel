@@ -272,36 +272,61 @@ export default function AdminDashboard() {
         <div className="bg-white rounded-lg shadow-md p-4 md:p-6">
           <h2 className="text-xl md:text-2xl font-bold mb-6">Images for {tours.find(t => t.id === selectedTour)?.name}</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             {['hero', 'gallery1', 'gallery2', 'gallery3'].map((type) => {
               const existingImage = currentTourImages.find(img => img.image_type === type);
+              const label = type === 'hero' ? '🖼️ Hero Image (Main Banner)' : 
+                           type === 'gallery1' ? '📸 Gallery Image 1' :
+                           type === 'gallery2' ? '📸 Gallery Image 2' :
+                           '📸 Gallery Image 3';
               return (
-                <div key={type} className="border rounded-lg p-4">
-                  <h3 className="font-semibold mb-2 capitalize">{type === 'hero' ? 'Hero Image' : type.replace('gallery', 'Gallery ')}</h3>
+                <div key={type} className="border-2 border-gray-200 rounded-lg p-4 hover:border-blue-400 transition-colors">
+                  <h3 className="font-bold mb-3 text-lg">{label}</h3>
                   {existingImage ? (
                     <div>
-                      <div className="relative h-40 mb-2">
-                        <Image src={existingImage.image_url} alt={type} fill className="object-cover rounded" />
+                      <div className="relative h-64 mb-3 rounded-lg overflow-hidden border-2 border-gray-300">
+                        <Image src={existingImage.image_url} alt={type} fill className="object-cover" />
                       </div>
-                      <button
-                        onClick={() => existingImage.id && deleteImage(existingImage.id, existingImage.image_url)}
-                        className="bg-red-500 text-white px-3 py-1 rounded text-sm w-full mb-2"
-                      >
-                        Delete
-                      </button>
+                      <div className="flex gap-2">
+                        <label className="flex-1 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 cursor-pointer text-center text-sm font-semibold">
+                          Replace Image
+                          <input
+                            type="file"
+                            accept="image/*"
+                            onChange={(e) => handleImageUpload(e, type)}
+                            disabled={uploadingImage}
+                            className="hidden"
+                          />
+                        </label>
+                        <button
+                          onClick={() => existingImage.id && deleteImage(existingImage.id, existingImage.image_url)}
+                          className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 text-sm font-semibold"
+                        >
+                          Delete
+                        </button>
+                      </div>
                     </div>
                   ) : (
-                    <div className="h-40 bg-gray-100 rounded flex items-center justify-center mb-2">
-                      <p className="text-gray-400 text-sm">No image</p>
+                    <div>
+                      <div className="h-64 bg-gray-100 rounded-lg flex flex-col items-center justify-center mb-3 border-2 border-dashed border-gray-300">
+                        <svg className="w-16 h-16 text-gray-400 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <p className="text-gray-400 font-semibold">No image uploaded</p>
+                        <p className="text-gray-400 text-sm">Click below to upload</p>
+                      </div>
+                      <label className="block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 cursor-pointer text-center font-semibold">
+                        Upload Image
+                        <input
+                          type="file"
+                          accept="image/*"
+                          onChange={(e) => handleImageUpload(e, type)}
+                          disabled={uploadingImage}
+                          className="hidden"
+                        />
+                      </label>
                     </div>
                   )}
-                  <input
-                    type="file"
-                    accept="image/*"
-                    onChange={(e) => handleImageUpload(e, type)}
-                    disabled={uploadingImage}
-                    className="text-sm w-full"
-                  />
                 </div>
               );
             })}
