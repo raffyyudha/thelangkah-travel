@@ -19,6 +19,27 @@ CREATE TABLE IF NOT EXISTS tour_images (
   UNIQUE(tour_name, image_type)
 );
 
+-- Create gallery_images table
+CREATE TABLE IF NOT EXISTS gallery_images (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  image_url TEXT NOT NULL,
+  title TEXT,
+  description TEXT,
+  display_order INTEGER DEFAULT 0,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+);
+
+-- Create about_images table
+CREATE TABLE IF NOT EXISTS about_images (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  image_url TEXT NOT NULL,
+  section TEXT NOT NULL, -- 'hero1', 'hero2', 'feature1', 'feature2', 'feature3', 'feature4'
+  title TEXT,
+  description TEXT,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
+  UNIQUE(section)
+);
+
 -- Create storage bucket for images
 INSERT INTO storage.buckets (id, name, public)
 VALUES ('images', 'images', true)
@@ -27,6 +48,8 @@ ON CONFLICT (id) DO NOTHING;
 -- Enable RLS (Row Level Security)
 ALTER TABLE tour_prices ENABLE ROW LEVEL SECURITY;
 ALTER TABLE tour_images ENABLE ROW LEVEL SECURITY;
+ALTER TABLE gallery_images ENABLE ROW LEVEL SECURITY;
+ALTER TABLE about_images ENABLE ROW LEVEL SECURITY;
 
 -- Drop existing policies if they exist
 DROP POLICY IF EXISTS "Public can read tour_prices" ON tour_prices;
@@ -37,6 +60,14 @@ DROP POLICY IF EXISTS "Anyone can delete tour_prices" ON tour_prices;
 DROP POLICY IF EXISTS "Anyone can insert tour_images" ON tour_images;
 DROP POLICY IF EXISTS "Anyone can update tour_images" ON tour_images;
 DROP POLICY IF EXISTS "Anyone can delete tour_images" ON tour_images;
+DROP POLICY IF EXISTS "Public can read gallery_images" ON gallery_images;
+DROP POLICY IF EXISTS "Anyone can insert gallery_images" ON gallery_images;
+DROP POLICY IF EXISTS "Anyone can update gallery_images" ON gallery_images;
+DROP POLICY IF EXISTS "Anyone can delete gallery_images" ON gallery_images;
+DROP POLICY IF EXISTS "Public can read about_images" ON about_images;
+DROP POLICY IF EXISTS "Anyone can insert about_images" ON about_images;
+DROP POLICY IF EXISTS "Anyone can update about_images" ON about_images;
+DROP POLICY IF EXISTS "Anyone can delete about_images" ON about_images;
 DROP POLICY IF EXISTS "Public can view images" ON storage.objects;
 DROP POLICY IF EXISTS "Anyone can upload images" ON storage.objects;
 DROP POLICY IF EXISTS "Anyone can update images" ON storage.objects;
@@ -47,6 +78,12 @@ CREATE POLICY "Public can read tour_prices" ON tour_prices
   FOR SELECT USING (true);
 
 CREATE POLICY "Public can read tour_images" ON tour_images
+  FOR SELECT USING (true);
+
+CREATE POLICY "Public can read gallery_images" ON gallery_images
+  FOR SELECT USING (true);
+
+CREATE POLICY "Public can read about_images" ON about_images
   FOR SELECT USING (true);
 
 -- Create policies for managing data (allow anon for upload script)
@@ -66,6 +103,24 @@ CREATE POLICY "Anyone can update tour_images" ON tour_images
   FOR UPDATE USING (true);
 
 CREATE POLICY "Anyone can delete tour_images" ON tour_images
+  FOR DELETE USING (true);
+
+CREATE POLICY "Anyone can insert gallery_images" ON gallery_images
+  FOR INSERT WITH CHECK (true);
+
+CREATE POLICY "Anyone can update gallery_images" ON gallery_images
+  FOR UPDATE USING (true);
+
+CREATE POLICY "Anyone can delete gallery_images" ON gallery_images
+  FOR DELETE USING (true);
+
+CREATE POLICY "Anyone can insert about_images" ON about_images
+  FOR INSERT WITH CHECK (true);
+
+CREATE POLICY "Anyone can update about_images" ON about_images
+  FOR UPDATE USING (true);
+
+CREATE POLICY "Anyone can delete about_images" ON about_images
   FOR DELETE USING (true);
 
 -- Storage policies

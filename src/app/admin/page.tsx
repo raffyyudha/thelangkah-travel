@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "@/lib/supabase";
 import Image from "next/image";
+import Link from "next/link";
 
 interface TourPrice {
   id?: string;
@@ -168,7 +169,7 @@ export default function AdminDashboard() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="bg-white rounded-lg shadow-md p-4 md:p-6 mb-6">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center mb-4">
             <h1 className="text-2xl md:text-3xl font-bold">Admin Dashboard</h1>
             <button
               onClick={() => setIsAuthenticated(false)}
@@ -176,6 +177,14 @@ export default function AdminDashboard() {
             >
               Logout
             </button>
+          </div>
+          <div className="flex gap-2 flex-wrap">
+            <Link href="/admin/gallery" className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 text-sm">
+              📸 Manage Gallery
+            </Link>
+            <Link href="/admin/about" className="bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600 text-sm">
+              ℹ️ Manage About Page
+            </Link>
           </div>
         </div>
 
