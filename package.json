@@ -11,7 +11,8 @@
     "format": "bunx biome format --write",
     "compress-images": "node scripts/compress-images.js",
     "upload-images": "node scripts/upload-images-to-supabase.js",
-    "insert-prices": "node scripts/insert-all-prices.js"
+    "insert-prices": "node scripts/insert-all-prices.js",
+    "upload-gallery-about": "node scripts/upload-gallery-about-images.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.80.0",
