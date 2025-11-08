@@ -198,7 +198,7 @@ export default function WhaleSharkStartLabuhanJambuPage() {
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse rounded-lg overflow-hidden shadow-md">
                   <thead>
-                    <tr className="bg-blue-400 text-white">
+                    <tr className="bg-green-600 text-white">
                       <th className="py-4 px-6 text-center font-bold text-sm md:text-base">
                         PARTICIPANT
                       </th>
