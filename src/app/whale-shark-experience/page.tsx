@@ -142,33 +142,23 @@ export default function WhaleSharkExperiencePage() {
             </h2>
 
             <h3 className="text-xl font-bold text-gray-900 mb-4">
-              <Link href="/whale-shark-start-sumbawa" className="text-blue-600 hover:underline">
-                Sumbawa Whale Shark Daily Tour start & finish Sumbawa Besar
-              </Link>
+              Sumbawa Whale Shark Daily Tour start & finish Sumbawa Besar
             </h3>
 
             <h3 className="text-xl font-bold text-gray-900 mb-4">
-              <Link href="/whale-shark-2d1n" className="text-blue-600 hover:underline">
-                Whale Shark Sumbawa 2 Days 1 Night Tour start & finish Sumbawa Besar
-              </Link>
+              Whale Shark Sumbawa 2 Days 1 Night Tour start & finish Sumbawa Besar
             </h3>
 
             <h3 className="text-xl font-bold text-gray-900 mb-4">
-              <Link href="/combo-moyo-whale-shark" className="text-blue-600 hover:underline">
-                Sumbawa Whale Shark & Moyo Island Tour 3 Days 2 Night
-              </Link>
+              Sumbawa Whale Shark & Moyo Island Tour 3 Days 2 Night
             </h3>
 
             <h3 className="text-xl font-bold text-gray-900 mb-4">
-              <Link href="/whale-shark-start-labuhan-jambu" className="text-blue-600 hover:underline">
-                Whale Shark Sumbawa & Moyo Island Tour 1 Day Fast Boat
-              </Link>
+              Whale Shark Sumbawa & Moyo Island Tour 1 Day Fast Boat
             </h3>
 
             <h3 className="text-xl font-bold text-gray-900 mb-8">
-              <Link href="/trip-4d3n-sumbawa" className="text-blue-600 hover:underline">
-                Whale Shark in Sumbawa, Moyo Island & Kenawa Island - 4 Days 3 Nights
-              </Link>
+              Whale Shark in Sumbawa, Moyo Island & Kenawa Island - 4 Days 3 Nights
             </h3>
 
             <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">Whale Shark Saleh Bay Sumbawa pricing revert to Indonesian Rupiah (IDR)</h3>
