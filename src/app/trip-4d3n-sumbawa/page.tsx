@@ -6,6 +6,7 @@ import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
 import { DropdownSection, PricingTable, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
+import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { tour5Translations } from "@/translations/tour5";
 
@@ -323,62 +324,31 @@ export default function Trip4D3NSumbawaPage() {
             Pulau Moyo terletak di Kabupaten Sumbawa, Provinsi Nusa Tenggara Barat. Selain Pulau Moyo, berikut berbagai pilihan paket wisata lainnya yang bisa anda nikmati bersama keluarga, kerabat dan sahabat saat berlibur ke Pulau Sumbawa.
           </p>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <Link href="/whale-shark-start-sumbawa" className="group">
-              <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
-                <Image
-                  src="/images/whale-shark/IMG_2992.JPG"
-                  alt="Whale Shark Daily Tour"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-white font-bold text-sm md:text-base">Whale Shark Daily Tour</h3>
-                </div>
-              </div>
-            </Link>
-            <Link href="/whale-shark-2d1n" className="group">
-              <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
-                <Image
-                  src="/images/whale-shark/IMG_2079.JPG"
-                  alt="Whale Shark 2D1N"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-white font-bold text-sm md:text-base">Whale Shark 2D1N</h3>
-                </div>
-              </div>
-            </Link>
-            <Link href="/combo-moyo-whale-shark" className="group">
-              <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
-                <Image
-                  src="/images/moyo/hero.jpg"
-                  alt="Combo Moyo + Whale Shark"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-white font-bold text-sm md:text-base">Combo Moyo + Whale Shark 3D2N</h3>
-                </div>
-              </div>
-            </Link>
-            <Link href="/whale-shark-start-labuhan-jambu" className="group">
-              <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
-                <Image
-                  src="/images/whale-shark/IMG_2806.JPG"
-                  alt="Whale Shark Overview"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-white font-bold text-sm md:text-base">Whale Shark Tours</h3>
-                </div>
-              </div>
-            </Link>
+            <DynamicRelatedTour
+              tourName="whale-shark-start-sumbawa"
+              title="Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar"
+              href="/whale-shark-start-sumbawa"
+            />
+            <DynamicRelatedTour
+              tourName="whale-shark-2d1n"
+              title="Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar"
+              href="/whale-shark-2d1n"
+            />
+            <DynamicRelatedTour
+              tourName="combo-moyo-whale-shark"
+              title="Paket Tour Sumbawa 3 Hari 2 Malam Pulau Moyo - Hiu Paus Teluk Saleh"
+              href="/combo-moyo-whale-shark"
+            />
+            <DynamicRelatedTour
+              tourName="whale-shark-start-labuhan-jambu"
+              title="Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok"
+              href="/whale-shark-start-labuhan-jambu"
+            />
+            <DynamicRelatedTour
+              tourName="whale-shark-experience"
+              title="Sumbawa Whale Shark Tour 2 Days 1 Night (scuba diving tour)"
+              href="/whale-shark-experience"
+            />
           </div>
         </div>
       </section>

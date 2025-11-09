@@ -29,7 +29,7 @@ export default function WhatsAppButton() {
       {/* WhatsApp Floating Button */}
       <button
         onClick={handleClick}
-        className={`fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 transform hover:scale-110 ${
+        className={`fixed bottom-6 right-4 sm:right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 transform hover:scale-110 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
         aria-label="Chat on WhatsApp"

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
 import { DropdownSection, PricingTable, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
+import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { tour6Translations } from "@/translations/tour6";
 
@@ -284,95 +285,31 @@ export default function WhaleSharkExperiencePage() {
           </p>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            {/* Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar */}
-            <Link href="/whale-shark-start-sumbawa" className="group">
-              <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
-                <Image
-                  src="/images/whale-shark/IMG_2992.JPG"
-                  alt="Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-xs sm:text-sm font-bold text-white leading-tight">
-                    Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar
-                  </h3>
-                </div>
-              </div>
-            </Link>
-
-            {/* Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar */}
-            <Link href="/whale-shark-2d1n" className="group">
-              <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
-                <Image
-                  src="/images/whale-shark/IMG_2079.JPG"
-                  alt="Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-xs sm:text-sm font-bold text-white leading-tight">
-                    Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar
-                  </h3>
-                </div>
-              </div>
-            </Link>
-
-            {/* Paket Tour Sumbawa 3 Hari 2 Malam Pulau Moyo - Hiu Paus Teluk Saleh */}
-            <Link href="/combo-moyo-whale-shark" className="group">
-              <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
-                <Image
-                  src="/images/moyo/hero.jpg"
-                  alt="Paket Tour Sumbawa 3 Hari 2 Malam Pulau Moyo - Hiu Paus Teluk Saleh"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-xs sm:text-sm font-bold text-white leading-tight">
-                    Paket Tour Sumbawa 3 Hari 2 Malam Pulau Moyo - Hiu Paus Teluk Saleh
-                  </h3>
-                </div>
-              </div>
-            </Link>
-
-            {/* Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok */}
-            <Link href="/whale-shark-start-labuhan-jambu" className="group">
-              <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
-                <Image
-                  src="/images/whale-shark/IMG_2082.JPG"
-                  alt="Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-xs sm:text-sm font-bold text-white leading-tight">
-                    Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok
-                  </h3>
-                </div>
-              </div>
-            </Link>
-
-            {/* Paket Tour Sumbawa 4 Hari 3 Malam Wisata Pulau Moyo, Pulau Kenawa & Hiu Paus */}
-            <Link href="/trip-4d3n-sumbawa" className="group">
-              <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
-                <Image
-                  src="/images/islandjawa.jpg"
-                  alt="Paket Tour Sumbawa 4 Hari 3 Malam Wisata Pulau Moyo, Pulau Kenawa & Hiu Paus"
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <h3 className="text-xs sm:text-sm font-bold text-white leading-tight">
-                    Paket Tour Sumbawa 4 Hari 3 Malam Wisata Pulau Moyo, Pulau Kenawa & Hiu Paus
-                  </h3>
-                </div>
-              </div>
-            </Link>
+            <DynamicRelatedTour
+              tourName="whale-shark-start-sumbawa"
+              title="Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar"
+              href="/whale-shark-start-sumbawa"
+            />
+            <DynamicRelatedTour
+              tourName="whale-shark-2d1n"
+              title="Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar"
+              href="/whale-shark-2d1n"
+            />
+            <DynamicRelatedTour
+              tourName="combo-moyo-whale-shark"
+              title="Paket Tour Sumbawa 3 Hari 2 Malam Pulau Moyo - Hiu Paus Teluk Saleh"
+              href="/combo-moyo-whale-shark"
+            />
+            <DynamicRelatedTour
+              tourName="whale-shark-start-labuhan-jambu"
+              title="Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok"
+              href="/whale-shark-start-labuhan-jambu"
+            />
+            <DynamicRelatedTour
+              tourName="trip-4d3n-sumbawa"
+              title="Paket Tour Sumbawa 4 Hari 3 Malam Wisata Pulau Moyo, Pulau Kenawa & Hiu Paus"
+              href="/trip-4d3n-sumbawa"
+            />
           </div>
         </div>
       </section>

@@ -4,6 +4,7 @@ import "./globals.css";
 import ClientBody from "./ClientBody";
 import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { AIChatBot } from "@/components/AIChatBot";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const poppins = Poppins({ 
@@ -28,6 +29,7 @@ export default function RootLayout({
         <LanguageProvider>
           <Header />
           {children}
+          <AIChatBot />
           <WhatsAppButton />
         </LanguageProvider>
       </ClientBody>
