@@ -221,7 +221,7 @@ export default function Home() {
                 </svg>
               </summary>
               <div className="px-6 pb-6 text-gray-700 leading-relaxed">
-                <p>{t.faqHowToGetAnswer}</p>
+                <p className="whitespace-pre-line">{t.faqHowToGetAnswer}</p>
               </div>
             </details>
 
