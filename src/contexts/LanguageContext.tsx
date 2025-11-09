@@ -238,7 +238,7 @@ const translations = {
     faqBestTimeAnswer: "Waktu terbaik mengunjungi Sumbawa adalah selama musim kemarau dari April hingga November. Untuk perjumpaan hiu paus di Teluk Saleh, waktu terbaik adalah dari Maret sampai November dengan musim puncak dari Juni sampai Oktober ketika hiu paus paling banyak. Musim hujan (Desember-Maret) dapat membawa hujan lebat.",
     
     faqHowToGet: "Bagaimana cara ke Sumbawa?",
-    faqHowToGetAnswer: "Anda dapat mencapai Sumbawa dengan penerbangan ke Bandara Sultan Muhammad Kaharuddin III (Sumbawa Besar) atau dengan feri dari Lombok (Pelabuhan Kayangan ke Poto Tano, sekitar 1,5-2 jam). Kami menyediakan layanan penjemputan dari bandara dan pelabuhan feri.",
+    faqHowToGetAnswer: "1. BALI - SUMBAWA: Penerbangan dari Bandara Ngurah Rai (DPS) Bali ke Bandara Sultan Muhammad Kaharuddin III (SWQ) Sumbawa Besar, waktu tempuh sekitar 1 jam.\n\n2. LOMBOK - SUMBAWA: Opsi Pesawat - Dari Bandara Internasional Lombok (LOP) ke Bandara Sultan Muhammad Kaharuddin III (SWQ) Sumbawa Besar, waktu tempuh sekitar 40 menit. Opsi Kapal Ferry - Dari Mataram/Senggigi naik angkutan umum/taxi ke Pelabuhan Kayangan (2 jam), lalu naik ferry ke Poto Tano (2 jam), kemudian angkutan umum/taxi ke Sumbawa Besar (2 jam).\n\n3. LABUAN BAJO - SUMBAWA: Kapal Ferry dari Labuan Bajo (Flores) ke Pelabuhan Sape (Sumbawa), waktu tempuh sekitar 7 jam.\n\nKami menyediakan layanan penjemputan dari bandara dan pelabuhan.",
     
     faqWhatToBring: "Apa yang harus dibawa untuk trip hiu paus?",
     faqWhatToBringAnswer: "Bawa: pakaian renang, sunscreen ramah terumbu karang, handuk, pakaian ganti, kamera/casing HP tahan air, dan uang tunai untuk pengeluaran pribadi. Kami menyediakan semua peralatan snorkeling, jaket pelampung, dan makanan. Jangan lupa semangat petualangan Anda!",
@@ -432,7 +432,7 @@ const translations = {
     faqBestTimeAnswer: "The best time to visit Sumbawa is during the dry season from April to November. For whale shark encounters in Teluk Saleh, the best time is from March to November with peak season from June to October when whale sharks are most abundant. The wet season (December-March) can bring heavy rains.",
     
     faqHowToGet: "How do I get to Sumbawa?",
-    faqHowToGetAnswer: "You can reach Sumbawa by flight to Sultan Muhammad Kaharuddin III Airport (Sumbawa Besar) or by ferry from Lombok (Pelabuhan Kayangan to Poto Tano, about 1.5-2 hours). We provide pickup services from both the airport and ferry ports.",
+    faqHowToGetAnswer: "1. BALI - SUMBAWA: Flight from Ngurah Rai Airport (DPS) Bali to Sultan Muhammad Kaharuddin III Airport (SWQ) Sumbawa Besar, approximately 1 hour.\n\n2. LOMBOK - SUMBAWA: Flight Option - From Lombok International Airport (LOP) to Sultan Muhammad Kaharuddin III Airport (SWQ) Sumbawa Besar, approximately 40 minutes. Ferry Option - From Mataram/Senggigi take public transport/taxi to Kayangan Port (2 hours), then ferry to Poto Tano (2 hours), followed by public transport/taxi to Sumbawa Besar (2 hours).\n\n3. LABUAN BAJO - SUMBAWA: Ferry from Labuan Bajo (Flores) to Sape Port (Sumbawa), approximately 7 hours.\n\nWe provide pickup services from airports and ports.",
     
     faqWhatToBring: "What should I bring for a whale shark trip?",
     faqWhatToBringAnswer: "Bring: swimwear, reef-safe sunscreen, towel, change of clothes, waterproof camera/phone case, and cash for personal expenses. We provide all snorkeling equipment, life jackets, and meals. Don't forget your sense of adventure!",

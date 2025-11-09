@@ -204,7 +204,7 @@ export default function ComboMoyoWhaleSharkPage() {
             {/* Customer Reviews Slider */}
             <div className="text-center mb-12">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
-                <a href="https://g.co/kgs/aGf4PBm" className="hover:underline" target="_blank" rel="noopener noreferrer">
+                <a href="https://maps.app.goo.gl/rjMm7EoFXzLLF4XU7" className="hover:underline" target="_blank" rel="noopener noreferrer">
                   Sumbawa Adventour Costumer Reviews (click here):
                 </a>
               </h3>

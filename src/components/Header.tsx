@@ -20,7 +20,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 md:gap-3">
-            <div className="relative w-12 h-12 md:w-20 md:h-20 flex-shrink-0 overflow-hidden flex items-center justify-center">
+            <div className="relative w-16 h-16 md:w-20 md:h-20 flex-shrink-0 overflow-hidden flex items-center justify-center">
               <Image
                 src="/images/logo.png"
                 alt="Adventure Sumbawa Island"
@@ -34,7 +34,7 @@ export default function Header() {
                 }}
               />
             </div>
-            <span className="text-[#00a6b5] font-bold text-sm md:text-xl uppercase tracking-wide leading-tight">
+            <span className="text-[#73939E] font-bold text-base md:text-xl uppercase tracking-wide leading-tight">
               Adventure<br className="md:hidden" /> Sumbawa Island
             </span>
           </Link>

@@ -32,9 +32,9 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section - Exact copy dari The Langkah Travel */}
-      <section className="relative h-[600px] flex items-center justify-start">
+      <section className="relative h-[600px] flex items-end md:items-center justify-start">
         <DynamicHomepageHero />
-        <div className="container mx-auto px-6 relative z-10 max-w-3xl">
+        <div className="container mx-auto px-6 pb-12 md:pb-0 relative z-10 max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white leading-tight">
             {t.heroTitle}
           </h1>
