@@ -28,7 +28,6 @@ export function AIChatBot() {
 
   useEffect(() => {
     scrollToBottom();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [messages]);
 
   const sendMessage = useCallback(async () => {

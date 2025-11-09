@@ -1,7 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+interface Message {
+  role: string;
+  content: string;
+}
+
 // Smart mock AI that generates contextual responses
-function generateResponse(userMessage: string, conversationHistory: any[]): string {
+function generateResponse(userMessage: string, conversationHistory: Message[]): string {
   const msg = userMessage.toLowerCase();
   
   // Greeting responses

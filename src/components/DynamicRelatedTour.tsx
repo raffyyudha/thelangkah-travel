@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
@@ -14,11 +14,7 @@ interface DynamicRelatedTourProps {
 export function DynamicRelatedTour({ tourName, title, href }: DynamicRelatedTourProps) {
   const [heroImage, setHeroImage] = useState<string>("/images/hero.jpg"); // fallback
 
-  useEffect(() => {
-    fetchHeroImage();
-  }, [tourName]);
-
-  const fetchHeroImage = async () => {
+  const fetchHeroImage = useCallback(async () => {
     try {
       const { data, error } = await supabase
         .from("tour_images")
@@ -38,7 +34,11 @@ export function DynamicRelatedTour({ tourName, title, href }: DynamicRelatedTour
     } catch (error) {
       console.error("Error:", error);
     }
-  };
+  }, [tourName]);
+
+  useEffect(() => {
+    fetchHeroImage();
+  }, [fetchHeroImage]);
 
   return (
     <Link href={href} className="group">
