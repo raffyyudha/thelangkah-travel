@@ -2,8 +2,8 @@ export const tour1Translations = {
   id: {
     title: "Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar",
     subtitle: "Trip ini dirancang dengan titik start dan finish di Sumbawa Besar untuk memberikan kemudahan akses dan kenyamanan bagi setiap tamu kami. Sumbawa Besar memiliki bandara, banyak pilihan hotel, dan fasilitas pendukung yang lengkap, sehingga cocok sebagai pusat perjalananmu. Dengan jarak kurang lebih 2 jam menuju Teluk Saleh, kamu bisa menikmati aktivitas snorkeling dan freedive bersama hiu paus dalam satu hari tanpa perlu pindah-pindah hotel.",
-    description1: "Faktanya, kawanan hiu paus di Sumbawa akan muncul karena bersamaan dengan jaring yang diangkat, selama waktu itu ada banyak plankton yang merupakan makanan makhluk lembut ini!, singkatnya pada periode waktu ini, kita bisa berenang, menyelam dengan Raksasa Lembut ini",
-    description2: "Melihat bahwa Hiu Paus Sumbawa selalu tertarik untuk datang setiap hari sejak dulu, hiu paus mudah dikenali dengan pola uniknya, kita bisa melihat sebelum matahari terbit pagi-pagi sekali ketika nelayan PERAHU BAGAN mengangkat jaring mereka pada saat itu.",
+    description1: "",
+    description2: "",
     programTitle: "Program Tour Hiu Paus Teluk Saleh Sumbawa",
     itinerary: {
       time1: "02:00",
@@ -54,8 +54,8 @@ export const tour1Translations = {
   en: {
     title: "Sumbawa Whale Shark Saleh Bay One Day Tour Start Finish Sumbawa Besar City",
     subtitle: "This trip is designed with start and finish points in Sumbawa Besar to provide easy access and comfort for all our guests. Sumbawa Besar has an airport, many hotel options, and complete supporting facilities, making it perfect as your travel hub. With approximately 2 hours journey to Saleh Bay, you can enjoy snorkeling and freediving activities with whale sharks in one day without needing to change hotels.",
-    description1: "in fact schooling of whale sharks in sumbawa will appear because along with the nett being lifted, during the time there be lots of planktons is the food of these Gentle Creatures!, in short on this period of time, we can swim, diving with these Gentle Giant",
-    description2: "Seeing that Whale Shark Sumbawa always attract to come on the daily basis come from long time ago, whale shark are easily recognizable with its unique pattern, we can see before sunrise early morning when the fisherman of BAGAN BOAT lift their nets at that time.",
+    description1: "",
+    description2: "",
     programTitle: "Whale Shark Saleh Bay Sumbawa Tour Program",
     itinerary: {
       time1: "02:00",

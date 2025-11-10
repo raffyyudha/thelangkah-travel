@@ -96,13 +96,17 @@ export default function WhaleSharkStartSumbawaPage() {
               {t.subtitle}
             </p>
 
-            <p className="text-gray-700 leading-relaxed mb-4">
-              {t.description1}
-            </p>
+            {t.description1 && (
+              <p className="text-gray-700 leading-relaxed mb-4">
+                {t.description1}
+              </p>
+            )}
 
-            <p className="text-gray-700 leading-relaxed mb-8">
-              {t.description2}
-            </p>
+            {t.description2 && (
+              <p className="text-gray-700 leading-relaxed mb-8">
+                {t.description2}
+              </p>
+            )}
 
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
               {t.programTitle}

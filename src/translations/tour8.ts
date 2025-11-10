@@ -2,8 +2,9 @@ export const tour8Translations = {
   id: {
     title: "Trip 1 Hari Hiu Paus (Menggunakan Speed Boat)",
     subtitle: "Mulai 1.180.000 IDR per orang",
-    description1: "Tour Hiu Paus di Sumbawa menggunakan speed boat ini kami susun untuk anda yang mengutamakan efisiensi dan kenyamanan saat berwisata.",
-    description2: "Jika paket reguler lainnya anda harus menempuh total hampir 5 jam (darat dan laut) untuk ke lokasi Hiu Paus, dengan speed boat anda hanya butuh sekitar 2 jam saja.",
+    description1: "Tour Hiu Paus di Sumbawa menggunakan speed boat ini kami susun khusus untuk Anda yang mengutamakan efisiensi waktu dan kenyamanan perjalanan.",
+    description2: "Jika pada paket reguler Anda harus menempuh total hampir 5 jam perjalanan (gabungan jalur darat dan laut) untuk mencapai lokasi kemunculan hiu paus, maka dengan speed boat perjalanan Anda menjadi jauh lebih singkat — hanya sekitar 2 jam saja.",
+    description3: "Paket ini ideal bagi traveler yang menginginkan perjalanan yang ringkas, aman, dan nyaman tanpa mengurangi kualitas pengalaman bertemu langsung dengan hiu paus.",
     programTitle: "Itinerary Tour Hiu Paus Sumbawa Menggunakan Speed Boat",
     itinerary: {
       time1: "03.30 AM",
@@ -54,8 +55,9 @@ export const tour8Translations = {
   en: {
     title: "1 Day Whale Shark Trip (Using Speed Boat)",
     subtitle: "Starting from 1,180,000 IDR per person",
-    description1: "This Whale Shark Tour in Sumbawa using a speed boat is designed for those who prioritize efficiency and comfort while traveling.",
-    description2: "If other regular packages require you to travel almost 5 hours (land and sea) to the Whale Shark location, with a speed boat you only need about 2 hours.",
+    description1: "This Whale Shark Tour in Sumbawa using a speed boat is specially curated for those who prioritize time efficiency and travel comfort.",
+    description2: "If regular packages require you to spend almost 5 hours in combined land and sea travel to reach the whale shark location, with the speed boat your journey becomes much shorter — only about 2 hours.",
+    description3: "This package is ideal for travelers who want a concise, safe, and comfortable trip without reducing the quality of meeting whale sharks up close.",
     programTitle: "Sumbawa Whale Shark Tour Itinerary Using Speed Boat",
     itinerary: {
       time1: "03.30 AM",

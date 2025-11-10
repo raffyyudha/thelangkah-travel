@@ -2,8 +2,10 @@ export const tour4Translations = {
   id: {
     title: "Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok",
     subtitle: "Tour hiu paus yang dimulai dan diakhiri di Lombok",
-    description1: "Paket tour khusus untuk Anda yang berada di Lombok dan ingin mengunjungi hiu paus Sumbawa tanpa harus menginap di Sumbawa.",
-    description2: "Sumbawa dan Lombok berada di provinsi yang sama, keragaman alam dan keindahan disajikan di area ini, salah satunya adalah hiu paus Sumbawa.",
+    description1: "Perjalanan ini dirancang khusus untuk wisatawan yang berangkat dari Lombok dan ingin menikmati pengalaman snorkeling bersama hiu paus Teluk Saleh dengan nyaman, aman, dan efisien. Paket ini menggabungkan kemudahan perjalanan lintas pulau, pengalaman budaya lokal, dan petualangan laut terbaik di Sumbawa.",
+    description2: "Dimulai dari penjemputan di Lombok, Anda akan kami antar menuju Pelabuhan Kayangan untuk menyeberang ke Poto Tano – Sumbawa. Setibanya di Sumbawa, perjalanan dilanjutkan menuju Labuhan Jambu, pusat kegiatan wisata hiu paus. Semua rute disusun untuk memastikan perjalanan Anda tetap nyaman meski melintasi dua pulau.",
+    description3: "Trip hiu paus dimulai pagi hari menggunakan perahu tradisional, dipandu oleh tim lokal berpengalaman yang memahami karakter dan area pergerakan hiu paus di Teluk Saleh. Setiap langkah dirancang untuk memberikan pengalaman snorkeling yang aman, terkontrol, dan penuh sensasi tanpa mengganggu habitat alami mereka.",
+    description4: "Setelah selesai petualangan hiu paus, Anda akan kembali ke hotel untuk bersih diri sebelum perjalanan pulang menuju Lombok. Rute kepulangan pun sudah disusun sedemikian rupa agar waktu Anda lebih efisien dan perjalanan tetap nyaman hingga tiba kembali di Lombok.",
     programTitle: "Program Tour Start & Finish Lombok",
     day1Title: "Hari 1",
     day1Items: [
@@ -29,13 +31,18 @@ export const tour4Translations = {
     ],
     inclusionsTitle: "Yang Termasuk",
     inclusions: [
-      "Fast boat Lombok - Sumbawa PP",
-      "Transportasi darat di Sumbawa",
+      "Transportasi darat Lombok-Sumbawa PP",
+      "Kapal Ferry Lombok - Sumbawa PP",
+      "Hotel 1 malam di Labuhan Jambu",
       "Perahu tour hiu paus",
       "Pemandu profesional",
       "Peralatan snorkeling lengkap",
-      "Dokumentasi",
-      "Semua tiket masuk"
+      "Dokumentasi foto dan video di bawah air menggunakan Gopro Hero 12",
+      "Sarapan ringan saat trip hiu paus",
+      "Air mineral, teh & kopi hangat di atas perahu",
+      "Handuk & selimut",
+      "Semua tiket masuk wisata",
+      "Tiket kapal Ferry PP"
     ],
     exclusionsTitle: "Yang Tidak Termasuk",
     exclusions: [
@@ -61,8 +68,10 @@ export const tour4Translations = {
   en: {
     title: "Sumbawa Whale Shark Tour Package 2 Days 1 Night start & finish Lombok",
     subtitle: "Whale shark tour starting and ending in Lombok",
-    description1: "Special tour package for those in Lombok who want to visit Sumbawa whale sharks without having to stay overnight in Sumbawa.",
-    description2: "Sumbawa and Lombok are in the same province, natural diversity and beauty are presented in this area, one of which is the Sumbawa whale shark.",
+    description1: "This journey is specially designed for travelers departing from Lombok who want to enjoy a comfortable, safe, and efficient snorkeling experience with whale sharks in Saleh Bay. This package combines the convenience of inter-island travel, local cultural experiences, and the best sea adventures in Sumbawa.",
+    description2: "Starting with pick-up in Lombok, we will take you to Kayangan Port to cross to Poto Tano – Sumbawa. Upon arrival in Sumbawa, the journey continues to Labuhan Jambu, the center of whale shark tourism activities. All routes are arranged to ensure your journey remains comfortable even when crossing two islands.",
+    description3: "The whale shark trip begins in the early morning using a traditional boat, guided by an experienced local team who understand the characteristics and movement areas of whale sharks in Saleh Bay. Every step is designed to provide a safe, controlled, and thrilling snorkeling experience without disturbing their natural habitat.",
+    description4: "After completing the whale shark adventure, you will return to the hotel to freshen up before the return journey to Lombok. The return route is also arranged in such a way that your time is more efficient and the journey remains comfortable until you arrive back in Lombok.",
     programTitle: "Tour Program Start & Finish Lombok",
     day1Title: "Day 1",
     day1Items: [
@@ -88,13 +97,18 @@ export const tour4Translations = {
     ],
     inclusionsTitle: "Inclusions",
     inclusions: [
-      "Fast boat Lombok - Sumbawa return",
-      "Land transportation in Sumbawa",
+      "Land transportation Lombok-Sumbawa round trip",
+      "Ferry boat Lombok - Sumbawa round trip",
+      "1 night hotel accommodation in Labuhan Jambu",
       "Whale shark tour boat",
       "Professional guide",
       "Complete snorkeling equipment",
-      "Documentation",
-      "All entrance tickets"
+      "Underwater photo and video documentation using Gopro Hero 12",
+      "Light breakfast during whale shark trip",
+      "Mineral water, tea & hot coffee on the boat",
+      "Towels & blankets",
+      "All tourist entrance tickets",
+      "Ferry boat tickets round trip"
     ],
     exclusionsTitle: "Exclusions",
     exclusions: [

@@ -2,8 +2,8 @@ export const tour2Translations = {
   id: {
     title: "Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar",
     subtitle: "Paket tour 2 hari 1 malam untuk pengalaman snorkeling dengan hiu paus di Teluk Saleh",
-    description1: "Tour hiu paus Sumbawa 2 hari 1 malam memberikan pengalaman lebih lengkap dengan menginap di perahu tradisional.",
-    description2: "Nikmati matahari terbenam dan terbit di tengah laut sambil menunggu hiu paus muncul.",
+    description1: "Temukan petualangan laut terbaik di Sumbawa melalui paket 2 Hari 1 Malam Tour Hiu Paus yang praktis dan nyaman.",
+    description2: "Tour ini dirancang agar Anda menikmati budaya tentang Sumbawa, alam, dan petualangan dalam waktu singkat namun berkesan.",
     programTitle: "Program Tour 2 Hari 1 Malam",
     day1Title: "Hari 1",
     day2Title: "Hari 2",
@@ -60,8 +60,8 @@ export const tour2Translations = {
   en: {
     title: "Sumbawa Whale Shark Tour 2 Days 1 Night start & finish Sumbawa Besar",
     subtitle: "2 days 1 night tour package for whale shark snorkeling experience in Saleh Bay",
-    description1: "Sumbawa whale shark 2 days 1 night tour provides a more complete experience with overnight stay on traditional boat.",
-    description2: "Enjoy sunset and sunrise in the middle of the sea while waiting for whale sharks to appear.",
+    description1: "Discover the best sea adventure in Sumbawa through a practical and comfortable 2 Days 1 Night Whale Shark Tour package.",
+    description2: "This tour is designed for you to enjoy Sumbawa's culture, nature, and adventure in a short but memorable time.",
     programTitle: "2 Days 1 Night Tour Program",
     day1Title: "Day 1",
     day2Title: "Day 2",

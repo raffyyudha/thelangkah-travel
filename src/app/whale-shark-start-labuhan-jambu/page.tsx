@@ -97,8 +97,16 @@ export default function WhaleSharkStartLabuhanJambuPage() {
               {t.description1}
             </p>
 
-            <p className="text-gray-700 leading-relaxed mb-8">
+            <p className="text-gray-700 leading-relaxed mb-4">
               {t.description2}
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-4">
+              {t.description3}
+            </p>
+
+            <p className="text-gray-700 leading-relaxed mb-8">
+              {t.description4}
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">{t.programTitle}</h2>
