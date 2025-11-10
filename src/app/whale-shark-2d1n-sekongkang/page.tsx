@@ -8,11 +8,11 @@ import { DropdownSection, PricingTable, DynamicTourImages } from "@/components/T
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { tour1Translations } from "@/translations/tour1";
+import { tour10Translations } from "@/translations/tour10";
 
-export default function WhaleSharkStartSumbawaPage() {
+export default function WhaleShark2D1NSekongkangPage() {
   const { language } = useLanguage();
-  const t = language === 'id' ? tour1Translations.id : tour1Translations.en;
+  const t = language === 'id' ? tour10Translations.id : tour10Translations.en;
   const { t: commonT } = useLanguage();
   
   const [currentReview, setCurrentReview] = useState(0);
@@ -80,11 +80,11 @@ export default function WhaleSharkStartSumbawaPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Title */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Whale Shark Sumbawa Daily Trip
+            2D1N Trip Hiu Paus (Start & Finish Area Sekongkang)
           </h1>
 
           {/* Featured Image - Dynamic from Database */}
-          <DynamicTourImages tourName="whale-shark-start-sumbawa" />
+          <DynamicTourImages tourName="whale-shark-2d1n-sekongkang" />
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
@@ -167,16 +167,28 @@ export default function WhaleSharkStartSumbawaPage() {
           </ul>
 
             {/* Pricing Table */}
-            <PricingTable
-              title="Harga Tour"
-              data={[
-                {
-                  participants: "2 - 10",
-                  openTrip: "IDR. 1,450,000/Person",
-                  fullPrivate: "IDR. 2,500,000/person"
-                }
-              ]}
-            />
+            <div className="overflow-x-auto mb-8">
+              <table className="w-full border-collapse rounded-lg overflow-hidden shadow-md">
+                <thead>
+                  <tr className="bg-green-600 text-white">
+                    <th className="py-4 px-6 text-left font-bold text-sm md:text-base">Peserta</th>
+                    <th className="py-4 px-6 text-left font-bold text-sm md:text-base">Harga Per Orang</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white">
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">1 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 7,410,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">2 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 3,770,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">3 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 2,610,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">4 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 2,030,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">5 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,810,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">6 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,560,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">7 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,730,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">8 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,550,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">9 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,410,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">10 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,300,000</td></tr>
+                </tbody>
+              </table>
+            </div>
 
             <div className="text-center mb-8">
               <p className="text-gray-900 text-lg font-bold mb-6">Intrested with this Program Tour book Here:</p>
@@ -336,6 +348,11 @@ export default function WhaleSharkStartSumbawaPage() {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <DynamicRelatedTour
+              tourName="whale-shark-start-sumbawa"
+              title="Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar"
+              href="/whale-shark-start-sumbawa"
+            />
+            <DynamicRelatedTour
               tourName="whale-shark-1day-labuhan-jambu"
               title="Trip 1 Hari Hiu Paus (Start & Finish Labuhan Jambu)"
               href="/whale-shark-1day-labuhan-jambu"
@@ -354,11 +371,6 @@ export default function WhaleSharkStartSumbawaPage() {
               tourName="whale-shark-2d1n-poto-tano"
               title="2D1N Trip Hiu Paus (Start & Finish Area Poto Tano)"
               href="/whale-shark-2d1n-poto-tano"
-            />
-            <DynamicRelatedTour
-              tourName="whale-shark-2d1n-sekongkang"
-              title="2D1N Trip Hiu Paus (Start & Finish Area Sekongkang)"
-              href="/whale-shark-2d1n-sekongkang"
             />
             <DynamicRelatedTour
               tourName="whale-shark-start-labuhan-jambu"
@@ -393,7 +405,7 @@ export default function WhaleSharkStartSumbawaPage() {
       <BookingModal
         isOpen={isBookingModalOpen}
         onClose={() => setIsBookingModalOpen(false)}
-        tourName="Whale Shark Sumbawa Daily Tour"
+        tourName="2D1N Trip Hiu Paus (Start & Finish Area Sekongkang)"
       />
     </main>
   );

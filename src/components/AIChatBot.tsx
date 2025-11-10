@@ -42,8 +42,8 @@ export function AIChatBot() {
     setIsLoading(true);
 
     try {
-      // Call internal API route (using mock for now)
-      const response = await fetch("/api/chat-mock", {
+      // Call internal API route with OpenRouter DeepSeek
+      const response = await fetch("/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -55,12 +55,17 @@ export function AIChatBot() {
               content: `Kamu adalah AI customer service untuk Adventure Sumbawa Island, sebuah tour operator di Sumbawa, Indonesia. 
               
 Paket wisata yang tersedia:
-1. Tour Hiu Paus Teluk Saleh Harian (start/finish Sumbawa Besar)
-2. Tour Hiu Paus 2D1N (start/finish Sumbawa Besar)
-3. Paket Tour 3D2N Pulau Moyo + Hiu Paus
-4. Tour Hiu Paus 2D1N (start/finish Lombok)
-5. Paket Tour 4D3N Pulau Moyo, Pulau Kenawa & Hiu Paus
-6. Whale Shark Scuba Diving Tour 2D1N
+1. Tour Hiu Paus Teluk Saleh Sumbawa Harian (start/finish Sumbawa Besar)
+2. Trip 1 Hari Hiu Paus (start/finish Labuhan Jambu)
+3. Trip 1 Hari Hiu Paus (Menggunakan Speed Boat)
+4. Tour Wisata Hiu Paus Sumbawa 2D1N (start/finish Sumbawa Besar)
+5. 2D1N Trip Hiu Paus (start/finish Poto Tano)
+6. 2D1N Trip Hiu Paus (start/finish Sekongkang)
+7. Paket Tour Hiu Paus Sumbawa 2D1N (start/finish Lombok)
+8. Sumbawa Whale Shark Tour 2D1N (scuba diving tour)
+9. Paket Tour Sumbawa 3D2N Pulau Moyo + Hiu Paus (start/finish Sumbawa Besar)
+10. 3D2N Trip Hiu Paus - Pulau Moyo - Kenawa (start/finish Lombok)
+11. Paket Tour Sumbawa 4D3N Pulau Moyo, Pulau Kenawa & Hiu Paus
 
 Destinasi utama: Hiu Paus Teluk Saleh, Pulau Moyo, Pulau Kenawa, snorkeling, diving.
 

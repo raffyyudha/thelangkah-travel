@@ -8,11 +8,11 @@ import { DropdownSection, PricingTable, DynamicTourImages } from "@/components/T
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { tour1Translations } from "@/translations/tour1";
+import { tour8Translations } from "@/translations/tour8";
 
-export default function WhaleSharkStartSumbawaPage() {
+export default function WhaleSharkSpeedboatPage() {
   const { language } = useLanguage();
-  const t = language === 'id' ? tour1Translations.id : tour1Translations.en;
+  const t = language === 'id' ? tour8Translations.id : tour8Translations.en;
   const { t: commonT } = useLanguage();
   
   const [currentReview, setCurrentReview] = useState(0);
@@ -80,11 +80,11 @@ export default function WhaleSharkStartSumbawaPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Title */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Whale Shark Sumbawa Daily Trip
+            Trip 1 Hari Hiu Paus (Menggunakan Speed Boat)
           </h1>
 
           {/* Featured Image - Dynamic from Database */}
-          <DynamicTourImages tourName="whale-shark-start-sumbawa" />
+          <DynamicTourImages tourName="whale-shark-speedboat" />
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
@@ -167,16 +167,28 @@ export default function WhaleSharkStartSumbawaPage() {
           </ul>
 
             {/* Pricing Table */}
-            <PricingTable
-              title="Harga Tour"
-              data={[
-                {
-                  participants: "2 - 10",
-                  openTrip: "IDR. 1,450,000/Person",
-                  fullPrivate: "IDR. 2,500,000/person"
-                }
-              ]}
-            />
+            <div className="overflow-x-auto mb-8">
+              <table className="w-full border-collapse rounded-lg overflow-hidden shadow-md">
+                <thead>
+                  <tr className="bg-green-600 text-white">
+                    <th className="py-4 px-6 text-left font-bold text-sm md:text-base">Peserta</th>
+                    <th className="py-4 px-6 text-left font-bold text-sm md:text-base">Harga Per Orang</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white">
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">1 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 9,910,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">2 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 5,020,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">3 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 3,400,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">4 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 2,580,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">5 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 2,100,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">6 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,780,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">7 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,620,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">8 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,440,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">9 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,290,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">10 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,180,000</td></tr>
+                </tbody>
+              </table>
+            </div>
 
             <div className="text-center mb-8">
               <p className="text-gray-900 text-lg font-bold mb-6">Intrested with this Program Tour book Here:</p>
@@ -336,14 +348,14 @@ export default function WhaleSharkStartSumbawaPage() {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <DynamicRelatedTour
+              tourName="whale-shark-start-sumbawa"
+              title="Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar"
+              href="/whale-shark-start-sumbawa"
+            />
+            <DynamicRelatedTour
               tourName="whale-shark-1day-labuhan-jambu"
               title="Trip 1 Hari Hiu Paus (Start & Finish Labuhan Jambu)"
               href="/whale-shark-1day-labuhan-jambu"
-            />
-            <DynamicRelatedTour
-              tourName="whale-shark-speedboat"
-              title="Trip 1 Hari Hiu Paus (Menggunakan Speed Boat)"
-              href="/whale-shark-speedboat"
             />
             <DynamicRelatedTour
               tourName="whale-shark-2d1n"
@@ -393,7 +405,7 @@ export default function WhaleSharkStartSumbawaPage() {
       <BookingModal
         isOpen={isBookingModalOpen}
         onClose={() => setIsBookingModalOpen(false)}
-        tourName="Whale Shark Sumbawa Daily Tour"
+        tourName="Trip 1 Hari Hiu Paus (Menggunakan Speed Boat)"
       />
     </main>
   );

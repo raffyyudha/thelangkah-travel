@@ -8,11 +8,11 @@ import { DropdownSection, PricingTable, DynamicTourImages } from "@/components/T
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { tour1Translations } from "@/translations/tour1";
+import { tour11Translations } from "@/translations/tour11";
 
-export default function WhaleSharkStartSumbawaPage() {
+export default function WhaleSharkMoyoKenawaLombokPage() {
   const { language } = useLanguage();
-  const t = language === 'id' ? tour1Translations.id : tour1Translations.en;
+  const t = language === 'id' ? tour11Translations.id : tour11Translations.en;
   const { t: commonT } = useLanguage();
   
   const [currentReview, setCurrentReview] = useState(0);
@@ -80,11 +80,11 @@ export default function WhaleSharkStartSumbawaPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Title */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Whale Shark Sumbawa Daily Trip
+            3D2N Trip Hiu Paus - Pulau Moyo - Kenawa (Start & Finish Area Lombok)
           </h1>
 
           {/* Featured Image - Dynamic from Database */}
-          <DynamicTourImages tourName="whale-shark-start-sumbawa" />
+          <DynamicTourImages tourName="whale-shark-moyo-kenawa-lombok" />
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
@@ -108,33 +108,34 @@ export default function WhaleSharkStartSumbawaPage() {
               {t.programTitle}
             </h2>
 
-            <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>{t.itinerary.time1}</strong> : {t.itinerary.desc1}
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>{t.itinerary.time2}</strong> : {t.itinerary.desc2}
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>{t.itinerary.time3}</strong> : {t.itinerary.desc3}
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>{t.itinerary.time4}</strong> : {t.itinerary.desc4}
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>{t.itinerary.time5}</strong> : {t.itinerary.desc5}
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>{t.itinerary.time6}</strong> : {t.itinerary.desc6}
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>{t.itinerary.time7}</strong> : {t.itinerary.desc7}
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>{t.itinerary.time8}</strong> : {t.itinerary.desc8}
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-8">
-              <strong>{t.itinerary.time9}</strong> : {t.itinerary.desc9}
-            </p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time1}</strong> : {t.itinerary.desc1}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time2}</strong> : {t.itinerary.desc2}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time3}</strong> : {t.itinerary.desc3}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time4}</strong> : {t.itinerary.desc4}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time5}</strong> : {t.itinerary.desc5}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time6}</strong> : {t.itinerary.desc6}</p>
+            <p className="text-gray-700 leading-relaxed mb-4"><strong>{t.itinerary.time7}</strong> : {t.itinerary.desc7}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time8}</strong> : {t.itinerary.desc8}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time9}</strong> : {t.itinerary.desc9}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time10}</strong> : {t.itinerary.desc10}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time11}</strong> : {t.itinerary.desc11}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time12}</strong> : {t.itinerary.desc12}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time13}</strong> : {t.itinerary.desc13}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time14}</strong> : {t.itinerary.desc14}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time15}</strong> : {t.itinerary.desc15}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time16}</strong> : {t.itinerary.desc16}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time17}</strong> : {t.itinerary.desc17}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time18}</strong> : {t.itinerary.desc18}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time19}</strong> : {t.itinerary.desc19}</p>
+            <p className="text-gray-700 leading-relaxed mb-4"><strong>{t.itinerary.time20}</strong> : {t.itinerary.desc20}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time21}</strong> : {t.itinerary.desc21}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time22}</strong> : {t.itinerary.desc22}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time23}</strong> : {t.itinerary.desc23}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time24}</strong> : {t.itinerary.desc24}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time25}</strong> : {t.itinerary.desc25}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time26}</strong> : {t.itinerary.desc26}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time27}</strong> : {t.itinerary.desc27}</p>
+            <p className="text-gray-700 leading-relaxed mb-8"><strong>{t.itinerary.time28}</strong> : {t.itinerary.desc28}</p>
 
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
               {t.inclusionsTitle}
@@ -167,16 +168,28 @@ export default function WhaleSharkStartSumbawaPage() {
           </ul>
 
             {/* Pricing Table */}
-            <PricingTable
-              title="Harga Tour"
-              data={[
-                {
-                  participants: "2 - 10",
-                  openTrip: "IDR. 1,450,000/Person",
-                  fullPrivate: "IDR. 2,500,000/person"
-                }
-              ]}
-            />
+            <div className="overflow-x-auto mb-8">
+              <table className="w-full border-collapse rounded-lg overflow-hidden shadow-md">
+                <thead>
+                  <tr className="bg-green-600 text-white">
+                    <th className="py-4 px-6 text-left font-bold text-sm md:text-base">Peserta</th>
+                    <th className="py-4 px-6 text-left font-bold text-sm md:text-base">Harga Per Orang</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white">
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">1 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 8,800,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">2 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 4,460,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">3 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 3,080,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">4 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 2,380,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">5 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 2,130,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">6 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,820,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">7 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,640,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">8 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,470,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">9 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,340,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">10 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,240,000</td></tr>
+                </tbody>
+              </table>
+            </div>
 
             <div className="text-center mb-8">
               <p className="text-gray-900 text-lg font-bold mb-6">Intrested with this Program Tour book Here:</p>
@@ -336,6 +349,11 @@ export default function WhaleSharkStartSumbawaPage() {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <DynamicRelatedTour
+              tourName="whale-shark-start-sumbawa"
+              title="Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar"
+              href="/whale-shark-start-sumbawa"
+            />
+            <DynamicRelatedTour
               tourName="whale-shark-1day-labuhan-jambu"
               title="Trip 1 Hari Hiu Paus (Start & Finish Labuhan Jambu)"
               href="/whale-shark-1day-labuhan-jambu"
@@ -376,11 +394,6 @@ export default function WhaleSharkStartSumbawaPage() {
               href="/combo-moyo-whale-shark"
             />
             <DynamicRelatedTour
-              tourName="whale-shark-moyo-kenawa-lombok"
-              title="3D2N Trip Hiu Paus - Pulau Moyo - Kenawa (Start & Finish Area Lombok)"
-              href="/whale-shark-moyo-kenawa-lombok"
-            />
-            <DynamicRelatedTour
               tourName="trip-4d3n-sumbawa"
               title="Paket Tour Sumbawa 4 Hari 3 Malam Wisata Pulau Moyo, Pulau Kenawa & Hiu Paus"
               href="/trip-4d3n-sumbawa"
@@ -393,7 +406,7 @@ export default function WhaleSharkStartSumbawaPage() {
       <BookingModal
         isOpen={isBookingModalOpen}
         onClose={() => setIsBookingModalOpen(false)}
-        tourName="Whale Shark Sumbawa Daily Tour"
+        tourName="3D2N Trip Hiu Paus - Pulau Moyo - Kenawa (Start & Finish Area Lombok)"
       />
     </main>
   );

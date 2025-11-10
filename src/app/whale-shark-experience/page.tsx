@@ -291,9 +291,34 @@ export default function WhaleSharkExperiencePage() {
               href="/whale-shark-start-sumbawa"
             />
             <DynamicRelatedTour
+              tourName="whale-shark-1day-labuhan-jambu"
+              title="Trip 1 Hari Hiu Paus (Start & Finish Labuhan Jambu)"
+              href="/whale-shark-1day-labuhan-jambu"
+            />
+            <DynamicRelatedTour
+              tourName="whale-shark-speedboat"
+              title="Trip 1 Hari Hiu Paus (Menggunakan Speed Boat)"
+              href="/whale-shark-speedboat"
+            />
+            <DynamicRelatedTour
               tourName="whale-shark-2d1n"
               title="Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar"
               href="/whale-shark-2d1n"
+            />
+            <DynamicRelatedTour
+              tourName="whale-shark-2d1n-poto-tano"
+              title="2D1N Trip Hiu Paus (Start & Finish Area Poto Tano)"
+              href="/whale-shark-2d1n-poto-tano"
+            />
+            <DynamicRelatedTour
+              tourName="whale-shark-2d1n-sekongkang"
+              title="2D1N Trip Hiu Paus (Start & Finish Area Sekongkang)"
+              href="/whale-shark-2d1n-sekongkang"
+            />
+            <DynamicRelatedTour
+              tourName="whale-shark-start-labuhan-jambu"
+              title="Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok"
+              href="/whale-shark-start-labuhan-jambu"
             />
             <DynamicRelatedTour
               tourName="combo-moyo-whale-shark"
@@ -301,9 +326,9 @@ export default function WhaleSharkExperiencePage() {
               href="/combo-moyo-whale-shark"
             />
             <DynamicRelatedTour
-              tourName="whale-shark-start-labuhan-jambu"
-              title="Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok"
-              href="/whale-shark-start-labuhan-jambu"
+              tourName="whale-shark-moyo-kenawa-lombok"
+              title="3D2N Trip Hiu Paus - Pulau Moyo - Kenawa (Start & Finish Area Lombok)"
+              href="/whale-shark-moyo-kenawa-lombok"
             />
             <DynamicRelatedTour
               tourName="trip-4d3n-sumbawa"

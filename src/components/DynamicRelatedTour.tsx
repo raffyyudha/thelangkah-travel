@@ -12,9 +12,44 @@ interface DynamicRelatedTourProps {
 }
 
 export function DynamicRelatedTour({ tourName, title, href }: DynamicRelatedTourProps) {
-  const [heroImage, setHeroImage] = useState<string>("/images/hero.jpg"); // fallback
+  // Hardcoded fallback for new tours
+  const defaultImage = tourName === "whale-shark-1day-labuhan-jambu" 
+    ? "/images/whale-shark-1day-labuhan-jambu-hero.PNG" 
+    : tourName === "whale-shark-speedboat"
+    ? "/images/whale-shark-speedboat-hero.jpg"
+    : tourName === "whale-shark-2d1n-poto-tano"
+    ? "/images/whale-shark-2d1n-poto-tano-hero.PNG"
+    : tourName === "whale-shark-2d1n-sekongkang"
+    ? "/images/whale-shark-2d1n-sekongkang-hero.PNG"
+    : tourName === "whale-shark-moyo-kenawa-lombok"
+    ? "/images/whale-shark-moyo-kenawa-lombok-hero.PNG"
+    : "/images/hero.jpg";
+  
+  const [heroImage, setHeroImage] = useState<string>(defaultImage);
 
   const fetchHeroImage = useCallback(async () => {
+    // Use hardcoded image for new tours
+    if (tourName === "whale-shark-1day-labuhan-jambu") {
+      setHeroImage("/images/whale-shark-1day-labuhan-jambu-hero.PNG");
+      return;
+    }
+    if (tourName === "whale-shark-speedboat") {
+      setHeroImage("/images/whale-shark-speedboat-hero.jpg");
+      return;
+    }
+    if (tourName === "whale-shark-2d1n-poto-tano") {
+      setHeroImage("/images/whale-shark-2d1n-poto-tano-hero.PNG");
+      return;
+    }
+    if (tourName === "whale-shark-2d1n-sekongkang") {
+      setHeroImage("/images/whale-shark-2d1n-sekongkang-hero.PNG");
+      return;
+    }
+    if (tourName === "whale-shark-moyo-kenawa-lombok") {
+      setHeroImage("/images/whale-shark-moyo-kenawa-lombok-hero.PNG");
+      return;
+    }
+    
     try {
       const { data, error } = await supabase
         .from("tour_images")

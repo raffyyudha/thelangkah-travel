@@ -51,11 +51,16 @@ export default function Header() {
               title={t.packages}
               items={[
                 { label: "Tour 1: Whale Shark Start Sumbawa", href: "/whale-shark-start-sumbawa" },
-                { label: "Tour 2: Whale Shark 2D1N", href: "/whale-shark-2d1n" },
-                { label: "Tour 3: Combo Moyo & Whale Shark", href: "/combo-moyo-whale-shark" },
-                { label: "Tour 4: Whale Shark Start Lombok", href: "/whale-shark-start-labuhan-jambu" },
-                { label: "Tour 5: Sumbawa 4D3N", href: "/trip-4d3n-sumbawa" },
-                { label: "Tour 6: Whale Shark Experience", href: "/whale-shark-experience" },
+                { label: "Tour 2: Whale Shark 1 Day Labuhan Jambu", href: "/whale-shark-1day-labuhan-jambu" },
+                { label: "Tour 3: Whale Shark 2D1N", href: "/whale-shark-2d1n" },
+                { label: "Tour 4: Combo Moyo & Whale Shark", href: "/combo-moyo-whale-shark" },
+                { label: "Tour 5: Whale Shark 2D1N Poto Tano", href: "/whale-shark-2d1n-poto-tano" },
+                { label: "Tour 6: Whale Shark 2D1N Sekongkang", href: "/whale-shark-2d1n-sekongkang" },
+                { label: "Tour 7: Whale Shark Start Lombok", href: "/whale-shark-start-labuhan-jambu" },
+                { label: "Tour 8: Sumbawa 4D3N", href: "/trip-4d3n-sumbawa" },
+                { label: "Tour 9: Whale Shark Experience", href: "/whale-shark-experience" },
+                { label: "Tour 10: Whale Shark Speed Boat", href: "/whale-shark-speedboat" },
+                { label: "Tour 11: 3D2N Moyo Kenawa Lombok", href: "/whale-shark-moyo-kenawa-lombok" },
               ]}
             />
             <Link href="/gallery" className="text-gray-700 hover:text-[#00a6b5] transition-colors font-medium">
@@ -126,11 +131,16 @@ export default function Header() {
               title={t.packages}
               items={[
                 { label: "Tour 1: Whale Shark Start Sumbawa", href: "/whale-shark-start-sumbawa" },
-                { label: "Tour 2: Whale Shark 2D1N", href: "/whale-shark-2d1n" },
-                { label: "Tour 3: Combo Moyo & Whale Shark", href: "/combo-moyo-whale-shark" },
-                { label: "Tour 4: Whale Shark Start Lombok", href: "/whale-shark-start-labuhan-jambu" },
-                { label: "Tour 5: Sumbawa 4D3N", href: "/trip-4d3n-sumbawa" },
-                { label: "Tour 6: Whale Shark Experience", href: "/whale-shark-experience" },
+                { label: "Tour 2: Whale Shark 1 Day Labuhan Jambu", href: "/whale-shark-1day-labuhan-jambu" },
+                { label: "Tour 3: Whale Shark 2D1N", href: "/whale-shark-2d1n" },
+                { label: "Tour 4: Combo Moyo & Whale Shark", href: "/combo-moyo-whale-shark" },
+                { label: "Tour 5: Whale Shark 2D1N Poto Tano", href: "/whale-shark-2d1n-poto-tano" },
+                { label: "Tour 6: Whale Shark 2D1N Sekongkang", href: "/whale-shark-2d1n-sekongkang" },
+                { label: "Tour 7: Whale Shark Start Lombok", href: "/whale-shark-start-labuhan-jambu" },
+                { label: "Tour 8: Sumbawa 4D3N", href: "/trip-4d3n-sumbawa" },
+                { label: "Tour 9: Whale Shark Experience", href: "/whale-shark-experience" },
+                { label: "Tour 10: Whale Shark Speed Boat", href: "/whale-shark-speedboat" },
+                { label: "Tour 11: 3D2N Moyo Kenawa Lombok", href: "/whale-shark-moyo-kenawa-lombok" },
               ]}
             />
             <Link href="/gallery" className="block py-2 text-gray-700 hover:text-[#00a6b5]">
