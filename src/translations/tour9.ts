@@ -23,15 +23,15 @@ export const tour9Translations = {
       "Satu malam akomodasi/hotel di Desa Labuan Jambu",
       "Perahu nelayan tradisional menuju Bagang di Kawasan Teluk Saleh",
       "Perlengkapan snorkeling",
-      "Dokumentasi underwater (Gopro Hero 12)",
+      "Dokumentasi Underwater Gopro Hero 12",
       "Entrance Fee Kawasan Wisata (Biaya Konservasi dan Uang Desa)",
       "Handuk",
       "Minuman hangat di atas perahu (teh & kopi)",
-      "Air mineral selama program",
-      "Makan selama trip"
+      "Air mineral selama program"
     ],
     exclusionsTitle: "Tidak Termasuk",
     exclusions: [
+      "Makan selama trip",
       "Keperluan pribadi lainnya"
     ],
     whatToBringTitle: "Apa yang Harus Dibawa",
@@ -74,15 +74,15 @@ export const tour9Translations = {
       "One night accommodation/hotel in Labuan Jambu Village",
       "Traditional fishing boat to Bagang in Teluk Saleh Area",
       "Snorkeling equipment",
-      "Underwater documentation (Gopro Hero 12)",
+      "Underwater Documentation Gopro Hero 12",
       "Tourist Area Entrance Fee (Conservation Fee and Village Fee)",
       "Towel",
       "Hot drinks on the boat (tea & coffee)",
-      "Mineral water during the program",
-      "Meals during the trip"
+      "Mineral water during the program"
     ],
     exclusionsTitle: "Not Included",
     exclusions: [
+      "Meals during the trip",
       "Other personal needs"
     ],
     whatToBringTitle: "What to Bring",

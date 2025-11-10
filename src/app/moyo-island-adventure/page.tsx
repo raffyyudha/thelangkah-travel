@@ -324,7 +324,7 @@ export default function Page() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-6xl">
           <h2 className="text-3xl font-bold mb-8 text-gray-900">
-            Pilihan Paket Tour Sumbawa Lainnya
+            {commonT.tourRecommendedTours}
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed mb-12">
             Pulau Moyo terletak di Kabupaten Sumbawa, Provinsi Nusa Tenggara Barat. 

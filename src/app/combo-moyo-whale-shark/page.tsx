@@ -78,9 +78,7 @@ export default function ComboMoyoWhaleSharkPage() {
       <article className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Sumbawa Tour 3 Days 2 Nights
-          </h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">{t.title}</h1>
 
           {/* Featured Image - Dynamic from Database */}
           <DynamicTourImages tourName="combo-moyo-whale-shark" />
@@ -88,115 +86,83 @@ export default function ComboMoyoWhaleSharkPage() {
           {/* Content */}
           <div className="prose prose-lg max-w-none">
 
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Sumbawa Tour PackagesMoyo Island & Whale Shark in Sumbawa Experience #type A
-            </h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">{t.subtitle}</h3>
 
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Sumbawa Tour 3 Days 2 Nights after arrival go to visit Moyo Island, also known as Mojo Island, is a pristine destination located just north of Sumbawa in West Nusa Tenggara. Easily accessible from Sumbawa City, this island is a must-visit for snorkeling and diving lovers. Among the many breathtaking spots are Takat Segele, Labuan Aji Reef, Sanglo Reef, Tanjung Pasir, and Angel Reef. Each location showcases the stunning underwater beauty of the area's diverse marine flora and fauna.
-            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">{t.description1}</p>
+            <p className="text-gray-700 leading-relaxed mb-8">{t.description2}</p>
 
-            <p className="text-gray-700 leading-relaxed mb-4">
-              On the eastern side of Moyo Island lies Saleh Bay, which, thanks to its geographical positioning, provides a safe haven from the open ocean. This makes it an ideal spot to observe the majestic whale sharks that are often found here. Moyo National Park's protected waters offer a unique opportunity to experience marine life up close.
-            </p>
-
-            <p className="text-gray-700 leading-relaxed mb-8">
-              Intrigued? Embark on a Sumbawa tour with us and explore this natural wonder!
-            </p>
-
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Sumbawa Tour Itinerary</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">{t.programTitle}</h2>
             
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Exploring Moyo Island and Surroundings</h3>
-            <p className="text-gray-700 mb-2"><strong>10:30 AM</strong> – Arrival at Sumbawa Airport (SWQ). Our team will pick you up at the meeting point.</p>
-            <p className="text-gray-700 mb-2"><strong>11:00 AM</strong> – Embark on a 45-minute speedboat ride to Moyo Island.</p>
-            <p className="text-gray-700 mb-2"><strong>11:45 AM</strong> – Arrive at Moyo Island.</p>
-            <p className="text-gray-700 mb-2"><strong>12:00 PM</strong> – Enjoy lunch at a beachfront restaurant with stunning ocean views.</p>
-            <p className="text-gray-700 mb-2"><strong>1:30 PM</strong> – After lunch, get ready for a soft adventure. Hop on an ojek (motorbike taxi) for a ride to the beautiful Mata Jitu Waterfalls.</p>
-            <p className="text-gray-700 mb-2"><strong>2:00 PM</strong> – Experience the serene atmosphere of the forest and swim in the turquoise pool beneath the waterfalls.</p>
-            <p className="text-gray-700 mb-2"><strong>3:30 PM</strong> – Return to Labuan Aji Village and continue to Takat Sagele for a snorkeling adventure. You'll also visit Poto Jarum Beach, a secluded spot with white sands and vibrant coral reefs, perfect for relaxation.</p>
-            <p className="text-gray-700 mb-2"><strong>5:30 PM</strong> – After snorkeling and swimming, head back to the main island.</p>
-            <p className="text-gray-700 mb-8"><strong>6:00 PM</strong> – Arrive at Samawa Seaside Resort for check-in and free time to unwind. Dinner Available at the hotel restaurant, where you can enjoy local and international cuisine.</p>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">{t.day1Title}</h3>
+            {t.day1Items && t.day1Items.map((item: string, index: number) => (
+              <p className="text-gray-700 mb-2" key={`d1-${index}`}>{item}</p>
+            ))}
 
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Whale Shark Saleh Bay Excursion</h3>
-            <h4 className="text-lg font-bold text-gray-900 mb-3">2nd Day</h4>
-            <p className="text-gray-700 mb-2"><strong>2.00 AM</strong> – Early pick-up from Samawa Seaside Resort and depart for Labu Jambu Village (approximately 2-hour drive).</p>
-            <p className="text-gray-700 mb-2"><strong>4:00 AM</strong> – Arrive at Labu Jambu Harbour. Board the boat, get comfortable with pillows, blankets, and mattresses, and prepare for an exciting whale shark encounter.</p>
-            <p className="text-gray-700 mb-2"><strong>5:30 AM</strong> – Reach the whale shark spotting location. Our crew will attract whale sharks by feeding them baby fish, keeping them near the surface for a closer view from the boat.</p>
-            <p className="text-gray-700 mb-2"><strong>6:00 AM</strong> – Dive into the unforgettable experience of swimming, snorkeling, and diving with whale sharks. Witness these gentle giants up close in their natural habitat.</p>
-            <p className="text-gray-700 mb-2">Light breakfast will be served on board, including bread, coffee, tea, and fresh fruit.</p>
-            <p className="text-gray-700 mb-2"><strong>9:00 AM</strong> – Depart from the whale shark spots. (Departure time is flexible based on when you're done swimming).</p>
-            <p className="text-gray-700 mb-2"><strong>11:00 AM</strong> – Arrive back at Labu Jambu Harbour and continue your journey back to Samawa Seaside Resort.</p>
-            <p className="text-gray-700 mb-2"><strong>12:00 PM</strong> – Optional stop for lunch at a floating seafood restaurant, featuring fresh local dishes.</p>
-            <p className="text-gray-700 mb-8"><strong>2:30 PM</strong> – Return to Samawa Seaside Resort for check-in and free time to relax by the pool or enjoy the seaside views. Dinner Available at the resort's restaurant or at a local venue in central Sumbawa.</p>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">{t.day2Title}</h3>
+            {t.day2Items && t.day2Items.map((item: string, index: number) => (
+              <p className="text-gray-700 mb-2" key={`d2-${index}`}>{item}</p>
+            ))}
 
-            <h4 className="text-lg font-bold text-gray-900 mb-3">3rd Day</h4>
-            <p className="text-gray-700 mb-8"><strong>07.30 – 09.00 AM</strong> – After breakfast Pick up at the Hotel and transfer out to Sumbawa Airport (SWQ). End of Service</p>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">{t.day3Title}</h3>
+            {t.day3Items && t.day3Items.map((item: string, index: number) => (
+              <p className="text-gray-700 mb-8" key={`d3-${index}`}>{item}</p>
+            ))}
 
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Inclusion</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">{t.inclusionsTitle}</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-8">
-              <li>2 night Hotel + Breakfast (AC & for 2 person/room)</li>
-              <li>Car Transpotation+Driver+fuel (full AC Vehicle)</li>
-              <li>boat transfer & return</li>
-              <li>taxy bike (ojeg) fee</li>
-              <li>Licensed English Speaking Guide</li>
-              <li>Mineral water during the tour</li>
-              <li>Simple light breakfast on the boat (bread, nutella, fruit)</li>
-              <li>Coffee, tea / hot chocolate (on the boat)</li>
-              <li>Snorkling Equipment</li>
-              <li>Profesional Tour Guide</li>
-              <li>Gopro hero11-12 / sony rx100m6 (the Tour Guide will provide a picture/video as your request)</li>
-              <li>Entrance and Conservation fee</li>
+              {t.inclusions.map((item: string, index: number) => (
+                <li key={`inc-${index}`}>{item}</li>
+              ))}
             </ul>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Exclusion</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">{t.exclusionsTitle}</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-8">
-              <li>flight Ticket</li>
-              <li>Meal Beverages L&D</li>
-              <li>Personal Needed</li>
-              <li>local crew/tour guide tips</li>
+              {t.exclusions.map((item: string, index: number) => (
+                <li key={`exc-${index}`}>{item}</li>
+              ))}
             </ul>
 
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">What to bring during the Tour (optional)</h2>
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">{t.whatToBringTitle}</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-8">
-              <li>Jackets</li>
-              <li>Head lamp or flashlight</li>
-              <li>Sun Protection</li>
-              <li>Sunglasses with UV Protection</li>
+              {t.whatToBring.map((item: string, index: number) => (
+                <li key={`wtb-${index}`}>{item}</li>
+              ))}
             </ul>
 
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">Whale Shark Saleh Bay Sumbawa pricing revert to Indonesian Rupiah (IDR)</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">{commonT.priceDetailTitle}</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
-              <li>Since we cannot control Mother Nature, and due to the sea conditions on the day of the tour, it is possible that the whale shark sighting may not occur. Therefore, we will only refund IDR 1,000,000 from your total payment.</li>
-              <li>Please note that lunch is not included in this package. However, we can arrange to take you to a local restaurant before returning you to your accommodation in Sumbawa Besar City.</li>
+              {t.pricingNotes.map((note, index) => (
+                <li key={index}>{note}</li>
+              ))}
             </ul>
 
             {/* Pricing Table */}
             <PricingTable
-              title="Harga Tour"
+              title={t.pricingTitle}
               data={[
                 {
                   participants: "2-10",
-                  openTrip: "IDR. 1,450,000/orang",
-                  fullPrivate: "IDR. 2,500,000/orang"
+                  openTrip: `${language === 'en' ? 'IDR. 1,450,000/Person' : 'IDR. 1,450,000/orang'}`,
+                  fullPrivate: `${language === 'en' ? 'IDR. 2,500,000/Person' : 'IDR. 2,500,000/orang'}`
                 }
               ]}
             />
 
             <div className="text-center mb-8">
-              <p className="text-gray-900 text-lg font-bold mb-6">Intrested with this Program Tour book Here:</p>
+              <p className="text-gray-900 text-lg font-bold mb-6">{commonT.interestedBookHere}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <button
                   onClick={handleBooking}
                   className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-all"
                 >
                   <MessageCircle size={20} />
-                  Chat On WhatsApp
+                  {commonT.tourChatWhatsApp}
                 </button>
                 <button
                   onClick={() => setIsBookingModalOpen(true)}
                   className="bg-blue-900 hover:bg-blue-950 text-white px-10 py-3 rounded-full font-semibold transition-all"
                 >
-                  Book Now
+                  {commonT.bookNow}
                 </button>
               </div>
             </div>
@@ -205,7 +171,7 @@ export default function ComboMoyoWhaleSharkPage() {
             <div className="text-center mb-12">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
                 <a href="https://maps.app.goo.gl/rjMm7EoFXzLLF4XU7" className="hover:underline" target="_blank" rel="noopener noreferrer">
-                  Sumbawa Adventour Costumer Reviews (click here):
+                  {commonT.customerReviews}
                 </a>
               </h3>
               
@@ -272,56 +238,52 @@ export default function ComboMoyoWhaleSharkPage() {
                 </div>
               </div>
               
-              <p className="text-gray-700 text-base">
-                Google rating score: <strong>5.0</strong> of 5, based on <strong>68 reviews</strong>
-              </p>
+              <p className="text-gray-700 text-base">{commonT.googleRatingSummary}</p>
             </div>
 
             {/* Dropdown Sections */}
             <div className="my-12">
-              <DropdownSection title="Syarat & Ketentuan">
+              <DropdownSection title={commonT.tourTermsConditions}>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>Whale Shark Sumbawa Tour package is PRIVATE and will not be shared with other</li>
-                  <li>Children 5 years old and under at the same time of tour are free of charge</li>
-                  <li>All minors must be accompanied by parents/guardians at all time.</li>
-                  <li>Payment of a 40% deposit is required to secure a package reservation</li>
-                  <li>Flexible tour dates are available upon request</li>
-                  <li>Once you decide to book the trip please provide us with details of your feet For snorkeling and swimming fins</li>
-                  <li>The remaining payment can be transferred/cash when you meet our guide</li>
+                  <li>{commonT.termsItem1}</li>
+                  <li>{commonT.termsItem2}</li>
+                  <li>{commonT.termsItem3}</li>
+                  <li>{commonT.termsItem4}</li>
+                  <li>{commonT.termsItem5}</li>
+                  <li>{commonT.termsItem6}</li>
+                  <li>{commonT.termsItem7}</li>
                 </ul>
               </DropdownSection>
 
-              <DropdownSection title="Pembatalan & Penjadwalan ulang">
+              <DropdownSection title={commonT.tourCancellationPolicy}>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>Cancellation up to 3 days before the event: a 25% cancellation fee will apply, based on the total booking price.</li>
-                  <li>Cancellation 3 day before or on the day of the event: The deposit is non-refundable, but you will get the opportunity to do the tour any other day as scheduled with no extra charge</li>
-                  <li>No-show on the day of the event: Regardless of prior cancellation, the payment is non-refundable.</li>
-                  <li>Force majeure (e.g., bad weather, natural disasters, war): The guide reserves the right to cancel or modify the schedule/itinerary for the safety of participants and crew. Any changes or cancellations due to force majeure are non-refundable</li>
+                  <li>{commonT.cancelItem1}</li>
+                  <li>{commonT.cancelItem2}</li>
+                  <li>{commonT.cancelItem3}</li>
+                  <li>{commonT.cancelItem4}</li>
                 </ul>
               </DropdownSection>
 
-              <DropdownSection title="Hiu Paus / Whale Shark Tour FAQ'S">
+              <DropdownSection title={commonT.tourFAQTitle}>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>These sumbawa whale shark roam the ocean in search of food all the year in sumbawa saleh bay, they gather around floating fishing platforms. These platforms use strong lights that attract plankton and fish – the perfect breakfast for whale sharks!</li>
-                  <li>forbidden to touch heir skin is covered in a sensitive mucus membrane that should not be touched, can harm the whale shark and disrupt their natural behavior</li>
-                  <li>We provide all the equipment you need (snorkel, mask and fins), but feel free to bring your own. We also suggest bringing ear plugs to reduce of the loud sound of the local boat's engine that will be used to go to the Whale Shark point</li>
-                  <li>As much we cannot control Mother Nature. Sea conditions on the day may impact water visibility or other factors beyond our control. Therefore, we cannot offer any guarantees or refunds regarding sightings.</li>
-                  <li>However, we maintain strong coordination with the all the local & Crews to ensure you visit the Whale Shark Sumbawa Congregation Point at the best possible time.Thank you for your understanding as we strive to provide the best experience in harmony with nature.</li>
+                  <li>{commonT.faqItem1}</li>
+                  <li>{commonT.faqItem2}</li>
+                  <li>{commonT.faqItem3}</li>
+                  <li>{commonT.faqItem4}</li>
+                  <li>{commonT.faqItem5}</li>
                 </ul>
               </DropdownSection>
             </div>
           </div>
         </div>
       </article>
-
-      {/* Pilihan Paket Tour Sumbawa Lainnya */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Pilihan Paket Tour Sumbawa Lainnya
+            {commonT.tourRecommendedTours}
           </h2>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-12">
-            Pulau Moyo terletak di Kabupaten Sumbawa, Provinsi Nusa Tenggara Barat. Selain Pulau Moyo, berikut berbagai pilihan paket wisata lainnya yang bisa anda nikmati bersama keluarga, kerabat dan sahabat saat berlibur ke Pulau Sumbawa.
+            {commonT.relatedToursDesc}
           </p>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

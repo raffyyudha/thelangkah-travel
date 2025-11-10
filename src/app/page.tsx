@@ -39,7 +39,7 @@ export default function Home() {
             {t.heroTitle}
           </h1>
           <p className="text-lg md:text-xl text-white mb-8 leading-relaxed">
-            <span className="font-bold">Selamat datang di Adventure Sumbawa Island, penyedia layanan wisata petualangan lokal yang berbasis di Sumbawa.</span>
+            <span className="font-bold">{t.heroDesc}</span>
           </p>
         </div>
       </section>
@@ -49,79 +49,79 @@ export default function Home() {
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="mb-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-3 text-gray-900">
-              Paket Wisata Populer
+              {t.popularPackages}
             </h2>
             <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-              Paket wisata Sumbawa bersama Adventure Sumbawa Island dengan destinasi terlengkap dan pilihan paket wisata yang beragam. Dari snorkeling dengan hiu paus hingga eksplorasi pulau-pulau eksotis.
+              {t.popularDesc}
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-4">
             <DynamicPackageCard
               tourName="whale-shark-start-sumbawa"
-              title="Trip 1 hari hiu paus (A) (star & finis sumbawa besar)"
+              title={t.tourA}
               href="/whale-shark-start-sumbawa"
-              price="Mulai 750.000 IDR per orang"
+              price={t.tourAPriceFrom}
             />
             <DynamicPackageCard
               tourName="whale-shark-1day-labuhan-jambu"
-              title="Trip 1 hari hiu paus (B) (star & finis labuhan jambu)"
+              title={t.tourB}
               href="/whale-shark-1day-labuhan-jambu"
-              price="Mulai 550.000 IDR per orang"
+              price={t.tourBPriceFrom}
             />
             <DynamicPackageCard
               tourName="whale-shark-speedboat"
-              title="Trip 1 hari hiu paus (C) (Menggunakan speed boat)"
+              title={t.tourC}
               href="/whale-shark-speedboat"
-              price="Mulai 1.700.000 IDR per orang"
+              price={t.tourCPriceFrom}
             />
             <DynamicPackageCard
               tourName="whale-shark-2d1n"
-              title="2D1N Trip hiu paus (D) (Star & finish sumbawa besar)"
+              title={t.tourD}
               href="/whale-shark-2d1n"
-              price="Mulai 1.200.000 IDR per orang"
+              price={t.tourDPriceFrom}
             />
             <DynamicPackageCard
               tourName="whale-shark-2d1n-poto-tano"
-              title="2D1N Trip hiu paus (E) (Star & finish area Poto tano)"
+              title={t.tourE}
               href="/whale-shark-2d1n-poto-tano"
-              price="Mulai 1.200.000 IDR per orang"
+              price={t.tourEPriceFrom}
             />
             <DynamicPackageCard
               tourName="whale-shark-2d1n-sekongkang"
-              title="2D1N Trip hiu paus (F) (Star & finish area sakongkang)"
+              title={t.tourF}
               href="/whale-shark-2d1n-sekongkang"
-              price="Mulai 1.200.000 IDR per orang"
+              price={t.tourFPriceFrom}
             />
             <DynamicPackageCard
               tourName="whale-shark-start-labuhan-jambu"
-              title="2D1N Trip hiu paus (G) (Star & finish area Lombok)"
+              title={t.tourG}
               href="/whale-shark-start-labuhan-jambu"
-              price="Mulai 1.200.000 IDR per orang"
+              price={t.tourGPriceFrom}
             />
             <DynamicPackageCard
               tourName="whale-shark-experience"
-              title="2D1N Trip hiu paus (H) (Scuba diving sumbawa)"
+              title={t.tourH}
               href="/whale-shark-experience"
-              price="Mulai 1.200.000 IDR per orang"
+              price={t.tourHPriceFrom}
             />
             <DynamicPackageCard
               tourName="combo-moyo-whale-shark"
-              title="3D2N Trip (I) hiu paus & pulau Moyo (Star & finish sumbawa besar)"
+              title={t.tourI}
               href="/combo-moyo-whale-shark"
-              price="Mulai 1.800.000 IDR per orang"
+              price={t.tourIPriceFrom}
             />
             <DynamicPackageCard
               tourName="whale-shark-moyo-kenawa-lombok"
-              title="3D2N Trip (J) hiu paus - pulau Moyo - kenawa (Star & finish area Lombok)"
+              title={t.tourJ}
               href="/whale-shark-moyo-kenawa-lombok"
-              price="Mulai 1.800.000 IDR per orang"
+              price={t.tourJPriceFrom}
             />
             <DynamicPackageCard
               tourName="trip-4d3n-sumbawa"
-              title="4D3N Trip (K) Hiu paus-pulau Moyo-kenawa (Star & finish sumbawa besar)"
+              title={t.tourK}
               href="/trip-4d3n-sumbawa"
-              price="Mulai 1.800.000 IDR per orang"
+              price={t.tourKPriceFrom}
             />
           </div>
         </div>

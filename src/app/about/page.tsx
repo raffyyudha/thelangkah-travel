@@ -92,7 +92,7 @@ export default function AboutPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
-                <h3 className="text-white font-bold text-sm md:text-lg">Eco-Conscious</h3>
+                <h3 className="text-white font-bold text-sm md:text-lg">{t.aboutEcoConscious}</h3>
               </div>
             </div>
             <div className="relative h-48 md:h-64 rounded-2xl overflow-hidden shadow-lg group">
@@ -104,7 +104,7 @@ export default function AboutPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
-                <h3 className="text-white font-bold text-sm md:text-lg">Community Based</h3>
+                <h3 className="text-white font-bold text-sm md:text-lg">{t.aboutCommunity}</h3>
               </div>
             </div>
             <div className="relative h-48 md:h-64 rounded-2xl overflow-hidden shadow-lg group">
@@ -116,7 +116,7 @@ export default function AboutPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
-                <h3 className="text-white font-bold text-sm md:text-lg">Tim yang Passionate</h3>
+                <h3 className="text-white font-bold text-sm md:text-lg">{t.aboutPassionateTeam}</h3>
               </div>
             </div>
           </div>
@@ -128,26 +128,14 @@ export default function AboutPage() {
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">
-                Misi Kami
-              </h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Menghadirkan pengalaman wisata terbaik di Sumbawa dengan tetap menjaga kelestarian alam dan memberdayakan masyarakat lokal.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                Kami berkomitmen untuk memberikan layanan profesional, aman, dan berkesan bagi setiap tamu yang mempercayakan perjalanan mereka kepada kami.
-              </p>
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">{t.aboutMissionTitle}</h2>
+              <p className="text-gray-700 leading-relaxed mb-4">{t.aboutMissionDesc1}</p>
+              <p className="text-gray-700 leading-relaxed">{t.aboutMissionDesc2}</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">
-                Visi Kami
-              </h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Menjadi operator wisata lokal terdepan di Sumbawa yang dikenal karena kualitas layanan, komitmen terhadap lingkungan, dan kontribusi positif kepada komunitas.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                Membagikan keindahan tersembunyi Sumbawa kepada dunia sambil menjaga kelestariannya untuk generasi mendatang.
-              </p>
+              <h2 className="text-3xl font-bold mb-6 text-gray-900">{t.aboutVisionTitle}</h2>
+              <p className="text-gray-700 leading-relaxed mb-4">{t.aboutVisionDesc1}</p>
+              <p className="text-gray-700 leading-relaxed">{t.aboutVisionDesc2}</p>
             </div>
           </div>
         </div>
@@ -157,39 +145,15 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900">
-              Tim Kami
-            </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Kenali para profesional di balik pengalaman wisata Anda
-            </p>
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">{t.aboutTeamTitle}</h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">{t.aboutTeamSubtitle}</p>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            <TeamCard
-              name="Andi"
-              role="Founder & Lead Guide"
-              icon="compass"
-              description="Berpengalaman lebih dari 10 tahun sebagai guide wisata Sumbawa"
-            />
-            <TeamCard
-              name="Naja"
-              role="Operations Manager"
-              icon="briefcase"
-              description="Mengatur semua operasional trip dengan detail dan profesional"
-            />
-            <TeamCard
-              name="Haikal"
-              role="Senior Guide"
-              icon="map"
-              description="Guide berpengalaman dengan pengetahuan mendalam tentang Sumbawa"
-            />
-            <TeamCard
-              name="Alex"
-              role="Marine Expert"
-              icon="waves"
-              description="Ahli ekosistem laut dan konservasi hiu paus"
-            />
+            <TeamCard name="Andi" role={t.teamRoleFounderLeadGuide} icon="compass" description={t.teamDescFounder} />
+            <TeamCard name="Naja" role={t.teamRoleOpsManager} icon="briefcase" description={t.teamDescOps} />
+            <TeamCard name="Haikal" role={t.teamRoleSeniorGuide} icon="map" description={t.teamDescSenior} />
+            <TeamCard name="Alex" role={t.teamRoleMarineExpert} icon="waves" description={t.teamDescMarine} />
           </div>
         </div>
       </section>
@@ -207,9 +171,7 @@ export default function AboutPage() {
               />
             </div>
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-gray-900">
-                Mengapa Memilih Kami?
-              </h2>
+              <h2 className="text-4xl font-bold mb-6 text-gray-900">{t.aboutWhyChooseUs}</h2>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-[#00a6b5] flex items-center justify-center flex-shrink-0 mt-1">
@@ -218,8 +180,8 @@ export default function AboutPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Pengalaman Lokal Autentik</h3>
-                    <p className="text-gray-600">Dipandu oleh orang lokal yang mengenal setiap sudut Sumbawa</p>
+                    <h3 className="font-bold text-lg mb-1">{t.aboutLocalExperience}</h3>
+                    <p className="text-gray-600">{t.localExpertiseDesc}</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -229,8 +191,8 @@ export default function AboutPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Harga Transparan</h3>
-                    <p className="text-gray-600">Tidak ada biaya tersembunyi, semua sudah termasuk dalam paket</p>
+                    <h3 className="font-bold text-lg mb-1">{t.aboutBestValue}</h3>
+                    <p className="text-gray-600">{t.aboutBestValueDesc}</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -240,8 +202,8 @@ export default function AboutPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Fleksibel & Customizable</h3>
-                    <p className="text-gray-600">Paket dapat disesuaikan dengan kebutuhan dan budget Anda</p>
+                    <h3 className="font-bold text-lg mb-1">{t.aboutFlexibleTitle}</h3>
+                    <p className="text-gray-600">{t.aboutFlexibleDesc}</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -251,8 +213,8 @@ export default function AboutPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Responsif 24/7</h3>
-                    <p className="text-gray-600">Tim kami siap membantu Anda kapan saja melalui WhatsApp</p>
+                    <h3 className="font-bold text-lg mb-1">{t.supportedWay}</h3>
+                    <p className="text-gray-600">{t.supportedWayDesc}</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -262,8 +224,8 @@ export default function AboutPage() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-1">Dokumentasi Profesional</h3>
-                    <p className="text-gray-600">Kami membantu mengabadikan momen terbaik Anda</p>
+                    <h3 className="font-bold text-lg mb-1">{t.aboutProDocumentationTitle}</h3>
+                    <p className="text-gray-600">{t.aboutProDocumentationDesc}</p>
                   </div>
                 </li>
               </ul>
@@ -275,12 +237,8 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-[#00a6b5] to-[#008c9a] text-white">
         <div className="container mx-auto px-6 max-w-7xl text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Siap Berpetualang Bersama Kami?
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Hubungi kami sekarang dan mulai rencanakan petualangan tak terlupakan Anda di Sumbawa
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">{t.aboutCTAHeading}</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">{t.aboutCTADesc}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://wa.me/6282341331975?text=Halo%20Adventure%20Sumbawa%20Island,%20saya%20ingin%20booking%20trip"
@@ -289,13 +247,13 @@ export default function AboutPage() {
               className="inline-flex items-center justify-center gap-2 bg-white text-[#00a6b5] px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl"
             >
               <MessageCircle size={24} />
-              Chat via WhatsApp
+              {t.tourChatWhatsApp}
             </a>
             <Link
               href="/tours"
               className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-[#00a6b5] transition-all transform hover:scale-105"
             >
-              Lihat Paket Wisata
+              {t.aboutCTASeePackages}
             </Link>
           </div>
         </div>

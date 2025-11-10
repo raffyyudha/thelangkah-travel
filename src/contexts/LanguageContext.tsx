@@ -76,6 +76,31 @@ interface LanguageContextType {
     aboutSafetyFirst: string;
     aboutEcoFriendly: string;
     aboutWhyChooseUs: string;
+    aboutMissionTitle: string;
+    aboutMissionDesc1: string;
+    aboutMissionDesc2: string;
+    aboutVisionTitle: string;
+    aboutVisionDesc1: string;
+    aboutVisionDesc2: string;
+    aboutTeamTitle: string;
+    aboutTeamSubtitle: string;
+    aboutPassionateTeam: string;
+    aboutFlexibleTitle: string;
+    aboutFlexibleDesc: string;
+    aboutProDocumentationTitle: string;
+    aboutProDocumentationDesc: string;
+    contactUsTitle: string;
+    aboutCTAHeading: string;
+    aboutCTADesc: string;
+    aboutCTASeePackages: string;
+    teamRoleFounderLeadGuide: string;
+    teamRoleOpsManager: string;
+    teamRoleSeniorGuide: string;
+    teamRoleMarineExpert: string;
+    teamDescFounder: string;
+    teamDescOps: string;
+    teamDescSenior: string;
+    teamDescMarine: string;
     aboutExpertTeam: string;
     aboutExpertTeamDesc: string;
     aboutSafetyCertified: string;
@@ -174,6 +199,56 @@ interface LanguageContextType {
     tourDuration: string;
     tourMinPax: string;
     tourStartingFrom: string;
+    
+    // Homepage Tour Titles
+    tourA: string;
+    tourAPriceFrom: string;
+    tourB: string;
+    tourBPriceFrom: string;
+    tourC: string;
+    tourCPriceFrom: string;
+    tourD: string;
+    tourDPriceFrom: string;
+    tourE: string;
+    tourEPriceFrom: string;
+    tourF: string;
+    tourFPriceFrom: string;
+    tourG: string;
+    tourGPriceFrom: string;
+    tourH: string;
+    tourHPriceFrom: string;
+    tourI: string;
+    tourIPriceFrom: string;
+    tourJ: string;
+    tourJPriceFrom: string;
+    tourK: string;
+    tourKPriceFrom: string;
+    
+    // Tour Page CTA
+    interestedBookHere: string;
+    customerReviews: string;
+    googleRatingSummary: string;
+    tourFAQTitle: string;
+    
+    // Common Tour Dropdown Content
+    termsItem1: string;
+    termsItem2: string;
+    termsItem3: string;
+    termsItem4: string;
+    termsItem5: string;
+    termsItem6: string;
+    termsItem7: string;
+    cancelItem1: string;
+    cancelItem2: string;
+    cancelItem3: string;
+    cancelItem4: string;
+    faqItem1: string;
+    faqItem2: string;
+    faqItem3: string;
+    faqItem4: string;
+    faqItem5: string;
+    relatedToursDesc: string;
+    priceDetailTitle: string;
   };
 }
 
@@ -273,6 +348,31 @@ const translations = {
     aboutSafetyFirst: "Keselamatan Utama",
     aboutEcoFriendly: "Ramah Lingkungan",
     aboutWhyChooseUs: "Mengapa Memilih Kami?",
+    aboutMissionTitle: "Misi Kami",
+    aboutMissionDesc1: "Menghadirkan pengalaman wisata terbaik di Sumbawa dengan tetap menjaga kelestarian alam dan memberdayakan masyarakat lokal.",
+    aboutMissionDesc2: "Kami berkomitmen untuk memberikan layanan profesional, aman, dan berkesan bagi setiap tamu yang mempercayakan perjalanan mereka kepada kami.",
+    aboutVisionTitle: "Visi Kami",
+    aboutVisionDesc1: "Menjadi operator wisata lokal terdepan di Sumbawa yang dikenal karena kualitas layanan, komitmen terhadap lingkungan, dan kontribusi positif kepada komunitas.",
+    aboutVisionDesc2: "Membagikan keindahan tersembunyi Sumbawa kepada dunia sambil menjaga kelestariannya untuk generasi mendatang.",
+    aboutTeamTitle: "Tim Kami",
+    aboutTeamSubtitle: "Kenali para profesional di balik pengalaman wisata Anda",
+    aboutPassionateTeam: "Tim yang Passionate",
+    aboutFlexibleTitle: "Fleksibel & Customizable",
+    aboutFlexibleDesc: "Paket dapat disesuaikan dengan kebutuhan dan budget Anda",
+    aboutProDocumentationTitle: "Dokumentasi Profesional",
+    aboutProDocumentationDesc: "Kami membantu mengabadikan momen terbaik Anda",
+    contactUsTitle: "Hubungi Kami",
+    aboutCTAHeading: "Siap Berpetualang Bersama Kami?",
+    aboutCTADesc: "Hubungi kami sekarang dan mulai rencanakan petualangan tak terlupakan Anda di Sumbawa",
+    aboutCTASeePackages: "Lihat Paket Wisata",
+    teamRoleFounderLeadGuide: "Founder & Lead Guide",
+    teamRoleOpsManager: "Operations Manager",
+    teamRoleSeniorGuide: "Senior Guide",
+    teamRoleMarineExpert: "Marine Expert",
+    teamDescFounder: "Berpengalaman lebih dari 10 tahun sebagai guide wisata Sumbawa",
+    teamDescOps: "Mengatur semua operasional trip dengan detail dan profesional",
+    teamDescSenior: "Guide berpengalaman dengan pengetahuan mendalam tentang Sumbawa",
+    teamDescMarine: "Ahli ekosistem laut dan konservasi hiu paus",
     aboutExpertTeam: "Tim Ahli Berpengalaman",
     aboutExpertTeamDesc: "Tim kami terdiri dari guide lokal berpengalaman yang mengenal setiap sudut Sumbawa",
     aboutSafetyCertified: "Bersertifikat Keselamatan",
@@ -371,6 +471,56 @@ const translations = {
     tourDuration: "Durasi",
     tourMinPax: "Minimal",
     tourStartingFrom: "Mulai dari",
+    
+    // Homepage Tour Titles
+    tourA: "Trip 1 hari hiu paus (A) (star & finis sumbawa besar)",
+    tourAPriceFrom: "Mulai 750.000 IDR per orang",
+    tourB: "Trip 1 hari hiu paus (B) (star & finis labuhan jambu)",
+    tourBPriceFrom: "Mulai 550.000 IDR per orang",
+    tourC: "Trip 1 hari hiu paus (C) (Menggunakan speed boat)",
+    tourCPriceFrom: "Mulai 1.700.000 IDR per orang",
+    tourD: "2D1N Trip hiu paus (D) (Star & finish sumbawa besar)",
+    tourDPriceFrom: "Mulai 1.200.000 IDR per orang",
+    tourE: "2D1N Trip hiu paus (E) (Star & finish area Poto tano)",
+    tourEPriceFrom: "Mulai 1.200.000 IDR per orang",
+    tourF: "2D1N Trip hiu paus (F) (Star & finish area sakongkang)",
+    tourFPriceFrom: "Mulai 1.200.000 IDR per orang",
+    tourG: "2D1N Trip hiu paus (G) (Star & finish area Lombok)",
+    tourGPriceFrom: "Mulai 1.200.000 IDR per orang",
+    tourH: "2D1N Trip hiu paus (H) (Scuba diving sumbawa)",
+    tourHPriceFrom: "Mulai 1.200.000 IDR per orang",
+    tourI: "3D2N Trip (I) hiu paus & pulau Moyo (Star & finish sumbawa besar)",
+    tourIPriceFrom: "Mulai 1.800.000 IDR per orang",
+    tourJ: "3D2N Trip (J) hiu paus - pulau Moyo - kenawa (Star & finish area Lombok)",
+    tourJPriceFrom: "Mulai 1.800.000 IDR per orang",
+    tourK: "4D3N Trip (K) Hiu paus-pulau Moyo-kenawa (Star & finish sumbawa besar)",
+    tourKPriceFrom: "Mulai 1.800.000 IDR per orang",
+    
+    // Tour Page CTA
+    interestedBookHere: "Tertarik dengan Program Tour ini? Book Di Sini:",
+    customerReviews: "Review Pelanggan Whale Shark Sumbawa (klik di sini):",
+    googleRatingSummary: "Skor Google: 5.0 dari 5, berdasarkan 68 ulasan",
+    tourFAQTitle: "Hiu Paus / Whale Shark Tour FAQ",
+    
+    // Common Tour Dropdown Content
+    termsItem1: "Paket Tour Hiu Paus Sumbawa bersifat PRIVATE dan tidak akan digabung dengan peserta lain",
+    termsItem2: "Anak usia 5 tahun ke bawah pada saat tour gratis",
+    termsItem3: "Semua anak di bawah umur harus didampingi orang tua/wali setiap saat",
+    termsItem4: "Pembayaran deposit 40% diperlukan untuk mengamankan reservasi paket",
+    termsItem5: "Tanggal tour yang fleksibel tersedia berdasarkan permintaan",
+    termsItem6: "Setelah Anda memutuskan untuk booking trip, mohon berikan detail ukuran kaki Anda untuk fins snorkeling dan berenang",
+    termsItem7: "Pembayaran sisa dapat ditransfer/tunai saat Anda bertemu guide kami",
+    cancelItem1: "Pembatalan hingga 3 hari sebelum acara: biaya pembatalan 25% akan dikenakan, berdasarkan total harga booking",
+    cancelItem2: "Pembatalan 3 hari sebelum atau pada hari acara: Deposit tidak dapat dikembalikan, tetapi Anda akan mendapat kesempatan untuk melakukan tour di hari lain sesuai jadwal tanpa biaya tambahan",
+    cancelItem3: "Tidak hadir pada hari acara: Terlepas dari pembatalan sebelumnya, pembayaran tidak dapat dikembalikan",
+    cancelItem4: "Force majeure (misalnya cuaca buruk, bencana alam, perang): Guide berhak membatalkan atau memodifikasi jadwal/itinerary demi keselamatan peserta dan kru. Setiap perubahan atau pembatalan karena force majeure tidak dapat dikembalikan",
+    faqItem1: "Hiu paus Sumbawa berkeliaran di lautan mencari makanan sepanjang tahun di teluk Saleh Sumbawa, mereka berkumpul di sekitar platform penangkapan ikan terapung. Platform ini menggunakan lampu terang yang menarik plankton dan ikan – sarapan sempurna untuk hiu paus!",
+    faqItem2: "Dilarang menyentuh kulit mereka yang tertutup membran mukus sensitif yang tidak boleh disentuh, dapat membahayakan hiu paus dan mengganggu perilaku alami mereka",
+    faqItem3: "Kami menyediakan semua peralatan yang Anda butuhkan (snorkel, masker dan fins), tetapi jangan ragu untuk membawa milik Anda sendiri. Kami juga menyarankan membawa ear plugs untuk mengurangi suara keras mesin perahu lokal yang akan digunakan untuk pergi ke titik Hiu Paus",
+    faqItem4: "Kami tidak dapat mengontrol Alam. Kondisi laut pada hari itu dapat mempengaruhi visibilitas air atau faktor lain di luar kendali kami. Oleh karena itu, kami tidak dapat menawarkan jaminan atau pengembalian dana terkait penampakan",
+    faqItem5: "Namun, kami menjaga koordinasi yang kuat dengan semua lokal & Kru untuk memastikan Anda mengunjungi Titik Kongregasi Hiu Paus Sumbawa pada waktu terbaik. Terima kasih atas pengertian Anda saat kami berusaha memberikan pengalaman terbaik yang harmonis dengan alam",
+    relatedToursDesc: "Pulau Moyo terletak di Kabupaten Sumbawa, Provinsi Nusa Tenggara Barat. Selain Pulau Moyo, berikut berbagai pilihan paket wisata lainnya yang bisa anda nikmati bersama keluarga, kerabat dan sahabat saat berlibur ke Pulau Sumbawa.",
+    priceDetailTitle: "Detail Harga Paket",
   },
   en: {
     // Navigation
@@ -467,6 +617,31 @@ const translations = {
     aboutSafetyFirst: "Safety First",
     aboutEcoFriendly: "Eco-Friendly",
     aboutWhyChooseUs: "Why Choose Us?",
+    aboutMissionTitle: "Our Mission",
+    aboutMissionDesc1: "Deliver the best travel experiences in Sumbawa while preserving nature and empowering local communities.",
+    aboutMissionDesc2: "We are committed to providing professional, safe and memorable services for every guest who entrusts their journey to us.",
+    aboutVisionTitle: "Our Vision",
+    aboutVisionDesc1: "To become the leading local tour operator in Sumbawa known for service quality, environmental commitment, and positive contribution to the community.",
+    aboutVisionDesc2: "To share Sumbawa's hidden beauty with the world while preserving it for future generations.",
+    aboutTeamTitle: "Our Team",
+    aboutTeamSubtitle: "Meet the professionals behind your travel experience",
+    aboutPassionateTeam: "Passionate Team",
+    aboutFlexibleTitle: "Flexible & Customizable",
+    aboutFlexibleDesc: "Packages can be tailored to your needs and budget",
+    aboutProDocumentationTitle: "Professional Documentation",
+    aboutProDocumentationDesc: "We help capture your best moments",
+    contactUsTitle: "Contact Us",
+    aboutCTAHeading: "Ready to Adventure with Us?",
+    aboutCTADesc: "Contact us now and start planning your unforgettable Sumbawa adventure",
+    aboutCTASeePackages: "See Tour Packages",
+    teamRoleFounderLeadGuide: "Founder & Lead Guide",
+    teamRoleOpsManager: "Operations Manager",
+    teamRoleSeniorGuide: "Senior Guide",
+    teamRoleMarineExpert: "Marine Expert",
+    teamDescFounder: "Over 10 years of experience as a Sumbawa tour guide",
+    teamDescOps: "Manages all trip operations with detail and professionalism",
+    teamDescSenior: "Experienced guide with deep knowledge of Sumbawa",
+    teamDescMarine: "Expert in marine ecosystems and whale shark conservation",
     aboutExpertTeam: "Expert Team",
     aboutExpertTeamDesc: "Our team consists of experienced local guides who know every corner of Sumbawa",
     aboutSafetyCertified: "Safety Certified",
@@ -565,6 +740,56 @@ const translations = {
     tourDuration: "Duration",
     tourMinPax: "Minimum",
     tourStartingFrom: "Starting from",
+    
+    // Homepage Tour Titles
+    tourA: "1 Day Whale Shark Trip (A) (Start & Finish Sumbawa Besar)",
+    tourAPriceFrom: "Starting from 750,000 IDR per person",
+    tourB: "1 Day Whale Shark Trip (B) (Start & Finish Labuhan Jambu)",
+    tourBPriceFrom: "Starting from 550,000 IDR per person",
+    tourC: "1 Day Whale Shark Trip (C) (Using Speed Boat)",
+    tourCPriceFrom: "Starting from 1,700,000 IDR per person",
+    tourD: "2D1N Whale Shark Trip (D) (Start & Finish Sumbawa Besar)",
+    tourDPriceFrom: "Starting from 1,200,000 IDR per person",
+    tourE: "2D1N Whale Shark Trip (E) (Start & Finish Poto Tano Area)",
+    tourEPriceFrom: "Starting from 1,200,000 IDR per person",
+    tourF: "2D1N Whale Shark Trip (F) (Start & Finish Sekongkang Area)",
+    tourFPriceFrom: "Starting from 1,200,000 IDR per person",
+    tourG: "2D1N Whale Shark Trip (G) (Start & Finish Lombok Area)",
+    tourGPriceFrom: "Starting from 1,200,000 IDR per person",
+    tourH: "2D1N Whale Shark Trip (H) (Scuba Diving Sumbawa)",
+    tourHPriceFrom: "Starting from 1,200,000 IDR per person",
+    tourI: "3D2N Trip (I) Whale Shark & Moyo Island (Start & Finish Sumbawa Besar)",
+    tourIPriceFrom: "Starting from 1,800,000 IDR per person",
+    tourJ: "3D2N Trip (J) Whale Shark - Moyo Island - Kenawa (Start & Finish Lombok Area)",
+    tourJPriceFrom: "Starting from 1,800,000 IDR per person",
+    tourK: "4D3N Trip (K) Whale Shark - Moyo Island - Kenawa (Start & Finish Sumbawa Besar)",
+    tourKPriceFrom: "Starting from 1,800,000 IDR per person",
+    
+    // Tour Page CTA
+    interestedBookHere: "Ready to book this tour? Book Here:",
+    customerReviews: "Whale Shark Sumbawa Customer Reviews (click here):",
+    googleRatingSummary: "Google rating score: 5.0 of 5, based on 68 reviews",
+    tourFAQTitle: "Whale Shark Tour FAQ",
+    
+    // Common Tour Dropdown Content
+    termsItem1: "Whale Shark Sumbawa Tour package is PRIVATE and will not be shared with other",
+    termsItem2: "Children 5 years old and under at the same time of tour are free of charge",
+    termsItem3: "All minors must be accompanied by parents/guardians at all time",
+    termsItem4: "Payment of a 40% deposit is required to secure a package reservation",
+    termsItem5: "Flexible tour dates are available upon request",
+    termsItem6: "Once you decide to book the trip please provide us with details of your feet For snorkeling and swimming fins",
+    termsItem7: "The remaining payment can be transferred/cash when you meet our guide",
+    cancelItem1: "Cancellation up to 3 days before the event: a 25% cancellation fee will apply, based on the total booking price",
+    cancelItem2: "Cancellation 3 day before or on the day of the event: The deposit is non-refundable, but you will get the opportunity to do the tour any other day as scheduled with no extra charge",
+    cancelItem3: "No-show on the day of the event: Regardless of prior cancellation, the payment is non-refundable",
+    cancelItem4: "Force majeure (e.g., bad weather, natural disasters, war): The guide reserves the right to cancel or modify the schedule/itinerary for the safety of participants and crew. Any changes or cancellations due to force majeure are non-refundable",
+    faqItem1: "These sumbawa whale shark roam the ocean in search of food all the year in sumbawa saleh bay, they gather around floating fishing platforms. These platforms use strong lights that attract plankton and fish – the perfect breakfast for whale sharks!",
+    faqItem2: "forbidden to touch heir skin is covered in a sensitive mucus membrane that should not be touched, can harm the whale shark and disrupt their natural behavior",
+    faqItem3: "We provide all the equipment you need (snorkel, mask and fins), but feel free to bring your own. We also suggest bringing ear plugs to reduce of the loud sound of the local boat's engine that will be used to go to the Whale Shark point",
+    faqItem4: "As much we cannot control Mother Nature. Sea conditions on the day may impact water visibility or other factors beyond our control. Therefore, we cannot offer any guarantees or refunds regarding sightings",
+    faqItem5: "However, we maintain strong coordination with the all the local & Crews to ensure you visit the Whale Shark Sumbawa Congregation Point at the best possible time.Thank you for your understanding as we strive to provide the best experience in harmony with nature",
+    relatedToursDesc: "Moyo Island is located in Sumbawa Regency, West Nusa Tenggara Province. Besides Moyo Island, here are various other tour package options that you can enjoy with family, relatives and friends when vacationing to Sumbawa Island.",
+    priceDetailTitle: "Package Price Details",
   }
 };
 

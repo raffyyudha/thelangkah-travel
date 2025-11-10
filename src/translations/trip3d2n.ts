@@ -16,7 +16,6 @@ export const trip3d2nTranslations = {
       "Transportasi AC penuh",
       "Perahu tour",
       "Pemandu profesional",
-      "Semua makan (3x sarapan, 3x makan siang, 2x makan malam)",
       "Air mineral",
       "Peralatan snorkeling",
       "Tiket masuk semua destinasi",
@@ -24,6 +23,7 @@ export const trip3d2nTranslations = {
     ],
     exclusionsTitle: "Yang Tidak Termasuk",
     exclusions: [
+      "Makan selama tour",
       "Hotel di Sumbawa Besar",
       "Pengeluaran pribadi",
       "Tips"
@@ -48,7 +48,6 @@ export const trip3d2nTranslations = {
       "Full AC transportation",
       "Tour boat",
       "Professional guide",
-      "All meals (3x breakfast, 3x lunch, 2x dinner)",
       "Mineral water",
       "Snorkeling equipment",
       "Entrance tickets to all destinations",
@@ -56,6 +55,7 @@ export const trip3d2nTranslations = {
     ],
     exclusionsTitle: "Exclusions",
     exclusions: [
+      "Meals during tour",
       "Hotel in Sumbawa Besar",
       "Personal expenses",
       "Tips"

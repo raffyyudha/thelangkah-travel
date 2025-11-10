@@ -79,92 +79,67 @@ export default function WhaleSharkExperiencePage() {
       <article className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Sumbawa Whale Shark Tours
-          </h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">{t.title}</h1>
 
           {/* Featured Image - Dynamic from Database */}
           <DynamicTourImages tourName="whale-shark-experience" />
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Sumbawa Adventour specializes in offering unique experiences with sumbawa whale sharks in Saleh Bay
-            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">{t.intro1}</p>
 
-            <p className="text-gray-700 leading-relaxed mb-4">
-              The presence of whalesharks sumbawa in Saleh Bay has been observed for many years. Their natural appearance in this bay is largely due to the regular activities of local fishermen from Sumbawa Island, who work & fishing in the area year-round.
-            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">{t.intro2}</p>
 
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Welcome to Sumbawa Adventour!, we specialize in offering Sumbawa Whale Shark Tours in the Saleh Bay area. Here, you'll have the unique opportunity to encounter the world's largest fish – the whale shark. These gentle giants are harmless and easily identifiable by their distinct patterns. Moreover, they are commonly found in the warm tropical waters of Sumbawa, particularly in Saleh Bay, near Mount <a href="https://en.wikipedia.org/wiki/Mount_Tambora" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Tambora</a>, and southeast of Moyo Island.
-            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">{t.intro3}</p>
 
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Dive into the stunning underwater world, with its crystal-clear waters and unforgettable experiences, with all our experienced team ensures your safety and enjoyment.
-            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">{t.intro4}</p>
 
-            <p className="text-gray-700 leading-relaxed mb-8 font-semibold">
-              Book your spot Now for an unforgettable whale shark snorkeling adventure in Sumbawa's aquatic paradise!
-            </p>
+            <p className="text-gray-700 leading-relaxed mb-8 font-semibold">{t.ctaLead}</p>
 
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-              Sumbawa Whale Sharks Tour Base on Pick Up Location
-            </h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">{t.locationBaseTitle}</h2>
 
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
-              Sumbawa Whale Shark Daily Tour start & finish Sumbawa Besar
-            </h3>
+            {t.locationOptions && (
+              <div className="space-y-2 mb-8">
+                {t.locationOptions.map((opt: string, idx: number) => (
+                  <h3 key={idx} className="text-xl font-bold text-gray-900">{opt}</h3>
+                ))}
+              </div>
+            )}
 
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
-              Whale Shark Sumbawa 2 Days 1 Night Tour start & finish Sumbawa Besar
-            </h3>
-
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
-              Sumbawa Whale Shark & Moyo Island Tour 3 Days 2 Night
-            </h3>
-
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
-              Whale Shark Sumbawa & Moyo Island Tour 1 Day Fast Boat
-            </h3>
-
-            <h3 className="text-xl font-bold text-gray-900 mb-8">
-              Whale Shark in Sumbawa, Moyo Island & Kenawa Island - 4 Days 3 Nights
-            </h3>
-
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">Whale Shark Saleh Bay Sumbawa pricing revert to Indonesian Rupiah (IDR)</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">{commonT.priceDetailTitle}</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
-              <li>Since we cannot control Mother Nature, and due to the sea conditions on the day of the tour, it is possible that the whale shark sighting may not occur. Therefore, we will only refund IDR 1,000,000 from your total payment.</li>
-              <li>Please note that lunch is not included in this package. However, we can arrange to take you to a local restaurant before returning you to your accommodation in Sumbawa Besar City.</li>
+              {t.pricingNotes.map((note, index) => (
+                <li key={index}>{note}</li>
+              ))}
             </ul>
 
             {/* Pricing Table */}
             <PricingTable
-              title="Harga Tour"
+              title={t.pricingTitle}
               data={[
                 {
                   participants: "2-10",
-                  openTrip: "IDR. 1,450,000/orang",
-                  fullPrivate: "IDR. 2,500,000/orang"
+                  openTrip: `${language === 'en' ? 'IDR. 1,450,000/Person' : 'IDR. 1,450,000/orang'}`,
+                  fullPrivate: `${language === 'en' ? 'IDR. 2,500,000/Person' : 'IDR. 2,500,000/orang'}`
                 }
               ]}
             />
 
             <div className="text-center mb-8">
-              <p className="text-gray-900 text-lg font-bold mb-6">Intrested with this Program Tour book Here:</p>
+              <p className="text-gray-900 text-lg font-bold mb-6">{commonT.interestedBookHere}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <button
                   onClick={handleBooking}
                   className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-all"
                 >
                   <MessageCircle size={20} />
-                  Chat On WhatsApp
+                  {commonT.tourChatWhatsApp}
                 </button>
                 <button
                   onClick={() => setIsBookingModalOpen(true)}
                   className="bg-blue-900 hover:bg-blue-950 text-white px-10 py-3 rounded-full font-semibold transition-all"
                 >
-                  Book Now
+                  {commonT.bookNow}
                 </button>
               </div>
             </div>
@@ -173,7 +148,7 @@ export default function WhaleSharkExperiencePage() {
             <div className="text-center mb-12">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
                 <a href="https://maps.app.goo.gl/rjMm7EoFXzLLF4XU7" className="hover:underline" target="_blank" rel="noopener noreferrer">
-                  Sumbawa Whale Shark Costumer Reviews (click here):
+                  {commonT.customerReviews}
                 </a>
               </h3>
               
@@ -240,48 +215,46 @@ export default function WhaleSharkExperiencePage() {
             </div>
 
             {/* Dropdown Sections */}
-            <DropdownSection title="Syarat & Ketentuan">
+            <DropdownSection title={commonT.tourTermsConditions}>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>Whale Shark Sumbawa Tour package is PRIVATE and will not be shared with other</li>
-                <li>Children 5 years old and under at the same time of tour are free of charge</li>
-                <li>All minors must be accompanied by parents/guardians at all time.</li>
-                <li>Payment of a 40% deposit is required to secure a package reservation</li>
-                <li>Flexible tour dates are available upon request</li>
-                <li>Once you decide to book the trip please provide us with details of your feet For snorkeling and swimming fins</li>
-                <li>The remaining payment can be transferred/cash when you meet our guide</li>
+                <li>{commonT.termsItem1}</li>
+                <li>{commonT.termsItem2}</li>
+                <li>{commonT.termsItem3}</li>
+                <li>{commonT.termsItem4}</li>
+                <li>{commonT.termsItem5}</li>
+                <li>{commonT.termsItem6}</li>
+                <li>{commonT.termsItem7}</li>
               </ul>
             </DropdownSection>
 
-            <DropdownSection title="Pembatalan & Penjadwalan ulang">
+            <DropdownSection title={commonT.tourCancellationPolicy}>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>Cancellation up to 3 days before the event: a 25% cancellation fee will apply, based on the total booking price.</li>
-                <li>Cancellation 3 day before or on the day of the event: The deposit is non-refundable, but you will get the opportunity to do the tour any other day as scheduled with no extra charge</li>
-                <li>No-show on the day of the event: Regardless of prior cancellation, the payment is non-refundable.</li>
-                <li>Force majeure (e.g., bad weather, natural disasters, war): The guide reserves the right to cancel or modify the schedule/itinerary for the safety of participants and crew. Any changes or cancellations due to force majeure are non-refundable</li>
+                <li>{commonT.cancelItem1}</li>
+                <li>{commonT.cancelItem2}</li>
+                <li>{commonT.cancelItem3}</li>
+                <li>{commonT.cancelItem4}</li>
               </ul>
             </DropdownSection>
 
-            <DropdownSection title="Hiu Paus / Whale Shark Tour FAQ'S">
+            <DropdownSection title={commonT.tourFAQTitle}>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>These sumbawa whale shark roam the ocean in search of food all the year in sumbawa saleh bay, they gather around floating fishing platforms. These platforms use strong lights that attract plankton and fish – the perfect breakfast for whale sharks!</li>
-                <li>forbidden to touch heir skin is covered in a sensitive mucus membrane that should not be touched, can harm the whale shark and disrupt their natural behavior</li>
-                <li>We provide all the equipment you need (snorkel, mask and fins), but feel free to bring your own. We also suggest bringing ear plugs to reduce of the loud sound of the local boat's engine that will be used to go to the Whale Shark point</li>
-                <li>As much we cannot control Mother Nature. Sea conditions on the day may impact water visibility or other factors beyond our control. Therefore, we cannot offer any guarantees or refunds regarding sightings.</li>
-                <li>However, we maintain strong coordination with the all the local & Crews to ensure you visit the Whale Shark Sumbawa Congregation Point at the best possible time.Thank you for your understanding as we strive to provide the best experience in harmony with nature.</li>
+                  <li>{commonT.faqItem1}</li>
+                <li>{commonT.faqItem2}</li>
+                <li>{commonT.faqItem3}</li>
+                <li>{commonT.faqItem4}</li>
+                <li>{commonT.faqItem5}</li>
               </ul>
             </DropdownSection>
           </div>
         </div>
       </article>
-
-      {/* Pilihan Paket Tour Sumbawa Lainnya */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Pilihan Paket Tour Sumbawa Lainnya
+            {commonT.tourRecommendedTours}
           </h2>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-12">
-            Pulau Moyo terletak di Kabupaten Sumbawa, Provinsi Nusa Tenggara Barat. Selain Pulau Moyo, berikut berbagai pilihan paket wisata lainnya yang bisa anda nikmati bersama keluarga, kerabat dan sahabat saat berlibur ke Pulau Sumbawa.
+            {commonT.relatedToursDesc}
           </p>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

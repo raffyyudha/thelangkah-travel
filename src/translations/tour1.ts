@@ -27,7 +27,7 @@ export const tour1Translations = {
       "Kopi, teh / coklat panas (di perahu)",
       "Alat snorkeling (masker standar tinggi dengan antifog, snorkel & fins)",
       "Pemandu Tour Profesional",
-      "Gopro hero 11-12-13 (Pemandu Tour akan menyediakan gambar/video sesuai permintaan Anda)",
+      "Dokumentasi Underwater Gopro Hero 12",
       "Biaya masuk dan konservasi"
     ],
     exclusionsTitle: "Yang Tidak Termasuk",
@@ -45,7 +45,11 @@ export const tour1Translations = {
       "Kacamata hitam dengan Perlindungan UV"
     ],
     pricingTitle: "Harga Hiu Paus Teluk Saleh Sumbawa dalam Rupiah Indonesia (IDR)",
-    pricingNotes: ["Untuk group lebih dari 10 orang, silahkan hubungi kami untuk harga spesial!"]
+    pricingNotes: [
+      "Di Adventure Sumbawa Island, kami selalu berupaya memberikan pengalaman terbaik bagi setiap tamu. Namun, kami juga menghormati kondisi alam dan mengutamakan keselamatan. Jika dalam perjalanan tidak ditemukan hiu paus, kami akan mengembalikan pembayaran anda sebesar Rp 1.000.000 dari total harga.",
+      "Kompensasi diberikan hanya jika hiu paus tidak terlihat sama sekali, bukan karena jarak atau durasi yang tidak sempat maksimal.",
+      "Peserta lebih dari 10 orang / group, silahkan menghubungi kami."
+    ]
   },
   en: {
     title: "Sumbawa Whale Shark Saleh Bay One Day Tour Start Finish Sumbawa Besar City",
@@ -75,7 +79,7 @@ export const tour1Translations = {
       "Coffee, tea / hot chocolate (on the boat)",
       "Snorkling tools (high standart mask with antifog, snorkle & fins)",
       "Profesional Tour Guide",
-      "Gopro hero 11-12-13 (Tour Guide will provide a picture/video as your request)",
+      "Underwater Documentation Gopro Hero 12",
       "Entrance and Conservation fee"
     ],
     exclusionsTitle: "Exclusion",
@@ -93,6 +97,10 @@ export const tour1Translations = {
       "Sunglasses with UV Protection"
     ],
     pricingTitle: "Whale Shark Saleh Bay Sumbawa pricing revert to Indonesian Rupiah (IDR)",
-    pricingNotes: ["For groups of more than 10 people, please contact us for special rates!"]
+    pricingNotes: [
+      "At Adventure Sumbawa Island, we always strive to provide the best experience for every guest. However, we also respect nature and prioritize safety. If whale sharks are not found during the trip, we will refund IDR 1,000,000 from your total payment.",
+      "Compensation is given only if whale sharks are not visible at all, not due to distance or duration that was not optimal.",
+      "For groups of more than 10 people, please contact us."
+    ]
   }
 };

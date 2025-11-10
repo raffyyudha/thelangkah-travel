@@ -112,15 +112,6 @@ export default function WhaleSharkMoyoKenawaLombokPage() {
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time2}</strong> : {t.itinerary.desc2}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time3}</strong> : {t.itinerary.desc3}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time4}</strong> : {t.itinerary.desc4}</p>
-            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time5}</strong> : {t.itinerary.desc5}</p>
-            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time6}</strong> : {t.itinerary.desc6}</p>
-            <p className="text-gray-700 leading-relaxed mb-4"><strong>{t.itinerary.time7}</strong> : {t.itinerary.desc7}</p>
-            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time8}</strong> : {t.itinerary.desc8}</p>
-            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time9}</strong> : {t.itinerary.desc9}</p>
-            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time10}</strong> : {t.itinerary.desc10}</p>
-            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time11}</strong> : {t.itinerary.desc11}</p>
-            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time12}</strong> : {t.itinerary.desc12}</p>
-            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time13}</strong> : {t.itinerary.desc13}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time14}</strong> : {t.itinerary.desc14}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time15}</strong> : {t.itinerary.desc15}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time16}</strong> : {t.itinerary.desc16}</p>
@@ -160,7 +151,7 @@ export default function WhaleSharkMoyoKenawaLombokPage() {
             ))}
           </ul>
 
-          <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">{t.pricingTitle}</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">{commonT.priceDetailTitle}</h3>
           <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
             {t.pricingNotes.map((note, index) => (
               <li key={index}>{note}</li>
@@ -172,40 +163,40 @@ export default function WhaleSharkMoyoKenawaLombokPage() {
               <table className="w-full border-collapse rounded-lg overflow-hidden shadow-md">
                 <thead>
                   <tr className="bg-green-600 text-white">
-                    <th className="py-4 px-6 text-left font-bold text-sm md:text-base">Peserta</th>
-                    <th className="py-4 px-6 text-left font-bold text-sm md:text-base">Harga Per Orang</th>
+                    <th className="py-4 px-6 text-left font-bold text-sm md:text-base">{commonT.tourParticipant}</th>
+                    <th className="py-4 px-6 text-left font-bold text-sm md:text-base">{commonT.tourPerPerson}</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white">
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">1 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 8,800,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">2 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 4,460,000</td></tr>
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">3 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 3,080,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">4 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 2,380,000</td></tr>
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">5 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 2,130,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">6 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,820,000</td></tr>
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">7 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,640,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">8 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,470,000</td></tr>
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">9 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,340,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">10 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,240,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '1 Person' : '1 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? 'IDR ' : 'Rp '}8,800,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '2 People' : '2 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? 'IDR ' : 'Rp '}4,460,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '3 People' : '3 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? 'IDR ' : 'Rp '}3,080,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '4 People' : '4 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? 'IDR ' : 'Rp '}2,380,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '5 People' : '5 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? 'IDR ' : 'Rp '}2,130,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '6 People' : '6 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? 'IDR ' : 'Rp '}1,820,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '7 People' : '7 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? 'IDR ' : 'Rp '}1,640,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '8 People' : '8 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? 'IDR ' : 'Rp '}1,470,000</td></tr>
+                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '9 People' : '9 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? 'IDR ' : 'Rp '}1,340,000</td></tr>
+                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '10 People' : '10 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? 'IDR ' : 'Rp '}1,240,000</td></tr>
                 </tbody>
               </table>
             </div>
 
             <div className="text-center mb-8">
-              <p className="text-gray-900 text-lg font-bold mb-6">Intrested with this Program Tour book Here:</p>
+              <p className="text-gray-900 text-lg font-bold mb-6">{commonT.interestedBookHere}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <button
                   onClick={handleBooking}
                   className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-all"
                 >
                   <MessageCircle size={20} />
-                  Chat On WhatsApp
+                  {commonT.tourChatWhatsApp}
                 </button>
                 <button
                   onClick={() => setIsBookingModalOpen(true)}
                   className="bg-blue-900 hover:bg-blue-950 text-white px-10 py-3 rounded-full font-semibold transition-all"
                 >
-                  Book Now
+                  {commonT.bookNow}
                 </button>
               </div>
             </div>
@@ -214,7 +205,7 @@ export default function WhaleSharkMoyoKenawaLombokPage() {
             <div className="text-center mb-12">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
                 <a href="https://maps.app.goo.gl/rjMm7EoFXzLLF4XU7" className="hover:underline" target="_blank" rel="noopener noreferrer">
-                  Sumbawa Whale Shark Costumer Reviews (click here):
+                  {commonT.customerReviews}
                 </a>
               </h3>
               
@@ -302,49 +293,47 @@ export default function WhaleSharkMoyoKenawaLombokPage() {
 
             {/* Dropdown Sections */}
             <div className="my-12">
-              <DropdownSection title="Syarat & Ketentuan">
+              <DropdownSection title={commonT.tourTermsConditions}>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>Whale Shark Sumbawa Tour package is PRIVATE and will not be shared with other</li>
-                  <li>Children 5 years old and under at the same time of tour are free of charge</li>
-                  <li>All minors must be accompanied by parents/guardians at all time.</li>
-                  <li>Payment of a 40% deposit is required to secure a package reservation</li>
-                  <li>Flexible tour dates are available upon request</li>
-                  <li>Once you decide to book the trip please provide us with details of your feet For snorkeling and swimming fins</li>
-                  <li>The remaining payment can be transferred/cash when you meet our guide</li>
+                  <li>{commonT.termsItem1}</li>
+                  <li>{commonT.termsItem2}</li>
+                  <li>{commonT.termsItem3}</li>
+                  <li>{commonT.termsItem4}</li>
+                  <li>{commonT.termsItem5}</li>
+                  <li>{commonT.termsItem6}</li>
+                  <li>{commonT.termsItem7}</li>
                 </ul>
               </DropdownSection>
 
-              <DropdownSection title="Pembatalan & Penjadwalan ulang">
+              <DropdownSection title={commonT.tourCancellationPolicy}>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>Cancellation up to 3 days before the event: a 25% cancellation fee will apply, based on the total booking price.</li>
-                  <li>Cancellation 3 day before or on the day of the event: The deposit is non-refundable, but you will get the opportunity to do the tour any other day as scheduled with no extra charge</li>
-                  <li>No-show on the day of the event: Regardless of prior cancellation, the payment is non-refundable.</li>
-                  <li>Force majeure (e.g., bad weather, natural disasters, war): The guide reserves the right to cancel or modify the schedule/itinerary for the safety of participants and crew. Any changes or cancellations due to force majeure are non-refundable</li>
+                  <li>{commonT.cancelItem1}</li>
+                  <li>{commonT.cancelItem2}</li>
+                  <li>{commonT.cancelItem3}</li>
+                  <li>{commonT.cancelItem4}</li>
                 </ul>
               </DropdownSection>
 
-              <DropdownSection title="Hiu Paus / Whale Shark Tour FAQ'S">
+              <DropdownSection title={commonT.tourFAQTitle}>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>These sumbawa whale shark roam the ocean in search of food all the year in sumbawa saleh bay, they gather around floating fishing platforms. These platforms use strong lights that attract plankton and fish – the perfect breakfast for whale sharks!</li>
-                  <li>forbidden to touch heir skin is covered in a sensitive mucus membrane that should not be touched, can harm the whale shark and disrupt their natural behavior</li>
-                  <li>We provide all the equipment you need (snorkel, mask and fins), but feel free to bring your own. We also suggest bringing ear plugs to reduce of the loud sound of the local boat's engine that will be used to go to the Whale Shark point</li>
-                  <li>As much we cannot control Mother Nature. Sea conditions on the day may impact water visibility or other factors beyond our control. Therefore, we cannot offer any guarantees or refunds regarding sightings.</li>
-                  <li>However, we maintain strong coordination with the all the local & Crews to ensure you visit the Whale Shark Sumbawa Congregation Point at the best possible time.Thank you for your understanding as we strive to provide the best experience in harmony with nature.</li>
+                  <li>{commonT.faqItem1}</li>
+                  <li>{commonT.faqItem2}</li>
+                  <li>{commonT.faqItem3}</li>
+                  <li>{commonT.faqItem4}</li>
+                  <li>{commonT.faqItem5}</li>
                 </ul>
               </DropdownSection>
             </div>
           </div>
         </div>
       </article>
-
-      {/* Pilihan Paket Tour Sumbawa Lainnya */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Pilihan Paket Tour Sumbawa Lainnya
+            {commonT.tourRecommendedTours}
           </h2>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-12">
-            Pulau Moyo terletak di Kabupaten Sumbawa, Provinsi Nusa Tenggara Barat. Selain Pulau Moyo, berikut berbagai pilihan paket wisata lainnya yang bisa anda nikmati bersama keluarga, kerabat dan sahabat saat berlibur ke Pulau Sumbawa.
+            {commonT.relatedToursDesc}
           </p>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -9,6 +10,58 @@ interface BookingModalProps {
 }
 
 export default function BookingModal({ isOpen, onClose, tourName = "Tour Package" }: BookingModalProps) {
+  const { language } = useLanguage();
+  const l = language === "id"
+    ? {
+        title: "Booking Tour",
+        nameGroup: "Nama / Nama Grup",
+        required: "(wajib)",
+        email: "Email",
+        whatsapp: "WhatsApp",
+        participant: "Jumlah Peserta",
+        participantPlaceholder: "Total Peserta (wajib)",
+        chooseTour: "Pilih Paket Tour",
+        selectTour: "Pilih Paket Tour",
+        tourDate: "Tanggal Tour",
+        pickup: "Lokasi Penjemputan",
+        pickupPlaceholder: "Nama hotel atau alamat",
+        specialRequest: "Permintaan Khusus (Opsional)",
+        cancel: "Batal",
+        sendWA: "Kirim ke WhatsApp",
+        msgBookingRequest: "PERMINTAAN BOOKING",
+        msgName: "Nama/Nama Grup",
+        msgTotal: "Jumlah Peserta",
+        msgPackage: "Paket Tour",
+        msgDate: "Tanggal Tour",
+        msgPickup: "Lokasi Jemput",
+        msgSpecial: "Permintaan Khusus",
+        msgFooter: "Mohon konfirmasi ketersediaan dan harga untuk booking ini.",
+      }
+    : {
+        title: "Book Your Tour",
+        nameGroup: "Name / Group Name",
+        required: "(required)",
+        email: "Email",
+        whatsapp: "WhatsApp",
+        participant: "Participant",
+        participantPlaceholder: "Total Participant (required)",
+        chooseTour: "Choose your Tour!",
+        selectTour: "Select Tour Package",
+        tourDate: "Tour Date",
+        pickup: "Pickup Location",
+        pickupPlaceholder: "Hotel name or address",
+        specialRequest: "Special Request (Optional)",
+        cancel: "Cancel",
+        sendWA: "Send to WhatsApp",
+        msgBookingRequest: "BOOKING REQUEST",
+        msgName: "Name/Group Name",
+        msgTotal: "Total Participants",
+        msgPackage: "Tour Package",
+        msgDate: "Tour Date",
+        msgPickup: "Pickup Location",
+        msgSpecial: "Special Request",
+        msgFooter: "Please confirm availability and price for this booking.",
+      };
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -26,18 +79,18 @@ export default function BookingModal({ isOpen, onClose, tourName = "Tour Package
     
     // Format pesan WhatsApp
     const message = `
-*BOOKING REQUEST*
+*${l.msgBookingRequest}*
 
-*Name/Group Name:* ${formData.name}
+*${l.msgName}:* ${formData.name}
 *Email:* ${formData.email}
 *WhatsApp:* ${formData.countryCode}${formData.whatsapp}
-*Total Participants:* ${formData.participants}
-*Tour Package:* ${formData.tourPackage}
-*Tour Date:* ${formData.tourDate}
-*Pickup Location:* ${formData.pickupLocation}
-${formData.specialRequest ? `*Special Request:* ${formData.specialRequest}` : ''}
+*${l.msgTotal}:* ${formData.participants}
+*${l.msgPackage}:* ${formData.tourPackage}
+*${l.msgDate}:* ${formData.tourDate}
+*${l.msgPickup}:* ${formData.pickupLocation}
+${formData.specialRequest ? `*${l.msgSpecial}:* ${formData.specialRequest}` : ''}
 
-Mohon konfirmasi ketersediaan dan harga untuk booking ini.
+${l.msgFooter}
     `.trim();
 
     // Encode dan kirim ke WhatsApp
@@ -66,7 +119,7 @@ Mohon konfirmasi ketersediaan dan harga untuk booking ini.
       <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="sticky top-0 bg-[#0a3d52] text-white p-6">
-          <h2 className="text-2xl font-bold">Book Your Tour</h2>
+          <h2 className="text-2xl font-bold">{l.title}</h2>
         </div>
 
         {/* Form */}
@@ -74,14 +127,14 @@ Mohon konfirmasi ketersediaan dan harga untuk booking ini.
           {/* Name / Group Name */}
           <div>
             <label className="block text-gray-700 font-semibold mb-2">
-              Name / Group Name <span className="text-red-500">*</span>
+              {l.nameGroup} <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
               required
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              placeholder="(required)"
+              placeholder={l.required}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
             />
           </div>
@@ -89,7 +142,7 @@ Mohon konfirmasi ketersediaan dan harga untuk booking ini.
           {/* Email */}
           <div>
             <label className="block text-gray-700 font-semibold mb-2">
-              Email <span className="text-red-500">*</span>
+              {l.email} <span className="text-red-500">*</span>
             </label>
             <input
               type="email"
@@ -104,7 +157,7 @@ Mohon konfirmasi ketersediaan dan harga untuk booking ini.
           {/* WhatsApp */}
           <div>
             <label className="block text-gray-700 font-semibold mb-2">
-              WhatsApp <span className="text-red-500">*</span>
+              {l.whatsapp} <span className="text-red-500">*</span>
             </label>
             <div className="flex gap-2">
               <select
@@ -137,7 +190,7 @@ Mohon konfirmasi ketersediaan dan harga untuk booking ini.
           {/* Participant */}
           <div>
             <label className="block text-gray-700 font-semibold mb-2">
-              Participant <span className="text-red-500">*</span>
+              {l.participant} <span className="text-red-500">*</span>
             </label>
             <input
               type="number"
@@ -145,7 +198,7 @@ Mohon konfirmasi ketersediaan dan harga untuk booking ini.
               min="1"
               value={formData.participants}
               onChange={(e) => setFormData({ ...formData, participants: e.target.value })}
-              placeholder="Total Participant (required)"
+              placeholder={l.participantPlaceholder}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
             />
           </div>
@@ -153,7 +206,7 @@ Mohon konfirmasi ketersediaan dan harga untuk booking ini.
           {/* Choose your Tour */}
           <div>
             <label className="block text-gray-700 font-semibold mb-2">
-              Choose your Tour! <span className="text-red-500">*</span>
+              {l.chooseTour} <span className="text-red-500">*</span>
             </label>
             <select
               required
@@ -161,7 +214,7 @@ Mohon konfirmasi ketersediaan dan harga untuk booking ini.
               onChange={(e) => setFormData({ ...formData, tourPackage: e.target.value })}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
             >
-              <option value="">Select Tour Package</option>
+              <option value="">{l.selectTour}</option>
               <option value="Whale Shark Sumbawa Daily Tour">Whale Shark Sumbawa Daily Tour</option>
               <option value="Whale Shark 2D1N Tour">Whale Shark 2D1N Tour</option>
               <option value="Moyo Island & Whale Shark 3D2N">Moyo Island & Whale Shark 3D2N</option>
@@ -174,7 +227,7 @@ Mohon konfirmasi ketersediaan dan harga untuk booking ini.
           {/* Tour Date */}
           <div>
             <label className="block text-gray-700 font-semibold mb-2">
-              Tour Date <span className="text-red-500">*</span>
+              {l.tourDate} <span className="text-red-500">*</span>
             </label>
             <input
               type="date"
@@ -188,14 +241,14 @@ Mohon konfirmasi ketersediaan dan harga untuk booking ini.
           {/* Pickup Location */}
           <div>
             <label className="block text-gray-700 font-semibold mb-2">
-              Pickup Location <span className="text-red-500">*</span>
+              {l.pickup} <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
               required
               value={formData.pickupLocation}
               onChange={(e) => setFormData({ ...formData, pickupLocation: e.target.value })}
-              placeholder="Hotel name or address"
+              placeholder={l.pickupPlaceholder}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
             />
           </div>
@@ -203,7 +256,7 @@ Mohon konfirmasi ketersediaan dan harga untuk booking ini.
           {/* Special Request */}
           <div>
             <label className="block text-gray-700 font-semibold mb-2">
-              Special Request (Optional)
+              {l.specialRequest}
             </label>
             <textarea
               value={formData.specialRequest}
@@ -221,13 +274,13 @@ Mohon konfirmasi ketersediaan dan harga untuk booking ini.
               onClick={onClose}
               className="flex-1 px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:bg-gray-50 transition-all"
             >
-              Cancel
+              {l.cancel}
             </button>
             <button
               type="submit"
               className="flex-1 px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-full font-semibold transition-all"
             >
-              Send to WhatsApp
+              {l.sendWA}
             </button>
           </div>
         </form>

@@ -3,8 +3,9 @@
 import Image from "next/image";
 import { useState } from "react";
 import { X } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-const categories = ["Semua", "Whale Shark", "Moyo Island", "Kenawa", "Island Hopping"];
+const categories = ["galleryAll", "galleryWhaleShark", "galleryMoyoIsland", "galleryKenawa", "galleryIslandHopping"];
 
 const galleryItems = [
   { id: 1, category: "Whale Shark", image: "/images/whale-shark-1day-labuhan-jambu-hero.PNG", title: "Snorkeling dengan Hiu Paus", description: "Pengalaman tak terlupakan di Teluk Saleh" },
@@ -30,12 +31,13 @@ const galleryItems = [
 ];
 
 export default function GalleryPage() {
-  const [selectedCategory, setSelectedCategory] = useState("Semua");
+  const { t } = useLanguage();
+  const [selectedCategory, setSelectedCategory] = useState("galleryAll");
   const [selectedImage, setSelectedImage] = useState<typeof galleryItems[0] | null>(null);
 
-  const filteredItems = selectedCategory === "Semua" 
+  const filteredItems = selectedCategory === "galleryAll" 
     ? galleryItems 
-    : galleryItems.filter(item => item.category === selectedCategory);
+    : galleryItems.filter(item => item.category === selectedCategory.replace('gallery', '').replace('All', 'Semua'));
 
   return (
     <main className="min-h-screen">
@@ -53,10 +55,10 @@ export default function GalleryPage() {
         </div>
         <div className="container mx-auto px-6 relative z-10 max-w-7xl">
           <h1 className="text-white text-5xl md:text-6xl font-bold mb-4 max-w-3xl">
-            Galeri Kami
+            {t.galleryTitle}
           </h1>
           <p className="text-white text-lg md:text-xl max-w-2xl">
-            Lihat momen-momen indah dari petualangan kami di Sumbawa. Dari snorkeling dengan hiu paus hingga eksplorasi pulau-pulau eksotis.
+            {t.popularDesc}
           </p>
         </div>
       </section>
@@ -76,7 +78,7 @@ export default function GalleryPage() {
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
-                {category}
+                {t[category as keyof typeof t]}
               </button>
             ))}
           </div>
@@ -140,10 +142,10 @@ export default function GalleryPage() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6 max-w-7xl text-center">
           <h2 className="text-4xl font-bold mb-6 text-gray-900">
-            Ingin Membuat Momen Seperti Ini?
+            {t.galleryCTATitle}
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Bergabunglah dengan kami dan ciptakan kenangan tak terlupakan di Sumbawa
+            {t.galleryCTADesc}
           </p>
           <a
             href="https://wa.me/6282341331975?text=Halo%20Adventure%20Sumbawa%20Island,%20saya%20ingin%20booking%20trip"
@@ -151,7 +153,7 @@ export default function GalleryPage() {
             rel="noopener noreferrer"
             className="inline-block bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-xl"
           >
-            Book Sekarang via WhatsApp
+            {t.galleryCTAButton}
           </a>
         </div>
       </section>
@@ -180,7 +182,7 @@ export default function GalleryPage() {
               </div>
 
               <p className="text-gray-300 text-sm leading-relaxed mb-8">
-                Adventure Sumbawa Island lahir pada tahun 2022 karena sebuah pemikiran yang dilandasi dengan keahlian dan keinginan untuk memberikan pelayanan terbaik bagi customer Adventure Sumbawa Island.
+                {t.footerDesc}
               </p>
 
               {/* Review Badges */}
@@ -197,7 +199,7 @@ export default function GalleryPage() {
                     </div>
                   </div>
                   <div className="text-sm">
-                    <span className="font-semibold">150+ ulasan</span>
+                    <span className="font-semibold">150+ {t.footerReviews}</span>
                     <span className="ml-2 text-gray-300">Google</span>
                   </div>
                 </div>
@@ -206,7 +208,7 @@ export default function GalleryPage() {
 
             {/* Right Column - Contact Info */}
             <div>
-              <h3 className="text-xl font-bold mb-6">Hubungi Kami</h3>
+              <h3 className="text-xl font-bold mb-6">{t.aboutTitle}</h3>
 
               <div className="space-y-4">
                 {/* WhatsApp */}

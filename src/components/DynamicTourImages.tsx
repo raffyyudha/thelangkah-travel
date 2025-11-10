@@ -52,7 +52,7 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
       }
       if (tourName === "whale-shark-2d1n-poto-tano") {
         setImages({
-          hero: "/images/whale-shark-2d1n-poto-tano-hero.PNG",
+          hero: "/images/whale-shark-2d1n-poto-tano.PNG",
           gallery1: "/images/whale-shark-2d1n-poto-tano-1.PNG",
           gallery2: "/images/whale-shark-2d1n-poto-tano-2.PNG",
           gallery3: "/images/whale-shark-2d1n-poto-tano-3.JPG"
