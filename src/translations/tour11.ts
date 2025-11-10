@@ -55,24 +55,29 @@ export const tour11Translations = {
       time28: "19.00",
       desc28: "Tiba di hotel dan istirahat. Program selesai."
     },
-    inclusionsTitle: "Harga Sudah Termasuk",
+    inclusionsTitle: "Yang Termasuk dalam Tour Hiu Paus Sumbawa",
     inclusions: [
-      "Transportasi AC PP Pulau Lombok – Desa Labuan Jambu",
-      "Tiket penyeberangan kapal ferry PP Pelabuhan Kayangan – Pelabuhan Poto Tano",
-      "Dua malam akomodasi/hotel di sumbawa besar & labuhan jambu",
-      "Perahu nelayan tradisional menuju Bagang di Kawasan Teluk Saleh",
-      "Sarapan sederhana saat di atas perahu/Bagang",
-      "Perlengkapan snorkeling",
-      "Dokumentasi Underwater Gopro Hero 12",
-      "Entrance Fee Kawasan Wisata (Biaya Konservasi dan Uang Desa)",
-      "Handuk, selimut",
-      "Minuman hangat di atas perahu (teh & kopi)",
-      "Air mineral selama program"
+      "Transportasi Lombok-Sumbawa PP, sopir, dan bahan bakar (kendaraan ber-AC penuh)",
+      "Tiket kapal ferry Lombok-Sumbawa PP",
+      "Hotel 1 malam di Sumbawa Besar (AC & WiFi)",
+      "Hotel 1 malam di Labuhan Jambu (AC & WiFi)",
+      "Speedboat Pulau Moyo",
+      "Perahu tour Pulau Kenawa",
+      "Perahu Tour Hiu Paus (kasur, bantal, selimut, handuk & toilet)",
+      "Pemandu Berbahasa Inggris",
+      "Air mineral selama tour",
+      "Sarapan sederhana tour hiu paus di perahu (roti, nutella, buah)",
+      "Kopi, teh (di perahu)",
+      "Alat diving (masker, fins, snorkel & pelampung)",
+      "Pemandu Tour Profesional",
+      "Dokumentasi foto & video Underwater Gopro Hero 12",
+      "Biaya masuk & konservasi"
     ],
-    exclusionsTitle: "Tidak Termasuk",
+    exclusionsTitle: "Yang Tidak Termasuk",
     exclusions: [
-      "Makan dalam perjalanan Lombok – Sumbawa PP",
-      "Keperluan pribadi lainnya"
+      "Makan & Minuman L&D",
+      "Kebutuhan Pribadi",
+      "Tips kru lokal/pemandu wisata"
     ],
     whatToBringTitle: "Apa yang Harus Dibawa",
     whatToBring: [
@@ -146,24 +151,29 @@ export const tour11Translations = {
       time28: "19.00",
       desc28: "Arrive at hotel and rest. Program ends."
     },
-    inclusionsTitle: "Price Includes",
+    inclusionsTitle: "Inclusions",
     inclusions: [
-      "AC transportation round trip Lombok Island – Labuan Jambu Village",
-      "Ferry ticket round trip Kayangan Port – Poto Tano Port",
-      "Two nights accommodation/hotel in Sumbawa Besar & Labuhan Jambu",
-      "Traditional fishing boat to Bagang in Teluk Saleh Area",
-      "Simple breakfast on the boat/Bagang",
-      "Snorkeling equipment",
-      "Underwater Documentation Gopro Hero 12",
-      "Tourist Area Entrance Fee (Conservation Fee and Village Fee)",
-      "Towel, blanket",
-      "Hot drinks on the boat (tea & coffee)",
-      "Mineral water during the program"
+      "Round-trip transportation Lombok-Sumbawa, driver, and fuel (full AC vehicle)",
+      "Round-trip ferry tickets Lombok-Sumbawa",
+      "1 night hotel in Sumbawa Besar (AC & WiFi)",
+      "1 night hotel in Labuhan Jambu (AC & WiFi)",
+      "Moyo Island speedboat",
+      "Kenawa Island tour boat",
+      "Whale shark tour boat (mattress, pillow, blanket, towel & toilet)",
+      "English-speaking guide",
+      "Mineral water during the tour",
+      "Simple breakfast during whale shark tour on the boat (bread, Nutella, fruit)",
+      "Coffee & tea on the boat",
+      "Diving gear (mask, fins, snorkel & life jacket)",
+      "Professional tour guide",
+      "Underwater photo & video documentation using Gopro Hero 12",
+      "Entrance & conservation fees"
     ],
-    exclusionsTitle: "Not Included",
+    exclusionsTitle: "Exclusions",
     exclusions: [
-      "Meals during Lombok – Sumbawa round trip journey",
-      "Other personal needs"
+      "Meals & beverages (Lunch & Dinner)",
+      "Personal needs",
+      "Tips for local crew/tour guide"
     ],
     whatToBringTitle: "What to Bring",
     whatToBring: [

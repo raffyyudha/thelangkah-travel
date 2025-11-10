@@ -29,13 +29,17 @@ export const tour2Translations = {
     ],
     inclusionsTitle: "Yang Termasuk",
     inclusions: [
-      "Transportasi AC dari/ke hotel",
-      "Perahu tour dengan fasilitas lengkap",
+      "Transportasi kendaraan, sopir, dan bahan bakar (kendaraan ber-AC penuh)",
+      "Hotel 1 malam di Labuhan Jambu (AC & WiFi)",
+      "Perahu tour hiu paus (kasur, bantal, selimut, handuk & toilet)",
       "Pemandu berbahasa Inggris",
-      "Air mineral",
-      "Peralatan snorkeling",
-      "Dokumentasi Underwater Gopro Hero 12",
-      "Biaya masuk dan konservasi"
+      "Air mineral selama tour",
+      "Sarapan sederhana di perahu (roti, nutella, buah)",
+      "Kopi, teh (di perahu)",
+      "Alat snorkeling (masker, snorkel, fins & pelampung)",
+      "Pemandu tour profesional",
+      "Dokumentasi foto & video underwater Gopro Hero 12",
+      "Biaya masuk & konservasi"
     ],
     whatToBringTitle: "Yang Harus Dibawa Saat Tour Hiu Paus (opsional)",
     whatToBring: [
@@ -46,9 +50,9 @@ export const tour2Translations = {
     ],
     exclusionsTitle: "Yang Tidak Termasuk",
     exclusions: [
-      "Makan selama tour",
-      "Pengeluaran pribadi",
-      "Tips untuk guide dan crew"
+      "Makan & minuman L&D",
+      "Kebutuhan pribadi",
+      "Tips kru lokal/pemandu wisata"
     ],
     pricingTitle: "Harga Tour 2D1N",
     pricingNotes: [
@@ -87,13 +91,17 @@ export const tour2Translations = {
     ],
     inclusionsTitle: "Inclusions",
     inclusions: [
-      "AC transportation from/to hotel",
-      "Tour boat with complete facilities",
-      "English speaking guide",
-      "Mineral water",
-      "Snorkeling equipment",
-      "Underwater Documentation Gopro Hero 12",
-      "Entrance and conservation fees"
+      "Vehicle transportation, driver, and fuel (full AC vehicle)",
+      "1 night hotel in Labuhan Jambu (AC & WiFi)",
+      "Whale shark tour boat (mattress, pillow, blanket, towel & toilet)",
+      "English-speaking guide",
+      "Mineral water during the tour",
+      "Simple breakfast on the boat (bread, Nutella, fruit)",
+      "Coffee & tea on the boat",
+      "Snorkeling equipment (mask, snorkel, fins & life jacket)",
+      "Professional tour guide",
+      "Underwater photo & video documentation using Gopro Hero 12",
+      "Entrance & conservation fees"
     ],
     whatToBringTitle: "What to bring during the Whale Shark Tour (optional)",
     whatToBring: [
@@ -104,9 +112,9 @@ export const tour2Translations = {
     ],
     exclusionsTitle: "Exclusions",
     exclusions: [
-      "Meals during tour",
-      "Personal expenses",
-      "Tips for guide and crew"
+      "Meals & beverages (Lunch & Dinner)",
+      "Personal needs",
+      "Tips for local crew/tour guide"
     ],
     pricingTitle: "2D1N Tour Price",
     pricingNotes: [

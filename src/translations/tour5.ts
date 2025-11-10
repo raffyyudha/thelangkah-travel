@@ -43,21 +43,26 @@ export const tour5Translations = {
     ],
     inclusionsTitle: "Yang Termasuk",
     inclusions: [
-      "Transportasi AC selama tour",
-      "Perahu untuk island hopping",
-      "Pemandu berpengalaman",
-      "Air mineral unlimited",
-      "Peralatan snorkeling premium",
-      "Tiket masuk semua destinasi",
-      "Dokumentasi profesional",
-      "Asuransi perjalanan"
+      "Transportasi kendaraan, sopir, dan bahan bakar (kendaraan ber-AC penuh)",
+      "Hotel 3 malam di Sumbawa Besar (AC & WiFi)",
+      "Speedboat Pulau Moyo",
+      "Ojek/motor taxi ke air terjun",
+      "Perahu tour Pulau Kenawa",
+      "Perahu Tour Hiu Paus (kasur, bantal, selimut, handuk & toilet)",
+      "Pemandu Berbahasa Inggris",
+      "Air mineral selama tour",
+      "Sarapan sederhana tour hiu paus di perahu (roti, nutella, buah)",
+      "Kopi, teh (di perahu)",
+      "Alat snorkeling (masker, fins, snorkel & pelampung)",
+      "Pemandu Tour Profesional",
+      "Dokumentasi foto & video Underwater Gopro Hero 12",
+      "Biaya masuk & konservasi"
     ],
     exclusionsTitle: "Yang Tidak Termasuk",
     exclusions: [
-      "Makan selama tour",
-      "Hotel di Sumbawa Besar (hari pertama dan terakhir)",
-      "Pengeluaran pribadi",
-      "Tips untuk guide dan crew"
+      "Makan & Minuman L&D",
+      "Kebutuhan Pribadi",
+      "Tips kru lokal/pemandu wisata"
     ],
     whatToBringTitle: "Apa yang Harus Dibawa (opsional)",
     whatToBring: [
@@ -117,21 +122,26 @@ export const tour5Translations = {
     ],
     inclusionsTitle: "Inclusions",
     inclusions: [
-      "AC transportation during tour",
-      "Boat for island hopping",
-      "Experienced guide",
-      "Unlimited mineral water",
-      "Premium snorkeling equipment",
-      "Entrance tickets to all destinations",
-      "Professional documentation",
-      "Travel insurance"
+      "Vehicle transportation, driver, and fuel (full AC vehicle)",
+      "3 nights hotel in Sumbawa Besar (AC & WiFi)",
+      "Moyo Island speedboat",
+      "Motorbike taxi to the waterfall",
+      "Kenawa Island tour boat",
+      "Whale shark tour boat (mattress, pillow, blanket, towel & toilet)",
+      "English-speaking guide",
+      "Mineral water during the tour",
+      "Simple breakfast during whale shark tour on the boat (bread, Nutella, fruit)",
+      "Coffee & tea on the boat",
+      "Snorkeling equipment (mask, fins, snorkel & life jacket)",
+      "Professional tour guide",
+      "Underwater photo & video documentation using Gopro Hero 12",
+      "Entrance & conservation fees"
     ],
     exclusionsTitle: "Exclusions",
     exclusions: [
-      "Meals during tour",
-      "Hotel in Sumbawa Besar (first and last day)",
-      "Personal expenses",
-      "Tips for guide and crew"
+      "Meals & beverages (Lunch & Dinner)",
+      "Personal needs",
+      "Tips for local crew/tour guide"
     ],
     whatToBringTitle: "What to bring (optional)",
     whatToBring: [

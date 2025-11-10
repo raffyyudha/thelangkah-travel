@@ -106,6 +106,28 @@ export default function WhaleSharkExperiencePage() {
               </div>
             )}
 
+            {t.inclusions?.length > 0 && (
+              <>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">{t.inclusionsTitle}</h3>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-8">
+                  {t.inclusions.map((item: string, index: number) => (
+                    <li key={`inc-${index}`}>{item}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+
+            {t.exclusions?.length > 0 && (
+              <>
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">{t.exclusionsTitle}</h3>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 mb-8">
+                  {t.exclusions.map((item: string, index: number) => (
+                    <li key={`exc-${index}`}>{item}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+
             <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">{commonT.priceDetailTitle}</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
               {t.pricingNotes.map((note, index) => (

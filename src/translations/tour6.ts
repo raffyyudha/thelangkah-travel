@@ -20,21 +20,23 @@ export const tour6Translations = {
     ],
     inclusionsTitle: "Yang Termasuk",
     inclusions: [
-      "Transportasi AC",
-      "Perahu diving",
-      "Dive master profesional",
-      "Peralatan diving lengkap",
-      "Tabung oksigen",
-      "Dokumentasi underwater",
-      "Asuransi diving"
+      "Transportasi kendaraan, sopir, dan bahan bakar (kendaraan ber-AC penuh)",
+      "Hotel 1 malam di Labuhan Jambu (AC & WiFi)",
+      "Perahu Tour Hiu Paus (kasur, bantal, selimut, handuk & toilet)",
+      "Pemandu Berbahasa Inggris",
+      "Air mineral selama tour",
+      "Sarapan sederhana di perahu (roti, nutella, buah)",
+      "Kopi, teh (di perahu)",
+      "Alat diving lengkap (masker, fins, tabung & regulator)",
+      "Pemandu Tour Profesional",
+      "Dokumentasi foto & video Underwater Gopro Hero 12",
+      "Biaya masuk & konservasi"
     ],
     exclusionsTitle: "Yang Tidak Termasuk",
     exclusions: [
-      "Makan selama tour",
-      "Sertifikat diving (wajib punya)",
-      "Hotel",
-      "Pengeluaran pribadi",
-      "Tips"
+      "Makan & Minuman L&D",
+      "Kebutuhan Pribadi",
+      "Tips kru lokal/pemandu wisata"
     ],
     pricingTitle: "Harga Diving Tour",
     pricingNotes: [
@@ -64,21 +66,23 @@ export const tour6Translations = {
     ],
     inclusionsTitle: "Inclusions",
     inclusions: [
-      "AC transportation",
-      "Diving boat",
-      "Professional dive master",
-      "Complete diving equipment",
-      "Oxygen tanks",
-      "Underwater documentation",
-      "Diving insurance"
+      "Vehicle transportation, driver, and fuel (full AC vehicle)",
+      "1 night hotel in Labuhan Jambu (AC & WiFi)",
+      "Whale shark tour boat (mattress, pillow, blanket, towel & toilet)",
+      "English-speaking guide",
+      "Mineral water during the tour",
+      "Simple breakfast on the boat (bread, Nutella, fruit)",
+      "Coffee & tea on the boat",
+      "Complete diving equipment (mask, fins, tank & regulator)",
+      "Professional tour guide",
+      "Underwater photo & video documentation using Gopro Hero 12",
+      "Entrance & conservation fees"
     ],
     exclusionsTitle: "Exclusions",
     exclusions: [
-      "Meals during tour",
-      "Diving certificate (required)",
-      "Hotel",
-      "Personal expenses",
-      "Tips"
+      "Meals & beverages (Lunch & Dinner)",
+      "Personal needs",
+      "Tips for local crew/tour guide"
     ],
     pricingTitle: "Diving Tour Price",
     pricingNotes: [

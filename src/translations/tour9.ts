@@ -17,22 +17,25 @@ export const tour9Translations = {
       time5: "06.00",
       desc5: "Waktunya snorkeling dan berenang bersama hiu paus yang megah. Rasakan pengalaman sekali seumur hidup di perairan jernih ini."
     },
-    inclusionsTitle: "Harga Sudah Termasuk",
+    inclusionsTitle: "Yang Termasuk dalam Tour Hiu Paus Sumbawa",
     inclusions: [
-      "Transportasi AC PP dari Poto Tano, Kertasari atau Taliwang ke Desa Labuan Jambu",
-      "Satu malam akomodasi/hotel di Desa Labuan Jambu",
-      "Perahu nelayan tradisional menuju Bagang di Kawasan Teluk Saleh",
-      "Perlengkapan snorkeling",
-      "Dokumentasi Underwater Gopro Hero 12",
-      "Entrance Fee Kawasan Wisata (Biaya Konservasi dan Uang Desa)",
-      "Handuk",
-      "Minuman hangat di atas perahu (teh & kopi)",
-      "Air mineral selama program"
+      "Transportasi kendaraan, sopir, dan bahan bakar (kendaraan ber-AC penuh)",
+      "Hotel 1 malam di Labuhan Jambu (AC & WiFi)",
+      "Perahu Tour Hiu Paus (kasur, bantal, selimut, handuk & toilet)",
+      "Pemandu Berbahasa Inggris",
+      "Air mineral selama tour",
+      "Sarapan sederhana di perahu (roti, nutella, buah)",
+      "Kopi, teh (di perahu)",
+      "Alat snorkeling (masker, snorkel, fins & pelampung)",
+      "Pemandu Tour Profesional",
+      "Dokumentasi foto & video Underwater Gopro Hero 12",
+      "Biaya masuk & konservasi"
     ],
-    exclusionsTitle: "Tidak Termasuk",
+    exclusionsTitle: "Yang Tidak Termasuk",
     exclusions: [
-      "Makan selama trip",
-      "Keperluan pribadi lainnya"
+      "Makan & Minuman L&D",
+      "Kebutuhan Pribadi",
+      "Tips kru lokal/pemandu wisata"
     ],
     whatToBringTitle: "Apa yang Harus Dibawa",
     whatToBring: [
@@ -68,22 +71,25 @@ export const tour9Translations = {
       time5: "06.00",
       desc5: "Time for snorkeling and swimming with the magnificent whale sharks. Experience a once-in-a-lifetime moment in these clear waters."
     },
-    inclusionsTitle: "Price Includes",
+    inclusionsTitle: "Inclusions",
     inclusions: [
-      "AC transportation round trip from Poto Tano, Kertasari or Taliwang to Labuan Jambu Village",
-      "One night accommodation/hotel in Labuan Jambu Village",
-      "Traditional fishing boat to Bagang in Teluk Saleh Area",
-      "Snorkeling equipment",
-      "Underwater Documentation Gopro Hero 12",
-      "Tourist Area Entrance Fee (Conservation Fee and Village Fee)",
-      "Towel",
-      "Hot drinks on the boat (tea & coffee)",
-      "Mineral water during the program"
+      "Vehicle transportation, driver, and fuel (full AC vehicle)",
+      "1 night hotel in Labuhan Jambu (AC & WiFi)",
+      "Whale shark tour boat (mattress, pillow, blanket, towel & toilet)",
+      "English-speaking guide",
+      "Mineral water during the tour",
+      "Simple breakfast on the boat (bread, Nutella, fruit)",
+      "Coffee & tea on the boat",
+      "Snorkeling equipment (mask, snorkel, fins & life jacket)",
+      "Professional tour guide",
+      "Underwater photo & video documentation using Gopro Hero 12",
+      "Entrance & conservation fees"
     ],
-    exclusionsTitle: "Not Included",
+    exclusionsTitle: "Exclusions",
     exclusions: [
-      "Meals during the trip",
-      "Other personal needs"
+      "Meals & beverages (Lunch & Dinner)",
+      "Personal needs",
+      "Tips for local crew/tour guide"
     ],
     whatToBringTitle: "What to Bring",
     whatToBring: [

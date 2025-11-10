@@ -17,22 +17,24 @@ export const tour7Translations = {
       time5: "10.00 AM",
       desc5: "Tiba di Desa Labuan Jambu. Program selesai."
     },
-    inclusionsTitle: "Harga Sudah Termasuk",
+    inclusionsTitle: "Yang Termasuk dalam Tour Hiu Paus Sumbawa",
     inclusions: [
-      "Profesional guide",
-      "Perahu masyarakat menuju Bagang di Kawasan Teluk Saleh",
-      "Sarapan sederhana saat di atas perahu/Bagang",
-      "Perlengkapan snorkeling (masker, snorkle dan pelampung)",
-      "Dokumentasi Underwater Gopro Hero 12",
-      "Entrance Fee Kawasan Wisata (Biaya Konservasi dan Uang Desa)",
-      "Handuk",
-      "Minuman hangat di atas perahu (teh & kopi)",
-      "Air mineral selama program"
+      "Perahu Tour Hiu Paus (kasur, bantal, selimut, handuk & toilet)",
+      "Pemandu Berbahasa Inggris",
+      "Air mineral selama tour",
+      "Sarapan sederhana di perahu (roti, nutella, buah)",
+      "Kopi, teh (di perahu)",
+      "Alat snorkeling (masker, snorkel, fins & pelampung)",
+      "Pemandu Tour Profesional",
+      "Dokumentasi foto & video Underwater Gopro Hero 12",
+      "Biaya masuk & konservasi"
     ],
-    exclusionsTitle: "Tidak Termasuk",
+    exclusionsTitle: "Yang Tidak Termasuk",
     exclusions: [
-      "Penginapan di Desa Labuan Jambu",
-      "Keperluan pribadi lainnya"
+      "Makan & Minuman L&D",
+      "Hotel",
+      "Kebutuhan Pribadi",
+      "Tips kru lokal/pemandu wisata"
     ],
     whatToBringTitle: "Apa yang Harus Dibawa",
     whatToBring: [
@@ -68,22 +70,24 @@ export const tour7Translations = {
       time5: "10.00 AM",
       desc5: "Arrive at Labuan Jambu Village. Program ends."
     },
-    inclusionsTitle: "Price Includes",
+    inclusionsTitle: "Inclusions",
     inclusions: [
-      "Professional guide",
-      "Community boat to Bagang in Teluk Saleh Area",
-      "Simple breakfast on the boat/Bagang",
-      "Snorkeling equipment (mask, snorkel and life jacket)",
-      "Underwater Documentation Gopro Hero 12",
-      "Tourist Area Entrance Fee (Conservation Fee and Village Fee)",
-      "Towel",
-      "Hot drinks on the boat (tea & coffee)",
-      "Mineral water during the program"
+      "Whale Shark Tour Boat (mattress, pillow, blanket, towel & toilet)",
+      "English-speaking guide",
+      "Mineral water during the tour",
+      "Simple breakfast on the boat (bread, Nutella, fruit)",
+      "Coffee & tea on the boat",
+      "Snorkeling equipment (mask, snorkel, fins & life jacket)",
+      "Professional tour guide",
+      "Underwater photo & video documentation using Gopro Hero 12",
+      "Entrance & conservation fees"
     ],
-    exclusionsTitle: "Not Included",
+    exclusionsTitle: "Exclusions",
     exclusions: [
-      "Accommodation in Labuan Jambu Village",
-      "Other personal needs"
+      "Meals & beverages (Lunch & Dinner)",
+      "Hotel",
+      "Personal needs",
+      "Tips for local crew/tour guide"
     ],
     whatToBringTitle: "What to Bring",
     whatToBring: [

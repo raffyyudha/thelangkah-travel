@@ -19,16 +19,16 @@ export const tour1Translations = {
     },
     inclusionsTitle: "Yang Termasuk dalam Tour Hiu Paus Sumbawa",
     inclusions: [
-      "Transportasi Kendaraan+Sopir+bahan bakar (Kendaraan ber-AC penuh)",
+      "Transportasi kendaraan, sopir, dan bahan bakar (kendaraan ber-AC penuh)",
       "Perahu Tour Hiu Paus (kasur, bantal, selimut, handuk & toilet)",
-      "Pemandu Berbahasa Inggris Berlisensi",
+      "Pemandu berbahasa Inggris",
       "Air mineral selama tour",
       "Sarapan sederhana di perahu (roti, nutella, buah)",
-      "Kopi, teh / coklat panas (di perahu)",
-      "Alat snorkeling (masker standar tinggi dengan antifog, snorkel & fins)",
+      "Kopi, teh (di perahu)",
+      "Alat snorkeling (masker, snorkel, fins & pelampung)",
       "Pemandu Tour Profesional",
-      "Dokumentasi Underwater Gopro Hero 12",
-      "Biaya masuk dan konservasi"
+      "Dokumentasi foto & video underwater Gopro Hero 12",
+      "Biaya masuk & konservasi"
     ],
     exclusionsTitle: "Yang Tidak Termasuk",
     exclusions: [
@@ -71,16 +71,16 @@ export const tour1Translations = {
     },
     inclusionsTitle: "Whats include in the Tour Whale Shark Sumbawa",
     inclusions: [
-      "Vehicle Transpotation+Driver+fuel (full AC Vehicle)",
-      "Boat Whale Shark Tour (matras, pillow, blanket, towel & toilet)",
-      "Licensed English Speaking Guide",
+      "Vehicle transportation, driver, and fuel (full AC vehicle)",
+      "Whale Shark Tour Boat (mattress, pillow, blanket, towel & toilet)",
+      "English-speaking guide",
       "Mineral water during the tour",
-      "Simple breakfast on the boat (bread, nutella, fruit)",
-      "Coffee, tea / hot chocolate (on the boat)",
-      "Snorkling tools (high standart mask with antifog, snorkle & fins)",
-      "Profesional Tour Guide",
-      "Underwater Documentation Gopro Hero 12",
-      "Entrance and Conservation fee"
+      "Simple breakfast on the boat (bread, Nutella, fruit)",
+      "Coffee & tea on the boat",
+      "Snorkeling equipment (mask, snorkel, fins & life jacket)",
+      "Professional tour guide",
+      "Underwater photo & video documentation using Gopro Hero 12",
+      "Entrance & conservation fees"
     ],
     exclusionsTitle: "Exclusion",
     exclusions: [

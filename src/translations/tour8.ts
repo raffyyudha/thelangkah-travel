@@ -18,23 +18,25 @@ export const tour8Translations = {
       time5: "08.30 AM",
       desc5: "Kembali ke Pelabuhan Goa di Kota Sumbawa Besar."
     },
-    inclusionsTitle: "Harga Sudah Termasuk",
+    inclusionsTitle: "Yang Termasuk dalam Tour Hiu Paus Sumbawa",
     inclusions: [
-      "Profesional guide",
-      "Transportasi AC PP Kota Sumbawa Besar – Dermaga Goa",
-      "Private speed boat dari Sumbawa Besar ke Perairan Teluk Saleh",
-      "Sarapan sederhana saat di atas boat/Bagang",
-      "Perlengkapan snorkeling (masker, snorkle dan pelampung)",
-      "Dokumentasi Underwater Gopro Hero 12",
-      "Entrance Fee Kawasan Wisata (Biaya Konservasi dan Uang Desa)",
-      "Handuk",
-      "Minuman hangat di atas perahu (teh & kopi)",
-      "Air mineral selama program"
+      "Transportasi mobil Sumbawa Besar - Dermaga Goa, sopir, dan bahan bakar (kendaraan ber-AC penuh)",
+      "Speedboat tour hiu paus (bantal, handuk & toilet)",
+      "Pemandu Berbahasa Inggris",
+      "Air mineral selama tour",
+      "Sarapan sederhana di speedboat (roti, nutella, buah)",
+      "Kopi, teh (di speedboat)",
+      "Alat snorkeling (masker, snorkel, fins & pelampung)",
+      "Pemandu Tour Profesional",
+      "Dokumentasi foto & video Underwater Gopro Hero 12",
+      "Biaya masuk & konservasi"
     ],
-    exclusionsTitle: "Tidak Termasuk",
+    exclusionsTitle: "Yang Tidak Termasuk",
     exclusions: [
-      "Akomodasi",
-      "Keperluan pribadi lainnya"
+      "Makan & Minuman L&D",
+      "Hotel",
+      "Kebutuhan Pribadi",
+      "Tips kru lokal/pemandu wisata"
     ],
     whatToBringTitle: "Apa yang Harus Dibawa",
     whatToBring: [
@@ -71,23 +73,25 @@ export const tour8Translations = {
       time5: "08.30 AM",
       desc5: "Return to Goa Port in Sumbawa Besar City."
     },
-    inclusionsTitle: "Price Includes",
+    inclusionsTitle: "Inclusions",
     inclusions: [
-      "Professional guide",
-      "AC transportation round trip Sumbawa Besar City – Goa Port",
-      "Private speed boat from Sumbawa Besar to Teluk Saleh Waters",
-      "Simple breakfast on the boat/Bagang",
-      "Snorkeling equipment (mask, snorkel and life jacket)",
-      "Underwater Documentation Gopro Hero 12",
-      "Tourist Area Entrance Fee (Conservation Fee and Village Fee)",
-      "Towel",
-      "Hot drinks on the boat (tea & coffee)",
-      "Mineral water during the program"
+      "Vehicle transportation Sumbawa Besar - Goa Pier, driver, and fuel (full AC vehicle)",
+      "Whale shark speedboat tour (pillow, towel & toilet)",
+      "English-speaking guide",
+      "Mineral water during the tour",
+      "Simple breakfast on the speedboat (bread, Nutella, fruit)",
+      "Coffee & tea on the speedboat",
+      "Snorkeling equipment (mask, snorkel, fins & life jacket)",
+      "Professional tour guide",
+      "Underwater photo & video documentation using Gopro Hero 12",
+      "Entrance & conservation fees"
     ],
-    exclusionsTitle: "Not Included",
+    exclusionsTitle: "Exclusions",
     exclusions: [
-      "Accommodation",
-      "Other personal needs"
+      "Meals & beverages (Lunch & Dinner)",
+      "Hotel",
+      "Personal needs",
+      "Tips for local crew/tour guide"
     ],
     whatToBringTitle: "What to Bring",
     whatToBring: [
