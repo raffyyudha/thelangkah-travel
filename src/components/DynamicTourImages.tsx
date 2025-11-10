@@ -72,10 +72,20 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
       }
       if (tourName === "whale-shark-moyo-kenawa-lombok") {
         setImages({
-          hero: "/images/whale-shark-moyo-kenawa-lombok-hero.PNG",
+          hero: "/images/whale-shark-moyo-kenawa-lombok.PNG",
           gallery1: "/images/whale-shark-moyo-kenawa-lombok-1.PNG",
           gallery2: "/images/whale-shark-moyo-kenawa-lombok-2.PNG",
           gallery3: "/images/whale-shark-moyo-kenawa-lombok-3.PNG"
+        });
+        setLoading(false);
+        return;
+      }
+      if (tourName === "trip-4d3n-sumbawa") {
+        setImages({
+          hero: "/images/whale-shark-moyo-kenawa-lombok-hero.PNG",
+          gallery1: "/images/whale-shark-moyo-kenawa-lombok-hero.PNG",
+          gallery2: "/images/whale-shark-moyo-kenawa-lombok-1.PNG",
+          gallery3: "/images/whale-shark-moyo-kenawa-lombok-2.PNG"
         });
         setLoading(false);
         return;
