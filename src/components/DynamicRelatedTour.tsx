@@ -23,6 +23,8 @@ export function DynamicRelatedTour({ tourName, title, href }: DynamicRelatedTour
     ? "/images/whale-shark-2d1n-sekongkang.PNG"
     : tourName === "whale-shark-moyo-kenawa-lombok"
     ? "/images/whale-shark-moyo-kenawa-lombok.PNG"
+    : tourName === "trip-4d3n-sumbawa"
+    ? "/images/whale-shark-moyo-kenawa-lombok-hero.PNG"
     : "/images/hero.jpg";
   
   const [heroImage, setHeroImage] = useState<string>(defaultImage);
@@ -47,6 +49,10 @@ export function DynamicRelatedTour({ tourName, title, href }: DynamicRelatedTour
     }
     if (tourName === "whale-shark-moyo-kenawa-lombok") {
       setHeroImage("/images/whale-shark-moyo-kenawa-lombok.PNG");
+      return;
+    }
+    if (tourName === "trip-4d3n-sumbawa") {
+      setHeroImage("/images/whale-shark-moyo-kenawa-lombok-hero.PNG");
       return;
     }
     

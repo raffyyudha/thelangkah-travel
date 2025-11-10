@@ -59,58 +59,69 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-4">
             <DynamicPackageCard
               tourName="whale-shark-start-sumbawa"
-              title="Tour Hiu Paus Teluk Saleh Sumbawa Harian Start Finish Kota Sumbawa Besar"
+              title="Trip 1 hari hiu paus (A) (star & finis sumbawa besar)"
               href="/whale-shark-start-sumbawa"
+              price="Mulai 750.000 IDR per orang"
             />
             <DynamicPackageCard
               tourName="whale-shark-1day-labuhan-jambu"
-              title="Trip 1 Hari Hiu Paus (Start & Finish Labuhan Jambu)"
+              title="Trip 1 hari hiu paus (B) (star & finis labuhan jambu)"
               href="/whale-shark-1day-labuhan-jambu"
+              price="Mulai 550.000 IDR per orang"
             />
             <DynamicPackageCard
               tourName="whale-shark-speedboat"
-              title="Trip 1 Hari Hiu Paus (Menggunakan Speed Boat)"
+              title="Trip 1 hari hiu paus (C) (Menggunakan speed boat)"
               href="/whale-shark-speedboat"
+              price="Mulai 1.700.000 IDR per orang"
             />
             <DynamicPackageCard
               tourName="whale-shark-2d1n"
-              title="Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar"
+              title="2D1N Trip hiu paus (D) (Star & finish sumbawa besar)"
               href="/whale-shark-2d1n"
+              price="Mulai 1.200.000 IDR per orang"
             />
             <DynamicPackageCard
               tourName="whale-shark-2d1n-poto-tano"
-              title="2D1N Trip Hiu Paus (Start & Finish Area Poto Tano)"
+              title="2D1N Trip hiu paus (E) (Star & finish area Poto tano)"
               href="/whale-shark-2d1n-poto-tano"
+              price="Mulai 1.200.000 IDR per orang"
             />
             <DynamicPackageCard
               tourName="whale-shark-2d1n-sekongkang"
-              title="2D1N Trip Hiu Paus (Start & Finish Area Sekongkang)"
+              title="2D1N Trip hiu paus (F) (Star & finish area sakongkang)"
               href="/whale-shark-2d1n-sekongkang"
+              price="Mulai 1.200.000 IDR per orang"
             />
             <DynamicPackageCard
               tourName="whale-shark-start-labuhan-jambu"
-              title="Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok"
+              title="2D1N Trip hiu paus (G) (Star & finish area Lombok)"
               href="/whale-shark-start-labuhan-jambu"
+              price="Mulai 1.200.000 IDR per orang"
             />
             <DynamicPackageCard
               tourName="whale-shark-experience"
-              title="Sumbawa Whale Shark Tour 2 Days 1 Night (scuba diving tour)"
+              title="2D1N Trip hiu paus (H) (Scuba diving sumbawa)"
               href="/whale-shark-experience"
+              price="Mulai 1.200.000 IDR per orang"
             />
             <DynamicPackageCard
               tourName="combo-moyo-whale-shark"
-              title="Paket Tour Sumbawa 3 Hari 2 Malam Pulau Moyo - Hiu Paus Teluk Saleh"
+              title="3D2N Trip (I) hiu paus & pulau Moyo (Star & finish sumbawa besar)"
               href="/combo-moyo-whale-shark"
+              price="Mulai 1.800.000 IDR per orang"
             />
             <DynamicPackageCard
               tourName="whale-shark-moyo-kenawa-lombok"
-              title="3D2N Trip Hiu Paus - Pulau Moyo - Kenawa (Start & Finish Area Lombok)"
+              title="3D2N Trip (J) hiu paus - pulau Moyo - kenawa (Star & finish area Lombok)"
               href="/whale-shark-moyo-kenawa-lombok"
+              price="Mulai 1.800.000 IDR per orang"
             />
             <DynamicPackageCard
               tourName="trip-4d3n-sumbawa"
-              title="Paket Tour Sumbawa 4 Hari 3 Malam Wisata Pulau Moyo, Pulau Kenawa & Hiu Paus"
+              title="4D3N Trip (K) Hiu paus-pulau Moyo-kenawa (Star & finish sumbawa besar)"
               href="/trip-4d3n-sumbawa"
+              price="Mulai 1.800.000 IDR per orang"
             />
           </div>
         </div>

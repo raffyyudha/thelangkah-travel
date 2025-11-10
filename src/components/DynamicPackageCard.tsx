@@ -9,9 +9,10 @@ interface DynamicPackageCardProps {
   tourName: string;
   title: string;
   href: string;
+  price?: string;
 }
 
-export function DynamicPackageCard({ tourName, title, href }: DynamicPackageCardProps) {
+export function DynamicPackageCard({ tourName, title, href, price }: DynamicPackageCardProps) {
   // Hardcoded fallback for new tours - using thumbnails
   const defaultImage = tourName === "whale-shark-1day-labuhan-jambu" 
     ? "/images/whale-shark-1day-labuhan-jambu.PNG" 
@@ -23,6 +24,8 @@ export function DynamicPackageCard({ tourName, title, href }: DynamicPackageCard
     ? "/images/whale-shark-2d1n-sekongkang.PNG"
     : tourName === "whale-shark-moyo-kenawa-lombok"
     ? "/images/whale-shark-moyo-kenawa-lombok.PNG"
+    : tourName === "trip-4d3n-sumbawa"
+    ? "/images/whale-shark-moyo-kenawa-lombok-hero.PNG"
     : "/images/hero.jpg";
   
   const [heroImage, setHeroImage] = useState<string>(defaultImage);
@@ -47,6 +50,10 @@ export function DynamicPackageCard({ tourName, title, href }: DynamicPackageCard
     }
     if (tourName === "whale-shark-moyo-kenawa-lombok") {
       setHeroImage("/images/whale-shark-moyo-kenawa-lombok.PNG");
+      return;
+    }
+    if (tourName === "trip-4d3n-sumbawa") {
+      setHeroImage("/images/whale-shark-moyo-kenawa-lombok-hero.PNG");
       return;
     }
     
@@ -88,6 +95,12 @@ export function DynamicPackageCard({ tourName, title, href }: DynamicPackageCard
         </div>
         <div className="p-3 text-center">
           <h3 className="text-xs sm:text-sm font-bold text-gray-900 leading-tight">{title}</h3>
+          {price && (
+            <p className="text-xs text-gray-600 mt-2">{price}</p>
+          )}
+          <div className="inline-block mt-3">
+            <p className="text-sm font-bold text-orange-500 bg-orange-50 px-4 py-1.5 rounded">More details</p>
+          </div>
         </div>
       </div>
     </Link>
