@@ -7,11 +7,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { comboKenawaWhaleSharkTranslations } from "@/translations/comboKenawaWhaleShark";
 import { MessageCircle, Clock, Users, MapPin, Check, X } from "lucide-react";
 
-export const metadata = {
-  title: "Combo: Kenawa + Whale Shark | Adventure Sumbawa Island",
-  description: "Paket kombinasi Pulau Kenawa dan Hiu Paus - sunset spektakuler dan berenang bersama hiu paus dalam satu trip.",
-};
-
 export default function ComboKenawaWhaleSharkPage() {
   const { language } = useLanguage();
   const t = language === 'id' ? comboKenawaWhaleSharkTranslations.id : comboKenawaWhaleSharkTranslations.en;

@@ -7,11 +7,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { comboUltimateSumbawaTranslations } from "@/translations/comboUltimateSumbawa";
 import { MessageCircle, Clock, Users, MapPin, Check, X } from "lucide-react";
 
-export const metadata = {
-  title: "Ultimate Sumbawa: Moyo + Kenawa + Whale Shark | Adventure Sumbawa Island",
-  description: "Paket kombinasi lengkap: Pulau Moyo, Pulau Kenawa, dan Hiu Paus - pengalaman terbaik Sumbawa dalam satu trip.",
-};
-
 export default function Page() {
   const { language } = useLanguage();
   const t = language === 'id' ? comboUltimateSumbawaTranslations.id : comboUltimateSumbawaTranslations.en;
