@@ -33,7 +33,7 @@ export const comboUltimateSumbawaTranslations = {
       "Tips untuk guide dan crew"
     ],
     pricingTitle: "Harga Tour Ultimate",
-    pricingNotes: []
+    pricingNotes: ["Untuk group lebih dari 10 orang, silahkan hubungi kami untuk harga spesial!"]
   },
   en: {
     title: "Ultimate Sumbawa Experience",
@@ -68,7 +68,6 @@ export const comboUltimateSumbawaTranslations = {
       "Personal expenses",
       "Tips for guide and crew"
     ],
-    pricingTitle: "Ultimate Tour Price",
-    pricingNotes: []
+    pricingTitle: "Ultimate Tour Price", pricingNotes: ["For groups of more than 10 people, please contact us for special rates!"]
   }
 };

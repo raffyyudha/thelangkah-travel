@@ -37,7 +37,7 @@ export const comboKenawaWhaleSharkTranslations = {
       "Tips untuk guide dan crew"
     ],
     pricingTitle: "Harga Tour",
-    pricingNotes: []
+    pricingNotes: ["Untuk group lebih dari 10 orang, silahkan hubungi kami untuk harga spesial!"]
   },
   en: {
     title: "Combo: Kenawa + Whale Shark",
@@ -77,6 +77,6 @@ export const comboKenawaWhaleSharkTranslations = {
       "Tips for guide and crew"
     ],
     pricingTitle: "Tour Price",
-    pricingNotes: []
+    pricingNotes: ["For groups of more than 10 people, please contact us for special rates!"]
   }
 };

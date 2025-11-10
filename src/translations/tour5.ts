@@ -28,7 +28,7 @@ export const tour5Translations = {
       "Tips untuk guide dan crew"
     ],
     pricingTitle: "Harga Tour 4D3N",
-    pricingNotes: []
+    pricingNotes: ["Untuk group lebih dari 10 orang, silahkan hubungi kami untuk harga spesial!"]
   },
   en: {
     title: "Sumbawa Tour Package 4 Days 3 Nights Moyo Island, Kenawa Island & Whale Shark",
@@ -58,7 +58,6 @@ export const tour5Translations = {
       "Personal expenses",
       "Tips for guide and crew"
     ],
-    pricingTitle: "4D3N Tour Price",
-    pricingNotes: []
+    pricingTitle: "4D3N Tour Price", pricingNotes: ["For groups of more than 10 people, please contact us for special rates!"]
   }
 };

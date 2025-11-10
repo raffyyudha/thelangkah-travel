@@ -24,7 +24,7 @@ export const tour6Translations = {
       "Tips"
     ],
     pricingTitle: "Harga Diving Tour",
-    pricingNotes: []
+    pricingNotes: ["Untuk group lebih dari 10 orang, silahkan hubungi kami untuk harga spesial!"]
   },
   en: {
     title: "Sumbawa Whale Shark Tour 2 Days 1 Night (scuba diving tour)",
@@ -50,7 +50,6 @@ export const tour6Translations = {
       "Personal expenses",
       "Tips"
     ],
-    pricingTitle: "Diving Tour Price",
-    pricingNotes: []
+    pricingTitle: "Diving Tour Price", pricingNotes: ["For groups of more than 10 people, please contact us for special rates!"]
   }
 };

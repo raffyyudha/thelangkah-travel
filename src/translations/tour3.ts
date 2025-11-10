@@ -26,7 +26,7 @@ export const tour3Translations = {
       "Tips"
     ],
     pricingTitle: "Harga Tour 3D2N",
-    pricingNotes: []
+    pricingNotes: ["Untuk group lebih dari 10 orang, silahkan hubungi kami untuk harga spesial!"]
   },
   en: {
     title: "Sumbawa Tour Package 3 Days 2 Nights Moyo Island - Whale Shark Saleh Bay",
@@ -54,7 +54,6 @@ export const tour3Translations = {
       "Personal expenses",
       "Tips"
     ],
-    pricingTitle: "3D2N Tour Price",
-    pricingNotes: []
+    pricingTitle: "3D2N Tour Price", pricingNotes: ["For groups of more than 10 people, please contact us for special rates!"]
   }
 };

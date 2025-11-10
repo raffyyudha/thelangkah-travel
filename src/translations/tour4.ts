@@ -24,7 +24,7 @@ export const tour4Translations = {
       "Tips"
     ],
     pricingTitle: "Harga Tour (Start & Finish Lombok)",
-    pricingNotes: []
+    pricingNotes: ["Untuk group lebih dari 10 orang, silahkan hubungi kami untuk harga spesial!"]
   },
   en: {
     title: "Sumbawa Whale Shark Tour Package 2 Days 1 Night start & finish Lombok",
@@ -50,7 +50,6 @@ export const tour4Translations = {
       "Personal expenses",
       "Tips"
     ],
-    pricingTitle: "Tour Price (Start & Finish Lombok)",
-    pricingNotes: []
+    pricingTitle: "Tour Price (Start & Finish Lombok)", pricingNotes: ["For groups of more than 10 people, please contact us for special rates!"]
   }
 };

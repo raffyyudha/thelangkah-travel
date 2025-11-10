@@ -45,7 +45,7 @@ export const tour1Translations = {
       "Kacamata hitam dengan Perlindungan UV"
     ],
     pricingTitle: "Harga Hiu Paus Teluk Saleh Sumbawa dalam Rupiah Indonesia (IDR)",
-    pricingNotes: []
+    pricingNotes: ["Untuk group lebih dari 10 orang, silahkan hubungi kami untuk harga spesial!"]
   },
   en: {
     title: "Sumbawa Whale Shark Saleh Bay One Day Tour Start Finish Sumbawa Besar City",
@@ -93,6 +93,6 @@ export const tour1Translations = {
       "Sunglasses with UV Protection"
     ],
     pricingTitle: "Whale Shark Saleh Bay Sumbawa pricing revert to Indonesian Rupiah (IDR)",
-    pricingNotes: []
+    pricingNotes: ["For groups of more than 10 people, please contact us for special rates!"]
   }
 };

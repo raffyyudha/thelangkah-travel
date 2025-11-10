@@ -24,7 +24,7 @@ export const tour2Translations = {
       "Tips untuk guide dan crew"
     ],
     pricingTitle: "Harga Tour 2D1N",
-    pricingNotes: []
+    pricingNotes: ["Untuk group lebih dari 10 orang, silahkan hubungi kami untuk harga spesial!"]
   },
   en: {
     title: "Sumbawa Whale Shark Tour 2 Days 1 Night start & finish Sumbawa Besar",
@@ -50,7 +50,6 @@ export const tour2Translations = {
       "Personal expenses",
       "Tips for guide and crew"
     ],
-    pricingTitle: "2D1N Tour Price",
-    pricingNotes: []
+    pricingTitle: "2D1N Tour Price", pricingNotes: ["For groups of more than 10 people, please contact us for special rates!"]
   }
 };
