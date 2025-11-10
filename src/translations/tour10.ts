@@ -15,15 +15,7 @@ export const tour10Translations = {
       time4: "05.30",
       desc4: "Tiba di bagan (platform penangkapan ikan terapung) yang dilengkapi lampu terang untuk menarik perhatian hiu paus.",
       time5: "06.00",
-      desc5: "Waktunya snorkeling dan berenang bersama hiu paus yang megah. Rasakan pengalaman sekali seumur hidup di perairan jernih ini.",
-      time6: "08.00",
-      desc6: "Kembali ke Desa Labuan Jambu.",
-      time7: "10.00",
-      desc7: "Istirahat dan bersantai di Labuan Jambu sebelum kembali ke hotel Anda di area Jelenga, Maluk, atau Sekongkang.",
-      time8: "16.00",
-      desc8: "Tiba kembali di hotel Anda. Program selesai.",
-      time9: "",
-      desc9: ""
+      desc5: "Waktunya snorkeling dan berenang bersama hiu paus yang megah. Rasakan pengalaman sekali seumur hidup di perairan jernih ini."
     },
     inclusionsTitle: "Harga Sudah Termasuk",
     inclusions: [
@@ -74,15 +66,7 @@ export const tour10Translations = {
       time4: "05.30",
       desc4: "Arrive at the bagan (floating fishing platform) equipped with bright lights to attract whale sharks.",
       time5: "06.00",
-      desc5: "Time for snorkeling and swimming with the magnificent whale sharks. Experience a once-in-a-lifetime moment in these clear waters.",
-      time6: "08.00",
-      desc6: "Return to Labuan Jambu Village.",
-      time7: "10.00",
-      desc7: "Rest and relax in Labuan Jambu before returning to your hotel in Jelenga, Maluk, or Sekongkang area.",
-      time8: "16.00",
-      desc8: "Arrive back at your hotel. Program ends.",
-      time9: "",
-      desc9: ""
+      desc5: "Time for snorkeling and swimming with the magnificent whale sharks. Experience a once-in-a-lifetime moment in these clear waters."
     },
     inclusionsTitle: "Price Includes",
     inclusions: [

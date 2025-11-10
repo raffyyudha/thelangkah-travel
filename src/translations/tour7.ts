@@ -3,7 +3,7 @@ export const tour7Translations = {
     title: "Trip 1 Hari Hiu Paus (Start & Finish Labuhan Jambu)",
     subtitle: "Mulai 550.000 IDR per orang",
     description1: "Labuhan Jambu adalah pintu terdekat menuju habitat alami hiu paus di Teluk Saleh. Dari pelabuhan ini, perjalanan ke spot hiu paus hanya membutuhkan waktu singkat. Dengan start langsung dari Labuhan Jambu, Anda tidak perlu menempuh perjalanan darat panjang dari kota. Ini cocok bagi wisatawan yang menginap di dekat area wisata.",
-    description2: "* At Adventure Sumbawa Island, kami selalu berupaya memberikan pengalaman terbaik bagi setiap tamu. Namun, kami juga menghormati kondisi alam dan mengutamakan keselamatan. Jika dalam perjalanan tidak ditemukan hiu paus, kami akan mengembalikan pembayaran anda sebesar Rp 1.000.000 dari total harga. * Kompensasi diberikan hanya jika hiu paus tidak terlihat sama sekali, bukan karena jarak atau durasi yang tidak sempat maksimal.",
+    description2: "Trip ini dirancang khusus untuk memberikan pengalaman terbaik melihat hiu paus dengan waktu yang efisien.",
     programTitle: "Program Wisata Hiu Paus Sumbawa",
     itinerary: {
       time1: "04.00 AM",
@@ -15,15 +15,7 @@ export const tour7Translations = {
       time4: "08.30 AM",
       desc4: "Kembali ke dermaga Desa Labuan Jambu.",
       time5: "10.00 AM",
-      desc5: "Tiba di Desa Labuan Jambu. Program selesai.",
-      time6: "",
-      desc6: "",
-      time7: "",
-      desc7: "",
-      time8: "",
-      desc8: "",
-      time9: "",
-      desc9: ""
+      desc5: "Tiba di Desa Labuan Jambu. Program selesai."
     },
     inclusionsTitle: "Harga Sudah Termasuk",
     inclusions: [
@@ -53,8 +45,6 @@ export const tour7Translations = {
     ],
     pricingTitle: "Detail Harga Paket",
     pricingNotes: [
-      "Di Adventure Sumbawa Island, kami selalu berupaya memberikan pengalaman terbaik bagi setiap tamu. Namun, kami juga menghormati kondisi alam dan mengutamakan keselamatan. Jika dalam perjalanan tidak ditemukan hiu paus, kami akan mengembalikan pembayaran anda sebesar Rp 1.000.000 dari total harga.",
-      "Kompensasi diberikan hanya jika hiu paus tidak terlihat sama sekali, bukan karena jarak atau durasi yang tidak sempat maksimal.",
       "Peserta lebih dari 10 orang / group, silahkan menghubungi kami!"
     ]
   },
@@ -62,7 +52,7 @@ export const tour7Translations = {
     title: "1 Day Whale Shark Trip (Start & Finish Labuhan Jambu)",
     subtitle: "Starting from 550,000 IDR per person",
     description1: "Labuhan Jambu is the closest gateway to the natural habitat of whale sharks in Teluk Saleh. From this port, the journey to the whale shark spot takes only a short time. Starting directly from Labuhan Jambu, you don't need to take a long overland journey from the city. This is suitable for tourists staying near the tourist area.",
-    description2: "* At Adventure Sumbawa Island, we always strive to provide the best experience for every guest. However, we also respect natural conditions and prioritize safety. If whale sharks are not found during the trip, we will refund Rp 1,000,000 from the total price. * Compensation is given only if whale sharks are not seen at all, not because of distance or duration that was not maximized.",
+    description2: "This trip is specially designed to provide the best whale shark viewing experience with efficient timing.",
     programTitle: "Sumbawa Whale Shark Tour Program",
     itinerary: {
       time1: "04.00 AM",
@@ -74,15 +64,7 @@ export const tour7Translations = {
       time4: "08.30 AM",
       desc4: "Return to Labuan Jambu Village pier.",
       time5: "10.00 AM",
-      desc5: "Arrive at Labuan Jambu Village. Program ends.",
-      time6: "",
-      desc6: "",
-      time7: "",
-      desc7: "",
-      time8: "",
-      desc8: "",
-      time9: "",
-      desc9: ""
+      desc5: "Arrive at Labuan Jambu Village. Program ends."
     },
     inclusionsTitle: "Price Includes",
     inclusions: [

@@ -15,15 +15,7 @@ export const tour9Translations = {
       time4: "05.30",
       desc4: "Tiba di bagan (platform penangkapan ikan terapung) yang dilengkapi lampu terang untuk menarik perhatian hiu paus.",
       time5: "06.00",
-      desc5: "Waktunya snorkeling dan berenang bersama hiu paus yang megah. Rasakan pengalaman sekali seumur hidup di perairan jernih ini.",
-      time6: "08.00",
-      desc6: "Kembali ke Desa Labuan Jambu.",
-      time7: "10.00",
-      desc7: "Istirahat sebentar sebelum memulai perjalanan kembali ke hotel Anda di area Poto Tano, Taliwang, atau Kertasari.",
-      time8: "15.00",
-      desc8: "Tiba kembali di hotel Anda, menandakan akhir dari petualangan hiu paus yang luar biasa.",
-      time9: "",
-      desc9: ""
+      desc5: "Waktunya snorkeling dan berenang bersama hiu paus yang megah. Rasakan pengalaman sekali seumur hidup di perairan jernih ini."
     },
     inclusionsTitle: "Harga Sudah Termasuk",
     inclusions: [
@@ -74,15 +66,7 @@ export const tour9Translations = {
       time4: "05.30",
       desc4: "Arrive at the bagan (floating fishing platform) equipped with bright lights to attract whale sharks.",
       time5: "06.00",
-      desc5: "Time for snorkeling and swimming with the magnificent whale sharks. Experience a once-in-a-lifetime moment in these clear waters.",
-      time6: "08.00",
-      desc6: "Return to Labuan Jambu Village.",
-      time7: "10.00",
-      desc7: "Brief rest before starting the journey back to your hotel in Poto Tano, Taliwang, or Kertasari area.",
-      time8: "15.00",
-      desc8: "Arrive back at your hotel, marking the end of an extraordinary whale shark adventure.",
-      time9: "",
-      desc9: ""
+      desc5: "Time for snorkeling and swimming with the magnificent whale sharks. Experience a once-in-a-lifetime moment in these clear waters."
     },
     inclusionsTitle: "Price Includes",
     inclusions: [

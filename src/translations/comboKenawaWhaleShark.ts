@@ -18,15 +18,7 @@ export const comboKenawaWhaleSharkTranslations = {
       time4: "10:00",
       desc4: "Sarapan di perahu",
       time5: "11:00",
-      desc5: "Perjalanan menuju Pulau Kenawa",
-      time6: "12:30",
-      desc6: "Tiba di Pulau Kenawa, makan siang",
-      time7: "14:00",
-      desc7: "Eksplorasi pulau dan foto-foto",
-      time8: "17:00",
-      desc8: "Menikmati sunset spektakuler",
-      time9: "18:30",
-      desc9: "Kembali ke Sumbawa Besar"
+      desc5: "Perjalanan menuju Pulau Kenawa"
     },
     inclusionsTitle: "Yang Termasuk",
     inclusions: [
@@ -45,10 +37,7 @@ export const comboKenawaWhaleSharkTranslations = {
       "Tips untuk guide dan crew"
     ],
     pricingTitle: "Harga Tour",
-    pricingNotes: [
-      "Di Adventure Sumbawa Island, kami selalu berupaya memberikan pengalaman terbaik bagi setiap tamu. Namun, kami juga menghormati kondisi alam dan mengutamakan keselamatan. Jika dalam perjalanan tidak ditemukan hiu paus, kami akan mengembalikan pembayaran anda sebesar Rp 1.000.000 dari total harga.",
-      "Kompensasi diberikan hanya jika hiu paus tidak terlihat sama sekali, bukan karena jarak atau durasi yang tidak sempat maksimal."
-    ]
+    pricingNotes: []
   },
   en: {
     title: "Combo: Kenawa + Whale Shark",
@@ -69,15 +58,7 @@ export const comboKenawaWhaleSharkTranslations = {
       time4: "10:00",
       desc4: "Breakfast on boat",
       time5: "11:00",
-      desc5: "Journey to Kenawa Island",
-      time6: "12:30",
-      desc6: "Arrive at Kenawa Island, lunch",
-      time7: "14:00",
-      desc7: "Island exploration and photos",
-      time8: "17:00",
-      desc8: "Enjoy spectacular sunset",
-      time9: "18:30",
-      desc9: "Return to Sumbawa Besar"
+      desc5: "Journey to Kenawa Island"
     },
     inclusionsTitle: "Inclusions",
     inclusions: [
@@ -96,9 +77,6 @@ export const comboKenawaWhaleSharkTranslations = {
       "Tips for guide and crew"
     ],
     pricingTitle: "Tour Price",
-    pricingNotes: [
-      "At Adventure Sumbawa Island, we always strive to provide the best experience for every guest. However, we also respect natural conditions and prioritize safety. If whale sharks are not found during the trip, we will refund IDR 1,000,000 from the total price.",
-      "Compensation is given only if whale sharks are not seen at all, not due to distance or duration that was not maximized."
-    ]
+    pricingNotes: []
   }
 };

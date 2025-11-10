@@ -15,15 +15,7 @@ export const tour1Translations = {
       time4: "08:00",
       desc4: "Sarapan ringan akan disajikan di perahu (roti, kopi, teh, dan buah segar).",
       time5: "08:30",
-      desc5: "Berangkat dari Titik Hiu Paus Sumbawa",
-      time6: "10:30",
-      desc6: "Tiba di Pelabuhan Labuhan Jambu, bersiap untuk perjalanan kembali ke Sumbawa Besar.",
-      time7: "11:30",
-      desc7: "Kembali ke Sumbawa Besar dan diantar ke hotel atau akomodasi Anda.",
-      time8: "12:30",
-      desc8: "Berhenti untuk makan siang (biaya pribadi).",
-      time9: "02:00",
-      desc9: "Tiba kembali di akomodasi Anda di Sumbawa Besar, akhir program"
+      desc5: "Berangkat dari Titik Hiu Paus Sumbawa"
     },
     inclusionsTitle: "Yang Termasuk dalam Tour Hiu Paus Sumbawa",
     inclusions: [
@@ -53,10 +45,7 @@ export const tour1Translations = {
       "Kacamata hitam dengan Perlindungan UV"
     ],
     pricingTitle: "Harga Hiu Paus Teluk Saleh Sumbawa dalam Rupiah Indonesia (IDR)",
-    pricingNotes: [
-      "Di Adventure Sumbawa Island, kami selalu berupaya memberikan pengalaman terbaik bagi setiap tamu. Namun, kami juga menghormati kondisi alam dan mengutamakan keselamatan. Jika dalam perjalanan tidak ditemukan hiu paus, kami akan mengembalikan pembayaran anda sebesar Rp 1.000.000 dari total harga.",
-      "Kompensasi diberikan hanya jika hiu paus tidak terlihat sama sekali, bukan karena jarak atau durasi yang tidak sempat maksimal."
-    ]
+    pricingNotes: []
   },
   en: {
     title: "Sumbawa Whale Shark Saleh Bay One Day Tour Start Finish Sumbawa Besar City",
@@ -74,15 +63,7 @@ export const tour1Translations = {
       time4: "08:00",
       desc4: "Light breakfast will be served on the boat (bread, coffee, tea, and fresh fruits).",
       time5: "08:30",
-      desc5: "Depart from the Sumbawa Whale Shark Point",
-      time6: "10:30",
-      desc6: "Arrive at Labuhan Jambu Harbor, prepare for return trip to Sumbawa Besar.",
-      time7: "11:30",
-      desc7: "Return to Sumbawa Besar and drop off at your hotel or accomodation.",
-      time8: "12:30",
-      desc8: "Stop for lunch (personal account).",
-      time9: "02:00",
-      desc9: "Arrive back at your accomodation in Sumbawa Besar, ends of program"
+      desc5: "Depart from the Sumbawa Whale Shark Point"
     },
     inclusionsTitle: "Whats include in the Tour Whale Shark Sumbawa",
     inclusions: [
@@ -112,9 +93,6 @@ export const tour1Translations = {
       "Sunglasses with UV Protection"
     ],
     pricingTitle: "Whale Shark Saleh Bay Sumbawa pricing revert to Indonesian Rupiah (IDR)",
-    pricingNotes: [
-      "At Adventure Sumbawa Island, we always strive to provide the best experience for every guest. However, we also respect natural conditions and prioritize safety. If whale sharks are not found during the trip, we will refund IDR 1,000,000 from the total price.",
-      "Compensation is given only if whale sharks are not seen at all, not due to distance or duration that was not maximized."
-    ]
+    pricingNotes: []
   }
 };

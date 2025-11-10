@@ -28,10 +28,7 @@ export const tour5Translations = {
       "Tips untuk guide dan crew"
     ],
     pricingTitle: "Harga Tour 4D3N",
-    pricingNotes: [
-      "Di Adventure Sumbawa Island, kami selalu berupaya memberikan pengalaman terbaik bagi setiap tamu. Namun, kami juga menghormati kondisi alam dan mengutamakan keselamatan. Jika dalam perjalanan tidak ditemukan hiu paus, kami akan mengembalikan pembayaran anda sebesar Rp 1.000.000 dari total harga.",
-      "Kompensasi diberikan hanya jika hiu paus tidak terlihat sama sekali, bukan karena jarak atau durasi yang tidak sempat maksimal."
-    ]
+    pricingNotes: []
   },
   en: {
     title: "Sumbawa Tour Package 4 Days 3 Nights Moyo Island, Kenawa Island & Whale Shark",
@@ -62,9 +59,6 @@ export const tour5Translations = {
       "Tips for guide and crew"
     ],
     pricingTitle: "4D3N Tour Price",
-    pricingNotes: [
-      "At Adventure Sumbawa Island, we always strive to provide the best experience for every guest. However, we also respect natural conditions and prioritize safety. If whale sharks are not found during the trip, we will refund IDR 1,000,000 from the total price.",
-      "Compensation is given only if whale sharks are not seen at all, not due to distance or duration that was not maximized."
-    ]
+    pricingNotes: []
   }
 };

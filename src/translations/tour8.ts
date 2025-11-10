@@ -15,15 +15,7 @@ export const tour8Translations = {
       time4: "06.30 AM",
       desc4: "Waktunya snorkeling dan berenang bersama Hiu Paus (sarapan di atas kapal).",
       time5: "08.30 AM",
-      desc5: "Kembali ke Pelabuhan Goa di Kota Sumbawa Besar.",
-      time6: "10.30 AM",
-      desc6: "Tiba di Pelabuhan Goa, kemudian kembali ke hotel Anda. Program selesai.",
-      time7: "",
-      desc7: "",
-      time8: "",
-      desc8: "",
-      time9: "",
-      desc9: ""
+      desc5: "Kembali ke Pelabuhan Goa di Kota Sumbawa Besar."
     },
     inclusionsTitle: "Harga Sudah Termasuk",
     inclusions: [
@@ -75,15 +67,7 @@ export const tour8Translations = {
       time4: "06.30 AM",
       desc4: "Time for snorkeling and swimming with Whale Sharks (breakfast on the boat).",
       time5: "08.30 AM",
-      desc5: "Return to Goa Port in Sumbawa Besar City.",
-      time6: "10.30 AM",
-      desc6: "Arrive at Goa Port, then return to your hotel. Program ends.",
-      time7: "",
-      desc7: "",
-      time8: "",
-      desc8: "",
-      time9: "",
-      desc9: ""
+      desc5: "Return to Goa Port in Sumbawa Besar City."
     },
     inclusionsTitle: "Price Includes",
     inclusions: [
