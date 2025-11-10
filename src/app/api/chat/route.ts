@@ -11,7 +11,7 @@ export async function POST(request: NextRequest) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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',
+        'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
         'HTTP-Referer': 'https://adventuresumbawaisland.com',
         'X-Title': 'Adventure Sumbawa Island'
       },
