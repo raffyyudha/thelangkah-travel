@@ -25,8 +25,8 @@ export const tour2Translations = {
     ],
     pricingTitle: "Harga Tour 2D1N",
     pricingNotes: [
-      "Harga dapat berubah tergantung musim dan jumlah peserta",
-      "Pengembalian dana IDR 1.000.000 jika hiu paus tidak muncul"
+      "Di Adventure Sumbawa Island, kami selalu berupaya memberikan pengalaman terbaik bagi setiap tamu. Namun, kami juga menghormati kondisi alam dan mengutamakan keselamatan. Jika dalam perjalanan tidak ditemukan hiu paus, kami akan mengembalikan pembayaran anda sebesar Rp 1.000.000 dari total harga.",
+      "Kompensasi diberikan hanya jika hiu paus tidak terlihat sama sekali, bukan karena jarak atau durasi yang tidak sempat maksimal."
     ]
   },
   en: {
@@ -55,8 +55,8 @@ export const tour2Translations = {
     ],
     pricingTitle: "2D1N Tour Price",
     pricingNotes: [
-      "Prices may vary depending on season and number of participants",
-      "IDR 1,000,000 refund if whale sharks don't appear"
+      "At Adventure Sumbawa Island, we always strive to provide the best experience for every guest. However, we also respect natural conditions and prioritize safety. If whale sharks are not found during the trip, we will refund IDR 1,000,000 from the total price.",
+      "Compensation is given only if whale sharks are not seen at all, not due to distance or duration that was not maximized."
     ]
   }
 };

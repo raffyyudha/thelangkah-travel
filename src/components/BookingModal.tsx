@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { X } from "lucide-react";
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -66,14 +65,8 @@ Mohon konfirmasi ketersediaan dan harga untuk booking ini.
     <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         {/* Header */}
-        <div className="sticky top-0 bg-[#0a3d52] text-white p-6 flex justify-between items-center">
+        <div className="sticky top-0 bg-[#0a3d52] text-white p-6">
           <h2 className="text-2xl font-bold">Book Your Tour</h2>
-          <button
-            onClick={onClose}
-            className="text-white hover:text-gray-200 transition-colors"
-          >
-            <X size={24} />
-          </button>
         </div>
 
         {/* Form */}

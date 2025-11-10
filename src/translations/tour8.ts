@@ -54,8 +54,8 @@ export const tour8Translations = {
     ],
     pricingTitle: "Detail Harga Paket",
     pricingNotes: [
-      "Karena kami tidak dapat mengontrol Alam, dan karena kondisi laut pada hari tour, ada kemungkinan penampakan hiu paus tidak terjadi. Oleh karena itu, kami hanya akan mengembalikan IDR 1.000.000 dari total pembayaran Anda.",
-      "Harap dicatat bahwa makan siang tidak termasuk dalam paket ini. Namun, kami dapat mengatur untuk membawa Anda ke restoran lokal sebelum mengantar Anda kembali ke akomodasi Anda di Kota Sumbawa Besar.",
+      "Di Adventure Sumbawa Island, kami selalu berupaya memberikan pengalaman terbaik bagi setiap tamu. Namun, kami juga menghormati kondisi alam dan mengutamakan keselamatan. Jika dalam perjalanan tidak ditemukan hiu paus, kami akan mengembalikan pembayaran anda sebesar Rp 1.000.000 dari total harga.",
+      "Kompensasi diberikan hanya jika hiu paus tidak terlihat sama sekali, bukan karena jarak atau durasi yang tidak sempat maksimal.",
       "Peserta lebih dari 10 orang / group, silahkan menghubungi kami!"
     ]
   },

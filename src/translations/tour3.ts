@@ -27,8 +27,8 @@ export const tour3Translations = {
     ],
     pricingTitle: "Harga Tour 3D2N",
     pricingNotes: [
-      "Minimal 2 orang",
-      "Harga sudah termasuk semua fasilitas"
+      "Di Adventure Sumbawa Island, kami selalu berupaya memberikan pengalaman terbaik bagi setiap tamu. Namun, kami juga menghormati kondisi alam dan mengutamakan keselamatan. Jika dalam perjalanan tidak ditemukan hiu paus, kami akan mengembalikan pembayaran anda sebesar Rp 1.000.000 dari total harga.",
+      "Kompensasi diberikan hanya jika hiu paus tidak terlihat sama sekali, bukan karena jarak atau durasi yang tidak sempat maksimal."
     ]
   },
   en: {
@@ -59,8 +59,8 @@ export const tour3Translations = {
     ],
     pricingTitle: "3D2N Tour Price",
     pricingNotes: [
-      "Minimum 2 people",
-      "Price includes all facilities"
+      "At Adventure Sumbawa Island, we always strive to provide the best experience for every guest. However, we also respect natural conditions and prioritize safety. If whale sharks are not found during the trip, we will refund IDR 1,000,000 from the total price.",
+      "Compensation is given only if whale sharks are not seen at all, not due to distance or duration that was not maximized."
     ]
   }
 };

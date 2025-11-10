@@ -13,7 +13,7 @@ export default function AboutPage() {
       <section className="relative h-[500px] flex items-center justify-start">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/destinations/sumbawa.jpg"
+            src="/images/sumbawa.jpg"
             alt="About Adventure Sumbawa Island"
             fill
             className="object-cover"
@@ -46,7 +46,7 @@ export default function AboutPage() {
             <div className="lg:col-span-2 grid grid-cols-2 gap-4">
               <div className="relative h-48 md:h-64 rounded-2xl overflow-hidden shadow-lg group">
                 <Image
-                  src="/images/moyo/beach.jpg"
+                  src="/images/whale-shark-1day-labuhan-jambu-hero.PNG"
                   alt="Local Expert"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-300"
@@ -58,7 +58,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-48 md:h-64 rounded-2xl overflow-hidden shadow-lg group">
                 <Image
-                  src="/images/kenawa/beach.jpg"
+                  src="/images/beach.jpg"
                   alt="Professional Service"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-300"
@@ -73,7 +73,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="relative h-48 md:h-64 rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/whale-shark/IMG_2992.JPG"
+                src="/images/IMG_2992.JPG"
                 alt="Safety First"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-300"
@@ -85,7 +85,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-48 md:h-64 rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/moyo/waterfall.jpg"
+                src="/images/waterfall.jpg"
                 alt="Eco Conscious"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-300"
@@ -97,7 +97,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-48 md:h-64 rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/kenawa/sunset.jpg"
+                src="/images/sunset.jpg"
                 alt="Community Based"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-300"
@@ -109,7 +109,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-48 md:h-64 rounded-2xl overflow-hidden shadow-lg group">
               <Image
-                src="/images/destinations/sumbawa.jpg"
+                src="/images/moyoisland.JPG"
                 alt="Passionate Team"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-300"
@@ -200,7 +200,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/moyo/waterfall.jpg"
+                src="/images/whale-shark-speedboat-hero.jpg"
                 alt="Why Choose Us"
                 fill
                 className="object-cover"
