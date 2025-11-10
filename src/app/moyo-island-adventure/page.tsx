@@ -1,5 +1,10 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { moyoIslandTranslations } from "@/translations/moyoIsland";
 import { MessageCircle, Clock, Users, MapPin, Check, X } from "lucide-react";
 
 export const metadata = {
@@ -7,7 +12,11 @@ export const metadata = {
   description: "One Day Trip Pulau Moyo bagi anda yang hanya memiliki waktu terbatas namun ingin mengunjungi ketenangan dan keindahan Pulau Moyo serta Air Terjun Mata Jitu. Mulai dari Rp 1.260.000 per orang.",
 };
 
-export default function MoyoIslandPage() {
+export default function Page() {
+  const { language } = useLanguage();
+  const t = language === 'id' ? moyoIslandTranslations.id : moyoIslandTranslations.en;
+  const { t: commonT } = useLanguage();
+
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}

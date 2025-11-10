@@ -1,5 +1,10 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { comboUltimateSumbawaTranslations } from "@/translations/comboUltimateSumbawa";
 import { MessageCircle, Clock, Users, MapPin, Check, X } from "lucide-react";
 
 export const metadata = {
@@ -7,7 +12,11 @@ export const metadata = {
   description: "Paket kombinasi lengkap: Pulau Moyo, Pulau Kenawa, dan Hiu Paus - pengalaman terbaik Sumbawa dalam satu trip.",
 };
 
-export default function ComboUltimateSumbawaPage() {
+export default function Page() {
+  const { language } = useLanguage();
+  const t = language === 'id' ? comboUltimateSumbawaTranslations.id : comboUltimateSumbawaTranslations.en;
+  const { t: commonT } = useLanguage();
+
   return (
     <main className="min-h-screen">
       {/* Hero Section */}

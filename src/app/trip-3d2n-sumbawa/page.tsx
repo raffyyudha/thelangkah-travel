@@ -1,10 +1,19 @@
 "use client";
 
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { trip3d2nTranslations } from "@/translations/trip3d2n";
 import { MessageCircle, Clock, Users, MapPin, Calendar } from "lucide-react";
 
-export default function Trip3D2NSumbawaPage() {
+export default function Page() {
+  const { language } = useLanguage();
+  const t = language === 'id' ? trip3d2nTranslations.id : trip3d2nTranslations.en;
+  const { t: commonT } = useLanguage();
+
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
