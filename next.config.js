@@ -32,6 +32,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'via.placeholder.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'nxzgjxghfxymrogybmnu.supabase.co',
+      },
     ],
   },
   trailingSlash: true,
