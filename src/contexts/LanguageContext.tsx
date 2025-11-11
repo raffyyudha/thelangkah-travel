@@ -292,7 +292,7 @@ const translations = {
     // Homepage Hero
     heroTitle: "Jelajahi Sumbawa Terbaik Bersama Kami",
     heroDesc: "Adventure Sumbawa Island adalah operator tur lokal terbaik yang menyediakan paket tur ke Sumbawa, terutama snorkeling dengan hiu paus di Labuhan Jambu.",
-    welcomeTitle: "Selamat Datang Di Adventure Island",
+    welcomeTitle: "Selamat Datang Di Adventure Sumbawa Island",
     welcomeDesc: "Platform penyedia layanan wisata petualangan lokal yang berbasis di Sumbawa. Kami berdiri dengan tujuan untuk memperkenalkan keindahan alam Sumbawa kepada dunia melalui pengalaman wisata yang autentik, aman, dan ramah lingkungan.",
     
     // Popular Packages
@@ -582,7 +582,7 @@ const translations = {
     // Homepage Hero
     heroTitle: "Explore Sumbawa's Best With Us",
     heroDesc: "Adventure Sumbawa Island is the best local tour operator providing tour packages to Sumbawa, especially snorkeling with whale sharks in Labuhan Jambu.",
-    welcomeTitle: "Welcome To Adventure Island",
+    welcomeTitle: "Welcome To Adventure Sumbawa Island",
     welcomeDesc: "A platform for local adventure travel providers based in Sumbawa. We were established with the mission to introduce the beauty of Sumbawa's nature to the world through authentic, safe, and eco-friendly travel experiences.",
     
     // Popular Packages
