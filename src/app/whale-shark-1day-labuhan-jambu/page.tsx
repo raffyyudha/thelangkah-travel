@@ -170,7 +170,7 @@ export default function WhaleShark1DayLabuhanJambuPage() {
                     <tr className="bg-gray-50">
                       <td className="py-4 px-6 text-gray-900 text-sm md:text-base">2 - 10</td>
                       <td className="py-4 px-6 text-gray-900 text-sm md:text-base">
-                        {language === 'en' ? 'IDR 1,450,000 / Person' : 'Rp 1.450.000 / Orang'}
+                        {language === 'en' ? 'IDR 700,000 / Person' : 'Rp 700.000 / Orang'}
                       </td>
                     </tr>
                   </tbody>
