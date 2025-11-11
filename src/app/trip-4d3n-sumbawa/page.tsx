@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
-import { DropdownSection, PricingTable, DynamicTourImages } from "@/components/TourComponents";
+import { DropdownSection, PrivatePricingTable, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -148,17 +148,7 @@ export default function Trip4D3NSumbawaPage() {
               ))}
             </ul>
 
-            {/* Pricing Table */}
-            <PricingTable
-              title={t.pricingTitle}
-              data={[
-                {
-                  participants: "2-10",
-                  openTrip: `${language === 'en' ? 'IDR. 1,450,000/Person' : 'IDR. 1,450,000/orang'}`,
-                  fullPrivate: `${language === 'en' ? 'IDR. 2,500,000/Person' : 'IDR. 2,500,000/orang'}`
-                }
-              ]}
-            />
+            <PrivatePricingTable title={t.pricingTitle} />
 
             <div className="text-center mb-8">
               <p className="text-gray-900 text-lg font-bold mb-6">{commonT.interestedBookHere}</p>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
-import { DropdownSection, PricingTable, DynamicTourImages } from "@/components/TourComponents";
+import { DropdownSection, PrivatePricingTable, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -155,29 +155,7 @@ export default function WhaleShark2D1NPotoTanoPage() {
             ))}
           </ul>
 
-            {/* Pricing Table */}
-            <div className="overflow-x-auto mb-8">
-              <table className="w-full border-collapse rounded-lg overflow-hidden shadow-md">
-                <thead>
-                  <tr className="bg-green-600 text-white">
-                    <th className="py-4 px-6 text-left font-bold text-sm md:text-base">Peserta</th>
-                    <th className="py-4 px-6 text-left font-bold text-sm md:text-base">Harga Per Orang</th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white">
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">1 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 6,950,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">2 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 3,540,000</td></tr>
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">3 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 2,460,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">4 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,920,000</td></tr>
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">5 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,700,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">6 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,470,000</td></tr>
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">7 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,660,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">8 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,490,000</td></tr>
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">9 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,360,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">10 Orang</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,250,000</td></tr>
-                </tbody>
-              </table>
-            </div>
+            <PrivatePricingTable title={t.pricingTitle} />
 
             <div className="text-center mb-8">
               <p className="text-gray-900 text-lg font-bold mb-6">{commonT.interestedBookHere}</p>

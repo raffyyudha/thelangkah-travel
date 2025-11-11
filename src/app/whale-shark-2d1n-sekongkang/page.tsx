@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
-import { DropdownSection, PricingTable, DynamicTourImages } from "@/components/TourComponents";
+import { DropdownSection, PrivatePricingTable, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -155,29 +155,7 @@ export default function WhaleShark2D1NSekongkangPage() {
             ))}
           </ul>
 
-            {/* Pricing Table */}
-            <div className="overflow-x-auto mb-8">
-              <table className="w-full border-collapse rounded-lg overflow-hidden shadow-md">
-                <thead>
-                  <tr className="bg-green-600 text-white">
-                    <th className="py-4 px-6 text-left font-bold text-sm md:text-base">{commonT.tourParticipant}</th>
-                    <th className="py-4 px-6 text-left font-bold text-sm md:text-base">{commonT.tourPerPerson}</th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white">
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '1 Person' : '1 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 7,410,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '2 People' : '2 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 3,770,000</td></tr>
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '3 People' : '3 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 2,610,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '4 People' : '4 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 2,030,000</td></tr>
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '5 People' : '5 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,810,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '6 People' : '6 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,560,000</td></tr>
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '7 People' : '7 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,730,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '8 People' : '8 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,550,000</td></tr>
-                  <tr className="bg-gray-50"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '9 People' : '9 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,410,000</td></tr>
-                  <tr className="bg-white"><td className="py-4 px-6 text-gray-900 text-sm md:text-base">{language === 'en' ? '10 People' : '10 Orang'}</td><td className="py-4 px-6 text-gray-900 text-sm md:text-base">Rp 1,300,000</td></tr>
-                </tbody>
-              </table>
-            </div>
+            <PrivatePricingTable title={t.pricingTitle} />
 
             <div className="text-center mb-8">
               <p className="text-gray-900 text-lg font-bold mb-6">{commonT.interestedBookHere}</p>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight, Clock, Check, X } from "lucide-react";
 import { useState } from "react";
-import { DropdownSection, DynamicPricingTable, DynamicTourImages } from "@/components/TourComponents";
+import { DropdownSection, PrivatePricingTable, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -143,13 +143,7 @@ export default function WhaleShark2D1NPage() {
               ))}
             </ul>
 
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">{t.pricingTitle}</h3>
-            
-            {/* Pricing Table - Dynamic from Supabase */}
-            <DynamicPricingTable
-              tourName="whale-shark-2d1n"
-              title={t.pricingTitle}
-            />
+            <PrivatePricingTable title={t.pricingTitle} />
 
             <div className="text-center mb-8">
               <p className="text-gray-900 text-lg font-bold mb-6">{commonT.interestedBookHere}</p>

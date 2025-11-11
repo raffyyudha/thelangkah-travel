@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight, Clock, Check, X } from "lucide-react";
-import { DropdownSection, PricingTable, DynamicTourImages } from "@/components/TourComponents";
+import { DropdownSection, PrivatePricingTable, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -153,60 +153,7 @@ export default function WhaleSharkStartLabuhanJambuPage() {
               ))}
             </ul>
 
-            {/* Pricing Table - Custom 2 Column */}
-            <div className="my-8">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
-                {t.pricingTitle}
-              </h3>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse rounded-lg overflow-hidden shadow-md">
-                  <thead>
-                    <tr className="bg-green-600 text-white">
-                      <th className="py-4 px-6 text-center font-bold text-sm md:text-base">
-                        {commonT.tourParticipant}
-                      </th>
-                      <th className="py-4 px-6 text-center font-bold text-sm md:text-base">
-                        {commonT.tourPerPerson}
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="bg-white">
-                    <tr className="bg-gray-100">
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">1</td>
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 8,890,000. / Person</td>
-                    </tr>
-                    <tr className="bg-white">
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">2</td>
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 4,685,000. / Person</td>
-                    </tr>
-                    <tr className="bg-gray-100">
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">3</td>
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 3,425,000 / Person</td>
-                    </tr>
-                    <tr className="bg-white">
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">4</td>
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 2,975,000. / Person</td>
-                    </tr>
-                    <tr className="bg-gray-100">
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">5</td>
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 2,930,000. / Person</td>
-                    </tr>
-                    <tr className="bg-white">
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">6</td>
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 2,650,000. / Person</td>
-                    </tr>
-                    <tr className="bg-gray-100">
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">7</td>
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 2,295,000. / Person</td>
-                    </tr>
-                    <tr className="bg-white">
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">8</td>
-                      <td className="py-4 px-6 text-gray-900 text-sm md:text-base text-center">IDR. 1,990,000. / Person</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+            <PrivatePricingTable title={t.pricingTitle} />
 
             <div className="text-center mb-8">
               <p className="text-gray-900 text-lg font-bold mb-6">{commonT.interestedBookHere}</p>
