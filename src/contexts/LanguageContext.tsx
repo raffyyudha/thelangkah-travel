@@ -199,6 +199,22 @@ interface LanguageContextType {
     tourDuration: string;
     tourMinPax: string;
     tourStartingFrom: string;
+    tourPaymentTitle: string;
+    tourPaymentDeposit: string;
+    tourPaymentProof: string;
+    tourPaymentBankTitle: string;
+    tourPaymentBankName: string;
+    tourPaymentAccountNumber: string;
+    tourPaymentAccountName: string;
+    tourPaymentSwiftCode: string;
+    tourPaymentInternationalTitle: string;
+    tourPaymentInternationalOption1: string;
+    tourPaymentInternationalOption2: string;
+    tourPaymentInternationalNote: string;
+    tourPaymentConfirmationTitle: string;
+    tourPaymentConfirmationItem1: string;
+    tourPaymentConfirmationItem2: string;
+    tourPaymentConfirmationItem3: string;
     
     // Homepage Tour Titles
     tourA: string;
@@ -471,6 +487,22 @@ const translations = {
     tourDuration: "Durasi",
     tourMinPax: "Minimal",
     tourStartingFrom: "Mulai dari",
+    tourPaymentTitle: "Metode Pembayaran",
+    tourPaymentDeposit: "Pembayaran dilakukan dengan mengirimkan deposit sebesar 40% dan sisanya dapat ditransfer saat hari pertama program tour.",
+    tourPaymentProof: "Jika Anda telah mengirimkan pembayaran deposit, silakan kirim bukti transfer ke WhatsApp kami. Tim kami akan segera mengirim faktur pembayaran Anda. Berikut nomor rekening kami:",
+    tourPaymentBankTitle: "Nomor Rekening:",
+    tourPaymentBankName: "Nama Bank : BANK RAKYAT INDONESIA (BRI)",
+    tourPaymentAccountNumber: "Nomor Rekening : 477301031640533",
+    tourPaymentAccountName: "Nama Rekening : ANDI MUHAR",
+    tourPaymentSwiftCode: "Code Swift : BRINDJAXXX",
+    tourPaymentInternationalTitle: "Pembayaran Wisatawan Internasional tersedia:",
+    tourPaymentInternationalOption1: "PayPal",
+    tourPaymentInternationalOption2: "Wise Transfer",
+    tourPaymentInternationalNote: "Pilih metode paling nyaman untuk Anda.",
+    tourPaymentConfirmationTitle: "Konfirmasi Pembayaran Setelah pembayaran berhasil:",
+    tourPaymentConfirmationItem1: "Sistem otomatis mengirim Invoice Resmi",
+    tourPaymentConfirmationItem2: "Admin kami juga akan menghubungi Anda melalui WhatsApp",
+    tourPaymentConfirmationItem3: "Booking Anda langsung tercatat di sistem",
     
     // Homepage Tour Titles
     tourA: "Trip 1 hari hiu paus (A) (star & finis sumbawa besar)",
@@ -740,6 +772,22 @@ const translations = {
     tourDuration: "Duration",
     tourMinPax: "Minimum",
     tourStartingFrom: "Starting from",
+    tourPaymentTitle: "Payment Methods",
+    tourPaymentDeposit: "Payment is made by sending a 40% deposit and the remaining balance can be transferred on the first day of the tour program.",
+    tourPaymentProof: "After sending your deposit payment, please send the transfer receipt to our WhatsApp. Our team will promptly send your invoice. Our bank account details:",
+    tourPaymentBankTitle: "Bank Account Details:",
+    tourPaymentBankName: "Bank Name: BANK RAKYAT INDONESIA (BRI)",
+    tourPaymentAccountNumber: "Account Number: 477301031640533",
+    tourPaymentAccountName: "Account Holder: ANDI MUHAR",
+    tourPaymentSwiftCode: "Swift Code: BRINDJAXXX",
+    tourPaymentInternationalTitle: "International traveler payment options available:",
+    tourPaymentInternationalOption1: "PayPal",
+    tourPaymentInternationalOption2: "Wise Transfer",
+    tourPaymentInternationalNote: "Choose the method that is most convenient for you.",
+    tourPaymentConfirmationTitle: "Payment confirmation after the payment is successful:",
+    tourPaymentConfirmationItem1: "Our system automatically sends an official invoice",
+    tourPaymentConfirmationItem2: "Our admin will also contact you via WhatsApp",
+    tourPaymentConfirmationItem3: "Your booking is immediately recorded in our system",
     
     // Homepage Tour Titles
     tourA: "1 Day Whale Shark Trip (A) (Start & Finish Sumbawa Besar)",

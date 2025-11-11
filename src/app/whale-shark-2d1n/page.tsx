@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight, Clock, Check, X } from "lucide-react";
 import { useState } from "react";
-import { DropdownSection, PrivatePricingTable, DynamicTourImages } from "@/components/TourComponents";
+import { DropdownSection, PrivatePricingTable, PaymentMethodsSection, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -271,10 +271,13 @@ export default function WhaleShark2D1NPage() {
                   <li>{commonT.faqItem5}</li>
                 </ul>
               </DropdownSection>
+
+              <PaymentMethodsSection />
             </div>
           </div>
         </div>
       </article>
+
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">

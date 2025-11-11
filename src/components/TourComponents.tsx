@@ -114,6 +114,44 @@ export function DropdownSection({ title, children, defaultOpen = false }: Dropdo
   );
 }
 
+export function PaymentMethodsSection() {
+  const { t } = useLanguage();
+
+  return (
+    <DropdownSection title={t.tourPaymentTitle}>
+      <div className="space-y-4 text-gray-700 leading-relaxed">
+        <p>{t.tourPaymentDeposit}</p>
+        <p>{t.tourPaymentProof}</p>
+        <div className="space-y-1">
+          <p className="font-semibold text-gray-900">{t.tourPaymentBankTitle}</p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>{t.tourPaymentBankName}</li>
+            <li>{t.tourPaymentAccountNumber}</li>
+            <li>{t.tourPaymentAccountName}</li>
+            <li>{t.tourPaymentSwiftCode}</li>
+          </ul>
+        </div>
+        <div className="space-y-2">
+          <p className="font-semibold text-gray-900">{t.tourPaymentInternationalTitle}</p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>{t.tourPaymentInternationalOption1}</li>
+            <li>{t.tourPaymentInternationalOption2}</li>
+          </ul>
+          <p>{t.tourPaymentInternationalNote}</p>
+        </div>
+        <div className="space-y-1">
+          <p className="font-semibold text-gray-900">{t.tourPaymentConfirmationTitle}</p>
+          <ul className="list-disc list-inside space-y-1">
+            <li>{t.tourPaymentConfirmationItem1}</li>
+            <li>{t.tourPaymentConfirmationItem2}</li>
+            <li>{t.tourPaymentConfirmationItem3}</li>
+          </ul>
+        </div>
+      </div>
+    </DropdownSection>
+  );
+}
+
 interface PricingTableProps {
   title?: string;
   data: {

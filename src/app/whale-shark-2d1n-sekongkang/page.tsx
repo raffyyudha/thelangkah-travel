@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
-import { DropdownSection, PrivatePricingTable, DynamicTourImages } from "@/components/TourComponents";
+import { DropdownSection, PrivatePricingTable, PaymentMethodsSection, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -290,15 +290,16 @@ export default function WhaleShark2D1NSekongkangPage() {
               </DropdownSection>
 
               <DropdownSection title={commonT.tourFAQTitle}>
-                <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>{commonT.faqItem1}</li>
-                  <li>{commonT.faqItem2}</li>
-                  <li>{commonT.faqItem3}</li>
-                  <li>{commonT.faqItem4}</li>
-                  <li>{commonT.faqItem5}</li>
-                </ul>
-              </DropdownSection>
-            </div>
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <li>{commonT.faqItem1}</li>
+                <li>{commonT.faqItem2}</li>
+                <li>{commonT.faqItem3}</li>
+                <li>{commonT.faqItem4}</li>
+                <li>{commonT.faqItem5}</li>
+              </ul>
+            </DropdownSection>
+            <PaymentMethodsSection />
+          </div>
           </div>
         </div>
       </article>

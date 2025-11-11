@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
-import { DropdownSection, PrivatePricingTable, DynamicTourImages } from "@/components/TourComponents";
+import { DropdownSection, PrivatePricingTable, PaymentMethodsSection, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -299,10 +299,32 @@ export default function WhaleSharkMoyoKenawaLombokPage() {
                   <li>{commonT.faqItem5}</li>
                 </ul>
               </DropdownSection>
+
+              <PaymentMethodsSection />
+            </div>
+
+            <div className="text-center mb-8">
+              <p className="text-gray-900 text-lg font-bold mb-6">{commonT.interestedBookHere}</p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button
+                  onClick={handleBooking}
+                  className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-all"
+                >
+                  <MessageCircle size={20} />
+                  {commonT.tourChatWhatsApp}
+                </button>
+                <button
+                  onClick={() => setIsBookingModalOpen(true)}
+                  className="bg-blue-900 hover:bg-blue-950 text-white px-10 py-3 rounded-full font-semibold transition-all"
+                >
+                  {commonT.bookNow}
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </article>
+
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
