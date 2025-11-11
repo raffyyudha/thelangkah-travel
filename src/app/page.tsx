@@ -69,11 +69,11 @@ export default function Home() {
           </div>
 
           {/* Pilihan Paket Wisata - Exact layout dari The Langkah Travel */}
-          <div className="mb-8">
+          <div className="mb-8 text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-3 text-gray-900">
               {t.popularPackages}
             </h2>
-            <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+            <p className="text-sm md:text-base text-gray-700 leading-relaxed max-w-3xl mx-auto">
               {t.popularDesc}
             </p>
           </div>
