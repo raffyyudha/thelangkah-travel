@@ -94,7 +94,7 @@ export function DynamicPackageCard({ tourName, title, href, price }: DynamicPack
           />
         </div>
         <div className="p-3 text-center">
-          <h3 className="text-xs sm:text-sm font-bold text-gray-900 leading-tight">{title}</h3>
+          <h3 className="text-xs sm:text-sm font-bold text-gray-900 leading-tight whitespace-pre-line">{title}</h3>
           {price && (
             <p className="text-xs text-gray-600 mt-2">{price}</p>
           )}

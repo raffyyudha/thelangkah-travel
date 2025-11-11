@@ -30,7 +30,7 @@ export default function Page() {
         </div>
         <div className="container mx-auto px-6 relative z-10 text-center max-w-4xl">
           <h1 className="text-white text-4xl md:text-6xl font-bold mb-4">
-            Trip 3D2N Sumbawa
+            3D2N Trip Sumbawa Island (I)
           </h1>
           <p className="text-white text-lg md:text-xl">
             Paket 3 Hari 2 Malam menjelajahi highlight Sumbawa

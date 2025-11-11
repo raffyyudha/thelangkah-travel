@@ -296,7 +296,7 @@ const translations = {
     
     // Popular Packages
     popularPackages: "Paket Wisata Populer",
-    popularDesc: "Paket wisata Sumbawa bersama Adventure Sumbawa Island dengan destinasi terlengkap dan pilihan paket wisata yang beragam. Dari snorkeling dengan hiu paus hingga eksplorasi pulau-pulau eksotis.",
+    popularDesc: "Paket wisata Sumbawa bersama Adventure Sumbawa Island dengan destinasi terlengkap dan pilihan paket wisata yang beragam. Dari snorkeling dengan hiu paus hingga eksplorasi pulau-pulau eksotis seperti Moyo dan Kenawa.",
     
     // Why Travel With Us
     whyTravelTitle: "Mengapa Berwisata dengan Adventure Sumbawa Island?",
@@ -525,11 +525,11 @@ const translations = {
     tourGPriceFrom: "Mulai 1.200.000 IDR per orang",
     tourH: "2D1N Trip hiu paus (H) (Scuba diving sumbawa)",
     tourHPriceFrom: "Mulai 1.200.000 IDR per orang",
-    tourI: "3D2N Trip (I) hiu paus & pulau Moyo (Star & finish sumbawa besar)",
+    tourI: "3D2N Trip Sumbawa Island (I)\nHiu paus & pulau Moyo\n(Start & Finish sumbawa besar)",
     tourIPriceFrom: "Mulai 1.800.000 IDR per orang",
-    tourJ: "3D2N Trip (J) hiu paus - pulau Moyo - kenawa (Star & finish area Lombok)",
+    tourJ: "3D2N Trip Sumbawa Island (J)\nHiu paus-pulau Moyo-Kenawa\n(Start & Finish Area Lombok)",
     tourJPriceFrom: "Mulai 1.800.000 IDR per orang",
-    tourK: "4D3N Trip (K) Hiu paus-pulau Moyo-kenawa (Star & finish sumbawa besar)",
+    tourK: "4D3N Trip Sumbawa Island (K)\nHiu paus-pulau Moyo-Kenawa\n(Start & Finish Sumbawa Besar)",
     tourKPriceFrom: "Mulai 1.800.000 IDR per orang",
     
     // Tour Page CTA
@@ -583,7 +583,7 @@ const translations = {
     
     // Popular Packages
     popularPackages: "Popular Tour Packages",
-    popularDesc: "Sumbawa tour packages with Adventure Sumbawa Island featuring the most complete destinations and diverse tour package options. From snorkeling with whale sharks to exploring exotic islands.",
+    popularDesc: "Sumbawa tour packages with Adventure Sumbawa Island featuring the most complete destinations and diverse tour package options. From snorkeling with whale sharks to exploring exotic islands like Moyo and Kenawa.",
     
     // Why Travel With Us
     whyTravelTitle: "Why travel with Adventure Sumbawa Island?",
@@ -808,22 +808,22 @@ const translations = {
     tourEPriceFrom: "Starting from 1,200,000 IDR per person",
     tourF: "2D1N Whale Shark Trip (F) (Start & Finish Sekongkang Area)",
     tourFPriceFrom: "Starting from 1,200,000 IDR per person",
-    tourG: "2D1N Whale Shark Trip (G) (Start & Finish Lombok Area)",
+    tourG: "2D1N Whale Shark Trip (G) (Start & Finish Area Lombok)",
     tourGPriceFrom: "Starting from 1,200,000 IDR per person",
-    tourH: "2D1N Whale Shark Trip (H) (Scuba Diving Sumbawa)",
+    tourH: "2D1N Whale Shark Trip (H) (Scuba diving Sumbawa)",
     tourHPriceFrom: "Starting from 1,200,000 IDR per person",
-    tourI: "3D2N Trip (I) Whale Shark & Moyo Island (Start & Finish Sumbawa Besar)",
+    tourI: "3D2N Trip Sumbawa Island (I)\nWhale shark & Moyo island\n(Start & Finish Sumbawa Besar)",
     tourIPriceFrom: "Starting from 1,800,000 IDR per person",
-    tourJ: "3D2N Trip (J) Whale Shark - Moyo Island - Kenawa (Start & Finish Lombok Area)",
+    tourJ: "3D2N Trip Sumbawa Island (J)\nWhale shark-Moyo island-Kenawa\n(Start & Finish Area Lombok)",
     tourJPriceFrom: "Starting from 1,800,000 IDR per person",
-    tourK: "4D3N Trip (K) Whale Shark - Moyo Island - Kenawa (Start & Finish Sumbawa Besar)",
+    tourK: "4D3N Trip Sumbawa Island (K)\nWhale shark-Moyo island-Kenawa\n(Start & Finish Sumbawa Besar)",
     tourKPriceFrom: "Starting from 1,800,000 IDR per person",
     
     // Tour Page CTA
-    interestedBookHere: "Ready to book this tour? Book Here:",
+    interestedBookHere: "Interested in this Tour Program? Book Here:",
     customerReviews: "Whale Shark Sumbawa Customer Reviews (click here):",
-    googleRatingSummary: "Google rating score: 5.0 of 5, based on 68 reviews",
-    tourFAQTitle: "Whale Shark Tour FAQ",
+    googleRatingSummary: "Google Score: 5.0 out of 5, based on 68 reviews",
+    tourFAQTitle: "Whale Shark / Whale Shark Tour FAQ",
     
     // Common Tour Dropdown Content
     termsItem1: "Whale Shark Sumbawa Tour package is PRIVATE and will not be shared with other",
