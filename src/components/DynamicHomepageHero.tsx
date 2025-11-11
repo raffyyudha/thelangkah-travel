@@ -11,7 +11,7 @@ interface HomepageImage {
 }
 
 export function DynamicHomepageHero() {
-  const [heroImage, setHeroImage] = useState<string>("/images/hero.PNG");
+  const [heroImage, setHeroImage] = useState<string>("/images/hero.jpg");
 
   useEffect(() => {
     fetchHeroImage();
@@ -53,7 +53,7 @@ export function DynamicHomepageHero() {
         priority
         quality={95}
         sizes="100vw"
-        unoptimized={heroImage.startsWith('http')}
+        unoptimized
       />
     </div>
   );
