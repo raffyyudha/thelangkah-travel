@@ -63,7 +63,8 @@ export default function WhaleSharkExperiencePage() {
   ];
 
   const handleBooking = () => {
-    const message = encodeURIComponent("Halo, saya ingin booking Whale Shark Sumbawa Tour");
+    const prefix = language === 'id' ? 'Halo, saya ingin booking' : 'Hi, I would like to book';
+    const message = encodeURIComponent(`${prefix} ${pageTitle}`);
     window.open(`https://wa.me/6282341331975?text=${message}`, "_blank");
   };
 
@@ -339,7 +340,7 @@ export default function WhaleSharkExperiencePage() {
       <BookingModal
         isOpen={isBookingModalOpen}
         onClose={() => setIsBookingModalOpen(false)}
-        tourName="Whale Shark Sumbawa Tour"
+        tourName={pageTitle}
       />
     </main>
   );

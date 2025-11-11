@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 interface BookingModalProps {
@@ -10,7 +10,7 @@ interface BookingModalProps {
 }
 
 export default function BookingModal({ isOpen, onClose, tourName = "Tour Package" }: BookingModalProps) {
-  const { language } = useLanguage();
+  const { language, t: commonT } = useLanguage();
   const l = language === "id"
     ? {
         title: "Booking Tour",
@@ -36,6 +36,7 @@ export default function BookingModal({ isOpen, onClose, tourName = "Tour Package
         msgPickup: "Lokasi Jemput",
         msgSpecial: "Permintaan Khusus",
         msgFooter: "Mohon konfirmasi ketersediaan dan harga untuk booking ini.",
+        customTour: "Paket Tour Custom",
       }
     : {
         title: "Book Your Tour",
@@ -61,18 +62,48 @@ export default function BookingModal({ isOpen, onClose, tourName = "Tour Package
         msgPickup: "Pickup Location",
         msgSpecial: "Special Request",
         msgFooter: "Please confirm availability and price for this booking.",
+        customTour: "Custom Tour Package",
       };
+  const tourSelectOptions = [
+    commonT.tourA,
+    commonT.tourB,
+    commonT.tourC,
+    commonT.tourD,
+    commonT.tourE,
+    commonT.tourF,
+    commonT.tourG,
+    commonT.tourH,
+    commonT.tourI,
+    commonT.tourJ,
+    commonT.tourK,
+  ];
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     whatsapp: "",
     countryCode: "+62",
     participants: "",
-    tourPackage: tourName,
+    tourPackage: tourName || "",
     tourDate: "",
     pickupLocation: "",
     specialRequest: ""
   });
+
+  useEffect(() => {
+    if (isOpen) {
+      setFormData({
+        name: "",
+        email: "",
+        whatsapp: "",
+        countryCode: "+62",
+        participants: "",
+        tourPackage: tourName || "",
+        tourDate: "",
+        pickupLocation: "",
+        specialRequest: "",
+      });
+    }
+  }, [isOpen, tourName]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -215,12 +246,12 @@ ${l.msgFooter}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-transparent"
             >
               <option value="">{l.selectTour}</option>
-              <option value="Whale Shark Sumbawa Daily Tour">Whale Shark Sumbawa Daily Tour</option>
-              <option value="Whale Shark 2D1N Tour">Whale Shark 2D1N Tour</option>
-              <option value="Moyo Island & Whale Shark 3D2N">Moyo Island & Whale Shark 3D2N</option>
-              <option value="Sumbawa Tour 4D3N">Sumbawa Tour 4D3N</option>
-              <option value="Whale Shark Start Labuhan Jambu">Whale Shark Start Labuhan Jambu</option>
-              <option value="Custom Tour Package">Custom Tour Package</option>
+              {tourSelectOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+              <option value={l.customTour}>{l.customTour}</option>
             </select>
           </div>
 

@@ -63,7 +63,8 @@ export default function WhaleShark2D1NPage() {
   ];
 
   const handleBooking = () => {
-    const message = encodeURIComponent("Halo, saya ingin booking Whale Shark Sumbawa Tour 2 Days 1 Night");
+    const prefix = language === 'id' ? 'Halo, saya ingin booking' : 'Hi, I would like to book';
+    const message = encodeURIComponent(`${prefix} ${pageTitle}`);
     window.open(`https://wa.me/6282341331975?text=${message}`, "_blank");
   };
 
@@ -348,8 +349,9 @@ export default function WhaleShark2D1NPage() {
       <BookingModal
         isOpen={isBookingModalOpen}
         onClose={() => setIsBookingModalOpen(false)}
-        tourName="Whale Shark Sumbawa 2D1N Tour"
+        tourName={pageTitle}
       />
+
     </main>
   );
 }

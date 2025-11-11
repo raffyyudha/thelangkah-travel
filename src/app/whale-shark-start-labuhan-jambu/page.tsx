@@ -63,7 +63,8 @@ export default function WhaleSharkStartLabuhanJambuPage() {
   ];
 
   const handleBooking = () => {
-    const message = encodeURIComponent("Halo, saya ingin booking Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok");
+    const prefix = language === 'id' ? 'Halo, saya ingin booking' : 'Hi, I would like to book';
+    const message = encodeURIComponent(`${prefix} ${pageTitle}`);
     window.open(`https://wa.me/6282341331975?text=${message}`, "_blank");
   };
 
@@ -403,8 +404,9 @@ export default function WhaleSharkStartLabuhanJambuPage() {
       <BookingModal
         isOpen={isBookingModalOpen}
         onClose={() => setIsBookingModalOpen(false)}
-        tourName="Paket Tour Hiu Paus Sumbawa 2D1N Start & Finish Lombok"
+        tourName={pageTitle}
       />
+
     </main>
   );
 }

@@ -63,8 +63,9 @@ export default function Trip4D3NSumbawaPage() {
   ];
 
   const handleBooking = () => {
-    const message = encodeURIComponent("Halo, saya ingin booking Sumbawa Tour 4 Days 3 Nights");
-    window.open(`https://wa.me/6285338445028?text=${message}`, "_blank");
+    const prefix = language === 'id' ? 'Halo, saya ingin booking' : 'Hi, I would like to book';
+    const message = encodeURIComponent(`${prefix} ${pageTitle}`);
+    window.open(`https://wa.me/6282341331975?text=${message}`, "_blank");
   };
 
   const nextReview = () => {
@@ -166,7 +167,7 @@ export default function Trip4D3NSumbawaPage() {
                   onClick={handleBooking}
                   className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-all"
                 >
-                  <MessageCircle size={20} />
+                  <MessageCircle size={24} />
                   {commonT.tourChatWhatsApp}
                 </button>
                 <button
@@ -357,7 +358,7 @@ export default function Trip4D3NSumbawaPage() {
       <BookingModal
         isOpen={isBookingModalOpen}
         onClose={() => setIsBookingModalOpen(false)}
-        tourName="Sumbawa Tour 4D3N Moyo, Kenawa & Whale Shark"
+        tourName={pageTitle}
       />
     </main>
   );
