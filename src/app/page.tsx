@@ -55,10 +55,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Welcome Section */}
-      <section className="py-2 bg-white">
+      {/* Welcome & Popular Packages Section */}
+      <section className="bg-white">
         <div className="container mx-auto px-6 max-w-4xl">
-          <div className="text-center">
+          {/* Welcome Section */}
+          <div className="text-center flex flex-col items-center justify-center min-h-[100px] md:min-h-[150px] py-8 md:py-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
               {t.heroTitle}
             </h2>
@@ -66,12 +67,8 @@ export default function Home() {
               {t.welcomeDesc}
             </p>
           </div>
-        </div>
-      </section>
 
-      {/* Pilihan Paket Wisata - Exact layout dari The Langkah Travel */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6 max-w-4xl">
+          {/* Pilihan Paket Wisata - Exact layout dari The Langkah Travel */}
           <div className="mb-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-3 text-gray-900">
               {t.popularPackages}
@@ -153,7 +150,7 @@ export default function Home() {
       </section>
 
       {/* Why Travel With Us Section - InsideAsiaTours Style */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-8 md:py-20 bg-gray-50">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
             {t.whyTravelTitle}
