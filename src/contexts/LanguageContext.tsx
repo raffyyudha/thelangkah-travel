@@ -174,6 +174,7 @@ interface LanguageContextType {
     // Gallery Page
     galleryTitle: string;
     galleryAll: string;
+    galleryGallery: string;
     galleryWhaleShark: string;
     galleryMoyoIsland: string;
     galleryKenawa: string;
@@ -297,6 +298,9 @@ const translations = {
     // Popular Packages
     popularPackages: "Paket Wisata Populer",
     popularDesc: "Paket wisata Sumbawa bersama Adventure Sumbawa Island dengan destinasi terlengkap dan pilihan paket wisata yang beragam. Dari snorkeling dengan hiu paus hingga eksplorasi pulau-pulau eksotis seperti Moyo dan Kenawa.",
+    
+    // Gallery Categories
+    galleryGallery: "Gallery",
     
     // Why Travel With Us
     whyTravelTitle: "Mengapa Berwisata dengan Adventure Sumbawa Island?",
@@ -584,6 +588,9 @@ const translations = {
     // Popular Packages
     popularPackages: "Popular Tour Packages",
     popularDesc: "Sumbawa tour packages with Adventure Sumbawa Island featuring the most complete destinations and diverse tour package options. From snorkeling with whale sharks to exploring exotic islands like Moyo and Kenawa.",
+    
+    // Gallery Categories
+    galleryGallery: "Gallery",
     
     // Why Travel With Us
     whyTravelTitle: "Why travel with Adventure Sumbawa Island?",

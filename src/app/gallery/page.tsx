@@ -5,29 +5,30 @@ import { useState } from "react";
 import { X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const categories = ["galleryAll", "galleryWhaleShark", "galleryMoyoIsland", "galleryKenawa", "galleryIslandHopping"];
+const categories = ["galleryAll", "galleryWhaleShark", "galleryMoyoIsland", "galleryKenawa", "galleryIslandHopping", "galleryGallery"];
 
 const galleryItems = [
-  { id: 1, category: "Whale Shark", image: "/images/whale-shark-1day-labuhan-jambu-hero.PNG", title: "Snorkeling dengan Hiu Paus", description: "Pengalaman tak terlupakan di Teluk Saleh" },
-  { id: 2, category: "Whale Shark", image: "/images/whale-shark-1day-labuhan-jambu-1.PNG", title: "Whale Shark di Habitat Alami", description: "Berenang bersama raksasa laut yang ramah" },
-  { id: 3, category: "Whale Shark", image: "/images/whale-shark-1day-labuhan-jambu-2.PNG", title: "Underwater Whale Shark", description: "Foto bawah air dengan hiu paus" },
-  { id: 4, category: "Whale Shark", image: "/images/whale-shark-1day-labuhan-jambu-3.PNG", title: "Close Encounter", description: "Momen dekat dengan hiu paus" },
-  { id: 5, category: "Whale Shark", image: "/images/whale-shark-speedboat-hero.jpg", title: "Speed Boat Adventure", description: "Petualangan dengan speed boat" },
-  { id: 6, category: "Whale Shark", image: "/images/whale-shark-speedboat-1.jpg", title: "Fast Trip to Whale Shark", description: "Perjalanan cepat menuju hiu paus" },
-  { id: 7, category: "Whale Shark", image: "/images/whale-shark-speedboat-2.jpg", title: "Whale Shark Spotting", description: "Mencari hiu paus di laut" },
-  { id: 8, category: "Whale Shark", image: "/images/whale-shark-speedboat-3.JPG", title: "Amazing Experience", description: "Pengalaman luar biasa bersama hiu paus" },
-  { id: 9, category: "Whale Shark", image: "/images/whale-shark-2d1n-poto-tano-hero.PNG", title: "Poto Tano Trip", description: "Trip dari Poto Tano" },
-  { id: 10, category: "Whale Shark", image: "/images/whale-shark-2d1n-poto-tano-1.PNG", title: "Whale Shark Feeding", description: "Hiu paus sedang makan" },
-  { id: 11, category: "Whale Shark", image: "/images/whale-shark-2d1n-poto-tano-2.PNG", title: "Swimming with Giants", description: "Berenang dengan raksasa laut" },
-  { id: 12, category: "Whale Shark", image: "/images/whale-shark-2d1n-poto-tano-3.JPG", title: "Underwater Adventure", description: "Petualangan bawah air" },
-  { id: 13, category: "Whale Shark", image: "/images/whale-shark-2d1n-sekongkang-hero.PNG", title: "Sekongkang Adventure", description: "Petualangan dari Sekongkang" },
-  { id: 14, category: "Whale Shark", image: "/images/whale-shark-2d1n-sekongkang-1.PNG", title: "Whale Shark Encounter", description: "Bertemu dengan hiu paus" },
-  { id: 15, category: "Whale Shark", image: "/images/whale-shark-2d1n-sekongkang-2.PNG", title: "Marine Life", description: "Kehidupan laut yang menakjubkan" },
-  { id: 16, category: "Whale Shark", image: "/images/whale-shark-2d1n-sekongkang-3.PNG", title: "Ocean Beauty", description: "Keindahan laut Sumbawa" },
-  { id: 17, category: "Moyo Island", image: "/images/whale-shark-moyo-kenawa-lombok-hero.PNG", title: "Moyo Island Paradise", description: "Surga Pulau Moyo" },
-  { id: 18, category: "Moyo Island", image: "/images/whale-shark-moyo-kenawa-lombok-1.PNG", title: "Moyo Beach", description: "Pantai eksotis Pulau Moyo" },
-  { id: 19, category: "Kenawa", image: "/images/whale-shark-moyo-kenawa-lombok-2.PNG", title: "Kenawa Island", description: "Pulau Kenawa yang memukau" },
-  { id: 20, category: "Island Hopping", image: "/images/whale-shark-moyo-kenawa-lombok-3.PNG", title: "Island Hopping Adventure", description: "Petualangan island hopping" },
+  { id: 2, category: "Whale Shark", image: "/images/whale-shark-speedboat-1.jpg", title: "Fast Trip to Whale Shark", description: "Perjalanan cepat menuju hiu paus" },
+  { id: 4, category: "Whale Shark", image: "/images/whale-shark-speedboat-3.JPG", title: "Amazing Experience", description: "Pengalaman luar biasa bersama hiu paus" },
+  { id: 5, category: "Gallery", image: "/images/gallery/IMG_2128.JPG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 6, category: "Gallery", image: "/images/gallery/IMG_2539.JPG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 7, category: "Gallery", image: "/images/gallery/IMG_5014.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 8, category: "Gallery", image: "/images/gallery/IMG_5039.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 9, category: "Gallery", image: "/images/gallery/IMG_5043.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 10, category: "Gallery", image: "/images/gallery/IMG_5051.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 11, category: "Gallery", image: "/images/gallery/IMG_5053 (2).PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 12, category: "Gallery", image: "/images/gallery/IMG_5065.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 13, category: "Gallery", image: "/images/gallery/IMG_5067.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 14, category: "Gallery", image: "/images/gallery/IMG_5072.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 15, category: "Gallery", image: "/images/gallery/IMG_5081 (1).PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 17, category: "Gallery", image: "/images/gallery/IMG_5082.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 18, category: "Gallery", image: "/images/gallery/IMG_5083.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 19, category: "Gallery", image: "/images/gallery/IMG_5085.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 20, category: "Gallery", image: "/images/gallery/IMG_5263.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 21, category: "Gallery", image: "/images/gallery/IMG_5268 (1).PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 22, category: "Gallery", image: "/images/gallery/IMG_5270 (1).PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 23, category: "Gallery", image: "/images/gallery/IMG_5271.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
+  { id: 24, category: "Gallery", image: "/images/gallery/IMG_5275.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
 ];
 
 export default function GalleryPage() {
@@ -96,6 +97,8 @@ export default function GalleryPage() {
                   alt={item.title}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-110"
+                  quality={75}
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-4">
@@ -128,6 +131,8 @@ export default function GalleryPage() {
                 alt={selectedImage.title}
                 fill
                 className="object-contain"
+                quality={85}
+                sizes="100vw"
               />
             </div>
             <div className="text-center mt-6">
