@@ -34,13 +34,19 @@ export const tour3Translations = {
     ],
     inclusionsTitle: "Yang Termasuk",
     inclusions: [
-      "Transportasi AC penuh",
-      "Perahu tour",
-      "Pemandu profesional",
-      "Air mineral",
-      "Peralatan snorkeling",
-      "Tiket masuk semua destinasi",
-      "Dokumentasi"
+      "Transportasi kendaraan, sopir, dan bahan bakar (kendaraan ber-AC penuh)",
+      "Hotel di Sumbawa Besar 2 malam (AC & WiFi)",
+      "Speedboat Pulau Moyo",
+      "Ojek/motor taxi ke air terjun",
+      "Perahu Tour Hiu Paus (kasur, bantal, selimut, handuk & toilet)",
+      "Pemandu Berbahasa Inggris",
+      "Air mineral selama tour",
+      "Sarapan sederhana di perahu (roti, nutella, buah)",
+      "Kopi, teh (di perahu)",
+      "Alat snorkeling (masker, fins, snorkel, pelampung)",
+      "Pemandu Tour Profesional",
+      "Dokumentasi foto & video Underwater Gopro Hero 12",
+      "Biaya masuk & konservasi"
     ],
     exclusionsTitle: "Yang Tidak Termasuk",
     whatToBringTitle: "Apa yang Harus Dibawa (opsional)",
@@ -51,10 +57,9 @@ export const tour3Translations = {
       "Kacamata hitam dengan perlindungan UV"
     ],
     exclusions: [
-      "Makan selama tour",
-      "Hotel di Sumbawa Besar",
-      "Pengeluaran pribadi",
-      "Tips"
+      "Makan & Minuman L&D",
+      "Kebutuhan Pribadi",
+      "Tips kru lokal/pemandu wisata"
     ],
     pricingTitle: "Harga Tour 3D2N",
     pricingNotes: [
@@ -98,13 +103,19 @@ export const tour3Translations = {
     ],
     inclusionsTitle: "Inclusions",
     inclusions: [
-      "Full AC transportation",
-      "Tour boat",
-      "Professional guide",
-      "Mineral water",
-      "Snorkeling equipment",
-      "Entrance tickets to all destinations",
-      "Documentation"
+      "Vehicle transportation, driver, and fuel (full AC vehicle)",
+      "2 nights hotel in Sumbawa Besar (AC & WiFi)",
+      "Moyo Island speedboat",
+      "Motorbike taxi to the waterfall",
+      "Whale shark tour boat (mattress, pillow, blanket, towel & toilet)",
+      "English-speaking guide",
+      "Mineral water during the tour",
+      "Simple breakfast on the boat (bread, Nutella, fruit)",
+      "Coffee & tea on the boat",
+      "Snorkeling equipment (mask, fins, snorkel, life jacket)",
+      "Professional tour guide",
+      "Underwater photo & video documentation using GoPro Hero 12",
+      "Entrance & conservation fees"
     ],
     exclusionsTitle: "Exclusions",
     whatToBringTitle: "What to bring (optional)",
@@ -115,10 +126,9 @@ export const tour3Translations = {
       "Sunglasses with UV protection"
     ],
     exclusions: [
-      "Meals during tour",
-      "Hotel in Sumbawa Besar",
-      "Personal expenses",
-      "Tips"
+      "Meals & beverages (Lunch & Dinner)",
+      "Personal needs",
+      "Tips for local crew/tour guide"
     ],
     pricingTitle: "3D2N Tour Price",
     pricingNotes: [

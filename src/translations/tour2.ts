@@ -2,7 +2,7 @@ export const tour2Translations = {
   id: {
     title: "Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar",
     subtitle: "Paket tour 2 hari 1 malam untuk pengalaman snorkeling dengan hiu paus di Teluk Saleh",
-    description1: "Temukan petualangan laut terbaik di Sumbawa melalui paket 2 Hari 1 Malam Tour Hiu Paus yang praktis dan nyaman.",
+    description1: "Temukan petualangan laut terbaik di Sumbawa melalui paket 2 Hari 1 Malam Tour Hiu Paus yang praktis dan nyaman. Tour ini dirancang agar Anda menikmati budaya tentang Sumbawa, alam, dan petualangan dalam waktu singkat namun berkesan.",
     description2: "Tour ini dirancang agar Anda menikmati budaya tentang Sumbawa, alam, dan petualangan dalam waktu singkat namun berkesan.",
     programTitle: "Program Tour 2 Hari 1 Malam",
     day1Title: "Hari 1",
