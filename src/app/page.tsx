@@ -55,6 +55,20 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Welcome Section */}
+      <section className="py-2 bg-white">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+              {t.heroTitle}
+            </h2>
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+              Selamat datang di Adventure Sumbawa Island, penyedia layanan wisata petualangan lokal yang berbasis di Sumbawa. Kami berdiri dengan tujuan untuk memperkenalkan keindahan alam Sumbawa kepada dunia melalui pengalaman wisata yang autentik, aman, dan ramah lingkungan.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Pilihan Paket Wisata - Exact layout dari The Langkah Travel */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6 max-w-4xl">
