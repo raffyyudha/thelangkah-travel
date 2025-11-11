@@ -59,8 +59,11 @@ export default function Home() {
       <section className="bg-white">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Welcome Section */}
-          <div className="text-center flex flex-col items-center justify-center py-8 md:py-4">
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+          <div className="py-8 md:py-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 text-center">
+              {t.welcomeTitle}
+            </h2>
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl text-left">
               {t.welcomeDesc}
             </p>
           </div>
