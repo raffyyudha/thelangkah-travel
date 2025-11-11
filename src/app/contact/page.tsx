@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { MessageCircle, Phone, Mail, MapPin, Instagram, Clock } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Footer } from "@/components/Footer";
 
 export const metadata = {
   title: "Kontak Kami | Adventure Sumbawa Island",
@@ -436,6 +438,7 @@ export default function ContactPage() {
           </div>
         </div>
       </footer>
+      <Footer />
     </main>
   );
 }

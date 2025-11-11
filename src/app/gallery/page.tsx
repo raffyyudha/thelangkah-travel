@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Footer } from "@/components/Footer";
 
 const categories = ["galleryAll", "galleryWhaleShark", "galleryMoyoIsland", "galleryKenawa", "galleryIslandHopping", "galleryGallery"];
 
@@ -273,6 +274,7 @@ export default function GalleryPage() {
           </div>
         </div>
       </footer>
+      <Footer />
     </main>
   );
 }

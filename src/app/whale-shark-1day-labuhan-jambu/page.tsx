@@ -7,6 +7,7 @@ import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
 import { DropdownSection, PrivatePricingTable, PaymentMethodsSection, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
+import { Footer } from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { tour7Translations } from "@/translations/tour7";
 
@@ -395,6 +396,7 @@ export default function WhaleShark1DayLabuhanJambuPage() {
         tourName={pageTitle}
       />
 
+      <Footer />
     </main>
   );
 }

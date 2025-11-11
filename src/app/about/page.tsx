@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, Users, Shield, Leaf, Award, Heart, MapPin, Compass, Briefcase, Map, Waves } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Footer } from "@/components/Footer";
 
 export default function AboutPage() {
   const { t } = useLanguage();
@@ -369,6 +370,7 @@ export default function AboutPage() {
           </div>
         </div>
       </footer>
+      <Footer />
     </main>
   );
 }

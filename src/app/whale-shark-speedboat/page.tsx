@@ -7,6 +7,7 @@ import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
 import { DropdownSection, PrivatePricingTable, PaymentMethodsSection, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
+import { Footer } from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { tour8Translations } from "@/translations/tour8";
 
@@ -377,6 +378,7 @@ export default function WhaleSharkSpeedboatPage() {
         onClose={() => setIsBookingModalOpen(false)}
         tourName={pageTitle}
       />
+      <Footer />
     </main>
   );
 }

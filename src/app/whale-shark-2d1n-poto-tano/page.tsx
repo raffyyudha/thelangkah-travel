@@ -7,6 +7,7 @@ import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
 import { DropdownSection, PrivatePricingTable, PaymentMethodsSection, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
+import { Footer } from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { tour9Translations } from "@/translations/tour9";
 
@@ -374,6 +375,7 @@ export default function WhaleShark2D1NPotoTanoPage() {
         onClose={() => setIsBookingModalOpen(false)}
         tourName={pageTitle}
       />
+      <Footer />
     </main>
   );
 }
