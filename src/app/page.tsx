@@ -63,7 +63,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 text-center">
               {t.welcomeTitle}
             </h2>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl text-left">
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl text-center">
               {t.welcomeDesc}
             </p>
           </div>
