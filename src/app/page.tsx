@@ -38,8 +38,10 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white leading-tight">
             {t.heroTitle}
           </h1>
-          <p className="text-lg md:text-xl text-white mb-8 leading-relaxed">
-            <span className="font-bold">{t.heroDesc}</span>
+          <p className="text-lg md:text-xl text-white mb-8 leading-relaxed translate-y-3 md:translate-y-4">
+            <span className="inline-block bg-white/30 text-white/95 px-4 py-3 rounded-lg backdrop-blur-md shadow-lg max-w-xl">
+              {t.heroDesc}
+            </span>
           </p>
         </div>
       </section>
