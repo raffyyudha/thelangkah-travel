@@ -112,21 +112,28 @@ export default function WhaleSharkStartSumbawaPage() {
               {t.programTitle}
             </h2>
 
-            <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>{t.itinerary.time1}</strong> : {t.itinerary.desc1}
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>{t.itinerary.time2}</strong> : {t.itinerary.desc2}
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>{t.itinerary.time3}</strong> : {t.itinerary.desc3}
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-2">
-              <strong>{t.itinerary.time4}</strong> : {t.itinerary.desc4}
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-8">
-              <strong>{t.itinerary.time5}</strong> : {t.itinerary.desc5}
-            </p>
+            {[t.itinerary.time1, t.itinerary.time2, t.itinerary.time3, t.itinerary.time4, t.itinerary.time5, t.itinerary.time6, t.itinerary.time7, t.itinerary.time8]
+              .filter(Boolean)
+              .map((time, idx) => {
+                const descKey = `desc${idx + 1}` as keyof typeof t.itinerary;
+                const desc = t.itinerary[descKey] as string | undefined;
+                if (!time || !desc) return null;
+                const isLast = idx === 7 || ![t.itinerary.time6, t.itinerary.time7, t.itinerary.time8].filter(Boolean)[0] && idx === 4;
+                return (
+                  <p
+                    key={`itinerary-${idx}`}
+                    className={`text-gray-700 leading-relaxed ${isLast ? "mb-4" : "mb-2"}`}
+                  >
+                    <strong>{time}</strong> : {desc}
+                  </p>
+                );
+              })}
+
+            {t.itinerary.optionalNote && (
+              <p className="text-gray-600 italic mb-8">
+                {t.itinerary.optionalNote}
+              </p>
+            )}
 
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
               {t.inclusionsTitle}
