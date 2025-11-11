@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Footer } from "@/components/Footer";
 import { comboKenawaWhaleSharkTranslations } from "@/translations/comboKenawaWhaleShark";
 import { MessageCircle, Clock, Users, MapPin, Check, X } from "lucide-react";
 
@@ -298,6 +299,7 @@ export default function ComboKenawaWhaleSharkPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }

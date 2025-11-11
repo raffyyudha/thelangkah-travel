@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Footer } from "@/components/Footer";
 import { moyoIslandTranslations } from "@/translations/moyoIsland";
 import { MessageCircle, Clock, Users, MapPin, Check, X } from "lucide-react";
 
@@ -578,6 +579,7 @@ export default function Page() {
           </div>
         </div>
       </footer>
+      <Footer />
     </main>
   );
 }

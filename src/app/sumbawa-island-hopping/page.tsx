@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, Clock, Users, MapPin, Anchor } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Footer } from "@/components/Footer";
 
 export default function SumbawaIslandHoppingPage() {
   const { t } = useLanguage();
@@ -439,6 +440,7 @@ export default function SumbawaIslandHoppingPage() {
           </div>
         </div>
       </footer>
+      <Footer />
     </main>
   );
 }

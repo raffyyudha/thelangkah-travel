@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, Clock, Users, MapPin, Check, X, AlertCircle } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Footer } from "@/components/Footer";
 
 export const metadata = {
   title: "Paket Wisata Pulau Kenawa | Adventure Sumbawa Island",
@@ -387,6 +389,7 @@ export default function KenawaSunsetTourPage() {
           </div>
         </div>
       </footer>
+      <Footer />
     </main>
   );
 }

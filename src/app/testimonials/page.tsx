@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Star, MessageCircle, MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Footer } from "@/components/Footer";
 import { googleReviews } from "@/data/googleReviews";
 
 // Convert Google Reviews to testimonials format
@@ -292,6 +293,7 @@ export default function TestimonialsPage() {
           </div>
         </div>
       </footer>
+      <Footer />
     </main>
   );
 }

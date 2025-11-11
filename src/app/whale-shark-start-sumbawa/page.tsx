@@ -8,6 +8,7 @@ import { DropdownSection, PrivatePricingTable, PaymentMethodsSection, DynamicTou
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Footer } from "@/components/Footer";
 import { tour1Translations } from "@/translations/tour1";
 
 export default function WhaleSharkStartSumbawaPage() {
@@ -380,7 +381,7 @@ export default function WhaleSharkStartSumbawaPage() {
         onClose={() => setIsBookingModalOpen(false)}
         tourName={pageTitle}
       />
-
+      <Footer />
     </main>
   );
 }

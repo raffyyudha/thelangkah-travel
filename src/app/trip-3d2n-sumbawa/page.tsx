@@ -1,11 +1,10 @@
 "use client";
 
-"use client";
-
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Footer } from "@/components/Footer";
 import { trip3d2nTranslations } from "@/translations/trip3d2n";
 import { MessageCircle, Clock, Users, MapPin, Calendar } from "lucide-react";
 
@@ -160,33 +159,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#0a3d52] text-white py-16">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="relative w-16 h-16">
-                  <Image src="/images/logo.png" alt="Logo" fill className="object-contain" />
-                </div>
-                <h3 className="text-xl font-bold">ADVENTURE SUMBAWA ISLAND</h3>
-              </div>
-              <p className="text-gray-300 mb-6">
-                Adventure Sumbawa Island lahir pada tahun 2022 karena sebuah pemikiran yang dilandasi dengan keahlian dan keinginan untuk memberikan pelayanan terbaik bagi customer Adventure Sumbawa Island.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-lg mb-4">Hubungi Kami</h4>
-              <div className="space-y-3">
-                <a href="https://wa.me/6282341331975" className="flex items-center gap-3 text-gray-300 hover:text-white">
-                  <MessageCircle size={20} />
-                  <span>+62 823-4133-1975</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

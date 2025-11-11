@@ -8,6 +8,7 @@ import { DropdownSection, PrivatePricingTable, PaymentMethodsSection, DynamicTou
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Footer } from "@/components/Footer";
 import { tour2Translations } from "@/translations/tour2";
 
 export default function WhaleShark2D1NPage() {
@@ -348,7 +349,7 @@ export default function WhaleShark2D1NPage() {
         onClose={() => setIsBookingModalOpen(false)}
         tourName={pageTitle}
       />
-
+      <Footer />
     </main>
   );
 }
