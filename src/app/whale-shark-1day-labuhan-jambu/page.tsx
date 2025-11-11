@@ -14,6 +14,7 @@ export default function WhaleShark1DayLabuhanJambuPage() {
   const { language } = useLanguage();
   const t = language === 'id' ? tour7Translations.id : tour7Translations.en;
   const { t: commonT } = useLanguage();
+  const pageTitle = commonT.tourB;
   
   const [currentReview, setCurrentReview] = useState(0);
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
@@ -78,10 +79,6 @@ export default function WhaleShark1DayLabuhanJambuPage() {
     <main className="min-h-screen bg-white">
       <article className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
-          {/* Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Trip 1 Hari Hiu Paus (Menggunakan Speed Boat)
-          </h1>
 
           {/* Featured Image - Dynamic from Database */}
           <DynamicTourImages tourName="whale-shark-1day-labuhan-jambu" />
@@ -89,7 +86,7 @@ export default function WhaleShark1DayLabuhanJambuPage() {
           {/* Content */}
           <div className="prose prose-lg max-w-none">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              {t.title}
+              {pageTitle}
             </h2>
 
             <p className="text-gray-700 leading-relaxed mb-4">

@@ -14,6 +14,7 @@ export default function WhaleSharkStartLabuhanJambuPage() {
   const { language } = useLanguage();
   const t = language === 'id' ? tour4Translations.id : tour4Translations.en;
   const { t: commonT } = useLanguage();
+  const pageTitle = commonT.tourG;
   
   const [currentReview, setCurrentReview] = useState(0);
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
@@ -78,16 +79,16 @@ export default function WhaleSharkStartLabuhanJambuPage() {
     <main className="min-h-screen bg-white">
       <article className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
-          {/* Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            {t.title}
-          </h1>
 
           {/* Featured Image - Dynamic from Database */}
           <DynamicTourImages tourName="whale-shark-start-labuhan-jambu" />
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
+
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              {pageTitle}
+            </h2>
 
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
               {t.subtitle}
