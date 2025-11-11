@@ -32,7 +32,7 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
       // Hardcoded images for new tours
       if (tourName === "whale-shark-1day-labuhan-jambu") {
         setImages({
-          hero: "/images/whale-shark-1day-labuhan-jambu-hero.PNG",
+          hero: "/images/whale-shark-1day-labuhan-jambu.PNG",
           gallery1: "/images/whale-shark-1day-labuhan-jambu-1.PNG",
           gallery2: "/images/whale-shark-1day-labuhan-jambu-2.PNG",
           gallery3: "/images/whale-shark-1day-labuhan-jambu-3.PNG"
@@ -52,7 +52,7 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
       }
       if (tourName === "whale-shark-2d1n-poto-tano") {
         setImages({
-          hero: "/images/whale-shark-2d1n-poto-tano.PNG",
+          hero: "/images/whale-shark-2d1n-poto-tano-3.JPG",
           gallery1: "/images/whale-shark-2d1n-poto-tano-1.PNG",
           gallery2: "/images/whale-shark-2d1n-poto-tano-2.PNG",
           gallery3: "/images/whale-shark-2d1n-poto-tano-3.JPG"
@@ -62,7 +62,7 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
       }
       if (tourName === "whale-shark-2d1n-sekongkang") {
         setImages({
-          hero: "/images/whale-shark-2d1n-sekongkang-hero.PNG",
+          hero: "/images/whale-shark-2d1n-sekongkang.PNG",
           gallery1: "/images/whale-shark-2d1n-sekongkang-1.PNG",
           gallery2: "/images/whale-shark-2d1n-sekongkang-2.PNG",
           gallery3: "/images/whale-shark-2d1n-sekongkang-3.PNG"

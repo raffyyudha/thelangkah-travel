@@ -15,13 +15,13 @@ interface DynamicPackageCardProps {
 export function DynamicPackageCard({ tourName, title, href, price }: DynamicPackageCardProps) {
   // Hardcoded fallback for new tours - using thumbnails
   const defaultImage = tourName === "whale-shark-1day-labuhan-jambu" 
-    ? "/images/whale-shark-1day-labuhan-jambu-hero.PNG" 
+    ? "/images/whale-shark-1day-labuhan-jambu.PNG" 
     : tourName === "whale-shark-speedboat"
     ? "/images/whale-shark-speedboat-3.JPG"
     : tourName === "whale-shark-2d1n-poto-tano"
-    ? "/images/whale-shark-2d1n-poto-tano-hero.PNG"
+    ? "/images/whale-shark-2d1n-poto-tano-3.JPG"
     : tourName === "whale-shark-2d1n-sekongkang"
-    ? "/images/whale-shark-2d1n-sekongkang-hero.PNG"
+    ? "/images/whale-shark-2d1n-sekongkang.PNG"
     : tourName === "whale-shark-moyo-kenawa-lombok"
     ? "/images/whale-shark-moyo-kenawa-lombok.PNG"
     : tourName === "trip-4d3n-sumbawa"
@@ -33,7 +33,7 @@ export function DynamicPackageCard({ tourName, title, href, price }: DynamicPack
   const fetchHeroImage = useCallback(async () => {
     // Use hardcoded thumbnail for new tours
     if (tourName === "whale-shark-1day-labuhan-jambu") {
-      setHeroImage("/images/whale-shark-1day-labuhan-jambu-hero.PNG");
+      setHeroImage("/images/whale-shark-1day-labuhan-jambu.PNG");
       return;
     }
     if (tourName === "whale-shark-speedboat") {
@@ -41,11 +41,11 @@ export function DynamicPackageCard({ tourName, title, href, price }: DynamicPack
       return;
     }
     if (tourName === "whale-shark-2d1n-poto-tano") {
-      setHeroImage("/images/whale-shark-2d1n-poto-tano-hero.PNG");
+      setHeroImage("/images/whale-shark-2d1n-poto-tano-3.JPG");
       return;
     }
     if (tourName === "whale-shark-2d1n-sekongkang") {
-      setHeroImage("/images/whale-shark-2d1n-sekongkang-hero.PNG");
+      setHeroImage("/images/whale-shark-2d1n-sekongkang.PNG");
       return;
     }
     if (tourName === "whale-shark-moyo-kenawa-lombok") {
