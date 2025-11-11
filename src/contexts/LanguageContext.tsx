@@ -22,6 +22,7 @@ interface LanguageContextType {
     islandHopping: string;
     heroTitle: string;
     heroDesc: string;
+    welcomeDesc: string;
     popularPackages: string;
     popularDesc: string;
     whyTravelTitle: string;
@@ -289,6 +290,7 @@ const translations = {
     // Homepage Hero
     heroTitle: "Jelajahi Sumbawa Terbaik Bersama Kami",
     heroDesc: "Adventure Sumbawa Island adalah operator tur lokal terbaik yang menyediakan paket tur ke Sumbawa, terutama snorkeling dengan hiu paus di Labuhan Jambu.",
+    welcomeDesc: "Selamat datang di Adventure Sumbawa Island, penyedia layanan wisata petualangan lokal yang berbasis di Sumbawa. Kami berdiri dengan tujuan untuk memperkenalkan keindahan alam Sumbawa kepada dunia melalui pengalaman wisata yang autentik, aman, dan ramah lingkungan.",
     
     // Popular Packages
     popularPackages: "Paket Wisata Populer",
@@ -574,6 +576,7 @@ const translations = {
     // Homepage Hero
     heroTitle: "Explore Sumbawa's Best With Us",
     heroDesc: "Adventure Sumbawa Island is the best local tour operator providing tour packages to Sumbawa, especially snorkeling with whale sharks in Labuhan Jambu.",
+    welcomeDesc: "Welcome to Adventure Sumbawa Island, a local adventure travel provider based in Sumbawa. We were established with the mission to introduce the beauty of Sumbawa's nature to the world through authentic, safe, and eco-friendly travel experiences.",
     
     // Popular Packages
     popularPackages: "Popular Tour Packages",
