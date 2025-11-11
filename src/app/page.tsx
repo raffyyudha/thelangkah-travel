@@ -32,17 +32,26 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section - Exact copy dari The Langkah Travel */}
-      <section className="relative h-[600px] flex items-end md:items-center justify-start">
+      <section className="relative h-[600px] md:h-[700px] flex flex-col justify-start">
         <DynamicHomepageHero />
-        <div className="container mx-auto px-6 pb-12 md:pb-0 relative z-10 max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white leading-tight">
+        
+        {/* Dark overlay gradient for water area - desktop only */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent from-30% via-black/20 via-50% to-transparent md:via-black/40 md:to-black/70 z-5"></div>
+        
+        {/* Hero Content - Title and Text Box */}
+        <div className="container mx-auto px-6 pt-28 md:pt-48 relative z-10 max-w-3xl">
+          <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight drop-shadow-lg mb-4 md:mb-8">
             {t.heroTitle}
           </h1>
-          <p className="text-lg md:text-xl text-white mb-8 leading-relaxed translate-y-3 md:translate-y-4">
-            <span className="inline-block bg-white/30 text-white/95 px-4 py-3 rounded-lg backdrop-blur-md shadow-lg max-w-xl">
-              {t.heroDesc}
-            </span>
-          </p>
+          
+          {/* Welcome Text Box - Right below title */}
+          <div className="max-w-3xl">
+            <div className="rounded-2xl p-5 md:p-6 bg-gradient-to-b from-white/35 to-white/15 backdrop-blur-lg ring-1 ring-white/50 shadow-xl">
+              <p className="text-sm md:text-base text-white leading-relaxed">
+                {t.heroDesc}
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
