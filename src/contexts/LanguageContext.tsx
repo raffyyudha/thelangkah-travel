@@ -211,8 +211,6 @@ interface LanguageContextType {
     tourPaymentSwiftCode: string;
     tourPaymentInternationalTitle: string;
     tourPaymentInternationalOption1: string;
-    tourPaymentInternationalOption2: string;
-    tourPaymentInternationalNote: string;
     tourPaymentConfirmationTitle: string;
     tourPaymentConfirmationItem1: string;
     tourPaymentConfirmationItem2: string;
@@ -241,6 +239,8 @@ interface LanguageContextType {
     tourJPriceFrom: string;
     tourK: string;
     tourKPriceFrom: string;
+    tourPaymentInternationalOption2: string;
+    tourPaymentInternationalNote: string;
     
     // Tour Page CTA
     interestedBookHere: string;
@@ -504,26 +504,26 @@ const translations = {
     tourPaymentInternationalOption2: "Wise Transfer",
     tourPaymentInternationalNote: "Pilih metode paling nyaman untuk Anda.",
     tourPaymentConfirmationTitle: "Konfirmasi Pembayaran Setelah pembayaran berhasil:",
-    tourPaymentConfirmationItem1: "Sistem otomatis mengirim Invoice Resmi",
-    tourPaymentConfirmationItem2: "Admin kami juga akan menghubungi Anda melalui WhatsApp",
-    tourPaymentConfirmationItem3: "Booking Anda langsung tercatat di sistem",
+    tourPaymentConfirmationItem1: "Sistem kami secara otomatis mengirimkan invoice resmi",
+    tourPaymentConfirmationItem2: "Admin kami juga akan menghubungi Anda via WhatsApp",
+    tourPaymentConfirmationItem3: "Booking Anda langsung tercatat dalam sistem kami",
     
     // Homepage Tour Titles
-    tourA: "Trip 1 hari hiu paus (A) (star & finis sumbawa besar)",
+    tourA: "1 Day Whale Shark Trip (A)\n(Start & Finish Sumbawa Besar)",
     tourAPriceFrom: "Mulai 750.000 IDR per orang",
-    tourB: "Trip 1 hari hiu paus (B) (star & finis labuhan jambu)",
+    tourB: "1 Day Whale Shark Trip (B)\n(Start & Finish Labuhan Jambu)",
     tourBPriceFrom: "Mulai 550.000 IDR per orang",
-    tourC: "Trip 1 hari hiu paus (C) (Menggunakan speed boat)",
+    tourC: "1 Day Whale Shark Trip (C)\n(Using Speed Boat)",
     tourCPriceFrom: "Mulai 1.700.000 IDR per orang",
-    tourD: "2D1N Trip hiu paus (D) (Star & finish sumbawa besar)",
+    tourD: "2D1N Trip hiu paus (D)\n(Star & finish sumbawa besar)",
     tourDPriceFrom: "Mulai 1.200.000 IDR per orang",
-    tourE: "2D1N Trip hiu paus (E) (Star & finish area Poto tano)",
+    tourE: "2D1N Trip hiu paus (E)\n(Star & finish area Poto tano)",
     tourEPriceFrom: "Mulai 1.200.000 IDR per orang",
-    tourF: "2D1N Trip hiu paus (F) (Star & finish area sakongkang)",
+    tourF: "2D1N Trip hiu paus (F)\n(Star & finish area sakongkang)",
     tourFPriceFrom: "Mulai 1.200.000 IDR per orang",
-    tourG: "2D1N Trip hiu paus (G) (Star & finish area Lombok)",
+    tourG: "2D1N Trip hiu paus (G)\n(Star & finish area Lombok)",
     tourGPriceFrom: "Mulai 1.200.000 IDR per orang",
-    tourH: "2D1N Trip hiu paus (H) (Scuba diving sumbawa)",
+    tourH: "2D1N Trip hiu paus (H)\n(Scuba diving sumbawa)",
     tourHPriceFrom: "Mulai 1.200.000 IDR per orang",
     tourI: "3D2N Trip Sumbawa Island (I)\nHiu paus & pulau Moyo\n(Start & Finish sumbawa besar)",
     tourIPriceFrom: "Mulai 1.800.000 IDR per orang",
@@ -796,21 +796,21 @@ const translations = {
     tourPaymentConfirmationItem3: "Your booking is immediately recorded in our system",
     
     // Homepage Tour Titles
-    tourA: "1 Day Whale Shark Trip (A) (Start & Finish Sumbawa Besar)",
+    tourA: "1 Day Whale Shark Trip (A)\n(Start & Finish Sumbawa Besar)",
     tourAPriceFrom: "Starting from 750,000 IDR per person",
-    tourB: "1 Day Whale Shark Trip (B) (Start & Finish Labuhan Jambu)",
+    tourB: "1 Day Whale Shark Trip (B)\n(Start & Finish Labuhan Jambu)",
     tourBPriceFrom: "Starting from 550,000 IDR per person",
-    tourC: "1 Day Whale Shark Trip (C) (Using Speed Boat)",
+    tourC: "1 Day Whale Shark Trip (C)\n(Using Speed Boat)",
     tourCPriceFrom: "Starting from 1,700,000 IDR per person",
-    tourD: "2D1N Whale Shark Trip (D) (Start & Finish Sumbawa Besar)",
+    tourD: "2D1N Whale Shark Trip (D)\n(Start & Finish Sumbawa Besar)",
     tourDPriceFrom: "Starting from 1,200,000 IDR per person",
-    tourE: "2D1N Whale Shark Trip (E) (Start & Finish Poto Tano Area)",
+    tourE: "2D1N Whale Shark Trip (E)\n(Start & Finish Poto Tano Area)",
     tourEPriceFrom: "Starting from 1,200,000 IDR per person",
-    tourF: "2D1N Whale Shark Trip (F) (Start & Finish Sekongkang Area)",
+    tourF: "2D1N Whale Shark Trip (F)\n(Start & Finish Sekongkang Area)",
     tourFPriceFrom: "Starting from 1,200,000 IDR per person",
-    tourG: "2D1N Whale Shark Trip (G) (Start & Finish Area Lombok)",
+    tourG: "2D1N Whale Shark Trip (G)\n(Start & Finish Area Lombok)",
     tourGPriceFrom: "Starting from 1,200,000 IDR per person",
-    tourH: "2D1N Whale Shark Trip (H) (Scuba diving Sumbawa)",
+    tourH: "2D1N Whale Shark Trip (H)\n(Scuba diving Sumbawa)",
     tourHPriceFrom: "Starting from 1,200,000 IDR per person",
     tourI: "3D2N Trip Sumbawa Island (I)\nWhale shark & Moyo island\n(Start & Finish Sumbawa Besar)",
     tourIPriceFrom: "Starting from 1,800,000 IDR per person",
