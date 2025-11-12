@@ -64,13 +64,19 @@ export function DynamicRelatedTour({ tourName, title, href }: DynamicRelatedTour
   return (
     <Link href={href} className="group">
       <div className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-44">
-        <Image
-          src={heroImage}
-          alt={displayTitle}
-          fill
-          className="object-cover group-hover:scale-105 transition-transform duration-300"
-          unoptimized={heroImage.startsWith('http')}
-        />
+        {heroImage ? (
+          <Image
+            src={heroImage}
+            alt={displayTitle}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            unoptimized={heroImage.startsWith('http')}
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center bg-gray-200">
+            <p className="text-gray-400 text-sm">No image</p>
+          </div>
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 p-3">
           <h3 className="text-xs sm:text-sm font-bold text-white leading-tight">

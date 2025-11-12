@@ -91,8 +91,8 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
   return (
     <>
       {/* Hero/Featured Image */}
-      {images.hero && (
-        <div className="relative w-full h-64 md:h-96 mb-8 rounded-lg overflow-hidden">
+      <div className="relative w-full h-64 md:h-96 mb-8 rounded-lg overflow-hidden bg-gray-200">
+        {images.hero ? (
           <Image
             src={images.hero}
             alt="Tour Hero Image"
@@ -101,13 +101,17 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
             priority
             unoptimized={images.hero.startsWith('http')}
           />
-        </div>
-      )}
+        ) : (
+          <div className="w-full h-full flex items-center justify-center">
+            <p className="text-gray-400">No hero image uploaded</p>
+          </div>
+        )}
+      </div>
 
       {/* Gallery - 3 small images */}
       <div className="grid grid-cols-3 gap-4 mb-8">
-        {images.gallery1 && (
-          <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
+        <div className="relative h-32 md:h-48 rounded-lg overflow-hidden bg-gray-200">
+          {images.gallery1 ? (
             <Image
               src={images.gallery1}
               alt="Gallery Image 1"
@@ -115,10 +119,14 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
               className="object-cover"
               unoptimized={images.gallery1.startsWith('http')}
             />
-          </div>
-        )}
-        {images.gallery2 && (
-          <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
+          ) : (
+            <div className="w-full h-full flex items-center justify-center">
+              <p className="text-gray-400 text-sm">No image</p>
+            </div>
+          )}
+        </div>
+        <div className="relative h-32 md:h-48 rounded-lg overflow-hidden bg-gray-200">
+          {images.gallery2 ? (
             <Image
               src={images.gallery2}
               alt="Gallery Image 2"
@@ -126,10 +134,14 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
               className="object-cover"
               unoptimized={images.gallery2.startsWith('http')}
             />
-          </div>
-        )}
-        {images.gallery3 && (
-          <div className="relative h-32 md:h-48 rounded-lg overflow-hidden">
+          ) : (
+            <div className="w-full h-full flex items-center justify-center">
+              <p className="text-gray-400 text-sm">No image</p>
+            </div>
+          )}
+        </div>
+        <div className="relative h-32 md:h-48 rounded-lg overflow-hidden bg-gray-200">
+          {images.gallery3 ? (
             <Image
               src={images.gallery3}
               alt="Gallery Image 3"
@@ -137,8 +149,12 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
               className="object-cover"
               unoptimized={images.gallery3.startsWith('http')}
             />
-          </div>
-        )}
+          ) : (
+            <div className="w-full h-full flex items-center justify-center">
+              <p className="text-gray-400 text-sm">No image</p>
+            </div>
+          )}
+        </div>
       </div>
     </>
   );
