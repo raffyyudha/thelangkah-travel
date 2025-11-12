@@ -6,6 +6,8 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 export { DynamicPricingTable } from "./DynamicPricingTable";
 export { DynamicTourImages } from "./DynamicTourImages";
+export { OptimizedTourImages } from "./OptimizedTourImages";
+export { OptimizedRelatedToursGrid } from "./OptimizedRelatedToursGrid";
 
 const PRIVATE_TOUR_PRICES: { count: number; price: string }[] = [
   { count: 1, price: "9,910,000" },

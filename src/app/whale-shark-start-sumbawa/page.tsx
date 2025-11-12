@@ -4,9 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
-import { DropdownSection, DynamicPricingTable, PaymentMethodsSection, DynamicTourImages } from "@/components/TourComponents";
+import { DropdownSection, DynamicPricingTable, PaymentMethodsSection, OptimizedTourImages, OptimizedRelatedToursGrid } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
-import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Footer } from "@/components/Footer";
 import { tour1Translations } from "@/translations/tour1";
@@ -19,6 +18,60 @@ export default function WhaleSharkStartSumbawaPage() {
   
   const [currentReview, setCurrentReview] = useState(0);
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+
+  // Related tours configuration for optimized loading
+  const relatedTours = [
+    {
+      tourName: "whale-shark-1day-labuhan-jambu",
+      title: "Trip 1 Hari Hiu Paus (Start & Finish Labuhan Jambu)",
+      href: "/whale-shark-1day-labuhan-jambu"
+    },
+    {
+      tourName: "whale-shark-speedboat",
+      title: "Trip 1 Hari Hiu Paus (Menggunakan Speed Boat)",
+      href: "/whale-shark-speedboat"
+    },
+    {
+      tourName: "whale-shark-2d1n",
+      title: "Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar",
+      href: "/whale-shark-2d1n"
+    },
+    {
+      tourName: "whale-shark-2d1n-poto-tano",
+      title: "2D1N Trip Hiu Paus (Start & Finish Area Poto Tano)",
+      href: "/whale-shark-2d1n-poto-tano"
+    },
+    {
+      tourName: "whale-shark-2d1n-sekongkang",
+      title: "2D1N Trip Hiu Paus (Start & Finish Area Sekongkang)",
+      href: "/whale-shark-2d1n-sekongkang"
+    },
+    {
+      tourName: "whale-shark-start-labuhan-jambu",
+      title: "Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok",
+      href: "/whale-shark-start-labuhan-jambu"
+    },
+    {
+      tourName: "whale-shark-experience",
+      title: "Sumbawa Whale Shark Tour 2 Days 1 Night (scuba diving tour)",
+      href: "/whale-shark-experience"
+    },
+    {
+      tourName: "combo-moyo-whale-shark",
+      title: "Paket Tour Sumbawa 3 Hari 2 Malam Pulau Moyo - Hiu Paus Teluk Saleh",
+      href: "/combo-moyo-whale-shark"
+    },
+    {
+      tourName: "whale-shark-moyo-kenawa-lombok",
+      title: "3D2N Trip Hiu Paus - Pulau Moyo - Kenawa (Start & Finish Area Lombok)",
+      href: "/whale-shark-moyo-kenawa-lombok"
+    },
+    {
+      tourName: "trip-4d3n-sumbawa",
+      title: "Paket Tour Sumbawa 4 Hari 3 Malam Wisata Pulau Moyo, Pulau Kenawa & Hiu Paus",
+      href: "/trip-4d3n-sumbawa"
+    }
+  ];
 
   const reviews = [
     {
@@ -82,8 +135,8 @@ export default function WhaleSharkStartSumbawaPage() {
       <article className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
 
-          {/* Featured Image - Dynamic from Database */}
-          <DynamicTourImages tourName="whale-shark-start-sumbawa" />
+          {/* Featured Image - Optimized from Database */}
+          <OptimizedTourImages tourName="whale-shark-start-sumbawa" />
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
@@ -320,58 +373,10 @@ export default function WhaleSharkStartSumbawaPage() {
             {commonT.relatedToursDesc}
           </p>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <DynamicRelatedTour
-              tourName="whale-shark-1day-labuhan-jambu"
-              title="Trip 1 Hari Hiu Paus (Start & Finish Labuhan Jambu)"
-              href="/whale-shark-1day-labuhan-jambu"
-            />
-            <DynamicRelatedTour
-              tourName="whale-shark-speedboat"
-              title="Trip 1 Hari Hiu Paus (Menggunakan Speed Boat)"
-              href="/whale-shark-speedboat"
-            />
-            <DynamicRelatedTour
-              tourName="whale-shark-2d1n"
-              title="Tour Wisata Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Sumbawa Besar"
-              href="/whale-shark-2d1n"
-            />
-            <DynamicRelatedTour
-              tourName="whale-shark-2d1n-poto-tano"
-              title="2D1N Trip Hiu Paus (Start & Finish Area Poto Tano)"
-              href="/whale-shark-2d1n-poto-tano"
-            />
-            <DynamicRelatedTour
-              tourName="whale-shark-2d1n-sekongkang"
-              title="2D1N Trip Hiu Paus (Start & Finish Area Sekongkang)"
-              href="/whale-shark-2d1n-sekongkang"
-            />
-            <DynamicRelatedTour
-              tourName="whale-shark-start-labuhan-jambu"
-              title="Paket Tour Hiu Paus Sumbawa 2 Hari 1 Malam start & finish Lombok"
-              href="/whale-shark-start-labuhan-jambu"
-            />
-            <DynamicRelatedTour
-              tourName="whale-shark-experience"
-              title="Sumbawa Whale Shark Tour 2 Days 1 Night (scuba diving tour)"
-              href="/whale-shark-experience"
-            />
-            <DynamicRelatedTour
-              tourName="combo-moyo-whale-shark"
-              title="Paket Tour Sumbawa 3 Hari 2 Malam Pulau Moyo - Hiu Paus Teluk Saleh"
-              href="/combo-moyo-whale-shark"
-            />
-            <DynamicRelatedTour
-              tourName="whale-shark-moyo-kenawa-lombok"
-              title="3D2N Trip Hiu Paus - Pulau Moyo - Kenawa (Start & Finish Area Lombok)"
-              href="/whale-shark-moyo-kenawa-lombok"
-            />
-            <DynamicRelatedTour
-              tourName="trip-4d3n-sumbawa"
-              title="Paket Tour Sumbawa 4 Hari 3 Malam Wisata Pulau Moyo, Pulau Kenawa & Hiu Paus"
-              href="/trip-4d3n-sumbawa"
-            />
-          </div>
+          <OptimizedRelatedToursGrid 
+            tours={relatedTours} 
+            currentTourName="whale-shark-start-sumbawa"
+          />
         </div>
       </section>
 
