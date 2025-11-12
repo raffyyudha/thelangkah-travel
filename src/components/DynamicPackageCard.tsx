@@ -17,21 +17,31 @@ export function DynamicPackageCard({ tourName, title, href, price }: DynamicPack
 
   const fetchHeroImage = useCallback(async () => {
     try {
-      // Get hero image (same as tour page) - NO FALLBACK
-      const { data: heroData } = await supabase
+      console.log(`🔍 Fetching homepage image for: ${tourName}`);
+      
+      // Try to get the latest card image; if not available, fallback to latest hero
+      const { data, error } = await supabase
         .from("tour_images")
-        .select("image_url")
+        .select("image_url,image_type")
         .eq("tour_name", tourName)
-        .eq("image_type", "hero")
-        .maybeSingle();
+        .in("image_type", ["card", "hero"])
+        .order("id", { ascending: false });
 
-      if (heroData && heroData.image_url) {
-        setHeroImage(heroData.image_url);
-      } else {
-        setHeroImage("");
+      if (!error && data && data.length > 0) {
+        const card = data.find((d: any) => d.image_type === "card");
+        const hero = data.find((d: any) => d.image_type === "hero");
+        const chosen = card?.image_url || hero?.image_url || "";
+        if (chosen) {
+          console.log(`✅ Using ${(card ? "card" : "hero")} for ${tourName}: ${chosen}`);
+          setHeroImage(chosen);
+          return;
+        }
       }
+
+      console.log(`❌ No image found for ${tourName}`);
+      setHeroImage("");
     } catch (error) {
-      console.error("Error fetching hero image:", error);
+      console.error(`Error fetching homepage image for ${tourName}:`, error);
       setHeroImage("");
     }
   }, [tourName]);

@@ -33,7 +33,8 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
         const { data, error } = await supabase
           .from('tour_images')
           .select('image_url,image_type')
-          .eq('tour_name', tourName);
+          .eq('tour_name', tourName)
+          .order('id', { ascending: false });
 
         const imageMap = {
           hero: "",
@@ -45,7 +46,8 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
         if (!error && data && data.length > 0) {
           (data as TourImage[]).forEach((img) => {
             const imgType = img.image_type as keyof typeof imageMap;
-            if (imgType in imageMap) {
+            // pick the newest entry per image_type (because ordered desc)
+            if ((imgType in imageMap) && !imageMap[imgType]) {
               imageMap[imgType] = img.image_url;
             }
           });

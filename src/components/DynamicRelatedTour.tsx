@@ -44,6 +44,8 @@ export function DynamicRelatedTour({ tourName, title, href }: DynamicRelatedTour
         .select("image_url")
         .eq("tour_name", tourName)
         .eq("image_type", "hero")
+        .order("id", { ascending: false })
+        .limit(1)
         .maybeSingle();
 
       if (!error && data && data.image_url) {

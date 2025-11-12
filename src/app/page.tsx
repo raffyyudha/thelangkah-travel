@@ -81,66 +81,77 @@ export default function Home() {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-4">
             <DynamicPackageCard
+              key="whale-shark-start-sumbawa-v2"
               tourName="whale-shark-start-sumbawa"
               title={t.tourA}
               href="/whale-shark-start-sumbawa"
               price={t.tourAPriceFrom}
             />
             <DynamicPackageCard
+              key="whale-shark-1day-labuhan-jambu-v2"
               tourName="whale-shark-1day-labuhan-jambu"
               title={t.tourB}
               href="/whale-shark-1day-labuhan-jambu"
               price={t.tourBPriceFrom}
             />
             <DynamicPackageCard
+              key="whale-shark-speedboat-v2"
               tourName="whale-shark-speedboat"
               title={t.tourC}
               href="/whale-shark-speedboat"
               price={t.tourCPriceFrom}
             />
             <DynamicPackageCard
+              key="whale-shark-2d1n-v2"
               tourName="whale-shark-2d1n"
               title={t.tourD}
               href="/whale-shark-2d1n"
               price={t.tourDPriceFrom}
             />
             <DynamicPackageCard
+              key="whale-shark-2d1n-poto-tano-v2"
               tourName="whale-shark-2d1n-poto-tano"
               title={t.tourE}
               href="/whale-shark-2d1n-poto-tano"
               price={t.tourEPriceFrom}
             />
             <DynamicPackageCard
+              key="whale-shark-2d1n-sekongkang-v2"
               tourName="whale-shark-2d1n-sekongkang"
               title={t.tourF}
               href="/whale-shark-2d1n-sekongkang"
               price={t.tourFPriceFrom}
             />
             <DynamicPackageCard
+              key="whale-shark-start-labuhan-jambu-v2"
               tourName="whale-shark-start-labuhan-jambu"
               title={t.tourG}
               href="/whale-shark-start-labuhan-jambu"
               price={t.tourGPriceFrom}
             />
             <DynamicPackageCard
+              key="whale-shark-experience-v2"
               tourName="whale-shark-experience"
               title={t.tourH}
               href="/whale-shark-experience"
               price={t.tourHPriceFrom}
             />
             <DynamicPackageCard
+              key="combo-moyo-whale-shark-v2"
               tourName="combo-moyo-whale-shark"
               title={t.tourI}
               href="/combo-moyo-whale-shark"
               price={t.tourIPriceFrom}
             />
             <DynamicPackageCard
+              key="whale-shark-moyo-kenawa-lombok-v2"
               tourName="whale-shark-moyo-kenawa-lombok"
               title={t.tourJ}
               href="/whale-shark-moyo-kenawa-lombok"
               price={t.tourJPriceFrom}
             />
             <DynamicPackageCard
+              key="trip-4d3n-sumbawa-v2"
               tourName="trip-4d3n-sumbawa"
               title={t.tourK}
               href="/trip-4d3n-sumbawa"

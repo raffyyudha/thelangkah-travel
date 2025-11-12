@@ -125,16 +125,18 @@ async function uploadImage(tourName, imageType, imagePath) {
       .from('images')
       .getPublicUrl(filePath);
 
-    // Check if already exists
+    // Check if already exists (latest by id)
     const { data: existing } = await supabase
       .from('tour_images')
       .select('id')
       .eq('tour_name', tourName)
       .eq('image_type', imageType)
-      .single();
+      .order('id', { ascending: false })
+      .limit(1)
+      .maybeSingle();
 
     let dbError = null;
-    if (existing) {
+    if (existing?.id) {
       // Update existing
       const { error } = await supabase
         .from('tour_images')

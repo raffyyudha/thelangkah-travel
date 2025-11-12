@@ -100,25 +100,74 @@ export default function AdminDashboard() {
     }
   };
 
+  const compressImage = async (file: File): Promise<File> => {
+    return new Promise((resolve) => {
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+      if (!ctx) {
+        resolve(file);
+        return;
+      }
+      const img = new window.Image();
+      
+      img.onload = () => {
+        // Calculate new dimensions (max 1200px width, maintain aspect ratio)
+        const maxWidth = 1200;
+        const ratio = Math.min(maxWidth / img.width, maxWidth / img.height);
+        canvas.width = img.width * ratio;
+        canvas.height = img.height * ratio;
+        
+        // Draw and compress
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        
+        // Convert to blob with aggressive compression (quality 0.5 = 50% quality)
+        canvas.toBlob((blob) => {
+          if (blob) {
+            const compressedFile = new File([blob], file.name, {
+              type: 'image/jpeg',
+              lastModified: Date.now()
+            });
+            resolve(compressedFile);
+          } else {
+            resolve(file);
+          }
+        }, 'image/jpeg', 0.5);
+      };
+      
+      img.src = URL.createObjectURL(file);
+    });
+  };
+
   const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>, imageType: string) => {
     if (!e.target.files || !e.target.files[0]) return;
-    const file = e.target.files[0];
+    const originalFile = e.target.files[0];
     setUploadingImage(true);
 
     try {
-      const fileExt = file.name.split('.').pop();
-      const fileName = `${selectedTour}_${imageType}_${Date.now()}.${fileExt}`;
+      // Compress image first
+      console.log(`Original size: ${(originalFile.size / 1024).toFixed(2)}KB`);
+      const compressedFile = await compressImage(originalFile);
+      console.log(`Compressed size: ${(compressedFile.size / 1024).toFixed(2)}KB`);
+      const savings = ((originalFile.size - compressedFile.size) / originalFile.size * 100).toFixed(2);
+      console.log(`Compression savings: ${savings}%`);
+
+      const fileName = `${selectedTour}_${imageType}_${Date.now()}.jpg`;
       const filePath = `tour-images/${fileName}`;
 
-      const { error: uploadError } = await supabase.storage.from('images').upload(filePath, file);
+      const { error: uploadError } = await supabase.storage.from('images').upload(filePath, compressedFile);
       if (uploadError) throw uploadError;
 
       const { data: { publicUrl } } = supabase.storage.from('images').getPublicUrl(filePath);
 
       const { data: existing } = await supabase.from('tour_images')
-        .select('id').eq('tour_name', selectedTour).eq('image_type', imageType).single();
+        .select('id')
+        .eq('tour_name', selectedTour)
+        .eq('image_type', imageType)
+        .order('id', { ascending: false })
+        .limit(1)
+        .maybeSingle();
 
-      if (existing) {
+      if (existing?.id) {
         await supabase.from('tour_images').update({ image_url: publicUrl })
           .eq('tour_name', selectedTour).eq('image_type', imageType);
       } else {
@@ -129,7 +178,8 @@ export default function AdminDashboard() {
         }]);
       }
 
-      alert('Image uploaded!');
+      const compressionInfo = `Image uploaded successfully!\n\nCompression details:\n- Original: ${(originalFile.size / 1024).toFixed(2)}KB\n- Compressed: ${(compressedFile.size / 1024).toFixed(2)}KB\n- Savings: ${savings}%`;
+      alert(compressionInfo);
       loadImages();
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'Unknown error';
