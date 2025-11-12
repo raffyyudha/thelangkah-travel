@@ -24,7 +24,7 @@ export function DynamicPackageCard({ tourName, title, href, price }: DynamicPack
     try {
       console.log(`🔍 Fetching homepage image for: ${tourName}`);
       
-      // Try to get the latest card image; if not available, fallback to latest hero
+      // Try to get the hero image first; if not available, fallback to card image
       const { data, error } = await supabase
         .from("tour_images")
         .select("image_url,image_type")
@@ -33,11 +33,11 @@ export function DynamicPackageCard({ tourName, title, href, price }: DynamicPack
         .order("id", { ascending: false });
 
       if (!error && data && data.length > 0) {
-        const card = data.find((d: TourImage) => d.image_type === "card");
         const hero = data.find((d: TourImage) => d.image_type === "hero");
-        const chosen = card?.image_url || hero?.image_url || "";
+        const card = data.find((d: TourImage) => d.image_type === "card");
+        const chosen = hero?.image_url || card?.image_url || "";
         if (chosen) {
-          console.log(`✅ Using ${(card ? "card" : "hero")} for ${tourName}: ${chosen}`);
+          console.log(`✅ Using ${(hero ? "hero" : "card")} for ${tourName}: ${chosen}`);
           setHeroImage(chosen);
           return;
         }
