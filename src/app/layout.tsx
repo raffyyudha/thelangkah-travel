@@ -16,6 +16,33 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Adventure Sumbawa Island | Snorkeling with Whale Shark Sumbawa",
   description: "Operator wisata lokal terpercaya di Sumbawa. Spesialis snorkeling dengan hiu paus di Teluk Saleh, Labuhan Jambu. Paket wisata Pulau Moyo, Kenawa, dan destinasi eksotis lainnya.",
+  icons: {
+    icon: "/images/logoshare.PNG",
+    shortcut: "/images/logoshare.PNG",
+    apple: "/images/logoshare.PNG",
+  },
+  openGraph: {
+    title: "Adventure Sumbawa Island | Snorkeling with Whale Shark Sumbawa",
+    description: "Operator wisata lokal terpercaya di Sumbawa. Spesialis snorkeling dengan hiu paus di Teluk Saleh, Labuhan Jambu. Paket wisata Pulau Moyo, Kenawa, dan destinasi eksotis lainnya.",
+    url: "https://adventuresumbawaisland.com",
+    siteName: "Adventure Sumbawa Island",
+    images: [
+      {
+        url: "/images/logoshare.PNG",
+        width: 512,
+        height: 512,
+        alt: "Adventure Sumbawa Island Logo",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Adventure Sumbawa Island | Snorkeling with Whale Shark Sumbawa",
+    description: "Operator wisata lokal terpercaya di Sumbawa. Spesialis snorkeling dengan hiu paus di Teluk Saleh, Labuhan Jambu.",
+    images: ["/images/logoshare.PNG"],
+  },
 };
 
 export default function RootLayout({
