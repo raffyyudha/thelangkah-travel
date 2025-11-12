@@ -292,12 +292,12 @@ const translations = {
     // Homepage Hero
     heroTitle: "Jelajahi Sumbawa Terbaik Bersama Kami",
     heroDesc: "Adventure Sumbawa Island adalah operator tur lokal terbaik yang menyediakan paket tur ke Sumbawa, terutama snorkeling dengan hiu paus di Labuhan Jambu.",
-    welcomeTitle: "Selamat Datang Di Adventure Sumbawa Island",
-    welcomeDesc: "Platform penyedia layanan wisata petualangan lokal yang berbasis di Sumbawa. Kami berdiri dengan tujuan untuk memperkenalkan keindahan alam Sumbawa kepada dunia melalui pengalaman wisata yang autentik, aman, dan ramah lingkungan.",
+    welcomeTitle: "Selamat Datang di Adventure Sumbawa Island",
+    welcomeDesc: "Adventure Sumbawa Island adalah platform layanan wisata petualangan lokal yang berbasis di Sumbawa. Kami hadir dengan komitmen untuk memperkenalkan keindahan alam Sumbawa kepada dunia melalui pengalaman wisata yang autentik, aman, nyaman, dan ramah lingkungan.\nDengan tim lokal berpengalaman, kami menawarkan perjalanan yang dirancang dengan penuh perhatian, memberikan kesempatan kepada setiap tamu untuk menikmati Sumbawa secara lebih dekat, alami, dan berkesan.",
     
     // Popular Packages
     popularPackages: "Paket Wisata Populer",
-    popularDesc: "Paket wisata Sumbawa bersama Adventure Sumbawa Island dengan destinasi terlengkap dan pilihan paket wisata yang beragam. Dari snorkeling dengan hiu paus hingga eksplorasi pulau-pulau eksotis seperti Moyo dan Kenawa.",
+    popularDesc: "Jelajahi Sumbawa bersama Adventure Sumbawa Island melalui berbagai pilihan paket wisata terbaik dengan destinasi paling lengkap. Mulai dari pengalaman snorkeling bersama hiu paus di Teluk Saleh hingga petualangan menjelajahi pulau-pulau eksotis seperti Pulau Moyo dan Kenawa. Setiap perjalanan dirancang untuk memberikan pengalaman yang aman, nyaman, dan meninggalkan kesan tak terlupakan.",
     
     // Gallery Categories
     galleryGallery: "Gallery",
@@ -580,14 +580,14 @@ const translations = {
     islandHopping: "Sumbawa Island Hopping",
     
     // Homepage Hero
-    heroTitle: "Explore Sumbawa's Best With Us",
-    heroDesc: "Adventure Sumbawa Island is the best local tour operator providing tour packages to Sumbawa, especially snorkeling with whale sharks in Labuhan Jambu.",
-    welcomeTitle: "Welcome To Adventure Sumbawa Island",
-    welcomeDesc: "A platform for local adventure travel providers based in Sumbawa. We were established with the mission to introduce the beauty of Sumbawa's nature to the world through authentic, safe, and eco-friendly travel experiences.",
+    heroTitle: "Welcome to Adventure Sumbawa Island",
+    heroDesc: "Adventure Sumbawa Island is a local adventure travel service platform based in Sumbawa. We are here with a commitment to introduce the natural beauty of Sumbawa to the world through authentic, safe, comfortable, and eco-friendly travel experiences. With an experienced local team, we offer carefully designed journeys, providing every guest the opportunity to enjoy Sumbawa more closely, naturally, and memorably.",
+    welcomeTitle: "Popular Tour Packages",
+    welcomeDesc: "Explore Sumbawa with Adventure Sumbawa Island through various best tour package options with the most complete destinations. From snorkeling experiences with whale sharks in Teluk Saleh to adventures exploring exotic islands like Moyo Island and Kenawa. Each journey is designed to provide a safe, comfortable experience that leaves an unforgettable impression.",
     
     // Popular Packages
     popularPackages: "Popular Tour Packages",
-    popularDesc: "Sumbawa tour packages with Adventure Sumbawa Island featuring the most complete destinations and diverse tour package options. From snorkeling with whale sharks to exploring exotic islands like Moyo and Kenawa.",
+    popularDesc: "Explore Sumbawa with Adventure Sumbawa Island through various best tour package options with the most complete destinations. From snorkeling experiences with whale sharks in Teluk Saleh to adventures exploring exotic islands like Moyo Island and Kenawa. Each journey is designed to provide a safe, comfortable experience that leaves an unforgettable impression.",
     
     // Gallery Categories
     galleryGallery: "Gallery",
