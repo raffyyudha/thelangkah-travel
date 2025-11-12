@@ -6,12 +6,66 @@ const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYm
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 const allPrices = [
-  // Tour 1: whale-shark-start-sumbawa
+  // Tour 1: whale-shark-start-sumbawa (Private tour dengan 10 tiers)
   {
     tour_name: 'whale-shark-start-sumbawa',
-    participants: '2 - 10',
-    open_trip_price: 'IDR. 1,450,000/Person',
-    full_private_price: 'IDR. 2,500,000/person'
+    participants: '1',
+    open_trip_price: '-',
+    full_private_price: 'IDR 9,910,000'
+  },
+  {
+    tour_name: 'whale-shark-start-sumbawa',
+    participants: '2',
+    open_trip_price: '-',
+    full_private_price: 'IDR 5,020,000'
+  },
+  {
+    tour_name: 'whale-shark-start-sumbawa',
+    participants: '3',
+    open_trip_price: '-',
+    full_private_price: 'IDR 3,400,000'
+  },
+  {
+    tour_name: 'whale-shark-start-sumbawa',
+    participants: '4',
+    open_trip_price: '-',
+    full_private_price: 'IDR 2,580,000'
+  },
+  {
+    tour_name: 'whale-shark-start-sumbawa',
+    participants: '5',
+    open_trip_price: '-',
+    full_private_price: 'IDR 2,100,000'
+  },
+  {
+    tour_name: 'whale-shark-start-sumbawa',
+    participants: '6',
+    open_trip_price: '-',
+    full_private_price: 'IDR 1,780,000'
+  },
+  {
+    tour_name: 'whale-shark-start-sumbawa',
+    participants: '7',
+    open_trip_price: '-',
+    full_private_price: 'IDR 1,620,000'
+  },
+  {
+    tour_name: 'whale-shark-start-sumbawa',
+    participants: '8',
+    open_trip_price: '-',
+    full_private_price: 'IDR 1,440,000'
+  },
+  {
+    tour_name: 'whale-shark-start-sumbawa',
+    participants: '9',
+    open_trip_price: '-',
+    full_private_price: 'IDR 1,290,000'
+  },
+  {
+    tour_name: 'whale-shark-start-sumbawa',
+    participants: '10',
+    open_trip_price: '-',
+    full_private_price: 'IDR 1,180,000'
   },
   
   // Tour 2: whale-shark-2d1n
@@ -94,6 +148,41 @@ const allPrices = [
     participants: '2-10',
     open_trip_price: 'IDR. 1,450,000/orang',
     full_private_price: 'IDR. 2,500,000/orang'
+  },
+  // Tour 7: whale-shark-speedboat
+  {
+    tour_name: 'whale-shark-speedboat',
+    participants: '2-10',
+    open_trip_price: 'IDR. 2,150,000/Person',
+    full_private_price: 'IDR. 3,100,000/person'
+  },
+  // Tour 8: whale-shark-1day-labuhan-jambu
+  {
+    tour_name: 'whale-shark-1day-labuhan-jambu',
+    participants: '2-10',
+    open_trip_price: 'IDR. 1,650,000/Person',
+    full_private_price: 'IDR. 2,600,000/person'
+  },
+  // Tour 9: whale-shark-2d1n-poto-tano
+  {
+    tour_name: 'whale-shark-2d1n-poto-tano',
+    participants: '2-10',
+    open_trip_price: 'IDR. 2,050,000/Person',
+    full_private_price: 'IDR. 2,950,000/person'
+  },
+  // Tour 10: whale-shark-2d1n-sekongkang
+  {
+    tour_name: 'whale-shark-2d1n-sekongkang',
+    participants: '2-10',
+    open_trip_price: 'IDR. 2,050,000/Person',
+    full_private_price: 'IDR. 2,950,000/person'
+  },
+  // Tour 11: whale-shark-moyo-kenawa-lombok
+  {
+    tour_name: 'whale-shark-moyo-kenawa-lombok',
+    participants: '2-10',
+    open_trip_price: 'IDR. 2,350,000/Person',
+    full_private_price: 'IDR. 3,400,000/person'
   }
 ];
 

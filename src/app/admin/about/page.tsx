@@ -130,6 +130,7 @@ export default function AdminAboutPage() {
                           alt={section.name}
                           fill
                           className="object-cover"
+                          unoptimized={existingImage.image_url.startsWith('http')}
                         />
                       </div>
                       <div className="flex gap-2">

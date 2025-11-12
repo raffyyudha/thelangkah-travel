@@ -11,43 +11,84 @@ const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYm
 
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-// Mapping gambar untuk setiap tour
+// Mapping gambar untuk setiap tour - SESUAI DENGAN YANG DIPAKAI DI WEBSITE ASLI
 const tourImages = {
   'whale-shark-start-sumbawa': {
-    hero: '/images/whale-shark/IMG_2992.JPG',
-    gallery1: '/images/whale-shark/IMG_2079.JPG',
-    gallery2: '/images/whale-shark/IMG_2082.JPG',
-    gallery3: '/images/whale-shark/IMG_2806.JPG'
+    card: '/images/whaleshark.PNG',
+    hero: '/images/IMG_2992.JPG',
+    gallery1: '/images/IMG_2079.JPG',
+    gallery2: '/images/IMG_2082.JPG',
+    gallery3: '/images/IMG_2806.JPG'
+  },
+  'whale-shark-1day-labuhan-jambu': {
+    card: '/images/whale-shark-1day-labuhan-jambu.PNG',
+    hero: '/images/whale-shark-1day-labuhan-jambu-hero.PNG',
+    gallery1: '/images/whale-shark-1day-labuhan-jambu-1.PNG',
+    gallery2: '/images/whale-shark-1day-labuhan-jambu-2.PNG',
+    gallery3: '/images/whale-shark-1day-labuhan-jambu-3.PNG'
+  },
+  'whale-shark-speedboat': {
+    card: '/images/whale-shark-speedboat-3.JPG',
+    hero: '/images/whale-shark-speedboat-hero.jpg',
+    gallery1: '/images/whale-shark-speedboat-1.jpg',
+    gallery2: '/images/whale-shark-speedboat-2.jpg',
+    gallery3: '/images/whale-shark-speedboat-3.JPG'
   },
   'whale-shark-2d1n': {
-    hero: '/images/whale-shark/IMG_2992.JPG',
-    gallery1: '/images/whale-shark/IMG_2079.JPG',
-    gallery2: '/images/whale-shark/IMG_2082.JPG',
-    gallery3: '/images/whale-shark/IMG_2806.JPG'
+    card: '/images/tripbaru.PNG',
+    hero: '/images/IMG_2992.JPG',
+    gallery1: '/images/IMG_2079.JPG',
+    gallery2: '/images/IMG_2082.JPG',
+    gallery3: '/images/IMG_2806.JPG'
   },
-  'combo-moyo-whale-shark': {
-    hero: '/images/hero.jpg',
-    gallery1: '/images/whale-shark/IMG_2992.JPG',
-    gallery2: '/images/whale-shark/IMG_2079.JPG',
-    gallery3: '/images/whale-shark/IMG_2082.JPG'
+  'whale-shark-2d1n-poto-tano': {
+    card: '/images/whale-shark-2d1n-poto-tano-3.JPG',
+    hero: '/images/whale-shark-2d1n-poto-tano-hero.PNG',
+    gallery1: '/images/whale-shark-2d1n-poto-tano-1.PNG',
+    gallery2: '/images/whale-shark-2d1n-poto-tano-2.PNG',
+    gallery3: '/images/whale-shark-2d1n-poto-tano-3.JPG'
+  },
+  'whale-shark-2d1n-sekongkang': {
+    card: '/images/whale-shark-2d1n-sekongkang.PNG',
+    hero: '/images/whale-shark-2d1n-sekongkang-hero.PNG',
+    gallery1: '/images/whale-shark-2d1n-sekongkang-1.PNG',
+    gallery2: '/images/whale-shark-2d1n-sekongkang-2.PNG',
+    gallery3: '/images/whale-shark-2d1n-sekongkang-3.PNG'
   },
   'whale-shark-start-labuhan-jambu': {
-    hero: '/images/whale-shark/IMG_2992.JPG',
-    gallery1: '/images/whale-shark/IMG_2079.JPG',
-    gallery2: '/images/whale-shark/IMG_2082.JPG',
-    gallery3: '/images/whale-shark/IMG_2806.JPG'
+    card: '/images/whaleshark.PNG',
+    hero: '/images/IMG_2992.JPG',
+    gallery1: '/images/IMG_2079.JPG',
+    gallery2: '/images/IMG_2082.JPG',
+    gallery3: '/images/IMG_2806.JPG'
+  },
+  'whale-shark-moyo-kenawa-lombok': {
+    card: '/images/whale-shark-moyo-kenawa-lombok.PNG',
+    hero: '/images/whale-shark-moyo-kenawa-lombok-hero.PNG',
+    gallery1: '/images/whale-shark-moyo-kenawa-lombok-1.PNG',
+    gallery2: '/images/whale-shark-moyo-kenawa-lombok-2.PNG',
+    gallery3: '/images/whale-shark-moyo-kenawa-lombok-3.PNG'
   },
   'trip-4d3n-sumbawa': {
+    card: '/images/whale-shark-moyo-kenawa-lombok-hero.PNG',
     hero: '/images/islandjawa.jpg',
-    gallery1: '/images/whale-shark/IMG_2992.JPG',
-    gallery2: '/images/whale-shark/IMG_2079.JPG',
-    gallery3: '/images/whale-shark/IMG_2082.JPG'
+    gallery1: '/images/IMG_2992.JPG',
+    gallery2: '/images/IMG_2079.JPG',
+    gallery3: '/images/IMG_2082.JPG'
+  },
+  'combo-moyo-whale-shark': {
+    card: '/images/moyoisland.JPG',
+    hero: '/images/hero.jpg',
+    gallery1: '/images/IMG_2992.JPG',
+    gallery2: '/images/IMG_2079.JPG',
+    gallery3: '/images/IMG_2082.JPG'
   },
   'whale-shark-experience': {
-    hero: '/images/whale-shark/IMG_2806.JPG',
-    gallery1: '/images/whale-shark/IMG_2992.JPG',
-    gallery2: '/images/whale-shark/IMG_2079.JPG',
-    gallery3: '/images/whale-shark/IMG_2082.JPG'
+    card: '/images/whaleshark.PNG',
+    hero: '/images/IMG_2806.JPG',
+    gallery1: '/images/IMG_2992.JPG',
+    gallery2: '/images/IMG_2079.JPG',
+    gallery3: '/images/IMG_2082.JPG'
   }
 };
 

@@ -120,6 +120,7 @@ export default function AdminGalleryPage() {
                     alt="Gallery"
                     fill
                     className="object-cover rounded"
+                    unoptimized={image.image_url.startsWith('http')}
                   />
                 </div>
                 <button

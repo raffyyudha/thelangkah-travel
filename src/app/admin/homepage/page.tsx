@@ -215,6 +215,7 @@ export default function AdminHomepagePage() {
                   alt="Hero Banner"
                   fill
                   className="object-cover"
+                  unoptimized={heroImage.image_url.startsWith('http')}
                 />
               </div>
               <div className="flex gap-2">

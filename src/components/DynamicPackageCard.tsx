@@ -13,68 +13,26 @@ interface DynamicPackageCardProps {
 }
 
 export function DynamicPackageCard({ tourName, title, href, price }: DynamicPackageCardProps) {
-  // Hardcoded fallback for new tours - using thumbnails
-  const defaultImage = tourName === "whale-shark-1day-labuhan-jambu" 
-    ? "/images/whale-shark-1day-labuhan-jambu.PNG" 
-    : tourName === "whale-shark-speedboat"
-    ? "/images/whale-shark-speedboat-3.JPG"
-    : tourName === "whale-shark-2d1n-poto-tano"
-    ? "/images/whale-shark-2d1n-poto-tano-3.JPG"
-    : tourName === "whale-shark-2d1n-sekongkang"
-    ? "/images/whale-shark-2d1n-sekongkang.PNG"
-    : tourName === "whale-shark-moyo-kenawa-lombok"
-    ? "/images/whale-shark-moyo-kenawa-lombok.PNG"
-    : tourName === "trip-4d3n-sumbawa"
-    ? "/images/whale-shark-moyo-kenawa-lombok-hero.PNG"
-    : "/images/hero.jpg";
-  
-  const [heroImage, setHeroImage] = useState<string>(defaultImage);
+  const [heroImage, setHeroImage] = useState<string>("");
 
   const fetchHeroImage = useCallback(async () => {
-    // Use hardcoded thumbnail for new tours
-    if (tourName === "whale-shark-1day-labuhan-jambu") {
-      setHeroImage("/images/whale-shark-1day-labuhan-jambu.PNG");
-      return;
-    }
-    if (tourName === "whale-shark-speedboat") {
-      setHeroImage("/images/whale-shark-speedboat-3.JPG");
-      return;
-    }
-    if (tourName === "whale-shark-2d1n-poto-tano") {
-      setHeroImage("/images/whale-shark-2d1n-poto-tano-3.JPG");
-      return;
-    }
-    if (tourName === "whale-shark-2d1n-sekongkang") {
-      setHeroImage("/images/whale-shark-2d1n-sekongkang.PNG");
-      return;
-    }
-    if (tourName === "whale-shark-moyo-kenawa-lombok") {
-      setHeroImage("/images/whale-shark-moyo-kenawa-lombok.PNG");
-      return;
-    }
-    if (tourName === "trip-4d3n-sumbawa") {
-      setHeroImage("/images/whale-shark-moyo-kenawa-lombok-hero.PNG");
-      return;
-    }
-    
     try {
-      const { data, error } = await supabase
+      // Get hero image (same as tour page) - NO FALLBACK
+      const { data: heroData } = await supabase
         .from("tour_images")
-        .select("*")
+        .select("image_url")
         .eq("tour_name", tourName)
         .eq("image_type", "hero")
-        .single();
+        .maybeSingle();
 
-      if (error) {
-        console.error("Error fetching hero image:", error);
-        return;
-      }
-
-      if (data && data.image_url) {
-        setHeroImage(data.image_url);
+      if (heroData && heroData.image_url) {
+        setHeroImage(heroData.image_url);
+      } else {
+        setHeroImage("");
       }
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Error fetching hero image:", error);
+      setHeroImage("");
     }
   }, [tourName]);
 
@@ -91,6 +49,7 @@ export function DynamicPackageCard({ tourName, title, href, price }: DynamicPack
             alt={title}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
+            unoptimized={heroImage.startsWith('http')}
           />
         </div>
         <div className="p-3 text-center">

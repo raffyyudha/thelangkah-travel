@@ -33,15 +33,26 @@ export default function AdminDashboard() {
   const ADMIN_PASSWORD = "sumbawa2025";
 
   const tours = [
-    { id: "whale-shark-start-sumbawa", name: "Tour 1: Whale Shark Start Sumbawa" },
-    { id: "whale-shark-2d1n", name: "Tour 2: Whale Shark 2D1N" },
-    { id: "combo-moyo-whale-shark", name: "Tour 3: Combo Moyo & Whale Shark" },
-    { id: "whale-shark-start-labuhan-jambu", name: "Tour 4: Whale Shark Start Lombok" },
-    { id: "trip-4d3n-sumbawa", name: "Tour 5: Sumbawa 4D3N" },
-    { id: "whale-shark-experience", name: "Tour 6: Whale Shark Experience" }
+    { id: "whale-shark-start-sumbawa", name: "Tour A: Whale Shark Start Sumbawa" },
+    { id: "whale-shark-1day-labuhan-jambu", name: "Tour B: Whale Shark 1 Day Labuhan Jambu" },
+    { id: "whale-shark-speedboat", name: "Tour C: Whale Shark Speedboat" },
+    { id: "whale-shark-2d1n", name: "Tour D: Whale Shark 2D1N (Sumbawa)" },
+    { id: "whale-shark-2d1n-poto-tano", name: "Tour E: Whale Shark 2D1N Poto Tano" },
+    { id: "whale-shark-2d1n-sekongkang", name: "Tour F: Whale Shark 2D1N Sekongkang" },
+    { id: "whale-shark-start-labuhan-jambu", name: "Tour G: Whale Shark Start Lombok" },
+    { id: "whale-shark-experience", name: "Tour H: Whale Shark Experience" },
+    { id: "combo-moyo-whale-shark", name: "Tour I: Combo Moyo & Whale Shark" },
+    { id: "whale-shark-moyo-kenawa-lombok", name: "Tour J: Whale Shark - Moyo - Kenawa (Lombok)" },
+    { id: "trip-4d3n-sumbawa", name: "Tour K: Trip 4D3N Sumbawa" },
   ];
 
-  const currentTourPrices = prices.filter(p => p.tour_name === selectedTour);
+  const currentTourPrices = prices
+    .filter(p => p.tour_name === selectedTour)
+    .sort((a, b) => {
+      const numA = parseInt(a.participants) || 0;
+      const numB = parseInt(b.participants) || 0;
+      return numA - numB;
+    });
   const currentTourImages = images.filter(img => img.tour_name === selectedTour);
 
   const handleLogin = (e: React.FormEvent) => {
@@ -299,7 +310,7 @@ export default function AdminDashboard() {
                   {existingImage ? (
                     <div>
                       <div className="relative h-64 mb-3 rounded-lg overflow-hidden border-2 border-gray-300">
-                        <Image src={existingImage.image_url} alt={type} fill className="object-cover" />
+                        <Image src={existingImage.image_url} alt={type} fill className="object-cover" unoptimized={existingImage.image_url.startsWith('http')} />
                       </div>
                       <div className="flex gap-2">
                         <label className="flex-1 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 cursor-pointer text-center text-sm font-semibold">

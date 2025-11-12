@@ -1,45 +1,40 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Footer } from "@/components/Footer";
+import { supabase } from "@/lib/supabase";
 
 const categories = ["galleryAll", "galleryWhaleShark", "galleryMoyoIsland", "galleryKenawa", "galleryIslandHopping", "galleryGallery"];
 
-const galleryItems = [
-  { id: 2, category: "Whale Shark", image: "/images/whale-shark-speedboat-1.jpg", title: "Fast Trip to Whale Shark", description: "Perjalanan cepat menuju hiu paus" },
-  { id: 4, category: "Whale Shark", image: "/images/whale-shark-speedboat-3.JPG", title: "Amazing Experience", description: "Pengalaman luar biasa bersama hiu paus" },
-  { id: 5, category: "Gallery", image: "/images/gallery/IMG_2128.JPG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 6, category: "Gallery", image: "/images/gallery/IMG_2539.JPG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 7, category: "Gallery", image: "/images/gallery/IMG_5014.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 8, category: "Gallery", image: "/images/gallery/IMG_5039.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 9, category: "Gallery", image: "/images/gallery/IMG_5043.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 10, category: "Gallery", image: "/images/gallery/IMG_5051.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 11, category: "Gallery", image: "/images/gallery/IMG_5053 (2).PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 12, category: "Gallery", image: "/images/gallery/IMG_5065.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 13, category: "Gallery", image: "/images/gallery/IMG_5067.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 14, category: "Gallery", image: "/images/gallery/IMG_5072.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 15, category: "Gallery", image: "/images/gallery/IMG_5081 (1).PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 17, category: "Gallery", image: "/images/gallery/IMG_5082.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 18, category: "Gallery", image: "/images/gallery/IMG_5083.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 19, category: "Gallery", image: "/images/gallery/IMG_5085.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 20, category: "Gallery", image: "/images/gallery/IMG_5263.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 21, category: "Gallery", image: "/images/gallery/IMG_5268 (1).PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 22, category: "Gallery", image: "/images/gallery/IMG_5270 (1).PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 23, category: "Gallery", image: "/images/gallery/IMG_5271.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-  { id: 24, category: "Gallery", image: "/images/gallery/IMG_5275.PNG", title: "Adventure Gallery", description: "Dokumentasi perjalanan seru" },
-];
+interface GalleryImage {
+  id: string | number;
+  image_url: string;
+  title?: string | null;
+  description?: string | null;
+  display_order?: number;
+}
 
 export default function GalleryPage() {
   const { t } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState("galleryAll");
-  const [selectedImage, setSelectedImage] = useState<typeof galleryItems[0] | null>(null);
+  const [images, setImages] = useState<GalleryImage[]>([]);
+  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
 
-  const filteredItems = selectedCategory === "galleryAll" 
-    ? galleryItems 
-    : galleryItems.filter(item => item.category === selectedCategory.replace('gallery', '').replace('All', 'Semua'));
+  useEffect(() => {
+    const loadImages = async () => {
+      const { data, error } = await supabase
+        .from('gallery_images')
+        .select('*')
+        .order('display_order');
+      if (!error) setImages((data as GalleryImage[]) || []);
+    };
+    loadImages();
+  }, []);
+
+  const filteredItems = images;
 
   return (
     <main className="min-h-screen">
@@ -94,17 +89,18 @@ export default function GalleryPage() {
                 className="relative h-48 md:h-64 rounded-lg overflow-hidden cursor-pointer group"
               >
                 <Image
-                  src={item.image}
-                  alt={item.title}
+                  src={item.image_url}
+                  alt={item.title || "Gallery"}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-110"
                   quality={75}
                   sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                  unoptimized={item.image_url.startsWith('http')}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <h3 className="text-white font-bold text-lg mb-1">{item.title}</h3>
-                    <p className="text-gray-200 text-sm">{item.description}</p>
+                    <h3 className="text-white font-bold text-lg mb-1">{item.title || "Adventure Gallery"}</h3>
+                    <p className="text-gray-200 text-sm">{item.description || ""}</p>
                   </div>
                 </div>
               </div>
@@ -128,17 +124,18 @@ export default function GalleryPage() {
           <div className="max-w-5xl w-full" onClick={(e) => e.stopPropagation()}>
             <div className="relative h-[70vh]">
               <Image
-                src={selectedImage.image}
-                alt={selectedImage.title}
+                src={selectedImage.image_url}
+                alt={selectedImage.title || "Gallery"}
                 fill
                 className="object-contain"
                 quality={85}
                 sizes="100vw"
+                unoptimized={selectedImage.image_url.startsWith('http')}
               />
             </div>
             <div className="text-center mt-6">
-              <h3 className="text-white text-2xl font-bold mb-2">{selectedImage.title}</h3>
-              <p className="text-gray-300">{selectedImage.description}</p>
+              <h3 className="text-white text-2xl font-bold mb-2">{selectedImage.title || "Adventure Gallery"}</h3>
+              <p className="text-gray-300">{selectedImage.description || ""}</p>
             </div>
           </div>
         </div>

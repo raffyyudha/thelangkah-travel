@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
-import { DropdownSection, PrivatePricingTable, PaymentMethodsSection, DynamicTourImages } from "@/components/TourComponents";
+import { DropdownSection, DynamicPricingTable, PaymentMethodsSection, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { Footer } from "@/components/Footer";
@@ -153,7 +153,7 @@ export default function WhaleShark1DayLabuhanJambuPage() {
             ))}
           </ul>
 
-            <PrivatePricingTable />
+            <DynamicPricingTable tourName="whale-shark-1day-labuhan-jambu" title={t.pricingTitle} />
 
             <div className="my-8">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">

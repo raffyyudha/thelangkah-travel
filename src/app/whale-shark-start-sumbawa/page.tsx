@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
-import { DropdownSection, PrivatePricingTable, PaymentMethodsSection, DynamicTourImages } from "@/components/TourComponents";
+import { DropdownSection, DynamicPricingTable, PaymentMethodsSection, DynamicTourImages } from "@/components/TourComponents";
 import BookingModal from "@/components/BookingModal";
 import { DynamicRelatedTour } from "@/components/DynamicRelatedTour";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -164,8 +164,8 @@ export default function WhaleSharkStartSumbawaPage() {
             ))}
           </ul>
 
-            {/* Pricing Table */}
-            <PrivatePricingTable title={t.pricingTitle} />
+            {/* Pricing Table - dynamic from database */}
+            <DynamicPricingTable tourName="whale-shark-start-sumbawa" title={t.pricingTitle} />
 
             <div className="text-center mb-8">
               <p className="text-gray-900 text-lg font-bold mb-6">{commonT.interestedBookHere}</p>

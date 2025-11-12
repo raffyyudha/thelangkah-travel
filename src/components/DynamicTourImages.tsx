@@ -29,95 +29,44 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
 
   useEffect(() => {
     async function loadImages() {
-      // Hardcoded images for new tours
-      if (tourName === "whale-shark-1day-labuhan-jambu") {
-        setImages({
-          hero: "/images/whale-shark-1day-labuhan-jambu.PNG",
-          gallery1: "/images/whale-shark-1day-labuhan-jambu-1.PNG",
-          gallery2: "/images/whale-shark-1day-labuhan-jambu-2.PNG",
-          gallery3: "/images/whale-shark-1day-labuhan-jambu-3.PNG"
-        });
-        setLoading(false);
-        return;
-      }
-      if (tourName === "whale-shark-speedboat") {
-        setImages({
-          hero: "/images/whale-shark-speedboat-hero.jpg",
-          gallery1: "/images/whale-shark-speedboat-1.jpg",
-          gallery2: "/images/whale-shark-speedboat-2.jpg",
-          gallery3: "/images/whale-shark-speedboat-3.JPG"
-        });
-        setLoading(false);
-        return;
-      }
-      if (tourName === "whale-shark-2d1n-poto-tano") {
-        setImages({
-          hero: "/images/whale-shark-2d1n-poto-tano-3.JPG",
-          gallery1: "/images/whale-shark-2d1n-poto-tano-1.PNG",
-          gallery2: "/images/whale-shark-2d1n-poto-tano-2.PNG",
-          gallery3: "/images/whale-shark-2d1n-poto-tano-3.JPG"
-        });
-        setLoading(false);
-        return;
-      }
-      if (tourName === "whale-shark-2d1n-sekongkang") {
-        setImages({
-          hero: "/images/whale-shark-2d1n-sekongkang.PNG",
-          gallery1: "/images/whale-shark-2d1n-sekongkang-1.PNG",
-          gallery2: "/images/whale-shark-2d1n-sekongkang-2.PNG",
-          gallery3: "/images/whale-shark-2d1n-sekongkang-3.PNG"
-        });
-        setLoading(false);
-        return;
-      }
-      if (tourName === "whale-shark-moyo-kenawa-lombok") {
-        setImages({
-          hero: "/images/whale-shark-moyo-kenawa-lombok.PNG",
-          gallery1: "/images/whale-shark-moyo-kenawa-lombok-1.PNG",
-          gallery2: "/images/whale-shark-moyo-kenawa-lombok-2.PNG",
-          gallery3: "/images/whale-shark-moyo-kenawa-lombok-3.PNG"
-        });
-        setLoading(false);
-        return;
-      }
-      if (tourName === "trip-4d3n-sumbawa") {
-        setImages({
-          hero: "/images/whale-shark-moyo-kenawa-lombok-hero.PNG",
-          gallery1: "/images/whale-shark-moyo-kenawa-lombok-hero.PNG",
-          gallery2: "/images/whale-shark-moyo-kenawa-lombok-1.PNG",
-          gallery3: "/images/whale-shark-moyo-kenawa-lombok-2.PNG"
-        });
-        setLoading(false);
-        return;
-      }
-      
       try {
         const { data, error } = await supabase
           .from('tour_images')
-          .select('*')
+          .select('image_url,image_type')
           .eq('tour_name', tourName);
 
-        if (error) throw error;
+        const imageMap = {
+          hero: "",
+          gallery1: "",
+          gallery2: "",
+          gallery3: ""
+        } as { [k in keyof typeof images]: string };
 
-        if (data && data.length > 0) {
-          const imageMap = {
-            hero: "",
-            gallery1: "",
-            gallery2: "",
-            gallery3: ""
-          };
-
-          data.forEach((img: TourImage) => {
+        if (!error && data && data.length > 0) {
+          (data as TourImage[]).forEach((img) => {
             const imgType = img.image_type as keyof typeof imageMap;
             if (imgType in imageMap) {
               imageMap[imgType] = img.image_url;
             }
           });
-
-          setImages(imageMap);
         }
+
+        // NO FALLBACK - hanya dari database
+        setImages({
+          hero: imageMap.hero,
+          gallery1: imageMap.gallery1,
+          gallery2: imageMap.gallery2,
+          gallery3: imageMap.gallery3,
+        });
       } catch (error) {
         console.error('Error loading images:', error);
+        // Set empty jika error
+        setImages({
+          hero: "",
+          gallery1: "",
+          gallery2: "",
+          gallery3: ""
+        });
       } finally {
         setLoading(false);
       }
@@ -150,6 +99,7 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
             fill
             className="object-cover"
             priority
+            unoptimized={images.hero.startsWith('http')}
           />
         </div>
       )}
@@ -163,6 +113,7 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
               alt="Gallery Image 1"
               fill
               className="object-cover"
+              unoptimized={images.gallery1.startsWith('http')}
             />
           </div>
         )}
@@ -173,6 +124,7 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
               alt="Gallery Image 2"
               fill
               className="object-cover"
+              unoptimized={images.gallery2.startsWith('http')}
             />
           </div>
         )}
@@ -183,6 +135,7 @@ export function DynamicTourImages({ tourName }: DynamicTourImagesProps) {
               alt="Gallery Image 3"
               fill
               className="object-cover"
+              unoptimized={images.gallery3.startsWith('http')}
             />
           </div>
         )}

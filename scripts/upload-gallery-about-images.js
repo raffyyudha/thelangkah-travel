@@ -15,25 +15,24 @@ const supabase = createClient(supabaseUrl, supabaseAnonKey);
 const galleryImages = [
   '/images/hero.jpg',
   '/images/islandjawa.jpg',
-  '/images/whale-shark/IMG_2992.JPG',
-  '/images/whale-shark/IMG_2079.JPG',
-  '/images/whale-shark/IMG_2082.JPG',
-  '/images/whale-shark/IMG_2806.JPG',
-  '/images/hero.jpg', // reuse
-  '/images/islandjawa.jpg', // reuse
-  '/images/whale-shark/IMG_2992.JPG', // reuse
-  '/images/whale-shark/IMG_2079.JPG', // reuse
-  '/images/whale-shark/IMG_2082.JPG' // reuse
+  '/images/IMG_2992.JPG',
+  '/images/IMG_2079.JPG',
+  '/images/IMG_2082.JPG',
+  '/images/IMG_2806.JPG',
+  '/images/kenawa/sunset.jpg',
+  '/images/hero.PNG',
+  '/images/IMG_3429.JPG',
+  '/images/IMG_2805.JPG'
 ];
 
 // About page images - 6 sections
 const aboutImages = {
-  'hero1': '/images/hero.jpg', // Pengalaman Lokal Autentik (palm tree beach)
-  'hero2': '/images/islandjawa.jpg', // Layanan Profesional (wave/ocean)
-  'feature1': '/images/whale-shark/IMG_2992.JPG', // Keselamatan Utama (whale shark with diver)
-  'feature2': '/images/whale-shark/IMG_2079.JPG', // Eco-Conscious (waterfall alternative)
-  'feature3': '/images/whale-shark/IMG_2082.JPG', // Community Based (beach/sunset alternative)
-  'feature4': '/images/islandjawa.jpg' // Tim yang Passionate (temple/cultural)
+  'hero1': '/images/hero.jpg', // Pengalaman Lokal Autentik
+  'hero2': '/images/islandjawa.jpg', // Layanan Profesional
+  'feature1': '/images/IMG_2992.JPG', // Keselamatan Utama
+  'feature2': '/images/IMG_2079.JPG', // Eco-Conscious
+  'feature3': '/images/IMG_2082.JPG', // Community Based
+  'feature4': '/images/IMG_2806.JPG' // Tim yang Passionate
 };
 
 async function uploadGalleryImages() {
