@@ -12,6 +12,11 @@ interface DynamicPackageCardProps {
   price?: string;
 }
 
+interface TourImage {
+  image_url: string;
+  image_type: string;
+}
+
 export function DynamicPackageCard({ tourName, title, href, price }: DynamicPackageCardProps) {
   const [heroImage, setHeroImage] = useState<string>("");
 
@@ -28,8 +33,8 @@ export function DynamicPackageCard({ tourName, title, href, price }: DynamicPack
         .order("id", { ascending: false });
 
       if (!error && data && data.length > 0) {
-        const card = data.find((d: any) => d.image_type === "card");
-        const hero = data.find((d: any) => d.image_type === "hero");
+        const card = data.find((d: TourImage) => d.image_type === "card");
+        const hero = data.find((d: TourImage) => d.image_type === "hero");
         const chosen = card?.image_url || hero?.image_url || "";
         if (chosen) {
           console.log(`✅ Using ${(card ? "card" : "hero")} for ${tourName}: ${chosen}`);
