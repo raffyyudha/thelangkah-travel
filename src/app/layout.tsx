@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Adventure Sumbawa Island",
     images: [
       {
-        url: "/images/logoshare.PNG",
+        url: "/images/logoshare.PNG?v=2024",
         width: 512,
         height: 512,
         alt: "Adventure Sumbawa Island Logo",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Adventure Sumbawa Island | Snorkeling with Whale Shark Sumbawa",
     description: "Operator wisata lokal terpercaya di Sumbawa. Spesialis snorkeling dengan hiu paus di Teluk Saleh, Labuhan Jambu.",
-    images: ["/images/logoshare.PNG"],
+    images: ["/images/logoshare.PNG?v=2024"],
   },
 };
 
@@ -52,6 +52,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
+      <head>
+        <meta property="og:image" content="/images/logoshare.PNG?v=2024" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta name="twitter:image" content="/images/logoshare.PNG?v=2024" />
+        <link rel="icon" type="image/png" href="/images/logoshare.PNG" />
+      </head>
       <ClientBody className={poppins.className}>
         <LanguageProvider>
           <Header />
