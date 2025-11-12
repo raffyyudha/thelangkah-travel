@@ -1,66 +1,27 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { supabase } from "@/lib/supabase";
 
-interface DynamicPackageCardProps {
-  tourName: string;
+interface OptimizedPackageCardProps {
   title: string;
   href: string;
   price?: string;
-  priority?: boolean; // For above-the-fold images
-  lazy?: boolean; // For lazy loading
+  imageUrl?: string;
+  priority?: boolean;
+  lazy?: boolean;
+  isLoading?: boolean;
 }
 
-interface TourImage {
-  image_url: string;
-  image_type: string;
-}
-
-export function DynamicPackageCard({ tourName, title, href, price, priority = false, lazy = true }: DynamicPackageCardProps) {
-  const [heroImage, setHeroImage] = useState<string>("");
-  const [isLoading, setIsLoading] = useState<boolean>(true);
-
-  const fetchHeroImage = useCallback(async () => {
-    try {
-      console.log(`🔍 Fetching homepage image for: ${tourName}`);
-      
-      // Try to get the hero image first; if not available, fallback to card image
-      const { data, error } = await supabase
-        .from("tour_images")
-        .select("image_url,image_type")
-        .eq("tour_name", tourName)
-        .in("image_type", ["card", "hero"])
-        .order("id", { ascending: false });
-
-      if (!error && data && data.length > 0) {
-        const hero = data.find((d: TourImage) => d.image_type === "hero");
-        const card = data.find((d: TourImage) => d.image_type === "card");
-        const chosen = hero?.image_url || card?.image_url || "";
-        if (chosen) {
-          console.log(`✅ Using ${(hero ? "hero" : "card")} for ${tourName}: ${chosen}`);
-          setHeroImage(chosen);
-          setIsLoading(false);
-          return;
-        }
-      }
-
-      console.log(`❌ No image found for ${tourName}`);
-      setHeroImage("");
-      setIsLoading(false);
-    } catch (error) {
-      console.error(`Error fetching homepage image for ${tourName}:`, error);
-      setHeroImage("");
-      setIsLoading(false);
-    }
-  }, [tourName]);
-
-  useEffect(() => {
-    fetchHeroImage();
-  }, [fetchHeroImage]);
-
+export function OptimizedPackageCard({ 
+  title, 
+  href, 
+  price, 
+  imageUrl, 
+  priority = false, 
+  lazy = true,
+  isLoading = false 
+}: OptimizedPackageCardProps) {
   return (
     <Link href={href} className="group">
       <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
@@ -72,13 +33,13 @@ export function DynamicPackageCard({ tourName, title, href, price, priority = fa
                 <div className="w-8 h-8 border-2 border-gray-400 border-t-transparent rounded-full animate-spin"></div>
               </div>
             </div>
-          ) : heroImage ? (
+          ) : imageUrl ? (
             <Image
-              src={heroImage}
+              src={imageUrl}
               alt={title}
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-300"
-              unoptimized={heroImage.startsWith('http')}
+              unoptimized={imageUrl.startsWith('http')}
               priority={priority}
               loading={lazy ? "lazy" : "eager"}
               placeholder="blur"

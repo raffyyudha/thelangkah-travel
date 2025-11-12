@@ -59,6 +59,9 @@ export default function RootLayout({
         <meta property="og:image:height" content="512" />
         <meta name="twitter:image" content="/images/logoshare.PNG?v=2024" />
         <link rel="icon" type="image/png" href="/images/logoshare.PNG" />
+        
+        {/* Preload critical images for better performance */}
+        <link rel="preload" as="image" href="/images/logoshare.PNG" />
       </head>
       <ClientBody className={poppins.className}>
         <LanguageProvider>
