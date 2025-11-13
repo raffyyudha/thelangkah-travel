@@ -163,6 +163,7 @@ export default function WhaleSharkMoyoKenawaLombokPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
               {t.programTitle}
             </h2>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">{t.day1Heading}</h3>
 
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time1}</strong> : {t.itinerary.desc1}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time2}</strong> : {t.itinerary.desc2}</p>
@@ -171,6 +172,7 @@ export default function WhaleSharkMoyoKenawaLombokPage() {
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time5}</strong> : {t.itinerary.desc5}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time8}</strong> : {t.itinerary.desc8}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time9}</strong> : {t.itinerary.desc9}</p>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mt-6 mb-2">{t.day2Heading}</h3>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time6}</strong> : {t.itinerary.desc6}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time7}</strong> : {t.itinerary.desc7}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time10}</strong> : {t.itinerary.desc10}</p>
@@ -184,6 +186,7 @@ export default function WhaleSharkMoyoKenawaLombokPage() {
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time18}</strong> : {t.itinerary.desc18}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time19}</strong> : {t.itinerary.desc19}</p>
             <p className="text-gray-700 leading-relaxed mb-4"><strong>{t.itinerary.time20}</strong> : {t.itinerary.desc20}</p>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mt-6 mb-2">{t.day3Heading}</h3>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time21}</strong> : {t.itinerary.desc21}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time22}</strong> : {t.itinerary.desc22}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time23}</strong> : {t.itinerary.desc23}</p>
