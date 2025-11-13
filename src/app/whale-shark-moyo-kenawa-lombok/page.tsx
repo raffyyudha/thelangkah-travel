@@ -168,6 +168,13 @@ export default function WhaleSharkMoyoKenawaLombokPage() {
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time2}</strong> : {t.itinerary.desc2}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time3}</strong> : {t.itinerary.desc3}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time4}</strong> : {t.itinerary.desc4}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time5}</strong> : {t.itinerary.desc5}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time6}</strong> : {t.itinerary.desc6}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time7}</strong> : {t.itinerary.desc7}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time10}</strong> : {t.itinerary.desc10}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time11}</strong> : {t.itinerary.desc11}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time12}</strong> : {t.itinerary.desc12}</p>
+            <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time13}</strong> : {t.itinerary.desc13}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time14}</strong> : {t.itinerary.desc14}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time15}</strong> : {t.itinerary.desc15}</p>
             <p className="text-gray-700 leading-relaxed mb-2"><strong>{t.itinerary.time16}</strong> : {t.itinerary.desc16}</p>
