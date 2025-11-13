@@ -1,7 +1,7 @@
 export const tour7Translations = {
   id: {
     title: "Trip 1 Hari Hiu Paus (Start & Finish Labuhan Jambu)",
-    subtitle: "Mulai 550.000 IDR per orang",
+    subtitle: "Mulai 1.180.000 IDR per orang",
     description1: "Labuhan Jambu adalah pintu terdekat menuju habitat alami hiu paus di Teluk Saleh. Dari pelabuhan ini, perjalanan ke spot hiu paus hanya membutuhkan waktu singkat. Dengan start langsung dari Labuhan Jambu, Anda tidak perlu menempuh perjalanan darat panjang dari kota. Ini cocok bagi wisatawan yang menginap di dekat area wisata.",
     description2: "Trip ini dirancang khusus untuk memberikan pengalaman terbaik melihat hiu paus dengan waktu yang efisien.",
     programTitle: "Program Wisata Hiu Paus Sumbawa",
@@ -54,7 +54,7 @@ export const tour7Translations = {
   },
   en: {
     title: "1 Day Whale Shark Trip (Start & Finish Labuhan Jambu)",
-    subtitle: "Starting from 550,000 IDR per person",
+    subtitle: "Starting from 1,180,000 IDR per person",
     description1: "Labuhan Jambu is the closest gateway to the natural habitat of whale sharks in Teluk Saleh. From this port, the journey to the whale shark spot takes only a short time. Starting directly from Labuhan Jambu, you don't need to take a long overland journey from the city. This is suitable for tourists staying near the tourist area.",
     description2: "This trip is specially designed to provide the best whale shark viewing experience with efficient timing.",
     programTitle: "Sumbawa Whale Shark Tour Program",

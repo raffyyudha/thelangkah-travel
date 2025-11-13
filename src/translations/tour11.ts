@@ -1,7 +1,7 @@
 export const tour11Translations = {
   id: {
     title: "3D2N Trip Hiu Paus - Pulau Moyo - Kenawa (Start & Finish Area Lombok)",
-    subtitle: "Mulai 1.240.000 IDR per orang",
+    subtitle: "Mulai 1.180.000 IDR per orang",
     description1: "Nikmati petualangan lengkap 3 hari 2 malam menjelajahi tiga destinasi terbaik di Sumbawa: bertemu Hiu Paus di Teluk Saleh, menikmati keindahan Pulau Moyo, dan menyaksikan sunset emas di Pulau Kenawa. Trip ini dimulai dan berakhir dari Lombok, sehingga sangat ideal bagi wisatawan yang ingin merasakan pengalaman Sumbawa tanpa harus mengatur perjalanan rumit.",
     description2: "Anda akan diajak menyelami jernihnya lautan Sumbawa, berenang bersama raksasa lembut laut, trekking menuju air terjun tersembunyi di Moyo, hingga menikmati pulau kecil berpasir putih dengan pemandangan Gunung Rinjani di kejauhan.",
     programTitle: "Itinerary 3D2N Trip Hiu Paus - Pulau Moyo - Kenawa",
@@ -108,7 +108,7 @@ export const tour11Translations = {
   },
   en: {
     title: "3D2N Whale Shark - Moyo Island - Kenawa Trip (Start & Finish Lombok Area)",
-    subtitle: "Starting from 1,240,000 IDR per person",
+    subtitle: "Starting from 1,180,000 IDR per person",
     description1: "Enjoy a complete 3 days 2 nights adventure exploring three best destinations in Sumbawa: meeting Whale Sharks in Teluk Saleh, enjoying the beauty of Moyo Island, and witnessing golden sunset at Kenawa Island. This trip starts and ends from Lombok, making it ideal for tourists who want to experience Sumbawa without complicated travel arrangements.",
     description2: "You will be invited to dive into the clear waters of Sumbawa, swim with gentle giants of the sea, trek to hidden waterfalls in Moyo, and enjoy a small white sand island with views of Mount Rinjani in the distance.",
     programTitle: "3D2N Whale Shark - Moyo Island - Kenawa Itinerary",

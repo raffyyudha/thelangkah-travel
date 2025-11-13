@@ -1,7 +1,7 @@
 export const tour9Translations = {
   id: {
     title: "2D1N Trip Hiu Paus (Start & Finish Area Poto Tano)",
-    subtitle: "Mulai 1.250.000 IDR per orang",
+    subtitle: "Mulai 1.180.000 IDR per orang",
     description1: "Rasakan pengalaman dua hari satu malam menjelajahi keindahan Sumbawa dengan bertemu langsung raksasa lembut laut Hiu Paus di perairan Labuhan Jambu.",
     description2: "Trip ini dimulai dan berakhir di Poto Tano, cocok untuk wisatawan dari Lombok atau yang tiba melalui jalur darat.",
     programTitle: "Itinerary Tour Hiu Paus Sumbawa (Start & Finish Area Poto Tano)",
@@ -64,7 +64,7 @@ export const tour9Translations = {
   },
   en: {
     title: "2D1N Whale Shark Trip (Start & Finish Poto Tano Area)",
-    subtitle: "Starting from 1,250,000 IDR per person",
+    subtitle: "Starting from 1,180,000 IDR per person",
     description1: "Experience two days and one night exploring the beauty of Sumbawa while meeting the gentle giants of the sea, Whale Sharks, in the waters of Labuhan Jambu.",
     description2: "This trip starts and ends in Poto Tano, perfect for tourists from Lombok or arriving via land routes.",
     programTitle: "Sumbawa Whale Shark Tour Itinerary (Start & Finish Poto Tano Area)",

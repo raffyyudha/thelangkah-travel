@@ -1,7 +1,7 @@
 export const tour10Translations = {
   id: {
     title: "2D1N Trip Hiu Paus (Start & Finish Area Sekongkang)",
-    subtitle: "Mulai 1.300.000 IDR per orang",
+    subtitle: "Mulai 1.180.000 IDR per orang",
     description1: "Temukan petualangan laut terbaik di Sumbawa melalui paket 2 Hari 1 Malam Tour Hiu Paus yang praktis dan nyaman bagi tamu yang menginap atau berada di kawasan Sekongkang, Sumbawa Barat. Trip ini membawa Anda langsung menuju perairan Labuhan Jambu—habitat alami Hiu Paus, sang raksasa lembut yang menjadi ikon laut Sumbawa.",
     description2: "Perjalanan dimulai dari Sekongkang menuju Labuhan Jambu, dilanjutkan dengan penyelaman atau snorkeling bersama Hiu Paus, menikmati pemandangan laut yang jernih, dan merasakan keramahan penduduk lokal di desa nelayan tradisional. Selama dua hari, Anda akan mengeksplorasi alam Sumbawa, belajar tentang kehidupan Hiu Paus, serta menikmati suasana pantai yang tenang jauh dari keramaian.",
     programTitle: "Itinerary Tour Hiu Paus Sumbawa (Start & Finish Area Sekongkang)",
@@ -64,7 +64,7 @@ export const tour10Translations = {
   },
   en: {
     title: "2D1N Whale Shark Trip (Start & Finish Sekongkang Area)",
-    subtitle: "Starting from 1,300,000 IDR per person",
+    subtitle: "Starting from 1,180,000 IDR per person",
     description1: "Discover the best sea adventure in Sumbawa through a practical and comfortable 2 Days 1 Night Whale Shark Tour package for guests staying or located in the Sekongkang area, West Sumbawa. This trip takes you directly to the waters of Labuhan Jambu—the natural habitat of Whale Sharks, the gentle giants that are the icon of Sumbawa's sea.",
     description2: "The journey starts from Sekongkang to Labuhan Jambu, followed by diving or snorkeling with Whale Sharks, enjoying clear sea views, and experiencing the hospitality of local residents in a traditional fishing village. Over two days, you will explore Sumbawa's nature, learn about Whale Shark life, and enjoy a peaceful beach atmosphere far from the crowds.",
     programTitle: "Sumbawa Whale Shark Tour Itinerary (Start & Finish Sekongkang Area)",
